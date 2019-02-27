@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToolBarView" customModule="HMKFieldCollector" customModuleProvider="target">
+            <connections>
+                <outlet property="btnG3Center" destination="ZXE-Fp-hN8" id="B4d-2t-fCR"/>
+                <outlet property="btnG3Left" destination="JiM-Im-pBb" id="jaA-hs-0tQ"/>
+                <outlet property="btnG3Right" destination="mEN-Ys-jg3" id="hbU-x8-Thu"/>
+                <outlet property="btnNotifyLeft" destination="YIb-QJ-l5M" id="PWQ-tY-aki"/>
+                <outlet property="btnNotifyRight" destination="hxg-0v-U6a" id="9kE-SH-Ufb"/>
+                <outlet property="view3Button" destination="5DY-I4-TZJ" id="ovu-3J-LgI"/>
+                <outlet property="viewStyleNotify" destination="OGs-93-bLc" id="ySX-L4-T9A"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5DY-I4-TZJ" customClass="KHView" customModule="HMKFieldCollector" customModuleProvider="target">
+                    <rect key="frame" x="24.333333333333343" y="15.666666666666668" width="365.33333333333326" height="38.666666666666657"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JiM-Im-pBb" customClass="KHButton" customModule="HMKFieldCollector" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="120.66666666666667" height="38.666666666666664"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                            <state key="normal" title="Cơ bản">
+                                <color key="titleColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="actionChooseLeft:" destination="-1" eventType="touchUpInside" id="YO1-9u-2am"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXE-Fp-hN8" customClass="KHButton" customModule="HMKFieldCollector" customModuleProvider="target">
+                            <rect key="frame" x="122.33333333333331" y="0.0" width="120.66666666666669" height="38.666666666666664"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                            <state key="normal" title="Ngân hàng">
+                                <color key="titleColor" white="0.72439236110000005" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="actionChooseCenter:" destination="-1" eventType="touchUpInside" id="UNN-mQ-zHu"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEN-Ys-jg3" customClass="KHButton" customModule="HMKFieldCollector" customModuleProvider="target">
+                            <rect key="frame" x="244.66666666666666" y="0.0" width="120.66666666666666" height="38.666666666666664"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                            <state key="normal" title="Liên hệ">
+                                <color key="titleColor" white="0.72439236110000005" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="actionChooseRight:" destination="-1" eventType="touchUpInside" id="09N-2M-3ND"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gIV-LB-b0D" userLabel="divideView" customClass="KHView" customModule="HMKFieldCollector" customModuleProvider="target">
+                            <rect key="frame" x="242.99999999999997" y="8.6666666666666661" width="1.6666666666666572" height="21.333333333333336"/>
+                            <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1.5" id="h77-WG-ofH"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Du-3C-QKr" userLabel="divideView" customClass="KHView" customModule="HMKFieldCollector" customModuleProvider="target">
+                            <rect key="frame" x="120.66666666666667" y="8.6666666666666661" width="1.6666666666666714" height="21.333333333333336"/>
+                            <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1.5" id="ipY-IL-gFE"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="JiM-Im-pBb" firstAttribute="top" secondItem="5DY-I4-TZJ" secondAttribute="top" id="1ga-Bw-CeK"/>
+                        <constraint firstItem="ZXE-Fp-hN8" firstAttribute="width" secondItem="JiM-Im-pBb" secondAttribute="width" id="1hH-Lk-e3r"/>
+                        <constraint firstItem="mEN-Ys-jg3" firstAttribute="leading" secondItem="gIV-LB-b0D" secondAttribute="trailing" id="2Mz-6u-F3W"/>
+                        <constraint firstItem="JiM-Im-pBb" firstAttribute="leading" secondItem="5DY-I4-TZJ" secondAttribute="leading" id="5Nx-Zf-7n3"/>
+                        <constraint firstItem="8Du-3C-QKr" firstAttribute="height" secondItem="5DY-I4-TZJ" secondAttribute="height" multiplier="27:48" id="8qN-m5-pxJ"/>
+                        <constraint firstItem="mEN-Ys-jg3" firstAttribute="top" secondItem="5DY-I4-TZJ" secondAttribute="top" id="99d-Qk-I16"/>
+                        <constraint firstItem="gIV-LB-b0D" firstAttribute="leading" secondItem="ZXE-Fp-hN8" secondAttribute="trailing" id="CrJ-Yk-LrF"/>
+                        <constraint firstItem="JiM-Im-pBb" firstAttribute="width" secondItem="5DY-I4-TZJ" secondAttribute="width" multiplier="1:3" constant="-1" id="HQL-ia-mgp"/>
+                        <constraint firstItem="gIV-LB-b0D" firstAttribute="centerY" secondItem="8Du-3C-QKr" secondAttribute="centerY" id="Mjw-hG-T8k"/>
+                        <constraint firstItem="gIV-LB-b0D" firstAttribute="height" secondItem="8Du-3C-QKr" secondAttribute="height" id="NC3-li-1Wb"/>
+                        <constraint firstItem="ZXE-Fp-hN8" firstAttribute="leading" secondItem="8Du-3C-QKr" secondAttribute="trailing" id="S3O-fb-wHK"/>
+                        <constraint firstItem="8Du-3C-QKr" firstAttribute="centerY" secondItem="JiM-Im-pBb" secondAttribute="centerY" id="XHS-Py-O0y"/>
+                        <constraint firstAttribute="bottom" secondItem="JiM-Im-pBb" secondAttribute="bottom" id="Xmm-Zl-oLc"/>
+                        <constraint firstAttribute="bottom" secondItem="ZXE-Fp-hN8" secondAttribute="bottom" id="gDo-H9-JBh"/>
+                        <constraint firstItem="8Du-3C-QKr" firstAttribute="leading" secondItem="JiM-Im-pBb" secondAttribute="trailing" id="glV-VK-jdR"/>
+                        <constraint firstAttribute="trailing" secondItem="mEN-Ys-jg3" secondAttribute="trailing" id="qwe-v3-H5b"/>
+                        <constraint firstAttribute="bottom" secondItem="mEN-Ys-jg3" secondAttribute="bottom" id="skk-Ml-fJK"/>
+                        <constraint firstItem="ZXE-Fp-hN8" firstAttribute="top" secondItem="5DY-I4-TZJ" secondAttribute="top" id="tQ1-8o-d9w"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OGs-93-bLc" customClass="KHView" customModule="HMKFieldCollector" customModuleProvider="target">
+                    <rect key="frame" x="24.333333333333343" y="15.666666666666668" width="365.33333333333326" height="38.666666666666657"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSz-nG-gb8" userLabel="divideView" customClass="KHView" customModule="HMKFieldCollector" customModuleProvider="target">
+                            <rect key="frame" x="182" y="8.6666666666666661" width="1.3333333333333428" height="21.333333333333336"/>
+                            <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1.5" id="BTo-SM-tIy"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxg-0v-U6a" customClass="KHButton" customModule="HMKFieldCollector" customModuleProvider="target">
+                            <rect key="frame" x="183.33333333333331" y="0.0" width="182" height="38.666666666666664"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                            <state key="normal" title="Ngân hàng">
+                                <color key="titleColor" white="0.72439236110000005" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="actionNotifyRight:" destination="-1" eventType="touchUpInside" id="fZZ-TE-HaY"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIb-QJ-l5M" customClass="KHButton" customModule="HMKFieldCollector" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="182" height="38.666666666666664"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                            <state key="normal" title="Cơ bản">
+                                <color key="titleColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="actionNotifyLeft:" destination="-1" eventType="touchUpInside" id="Yud-Ng-Ejn"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="YIb-QJ-l5M" secondAttribute="bottom" id="01i-TS-dgm"/>
+                        <constraint firstItem="aSz-nG-gb8" firstAttribute="centerX" secondItem="OGs-93-bLc" secondAttribute="centerX" id="CaQ-rG-7TT"/>
+                        <constraint firstItem="aSz-nG-gb8" firstAttribute="centerY" secondItem="OGs-93-bLc" secondAttribute="centerY" id="Fcu-bV-MpB"/>
+                        <constraint firstItem="YIb-QJ-l5M" firstAttribute="top" secondItem="OGs-93-bLc" secondAttribute="top" id="Fok-4i-PxP"/>
+                        <constraint firstAttribute="bottom" secondItem="hxg-0v-U6a" secondAttribute="bottom" id="KDB-Ak-eS9"/>
+                        <constraint firstItem="YIb-QJ-l5M" firstAttribute="leading" secondItem="OGs-93-bLc" secondAttribute="leading" id="YB4-xu-YAt"/>
+                        <constraint firstItem="hxg-0v-U6a" firstAttribute="leading" secondItem="aSz-nG-gb8" secondAttribute="trailing" id="Yws-Su-MMJ"/>
+                        <constraint firstItem="aSz-nG-gb8" firstAttribute="leading" secondItem="YIb-QJ-l5M" secondAttribute="trailing" id="Zdq-9a-mdo"/>
+                        <constraint firstAttribute="trailing" secondItem="hxg-0v-U6a" secondAttribute="trailing" id="cEi-RZ-lDc"/>
+                        <constraint firstItem="hxg-0v-U6a" firstAttribute="top" secondItem="OGs-93-bLc" secondAttribute="top" id="erI-ck-ZZk"/>
+                        <constraint firstItem="aSz-nG-gb8" firstAttribute="height" secondItem="OGs-93-bLc" secondAttribute="height" multiplier="27:48" id="h23-dy-vHG"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ZXE-Fp-hN8" firstAttribute="leading" secondItem="8Du-3C-QKr" secondAttribute="trailing" id="2oX-fF-ie4"/>
+                <constraint firstItem="OGs-93-bLc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DY6-sQ-YEL"/>
+                <constraint firstItem="5DY-I4-TZJ" firstAttribute="width" secondItem="OGs-93-bLc" secondAttribute="width" id="ESF-0E-cIo"/>
+                <constraint firstItem="gIV-LB-b0D" firstAttribute="leading" secondItem="ZXE-Fp-hN8" secondAttribute="trailing" id="NIr-bL-sXV"/>
+                <constraint firstItem="5DY-I4-TZJ" firstAttribute="centerY" secondItem="OGs-93-bLc" secondAttribute="centerY" id="Shv-fB-QCl"/>
+                <constraint firstItem="OGs-93-bLc" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="366:415" id="V9X-gj-fzT"/>
+                <constraint firstItem="OGs-93-bLc" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="44:80" id="cKA-2T-igq"/>
+                <constraint firstItem="5DY-I4-TZJ" firstAttribute="height" secondItem="OGs-93-bLc" secondAttribute="height" id="kUY-00-9go"/>
+                <constraint firstItem="ZXE-Fp-hN8" firstAttribute="width" secondItem="JiM-Im-pBb" secondAttribute="width" id="t7S-Ut-K14"/>
+                <constraint firstItem="5DY-I4-TZJ" firstAttribute="centerX" secondItem="OGs-93-bLc" secondAttribute="centerX" id="tVQ-qn-cA0"/>
+                <constraint firstItem="OGs-93-bLc" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="zMA-Dj-mOd"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="108.42391304347827"/>
+        </view>
+    </objects>
+</document>

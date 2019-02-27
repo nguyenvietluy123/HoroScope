@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputView" customModule="FakeWeather" customModuleProvider="target">
+            <connections>
+                <outlet property="lbTitle" destination="vho-mv-0Ao" id="21x-4y-emP"/>
+                <outlet property="tfValue" destination="lpG-M3-B7K" id="GeW-lx-dtF"/>
+                <outlet property="viewInput" destination="ad8-IB-d80" id="QbM-vg-U8r"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="398" height="63"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bot-ig-t3C">
+                    <rect key="frame" x="0.0" y="0.0" width="108" height="63"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temprature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vho-mv-0Ao" customClass="KHLabel" customModule="FakeWeather" customModuleProvider="target">
+                            <rect key="frame" x="5" y="0.0" width="98" height="63"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="vho-mv-0Ao" firstAttribute="centerY" secondItem="bot-ig-t3C" secondAttribute="centerY" id="C1W-D5-bej"/>
+                        <constraint firstItem="vho-mv-0Ao" firstAttribute="leading" secondItem="bot-ig-t3C" secondAttribute="leading" constant="5" id="Grv-cP-K04"/>
+                        <constraint firstAttribute="trailing" secondItem="vho-mv-0Ao" secondAttribute="trailing" constant="5" id="fzd-Hb-JvO"/>
+                        <constraint firstAttribute="bottom" secondItem="vho-mv-0Ao" secondAttribute="bottom" id="gdh-A1-uUC"/>
+                        <constraint firstItem="vho-mv-0Ao" firstAttribute="top" secondItem="bot-ig-t3C" secondAttribute="top" id="miT-Uf-VwV"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ad8-IB-d80">
+                    <rect key="frame" x="120" y="0.0" width="278" height="63"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="adfsadf" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lpG-M3-B7K" customClass="KHTextField" customModule="FakeWeather" customModuleProvider="target">
+                            <rect key="frame" x="8" y="0.0" width="265" height="63"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="lpG-M3-B7K" firstAttribute="leading" secondItem="ad8-IB-d80" secondAttribute="leading" constant="8" id="5I4-el-ogO"/>
+                        <constraint firstItem="lpG-M3-B7K" firstAttribute="top" secondItem="ad8-IB-d80" secondAttribute="top" id="LHw-a1-eOo"/>
+                        <constraint firstAttribute="trailing" secondItem="lpG-M3-B7K" secondAttribute="trailing" constant="5" id="Rmj-Nk-bUX"/>
+                        <constraint firstAttribute="bottom" secondItem="lpG-M3-B7K" secondAttribute="bottom" id="eZc-sB-W5I"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="bot-ig-t3C" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="48J-Gq-on4"/>
+                <constraint firstItem="ad8-IB-d80" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Pyh-Y4-wuH"/>
+                <constraint firstItem="bot-ig-t3C" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="350:1287" id="T81-In-88r"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ad8-IB-d80" secondAttribute="bottom" id="gJ3-T0-rTD"/>
+                <constraint firstItem="ad8-IB-d80" firstAttribute="leading" secondItem="bot-ig-t3C" secondAttribute="trailing" constant="12" id="hV2-9E-R9k"/>
+                <constraint firstItem="bot-ig-t3C" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="qaO-Zb-cFa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="bot-ig-t3C" secondAttribute="bottom" id="qeB-yx-me6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ad8-IB-d80" secondAttribute="trailing" id="srR-wG-q6O"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="163.19999999999999" y="368.36581709145429"/>
+        </view>
+    </objects>
+</document>

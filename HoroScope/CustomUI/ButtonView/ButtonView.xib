@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SF-Pro-Display-Semibold.otf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ButtonView" customModule="HMKFieldCollector" customModuleProvider="target">
+            <connections>
+                <outlet property="btnCheckIn" destination="Vtv-Wn-MOb" id="8Zg-mT-Q0e"/>
+                <outlet property="btnStyleFilterLeft" destination="iRz-0X-VKt" id="cYi-n9-x02"/>
+                <outlet property="btnStyleFilterRight" destination="E0E-Vv-8lH" id="vdC-6V-cEb"/>
+                <outlet property="buttonStyleLogin" destination="aCc-hg-zKh" id="E8R-UJ-bNO"/>
+                <outlet property="buttonStyleRegister" destination="KsL-L2-JVA" id="IBt-Uq-atQ"/>
+                <outlet property="viewStyleCheckIn" destination="HzV-Oe-hLf" id="2O0-ZB-Dw2"/>
+                <outlet property="viewStyleFilter" destination="pig-cj-6nm" id="DZk-WJ-SmH"/>
+                <outlet property="viewStyleLogin" destination="2qY-FB-b3z" id="7uB-bU-7zu"/>
+                <outlet property="viewStyleRegister" destination="abd-0e-mrC" id="tPH-2n-dSf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2qY-FB-b3z">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCc-hg-zKh" customClass="KHButton" customModule="HMKFieldCollector" customModuleProvider="target">
+                            <rect key="frame" x="68" y="13" width="278" height="44"/>
+                            <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="17"/>
+                            <state key="normal" title="Đăng nhập">
+                                <color key="titleColor" red="0.80000000000000004" green="0.11764705882352941" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="actionStyleLogin:" destination="-1" eventType="touchUpInside" id="bfd-CE-46K"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="aCc-hg-zKh" firstAttribute="centerX" secondItem="2qY-FB-b3z" secondAttribute="centerX" id="2qd-WQ-Sqd"/>
+                        <constraint firstItem="aCc-hg-zKh" firstAttribute="height" secondItem="2qY-FB-b3z" secondAttribute="height" multiplier="50:80" id="IGl-eG-bKl"/>
+                        <constraint firstItem="aCc-hg-zKh" firstAttribute="width" secondItem="2qY-FB-b3z" secondAttribute="width" multiplier="278:414" id="RJK-t6-73z"/>
+                        <constraint firstItem="aCc-hg-zKh" firstAttribute="centerY" secondItem="2qY-FB-b3z" secondAttribute="centerY" id="kTJ-7J-sfq"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pig-cj-6nm" userLabel="View Style Filter">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jU7-lB-OvR">
+                            <rect key="frame" x="24.333333333333343" y="15.666666666666668" width="365.33333333333326" height="38.666666666666657"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRz-0X-VKt" customClass="KHButton" customModule="HMKFieldCollector" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="38.666666666666664"/>
+                                    <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="15"/>
+                                    <state key="normal" title=" Xoá bộ lọc" backgroundImage="button_background">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="actionStyleFilterLeft:" destination="-1" eventType="touchUpInside" id="GnW-jt-sEe"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0E-Vv-8lH" customClass="KHButton" customModule="HMKFieldCollector" customModuleProvider="target">
+                                    <rect key="frame" x="188.66666666666669" y="0.0" width="176.66666666666669" height="38.666666666666664"/>
+                                    <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="15"/>
+                                    <state key="normal" title="Lọc dữ liệu" backgroundImage="button_background">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="actionStyleFilterRight:" destination="-1" eventType="touchUpInside" id="Zby-wf-T4D"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xjr-7U-8CY" customClass="MagicView" customModule="HMKFieldCollector" customModuleProvider="target">
+                                    <rect key="frame" x="176.66666666666666" y="0.0" width="12" height="38.666666666666664"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="12" id="Eq8-Md-WIo"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="xjr-7U-8CY" secondAttribute="bottom" id="0fg-jx-slz"/>
+                                <constraint firstAttribute="bottom" secondItem="E0E-Vv-8lH" secondAttribute="bottom" id="GVV-s3-48U"/>
+                                <constraint firstItem="xjr-7U-8CY" firstAttribute="centerX" secondItem="jU7-lB-OvR" secondAttribute="centerX" id="YU0-Xo-ujL"/>
+                                <constraint firstItem="E0E-Vv-8lH" firstAttribute="leading" secondItem="xjr-7U-8CY" secondAttribute="trailing" id="Ywb-z8-OIl"/>
+                                <constraint firstAttribute="trailing" secondItem="E0E-Vv-8lH" secondAttribute="trailing" id="hTD-5p-o4D"/>
+                                <constraint firstItem="iRz-0X-VKt" firstAttribute="top" secondItem="jU7-lB-OvR" secondAttribute="top" id="iNL-oZ-8J3"/>
+                                <constraint firstItem="xjr-7U-8CY" firstAttribute="top" secondItem="jU7-lB-OvR" secondAttribute="top" id="kct-t7-Gyp"/>
+                                <constraint firstItem="xjr-7U-8CY" firstAttribute="leading" secondItem="iRz-0X-VKt" secondAttribute="trailing" id="xje-CW-BwU"/>
+                                <constraint firstAttribute="bottom" secondItem="iRz-0X-VKt" secondAttribute="bottom" id="z4F-Q0-xbc"/>
+                                <constraint firstItem="iRz-0X-VKt" firstAttribute="leading" secondItem="jU7-lB-OvR" secondAttribute="leading" id="zMK-Eg-54x"/>
+                                <constraint firstItem="E0E-Vv-8lH" firstAttribute="top" secondItem="jU7-lB-OvR" secondAttribute="top" id="zlx-9g-bWj"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="jU7-lB-OvR" firstAttribute="width" secondItem="pig-cj-6nm" secondAttribute="width" multiplier="366:415" id="4h8-lT-sYx"/>
+                        <constraint firstItem="jU7-lB-OvR" firstAttribute="centerY" secondItem="pig-cj-6nm" secondAttribute="centerY" id="IqH-tf-uvr"/>
+                        <constraint firstItem="jU7-lB-OvR" firstAttribute="height" secondItem="pig-cj-6nm" secondAttribute="height" multiplier="44:80" id="by5-Er-taK"/>
+                        <constraint firstItem="jU7-lB-OvR" firstAttribute="centerX" secondItem="pig-cj-6nm" secondAttribute="centerX" id="ycf-HF-2NT"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HzV-Oe-hLf">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IuP-5g-h49">
+                            <rect key="frame" x="24.333333333333343" y="15.666666666666668" width="365.33333333333326" height="38.666666666666657"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vtv-Wn-MOb" customClass="KHButton" customModule="HMKFieldCollector" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="365.33333333333331" height="38.666666666666664"/>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="15"/>
+                                    <state key="normal" title="Check-In" backgroundImage="button_background"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="actionStyleCheckin:" destination="-1" eventType="touchUpInside" id="uR0-29-pBu"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="Vtv-Wn-MOb" secondAttribute="bottom" id="Qhz-bt-J0u"/>
+                                <constraint firstItem="Vtv-Wn-MOb" firstAttribute="leading" secondItem="IuP-5g-h49" secondAttribute="leading" id="Te3-OP-wab"/>
+                                <constraint firstItem="Vtv-Wn-MOb" firstAttribute="top" secondItem="IuP-5g-h49" secondAttribute="top" id="WS9-zN-DKF"/>
+                                <constraint firstAttribute="trailing" secondItem="Vtv-Wn-MOb" secondAttribute="trailing" id="ZwI-Ny-Nsz"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="IuP-5g-h49" firstAttribute="width" secondItem="HzV-Oe-hLf" secondAttribute="width" multiplier="366:415" id="LMk-6V-hai"/>
+                        <constraint firstItem="IuP-5g-h49" firstAttribute="centerY" secondItem="HzV-Oe-hLf" secondAttribute="centerY" id="ZNo-dF-bc7"/>
+                        <constraint firstItem="IuP-5g-h49" firstAttribute="height" secondItem="HzV-Oe-hLf" secondAttribute="height" multiplier="44:80" id="wC3-qa-rUG"/>
+                        <constraint firstItem="IuP-5g-h49" firstAttribute="centerX" secondItem="HzV-Oe-hLf" secondAttribute="centerX" id="xJi-Eh-8wW"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abd-0e-mrC">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KsL-L2-JVA" customClass="KHButton" customModule="HMKFieldCollector" customModuleProvider="target">
+                            <rect key="frame" x="68" y="15.666666666666668" width="278" height="38.666666666666657"/>
+                            <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="17"/>
+                            <state key="normal" title="Xác nhận" backgroundImage="button_background">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="actionStyleRegister:" destination="-1" eventType="touchUpInside" id="5el-46-4Pp"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="KsL-L2-JVA" firstAttribute="centerX" secondItem="abd-0e-mrC" secondAttribute="centerX" id="8MN-Lh-Z6t"/>
+                        <constraint firstItem="KsL-L2-JVA" firstAttribute="centerY" secondItem="abd-0e-mrC" secondAttribute="centerY" id="Hxz-K0-Y9N"/>
+                        <constraint firstItem="KsL-L2-JVA" firstAttribute="width" secondItem="abd-0e-mrC" secondAttribute="width" multiplier="278:414" id="j49-16-A6o"/>
+                        <constraint firstItem="KsL-L2-JVA" firstAttribute="height" secondItem="abd-0e-mrC" secondAttribute="height" multiplier="44:80" id="v9l-nf-Vzf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pig-cj-6nm" secondAttribute="bottom" id="33S-YN-crJ"/>
+                <constraint firstItem="abd-0e-mrC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3V3-Ri-jft"/>
+                <constraint firstItem="2qY-FB-b3z" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4l2-VJ-v6n"/>
+                <constraint firstAttribute="trailing" secondItem="2qY-FB-b3z" secondAttribute="trailing" id="5Ob-fc-lkn"/>
+                <constraint firstAttribute="trailing" secondItem="pig-cj-6nm" secondAttribute="trailing" id="C1i-LJ-84G"/>
+                <constraint firstItem="abd-0e-mrC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="INj-fD-qgd"/>
+                <constraint firstItem="HzV-Oe-hLf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KUc-o1-8X9"/>
+                <constraint firstAttribute="trailing" secondItem="HzV-Oe-hLf" secondAttribute="trailing" id="RXY-fa-ZEF"/>
+                <constraint firstAttribute="bottom" secondItem="abd-0e-mrC" secondAttribute="bottom" id="bXt-mP-Ni7"/>
+                <constraint firstItem="pig-cj-6nm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="frI-9t-ItY"/>
+                <constraint firstAttribute="bottom" secondItem="HzV-Oe-hLf" secondAttribute="bottom" id="j6T-gP-WpT"/>
+                <constraint firstItem="HzV-Oe-hLf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jVN-Pe-hwI"/>
+                <constraint firstItem="pig-cj-6nm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kTu-i1-em1"/>
+                <constraint firstAttribute="bottom" secondItem="2qY-FB-b3z" secondAttribute="bottom" id="pnd-Ol-6ZP"/>
+                <constraint firstItem="2qY-FB-b3z" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uYc-5M-heS"/>
+                <constraint firstAttribute="trailing" secondItem="abd-0e-mrC" secondAttribute="trailing" id="umg-kv-bFI"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="57.971014492753625" y="97.826086956521749"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="button_background" width="279" height="44"/>
+    </resources>
+</document>

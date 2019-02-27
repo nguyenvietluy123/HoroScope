@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchView" customModule="HMKFieldCollector" customModuleProvider="target">
+            <connections>
+                <outlet property="tfSearch" destination="aEm-Kc-uSC" id="rDy-15-SxN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LoC-KH-0pa">
+                    <rect key="frame" x="16" y="13" width="382" height="44"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdg-n1-jSi" customClass="KHView" customModule="HMKFieldCollector" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="44"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_icon" translatesAutoresizingMaskIntoConstraints="NO" id="PYJ-jp-j2P" customClass="KHImageView" customModule="HMKFieldCollector" customModuleProvider="target">
+                                    <rect key="frame" x="14.33333333333333" y="13.666666666666666" width="16.666666666666671" height="16.666666666666671"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="PYJ-jp-j2P" secondAttribute="height" multiplier="1:1" id="d9y-fI-ium"/>
+                                    </constraints>
+                                </imageView>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tìm theo tên công việc" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aEm-Kc-uSC" customClass="KHTextField" customModule="HMKFieldCollector" customModuleProvider="target">
+                                    <rect key="frame" x="45.333333333333343" y="0.0" width="326.66666666666663" height="44"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="EtG-dT-hyQ"/>
+                                    </connections>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlk-1I-9oY" customClass="KHButton" customModule="HMKFieldCollector" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="45.333333333333336" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="hlk-1I-9oY" secondAttribute="height" multiplier="31:30" id="HGY-HN-jPv"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="actionSearch:" destination="-1" eventType="touchUpInside" id="AIB-6x-YdJ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="hlk-1I-9oY" firstAttribute="top" secondItem="bdg-n1-jSi" secondAttribute="top" id="5vN-7T-05X"/>
+                                <constraint firstAttribute="bottom" secondItem="aEm-Kc-uSC" secondAttribute="bottom" id="7Z7-jB-IdT"/>
+                                <constraint firstAttribute="trailing" secondItem="aEm-Kc-uSC" secondAttribute="trailing" constant="10" id="Enq-a4-bI2"/>
+                                <constraint firstItem="aEm-Kc-uSC" firstAttribute="leading" secondItem="hlk-1I-9oY" secondAttribute="trailing" id="Jhj-Qq-Dxb"/>
+                                <constraint firstItem="PYJ-jp-j2P" firstAttribute="centerX" secondItem="hlk-1I-9oY" secondAttribute="centerX" id="LU4-xi-JLq"/>
+                                <constraint firstItem="aEm-Kc-uSC" firstAttribute="top" secondItem="bdg-n1-jSi" secondAttribute="top" id="WKX-bn-Hdq"/>
+                                <constraint firstItem="PYJ-jp-j2P" firstAttribute="height" secondItem="bdg-n1-jSi" secondAttribute="height" multiplier="15:40" id="gYp-bZ-g87"/>
+                                <constraint firstAttribute="bottom" secondItem="hlk-1I-9oY" secondAttribute="bottom" id="lE2-wj-1Vx"/>
+                                <constraint firstItem="hlk-1I-9oY" firstAttribute="leading" secondItem="bdg-n1-jSi" secondAttribute="leading" id="uQM-di-IAV"/>
+                                <constraint firstItem="PYJ-jp-j2P" firstAttribute="centerY" secondItem="hlk-1I-9oY" secondAttribute="centerY" id="wUB-Aw-HpG"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="bdg-n1-jSi" firstAttribute="leading" secondItem="LoC-KH-0pa" secondAttribute="leading" id="3IQ-0u-jxd"/>
+                        <constraint firstAttribute="trailing" secondItem="bdg-n1-jSi" secondAttribute="trailing" id="CeP-ll-WxR"/>
+                        <constraint firstAttribute="bottom" secondItem="bdg-n1-jSi" secondAttribute="bottom" id="H0b-e7-eAT"/>
+                        <constraint firstItem="bdg-n1-jSi" firstAttribute="top" secondItem="LoC-KH-0pa" secondAttribute="top" id="tah-cN-siA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="LoC-KH-0pa" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="44:70" id="9Si-p9-cPI"/>
+                <constraint firstItem="LoC-KH-0pa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="H12-fc-eeq"/>
+                <constraint firstItem="LoC-KH-0pa" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="fi4-jH-4oe"/>
+                <constraint firstItem="LoC-KH-0pa" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="382:414" id="vVA-7p-PYh"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="52.173913043478265" y="161.41304347826087"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="search_icon" width="20" height="20"/>
+    </resources>
+</document>

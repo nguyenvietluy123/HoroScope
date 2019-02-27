@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabbarView" customModule="FakeWeather" customModuleProvider="target">
+            <connections>
+                <outlet property="imgHistory" destination="KRr-SI-NxL" id="6Eq-xh-DwE"/>
+                <outlet property="imgHome" destination="WGn-UN-5JP" id="Z3c-Nc-eRT"/>
+                <outlet property="imgSetting" destination="bdP-yQ-vrJ" id="Rh0-iF-shV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GXh-hb-h80">
+                    <rect key="frame" x="0.0" y="0.0" width="138" height="50"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_home_selected" translatesAutoresizingMaskIntoConstraints="NO" id="WGn-UN-5JP" customClass="KHImageView" customModule="FakeWeather" customModuleProvider="target">
+                            <rect key="frame" x="56.666666666666657" y="12.666666666666664" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="WGn-UN-5JP" secondAttribute="height" id="DrA-VT-nqV"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlk-8V-ybY">
+                            <rect key="frame" x="0.0" y="0.0" width="138" height="50"/>
+                            <state key="normal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="actionHome:" destination="-1" eventType="touchUpInside" id="z60-vi-3nC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="vlk-8V-ybY" secondAttribute="trailing" id="L5M-5K-nPK"/>
+                        <constraint firstItem="WGn-UN-5JP" firstAttribute="height" secondItem="GXh-hb-h80" secondAttribute="height" multiplier="1:2" id="Nvc-Ie-oQ9"/>
+                        <constraint firstItem="WGn-UN-5JP" firstAttribute="centerY" secondItem="GXh-hb-h80" secondAttribute="centerY" id="YKS-rt-IGk"/>
+                        <constraint firstAttribute="bottom" secondItem="vlk-8V-ybY" secondAttribute="bottom" id="b9R-lP-K4a"/>
+                        <constraint firstItem="vlk-8V-ybY" firstAttribute="leading" secondItem="GXh-hb-h80" secondAttribute="leading" id="f2j-xW-Yoq"/>
+                        <constraint firstItem="WGn-UN-5JP" firstAttribute="centerX" secondItem="GXh-hb-h80" secondAttribute="centerX" id="ouv-ma-oDO"/>
+                        <constraint firstItem="vlk-8V-ybY" firstAttribute="top" secondItem="GXh-hb-h80" secondAttribute="top" id="yrB-S3-NNd"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wgj-WY-vLJ">
+                    <rect key="frame" x="138" y="0.0" width="138" height="50"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tab_history" translatesAutoresizingMaskIntoConstraints="NO" id="KRr-SI-NxL" customClass="KHImageView" customModule="FakeWeather" customModuleProvider="target">
+                            <rect key="frame" x="56.666666666666657" y="12.666666666666664" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="KRr-SI-NxL" secondAttribute="height" id="57g-iz-3Nb"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wwh-QL-bbk">
+                            <rect key="frame" x="0.0" y="0.0" width="138" height="50"/>
+                            <state key="normal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="actionHistory:" destination="-1" eventType="touchUpInside" id="vHy-IF-h6q"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="KRr-SI-NxL" firstAttribute="centerX" secondItem="Wgj-WY-vLJ" secondAttribute="centerX" id="3PK-HP-6Eu"/>
+                        <constraint firstItem="Wwh-QL-bbk" firstAttribute="leading" secondItem="Wgj-WY-vLJ" secondAttribute="leading" id="6wh-xc-o3r"/>
+                        <constraint firstItem="Wwh-QL-bbk" firstAttribute="top" secondItem="Wgj-WY-vLJ" secondAttribute="top" id="Ksr-qE-ZM6"/>
+                        <constraint firstAttribute="bottom" secondItem="Wwh-QL-bbk" secondAttribute="bottom" id="dmH-5u-NMt"/>
+                        <constraint firstItem="KRr-SI-NxL" firstAttribute="centerY" secondItem="Wgj-WY-vLJ" secondAttribute="centerY" id="eum-Gj-npp"/>
+                        <constraint firstAttribute="trailing" secondItem="Wwh-QL-bbk" secondAttribute="trailing" id="hiN-TI-gKw"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V0c-2c-jqs">
+                    <rect key="frame" x="276" y="0.0" width="138" height="50"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tab_setting" translatesAutoresizingMaskIntoConstraints="NO" id="bdP-yQ-vrJ" customClass="KHImageView" customModule="FakeWeather" customModuleProvider="target">
+                            <rect key="frame" x="56.666666666666686" y="12.666666666666664" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="bdP-yQ-vrJ" secondAttribute="height" id="SUc-EP-7aW"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fxh-uQ-HTb">
+                            <rect key="frame" x="0.0" y="0.0" width="138" height="50"/>
+                            <state key="normal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="actionSetting:" destination="-1" eventType="touchUpInside" id="eIM-ac-UOd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="bdP-yQ-vrJ" firstAttribute="centerX" secondItem="V0c-2c-jqs" secondAttribute="centerX" id="C52-h0-KNW"/>
+                        <constraint firstItem="Fxh-uQ-HTb" firstAttribute="leading" secondItem="V0c-2c-jqs" secondAttribute="leading" id="G4P-lm-sCD"/>
+                        <constraint firstItem="bdP-yQ-vrJ" firstAttribute="centerY" secondItem="V0c-2c-jqs" secondAttribute="centerY" id="JIj-7L-gIO"/>
+                        <constraint firstAttribute="trailing" secondItem="Fxh-uQ-HTb" secondAttribute="trailing" id="lpB-qS-L4x"/>
+                        <constraint firstAttribute="bottom" secondItem="Fxh-uQ-HTb" secondAttribute="bottom" id="rL6-Rv-0cr"/>
+                        <constraint firstItem="Fxh-uQ-HTb" firstAttribute="top" secondItem="V0c-2c-jqs" secondAttribute="top" id="uOK-Ut-2q7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="V0c-2c-jqs" firstAttribute="leading" secondItem="Wgj-WY-vLJ" secondAttribute="trailing" id="67D-74-bgz"/>
+                <constraint firstAttribute="bottom" secondItem="V0c-2c-jqs" secondAttribute="bottom" id="8Hf-rM-q8w"/>
+                <constraint firstItem="Wgj-WY-vLJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="GTY-OE-44E"/>
+                <constraint firstItem="GXh-hb-h80" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="1:3" id="MDz-Qi-na4"/>
+                <constraint firstItem="bdP-yQ-vrJ" firstAttribute="height" secondItem="WGn-UN-5JP" secondAttribute="height" id="Q2L-1g-hHw"/>
+                <constraint firstItem="V0c-2c-jqs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Tad-kA-NnT"/>
+                <constraint firstItem="KRr-SI-NxL" firstAttribute="height" secondItem="WGn-UN-5JP" secondAttribute="height" id="WNZ-Qx-PSH"/>
+                <constraint firstItem="GXh-hb-h80" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aAa-ik-QKC"/>
+                <constraint firstItem="Wgj-WY-vLJ" firstAttribute="leading" secondItem="GXh-hb-h80" secondAttribute="trailing" id="oW8-Yl-YCD"/>
+                <constraint firstAttribute="bottom" secondItem="Wgj-WY-vLJ" secondAttribute="bottom" id="qB1-Vm-E7f"/>
+                <constraint firstAttribute="bottom" secondItem="GXh-hb-h80" secondAttribute="bottom" id="s1b-Lh-Idc"/>
+                <constraint firstItem="GXh-hb-h80" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="taZ-sx-nIT"/>
+                <constraint firstItem="Wgj-WY-vLJ" firstAttribute="width" secondItem="GXh-hb-h80" secondAttribute="width" id="tiy-Fr-djT"/>
+                <constraint firstItem="V0c-2c-jqs" firstAttribute="width" secondItem="GXh-hb-h80" secondAttribute="width" id="zzb-zX-3xf"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="57.971014492753625" y="113.31521739130436"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_home_selected" width="33" height="33"/>
+        <image name="tab_history" width="33" height="33"/>
+        <image name="tab_setting" width="33" height="33"/>
+    </resources>
+</document>

@@ -1,0 +1,752 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E934630E2C65AA084033F1B67F122E7 /* Pods-HoroScopeUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1924F22BFBC3AC9B2E837CBDC2896FBE /* Pods-HoroScopeUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D9EB62D603AC8EABFBBA6C7670EDFFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		4F4B315D53D5A3E33B00246BC1793219 /* Pods-HoroScope-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 704DFE7EE335A78061F031DDDB97FBFE /* Pods-HoroScope-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		781F5C7554813264FBE4F5F5C01DF39F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		A3DDBEB56AC8EBC48FE0BA3625D16A8E /* Pods-HoroScopeUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8E011A37104871B384BE8963B01518 /* Pods-HoroScopeUITests-dummy.m */; };
+		B2566A2ED4E2A294A423CCFA761A0BC0 /* Pods-HoroScope-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A92B4FBAAD0ABCDB66EA361AF3136 /* Pods-HoroScope-dummy.m */; };
+		D1EF044E056D37B63A2E2063EE170370 /* Pods-HoroScopeTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AB0F74D821FC1F6C35B12B7E10465815 /* Pods-HoroScopeTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8FEB12EBD079A8C9E33C14997503B2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		F66BE6205A37A9A371A66E04EF659D7E /* Pods-HoroScopeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DF04E3BEAA511066606DE8810D2DDF /* Pods-HoroScopeTests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		38BBC04271CBADB000861EC803AFB4A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A615CA78798AC1A9F0AD3365F6E85D94;
+			remoteInfo = "Pods-HoroScope";
+		};
+		7F3CF7AC76B13C773EB8C90F810F2D83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A615CA78798AC1A9F0AD3365F6E85D94;
+			remoteInfo = "Pods-HoroScope";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		039A6E9C5F8C470EAB539D85721FE43A /* Pods-HoroScopeUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HoroScopeUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		09A63C1965CCA195542DA61167C0F7FC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A8D2C9797600DAFE46822A8D3CA101D /* Pods-HoroScopeUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HoroScopeUITests-resources.sh"; sourceTree = "<group>"; };
+		0CCE4ED113592D2A2712086C2D031516 /* Pods-HoroScopeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HoroScopeTests.release.xcconfig"; sourceTree = "<group>"; };
+		1466912116CCB7F57C76F22A0127A898 /* Pods-HoroScope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HoroScope.debug.xcconfig"; sourceTree = "<group>"; };
+		1924F22BFBC3AC9B2E837CBDC2896FBE /* Pods-HoroScopeUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HoroScopeUITests-umbrella.h"; sourceTree = "<group>"; };
+		25F24DB5BBF11C21DA7D2FBC5D4411C4 /* Pods_HoroScopeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HoroScopeUITests.framework; path = "Pods-HoroScopeUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29A5989C41D0B0F8203E0219D848FF81 /* Pods-HoroScopeTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HoroScopeTests-frameworks.sh"; sourceTree = "<group>"; };
+		2E02EF0C317FB94007469574244B9F3D /* Pods-HoroScopeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HoroScopeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		339723E10E2456C1B2BEDDEF8B1B58B3 /* Pods-HoroScopeUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HoroScopeUITests-frameworks.sh"; sourceTree = "<group>"; };
+		39E3BFFE43D1A02A58551AD654479349 /* Pods-HoroScopeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HoroScopeTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		402134DF8CE95DC4C54EE410AAF219D1 /* Pods-HoroScope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HoroScope.release.xcconfig"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6297F6DA2F8CE36FF59405BB1232865B /* Pods-HoroScope-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HoroScope-resources.sh"; sourceTree = "<group>"; };
+		704DFE7EE335A78061F031DDDB97FBFE /* Pods-HoroScope-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HoroScope-umbrella.h"; sourceTree = "<group>"; };
+		71E70888226C41D41DE843697656E1F6 /* Pods-HoroScopeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HoroScopeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		72B4C9F83E3A702138C8C043DE792C4F /* Pods-HoroScopeUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HoroScopeUITests.modulemap"; sourceTree = "<group>"; };
+		72DF04E3BEAA511066606DE8810D2DDF /* Pods-HoroScopeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HoroScopeTests-dummy.m"; sourceTree = "<group>"; };
+		7F4A92B4FBAAD0ABCDB66EA361AF3136 /* Pods-HoroScope-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HoroScope-dummy.m"; sourceTree = "<group>"; };
+		8CA559A0B50A0E5B432677B24CD191FB /* Pods-HoroScope.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HoroScope.modulemap"; sourceTree = "<group>"; };
+		8DFC035CEA4252CC8534FFBA04DE1830 /* Pods-HoroScope-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HoroScope-acknowledgements.plist"; sourceTree = "<group>"; };
+		934E0F949ABEC4851864BCFEDC9210A1 /* Pods_HoroScope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HoroScope.framework; path = "Pods-HoroScope.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9565B53CB826BC62B9248676C7AB7979 /* Pods-HoroScopeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HoroScopeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AB0F74D821FC1F6C35B12B7E10465815 /* Pods-HoroScopeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HoroScopeTests-umbrella.h"; sourceTree = "<group>"; };
+		B08D9A37880DBD4BB5C2AE1ECDB6FD45 /* Pods-HoroScopeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HoroScopeTests.modulemap"; sourceTree = "<group>"; };
+		B4072C212F0BC9EEDA0746693DFCC6C6 /* Pods-HoroScopeUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HoroScopeUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B7E6EE79CABEF63B4EF2DB21010C164D /* Pods-HoroScopeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HoroScopeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C60C20A812BEE1B94C13B1CD6C024947 /* Pods-HoroScope-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HoroScope-frameworks.sh"; sourceTree = "<group>"; };
+		C71F1A6C2A7E22D7D66D191CB3ADFD3F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D04BC2C8C4D4630E7FE8CA1C124FEDFB /* Pods-HoroScope-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HoroScope-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DF405F3AB1D088C0B4BEDEFE92E96C46 /* Pods-HoroScopeTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HoroScopeTests-resources.sh"; sourceTree = "<group>"; };
+		E30F0B80B98A81DE1ECAC1E8046DC8C2 /* Pods_HoroScopeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HoroScopeTests.framework; path = "Pods-HoroScopeTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE7619D0D8A0C329AEDFBC5D279B1214 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE8E011A37104871B384BE8963B01518 /* Pods-HoroScopeUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HoroScopeUITests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C00358B76A26236EE2E7AB7DE8A71CD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D9EB62D603AC8EABFBBA6C7670EDFFB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C700F93E291D74D8C9749FC7DA38D3B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				781F5C7554813264FBE4F5F5C01DF39F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB675C5DC84CAFBF9E88A884402E4AA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8FEB12EBD079A8C9E33C14997503B2B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48517790E64CDA0BDA25BF44F0E8B0D8 /* Pods-HoroScopeTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE7619D0D8A0C329AEDFBC5D279B1214 /* Info.plist */,
+				B08D9A37880DBD4BB5C2AE1ECDB6FD45 /* Pods-HoroScopeTests.modulemap */,
+				9565B53CB826BC62B9248676C7AB7979 /* Pods-HoroScopeTests-acknowledgements.markdown */,
+				39E3BFFE43D1A02A58551AD654479349 /* Pods-HoroScopeTests-acknowledgements.plist */,
+				72DF04E3BEAA511066606DE8810D2DDF /* Pods-HoroScopeTests-dummy.m */,
+				29A5989C41D0B0F8203E0219D848FF81 /* Pods-HoroScopeTests-frameworks.sh */,
+				DF405F3AB1D088C0B4BEDEFE92E96C46 /* Pods-HoroScopeTests-resources.sh */,
+				AB0F74D821FC1F6C35B12B7E10465815 /* Pods-HoroScopeTests-umbrella.h */,
+				2E02EF0C317FB94007469574244B9F3D /* Pods-HoroScopeTests.debug.xcconfig */,
+				0CCE4ED113592D2A2712086C2D031516 /* Pods-HoroScopeTests.release.xcconfig */,
+			);
+			name = "Pods-HoroScopeTests";
+			path = "Target Support Files/Pods-HoroScopeTests";
+			sourceTree = "<group>";
+		};
+		4AC12B951439F7687D1C31687F9061FF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7AC54AD302AB248BF51D2D18150BB7D /* Pods-HoroScope */,
+				48517790E64CDA0BDA25BF44F0E8B0D8 /* Pods-HoroScopeTests */,
+				F3FA765FF114F1E09168F082321122EF /* Pods-HoroScopeUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		54E83291D04BE6CE439960C1ADE7F280 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				934E0F949ABEC4851864BCFEDC9210A1 /* Pods_HoroScope.framework */,
+				E30F0B80B98A81DE1ECAC1E8046DC8C2 /* Pods_HoroScopeTests.framework */,
+				25F24DB5BBF11C21DA7D2FBC5D4411C4 /* Pods_HoroScopeUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				54E83291D04BE6CE439960C1ADE7F280 /* Products */,
+				4AC12B951439F7687D1C31687F9061FF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A7AC54AD302AB248BF51D2D18150BB7D /* Pods-HoroScope */ = {
+			isa = PBXGroup;
+			children = (
+				09A63C1965CCA195542DA61167C0F7FC /* Info.plist */,
+				8CA559A0B50A0E5B432677B24CD191FB /* Pods-HoroScope.modulemap */,
+				D04BC2C8C4D4630E7FE8CA1C124FEDFB /* Pods-HoroScope-acknowledgements.markdown */,
+				8DFC035CEA4252CC8534FFBA04DE1830 /* Pods-HoroScope-acknowledgements.plist */,
+				7F4A92B4FBAAD0ABCDB66EA361AF3136 /* Pods-HoroScope-dummy.m */,
+				C60C20A812BEE1B94C13B1CD6C024947 /* Pods-HoroScope-frameworks.sh */,
+				6297F6DA2F8CE36FF59405BB1232865B /* Pods-HoroScope-resources.sh */,
+				704DFE7EE335A78061F031DDDB97FBFE /* Pods-HoroScope-umbrella.h */,
+				1466912116CCB7F57C76F22A0127A898 /* Pods-HoroScope.debug.xcconfig */,
+				402134DF8CE95DC4C54EE410AAF219D1 /* Pods-HoroScope.release.xcconfig */,
+			);
+			name = "Pods-HoroScope";
+			path = "Target Support Files/Pods-HoroScope";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3FA765FF114F1E09168F082321122EF /* Pods-HoroScopeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C71F1A6C2A7E22D7D66D191CB3ADFD3F /* Info.plist */,
+				72B4C9F83E3A702138C8C043DE792C4F /* Pods-HoroScopeUITests.modulemap */,
+				B4072C212F0BC9EEDA0746693DFCC6C6 /* Pods-HoroScopeUITests-acknowledgements.markdown */,
+				039A6E9C5F8C470EAB539D85721FE43A /* Pods-HoroScopeUITests-acknowledgements.plist */,
+				EE8E011A37104871B384BE8963B01518 /* Pods-HoroScopeUITests-dummy.m */,
+				339723E10E2456C1B2BEDDEF8B1B58B3 /* Pods-HoroScopeUITests-frameworks.sh */,
+				0A8D2C9797600DAFE46822A8D3CA101D /* Pods-HoroScopeUITests-resources.sh */,
+				1924F22BFBC3AC9B2E837CBDC2896FBE /* Pods-HoroScopeUITests-umbrella.h */,
+				B7E6EE79CABEF63B4EF2DB21010C164D /* Pods-HoroScopeUITests.debug.xcconfig */,
+				71E70888226C41D41DE843697656E1F6 /* Pods-HoroScopeUITests.release.xcconfig */,
+			);
+			name = "Pods-HoroScopeUITests";
+			path = "Target Support Files/Pods-HoroScopeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4CC3565C348EBD7E1A3B850E44ADB886 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1EF044E056D37B63A2E2063EE170370 /* Pods-HoroScopeTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		650D473E6F49298C9B09AE697BB2288B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F4B315D53D5A3E33B00246BC1793219 /* Pods-HoroScope-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E955747B4BAB9F9F29EDCFB7DF1FBFBE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E934630E2C65AA084033F1B67F122E7 /* Pods-HoroScopeUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6846EC6A1D62F978DD039B399D01112F /* Pods-HoroScopeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 191E227553172F6FE935EFD287ED03EF /* Build configuration list for PBXNativeTarget "Pods-HoroScopeTests" */;
+			buildPhases = (
+				583DCCE48A526A88A6FABDBBC1F767AE /* Sources */,
+				EB675C5DC84CAFBF9E88A884402E4AA3 /* Frameworks */,
+				4CC3565C348EBD7E1A3B850E44ADB886 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				833E03257169CE5A4B5C383D3271A066 /* PBXTargetDependency */,
+			);
+			name = "Pods-HoroScopeTests";
+			productName = "Pods-HoroScopeTests";
+			productReference = E30F0B80B98A81DE1ECAC1E8046DC8C2 /* Pods_HoroScopeTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		75750AE15B7F5DB474A6769FC270587F /* Pods-HoroScopeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5DBEF08701E59D3035D6BE2F56B2962 /* Build configuration list for PBXNativeTarget "Pods-HoroScopeUITests" */;
+			buildPhases = (
+				18A3D43186DD1B4AABEB53E999F5E589 /* Sources */,
+				C700F93E291D74D8C9749FC7DA38D3B1 /* Frameworks */,
+				E955747B4BAB9F9F29EDCFB7DF1FBFBE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64B2AFF2D139D7773BAC7BF23670F61C /* PBXTargetDependency */,
+			);
+			name = "Pods-HoroScopeUITests";
+			productName = "Pods-HoroScopeUITests";
+			productReference = 25F24DB5BBF11C21DA7D2FBC5D4411C4 /* Pods_HoroScopeUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A615CA78798AC1A9F0AD3365F6E85D94 /* Pods-HoroScope */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ADDDEA919E4506162A22CB4C505D171 /* Build configuration list for PBXNativeTarget "Pods-HoroScope" */;
+			buildPhases = (
+				ACDF7022E22BB977FEB5B340EAA1159C /* Sources */,
+				C00358B76A26236EE2E7AB7DE8A71CD4 /* Frameworks */,
+				650D473E6F49298C9B09AE697BB2288B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HoroScope";
+			productName = "Pods-HoroScope";
+			productReference = 934E0F949ABEC4851864BCFEDC9210A1 /* Pods_HoroScope.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 54E83291D04BE6CE439960C1ADE7F280 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A615CA78798AC1A9F0AD3365F6E85D94 /* Pods-HoroScope */,
+				6846EC6A1D62F978DD039B399D01112F /* Pods-HoroScopeTests */,
+				75750AE15B7F5DB474A6769FC270587F /* Pods-HoroScopeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18A3D43186DD1B4AABEB53E999F5E589 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3DDBEB56AC8EBC48FE0BA3625D16A8E /* Pods-HoroScopeUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		583DCCE48A526A88A6FABDBBC1F767AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F66BE6205A37A9A371A66E04EF659D7E /* Pods-HoroScopeTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACDF7022E22BB977FEB5B340EAA1159C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2566A2ED4E2A294A423CCFA761A0BC0 /* Pods-HoroScope-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64B2AFF2D139D7773BAC7BF23670F61C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HoroScope";
+			target = A615CA78798AC1A9F0AD3365F6E85D94 /* Pods-HoroScope */;
+			targetProxy = 7F3CF7AC76B13C773EB8C90F810F2D83 /* PBXContainerItemProxy */;
+		};
+		833E03257169CE5A4B5C383D3271A066 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HoroScope";
+			target = A615CA78798AC1A9F0AD3365F6E85D94 /* Pods-HoroScope */;
+			targetProxy = 38BBC04271CBADB000861EC803AFB4A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		063198AB09B9CDB3A695432FC17AD8CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		12E391CBD3667E36B0FCBE8B8BDE19C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7E6EE79CABEF63B4EF2DB21010C164D /* Pods-HoroScopeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HoroScopeUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HoroScopeUITests/Pods-HoroScopeUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2DA8FDC90536D17CEB176BCE87E79F0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 402134DF8CE95DC4C54EE410AAF219D1 /* Pods-HoroScope.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HoroScope/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HoroScope/Pods-HoroScope.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4DB1238E38CA790D81B6479B035F23B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71E70888226C41D41DE843697656E1F6 /* Pods-HoroScopeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HoroScopeUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HoroScopeUITests/Pods-HoroScopeUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		87EAC867385563488A6D8F1E74AC46B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9393D529FD2CDDE8FC89997010132770 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CCE4ED113592D2A2712086C2D031516 /* Pods-HoroScopeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HoroScopeTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HoroScopeTests/Pods-HoroScopeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CD7ACE8164F4E21666D8698687F58129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1466912116CCB7F57C76F22A0127A898 /* Pods-HoroScope.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HoroScope/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HoroScope/Pods-HoroScope.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F10CA8F4515F58D508CAF63FDDCC85F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E02EF0C317FB94007469574244B9F3D /* Pods-HoroScopeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HoroScopeTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HoroScopeTests/Pods-HoroScopeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0ADDDEA919E4506162A22CB4C505D171 /* Build configuration list for PBXNativeTarget "Pods-HoroScope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD7ACE8164F4E21666D8698687F58129 /* Debug */,
+				2DA8FDC90536D17CEB176BCE87E79F0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		191E227553172F6FE935EFD287ED03EF /* Build configuration list for PBXNativeTarget "Pods-HoroScopeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F10CA8F4515F58D508CAF63FDDCC85F9 /* Debug */,
+				9393D529FD2CDDE8FC89997010132770 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87EAC867385563488A6D8F1E74AC46B4 /* Debug */,
+				063198AB09B9CDB3A695432FC17AD8CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5DBEF08701E59D3035D6BE2F56B2962 /* Build configuration list for PBXNativeTarget "Pods-HoroScopeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12E391CBD3667E36B0FCBE8B8BDE19C4 /* Debug */,
+				4DB1238E38CA790D81B6479B035F23B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

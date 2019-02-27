@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rBH-XC-bFY" customClass="CellZodiac" customModule="HoroScope" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="265" height="354"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="265" height="354"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bwp-97-5LC">
+                        <rect key="frame" x="0.0" y="0.0" width="265" height="354"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xfe-of-o5t" customClass="MagicView" customModule="HoroScope" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="265" height="15"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="BbZ-JB-dWv"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lZT-2M-HSQ">
+                                <rect key="frame" x="0.0" y="15" width="265" height="265"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Aquarius" translatesAutoresizingMaskIntoConstraints="NO" id="9LL-jk-TnL">
+                                        <rect key="frame" x="0.0" y="0.0" width="265" height="265"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="9LL-jk-TnL" firstAttribute="leading" secondItem="lZT-2M-HSQ" secondAttribute="leading" id="CH6-Qc-FZ9"/>
+                                    <constraint firstAttribute="width" secondItem="lZT-2M-HSQ" secondAttribute="height" multiplier="1:1" id="Lle-8d-Fhe"/>
+                                    <constraint firstAttribute="trailing" secondItem="9LL-jk-TnL" secondAttribute="trailing" id="Qgc-oa-pK5"/>
+                                    <constraint firstAttribute="bottom" secondItem="9LL-jk-TnL" secondAttribute="bottom" id="RGv-b2-A3c"/>
+                                    <constraint firstItem="9LL-jk-TnL" firstAttribute="top" secondItem="lZT-2M-HSQ" secondAttribute="top" id="yf5-sU-kxJ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aquarius" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLh-x0-9je" customClass="KHLabel" customModule="HoroScope" customModuleProvider="target">
+                                <rect key="frame" x="13.5" y="280" width="238.5" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PMX-eK-plh" customClass="MagicView" customModule="HoroScope" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="301.5" width="265" height="5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="fnO-dT-Uln"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3/21~4/19" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Emf-xI-a1x" customClass="KHLabel" customModule="HoroScope" customModuleProvider="target">
+                                <rect key="frame" x="13.5" y="306.5" width="238.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.0" alpha="0.53071489726027399" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bLh-x0-9je" firstAttribute="width" secondItem="9LL-jk-TnL" secondAttribute="width" multiplier="0.9" id="42W-2V-qm0"/>
+                            <constraint firstItem="bLh-x0-9je" firstAttribute="centerX" secondItem="9LL-jk-TnL" secondAttribute="centerX" id="9Xr-qP-jed"/>
+                            <constraint firstItem="bLh-x0-9je" firstAttribute="top" secondItem="lZT-2M-HSQ" secondAttribute="bottom" id="BPg-wO-9Y5"/>
+                            <constraint firstItem="Emf-xI-a1x" firstAttribute="top" secondItem="PMX-eK-plh" secondAttribute="bottom" id="Czq-cS-sXF"/>
+                            <constraint firstAttribute="trailing" secondItem="PMX-eK-plh" secondAttribute="trailing" id="GXF-MG-PZY"/>
+                            <constraint firstItem="Xfe-of-o5t" firstAttribute="top" secondItem="bwp-97-5LC" secondAttribute="top" id="Gag-tM-l6b"/>
+                            <constraint firstItem="Emf-xI-a1x" firstAttribute="width" secondItem="bLh-x0-9je" secondAttribute="width" id="KjX-2N-vUF"/>
+                            <constraint firstItem="Xfe-of-o5t" firstAttribute="leading" secondItem="bwp-97-5LC" secondAttribute="leading" id="Qly-zM-Xxx"/>
+                            <constraint firstItem="PMX-eK-plh" firstAttribute="top" secondItem="bLh-x0-9je" secondAttribute="bottom" id="RYW-kf-Mgs"/>
+                            <constraint firstItem="PMX-eK-plh" firstAttribute="leading" secondItem="bwp-97-5LC" secondAttribute="leading" id="W70-ob-IHY"/>
+                            <constraint firstItem="lZT-2M-HSQ" firstAttribute="leading" secondItem="bwp-97-5LC" secondAttribute="leading" id="X6f-Wb-Pxc"/>
+                            <constraint firstAttribute="trailing" secondItem="Xfe-of-o5t" secondAttribute="trailing" id="ZN9-Qb-LNU"/>
+                            <constraint firstItem="Emf-xI-a1x" firstAttribute="centerX" secondItem="bLh-x0-9je" secondAttribute="centerX" id="h66-gM-HYx"/>
+                            <constraint firstItem="lZT-2M-HSQ" firstAttribute="top" secondItem="Xfe-of-o5t" secondAttribute="bottom" id="i1d-uW-h5C"/>
+                            <constraint firstAttribute="trailing" secondItem="lZT-2M-HSQ" secondAttribute="trailing" id="qQa-NP-LHq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bwp-97-5LC" secondAttribute="trailing" id="OAA-hO-9vU"/>
+                <constraint firstItem="bwp-97-5LC" firstAttribute="leading" secondItem="rBH-XC-bFY" secondAttribute="leading" id="PPJ-B8-euQ"/>
+                <constraint firstAttribute="bottom" secondItem="bwp-97-5LC" secondAttribute="bottom" id="Sd2-tr-MAq"/>
+                <constraint firstItem="bwp-97-5LC" firstAttribute="top" secondItem="rBH-XC-bFY" secondAttribute="top" id="ntW-20-aS0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="50N-pJ-C8d"/>
+            <size key="customSize" width="265" height="354"/>
+            <connections>
+                <outlet property="imgView" destination="9LL-jk-TnL" id="Eys-hr-EAa"/>
+                <outlet property="lbDate" destination="Emf-xI-a1x" id="Bcq-IY-aka"/>
+                <outlet property="lbName" destination="bLh-x0-9je" id="ybX-jh-aB2"/>
+                <outlet property="viewContent" destination="bwp-97-5LC" id="fR9-Yv-X6b"/>
+            </connections>
+            <point key="canvasLocation" x="220" y="635.98200899550227"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Aquarius" width="420" height="420"/>
+    </resources>
+</document>

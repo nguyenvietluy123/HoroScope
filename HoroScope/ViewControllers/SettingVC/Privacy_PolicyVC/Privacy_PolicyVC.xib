@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Privacy_PolicyVC" customModule="FakeWeather" customModuleProvider="target">
+            <connections>
+                <outlet property="navi" destination="01V-2L-jaG" id="62H-Lq-7fg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="01V-2L-jaG" customClass="NavigationView" customModule="FakeWeather" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="Zgy-TW-Jgp"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Privacy Policy"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="hasLeft" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMj-Vy-Wjd">
+                    <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Cax-9g-m9k" customClass="KHTextView" customModule="FakeWeather" customModuleProvider="target">
+                            <rect key="frame" x="12" y="12" width="351" height="573"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <mutableString key="text">By using SmartApp Team's APP (the “APP”), you are agreeing to our privacy policy, which applies to the use of the Site and SmartApp Team applications. SmartApp Team reserves the right at any time, without further notice, to change and modify this privacy policy. You should check this privacy policy periodically.
+
+We here at Eyewind respect your privacy. Here is a little explanation of when and why we might collect your data, and what we do with it . If you have any questions about this Privacy Policy, please contact us！
+I. Collection and Use of Personal Information
+
+For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information, including but not limited to Internet access. The information that I request will be retained on your device and is not collected by me in any way.
+
+Log Data
+
+I want to inform you that whenever you use my Service, in a case of an error in the app I collect data and information (through third party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing my Service, the time and date of your use of the Service, and other statistics.
+
+II. Information Sharing
+
+Unless the Law forces us, we will not share any personal information with any unaffiliated third party for any purpose…ever.
+III. Security
+
+While we take all necessary measures to protect your personal information, no method of transmission over the Internet or method of electronic storage is fully secure, therefore we cannot guarantee complete security.
+In order to provide products or services you have requested;We require that these parties agree to process such information based on our instructions and in compliance with this policy;There are other instances in which we may divulge your personal information, such as when required by law, regulation, or litigation.
+If SmartApp becomes involved in a merger, acquisition, or any form of sale of some or all of its assets, we will provide notice before personal information is transferred and becomes subject to a different privacy policy.
+
+Contact Us
+
+If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me:tueanhoang.devios2011@gmail.com</mutableString>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Cax-9g-m9k" firstAttribute="leading" secondItem="TMj-Vy-Wjd" secondAttribute="leading" constant="12" id="8ix-OM-Pq8"/>
+                        <constraint firstAttribute="bottom" secondItem="Cax-9g-m9k" secondAttribute="bottom" constant="12" id="dF7-hl-VZJ"/>
+                        <constraint firstItem="Cax-9g-m9k" firstAttribute="top" secondItem="TMj-Vy-Wjd" secondAttribute="top" constant="12" id="vQg-JO-bxi"/>
+                        <constraint firstAttribute="trailing" secondItem="Cax-9g-m9k" secondAttribute="trailing" constant="12" id="vue-uQ-myu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="TMj-Vy-Wjd" secondAttribute="bottom" id="CcW-FZ-l5d"/>
+                <constraint firstItem="01V-2L-jaG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ECA-4f-DGJ"/>
+                <constraint firstItem="TMj-Vy-Wjd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="WxA-e5-JnN"/>
+                <constraint firstItem="TMj-Vy-Wjd" firstAttribute="top" secondItem="01V-2L-jaG" secondAttribute="bottom" id="X0x-7A-QqN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="01V-2L-jaG" secondAttribute="trailing" id="i1O-fK-scP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TMj-Vy-Wjd" secondAttribute="trailing" id="p9w-zZ-wzf"/>
+                <constraint firstItem="01V-2L-jaG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wYQ-8B-kRs"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
