@@ -40,8 +40,15 @@ class MagicView: UIView {
                 ctr.constant = ctr.constant*widthRatio
             }
             
-            if isGradient {
-                gradient(UIColor.init("FD9E74", alpha: 1), UIColor.init("FC1776", alpha: 1))
+            
+        }
+    }
+    
+    override func layoutSubviews() {
+        if isGradient {
+            GCDCommon.mainQueue {
+                self.gradient(UIColor.init("FD9E74", alpha: 1), UIColor.init("FC1776", alpha: 1))
+                self.isGradient = false
             }
         }
     }
@@ -51,9 +58,9 @@ class MagicView: UIView {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = bounds
         gradientLayer.colors = [firstColor.cgColor, secondColor.cgColor]
-        gradientLayer.locations = [0.0, 0.7]
-        gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.0)
-        gradientLayer.endPoint = CGPoint(x: 0.5, y: 1.0)
+        gradientLayer.locations = [0.0, 1.0]
+        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
+        gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
         layer.insertSublayer(gradientLayer, at: 0)
     }
     

@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 //        GADMobileAds.configure(withApplicationID: kAdmobAppID)
 //        initMainVC()
-        initTabVC(0)
+        initTabVC(1)
         return true
     }
     
@@ -43,7 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         tabVC?.tabBar.contentMode = .scaleToFill
         tabVC?.tabBar.isTranslucent = false
         
-        let tabHome = ZodiacsVC(nibName:"ZodiacsVC",bundle: nil)
+        let tabHome = HomeVC(nibName:"HomeVC",bundle: nil)
         tabHome.tabBarItem = UITabBarItem(title: "Home", image: #imageLiteral(resourceName: "tabbar_horoscope").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "tabbar_horoscope").withRenderingMode(.alwaysOriginal))
         let navHome = UINavigationController(rootViewController: tabHome)
         navHome.isNavigationBarHidden = true

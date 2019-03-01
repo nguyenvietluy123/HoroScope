@@ -15,18 +15,9 @@ class CellZodiac: UICollectionViewCell {
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var viewContent: UIView!
     
-    var handleCellForRow: ((CGFloat) -> ())?
-    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-//        viewContent.translatesAutoresizingMaskIntoConstraints = false
-//        viewContent.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-//        viewContent.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
-//        viewContent.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
-//        viewContent.bottomAnchor.constraint(equalTo: lbDate.bottomAnchor, constant: 10).isActive = true
-//        handleCellForRow?(viewContent.frame.height)
-//        print(viewContent.frame.height)
+        
     }
 }
 

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		03E88D1A91C75262E4F64574 /* Pods_HoroScopeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828FA28549C5DE1B7EE7E1A5 /* Pods_HoroScopeTests.framework */; };
+		0C136B9A2228988C00680619 /* aquarius.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C136B992228988C00680619 /* aquarius.json */; };
+		0C136B9D22289A0700680619 /* ReadJsonFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C136B9C22289A0700680619 /* ReadJsonFile.swift */; };
 		0C2D7A322224174700EBFDEC /* GLViewPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D7A312224174700EBFDEC /* GLViewPagerViewController.swift */; };
 		0C2D7A3622241A9B00EBFDEC /* TodayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D7A3422241A9B00EBFDEC /* TodayVC.swift */; };
 		0C2D7A3722241A9B00EBFDEC /* TodayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C2D7A3522241A9B00EBFDEC /* TodayVC.xib */; };
@@ -100,6 +102,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0C136B992228988C00680619 /* aquarius.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = aquarius.json; sourceTree = "<group>"; };
+		0C136B9C22289A0700680619 /* ReadJsonFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadJsonFile.swift; sourceTree = "<group>"; };
 		0C2D7A312224174700EBFDEC /* GLViewPagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GLViewPagerViewController.swift; path = HoroScope/GLViewPagerViewController.swift; sourceTree = SOURCE_ROOT; };
 		0C2D7A3422241A9B00EBFDEC /* TodayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayVC.swift; sourceTree = "<group>"; };
 		0C2D7A3522241A9B00EBFDEC /* TodayVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayVC.xib; sourceTree = "<group>"; };
@@ -202,6 +206,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C136B9B2228989600680619 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0C136B992228988C00680619 /* aquarius.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		0C2D7A3322241A8700EBFDEC /* TodayVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +270,7 @@
 				0CBB66EE22202988009E0733 /* CustomUI */,
 				0CBB6751222029DB009E0733 /* Cell */,
 				0CBB6739222029DB009E0733 /* ViewControllers */,
+				0C136B9B2228989600680619 /* Resources */,
 				0CA9EF54221C3A320053CDBA /* AppDelegate.swift */,
 				0CA9EF56221C3A320053CDBA /* ViewController.swift */,
 				0CA9EF58221C3A320053CDBA /* Main.storyboard */,
@@ -401,6 +414,7 @@
 				0CBB671622202988009E0733 /* SaveHelper.swift */,
 				0CBB671722202988009E0733 /* SKStoreReviewHepler.swift */,
 				0CBB671822202988009E0733 /* Device.swift */,
+				0C136B9C22289A0700680619 /* ReadJsonFile.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -508,6 +522,7 @@
 				0CA9EF4E221C3A320053CDBA /* Frameworks */,
 				0CA9EF4F221C3A320053CDBA /* Resources */,
 				0C11293D2220707100AC9A7C /* Embed Frameworks */,
+				D861EC834C772E40A17FD719 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -616,6 +631,7 @@
 				0CBB671A22202988009E0733 /* MagicView.xib in Resources */,
 				0CBB671B22202988009E0733 /* ButtonView.xib in Resources */,
 				0CBB672622202988009E0733 /* ToolBarView.xib in Resources */,
+				0C136B9A2228988C00680619 /* aquarius.json in Resources */,
 				0C2D7A4522243C1800EBFDEC /* CellZodiac.xib in Resources */,
 				0CA9EF5A221C3A320053CDBA /* Main.storyboard in Resources */,
 				0CBB672222202988009E0733 /* TabbarView.xib in Resources */,
@@ -679,6 +695,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D861EC834C772E40A17FD719 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HoroScope/Pods-HoroScope-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HoroScope/Pods-HoroScope-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EB75DECEDC316631663611DE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -731,6 +765,7 @@
 				0CBB673622202988009E0733 /* SaveHelper.swift in Sources */,
 				0CBB673222202988009E0733 /* Common.swift in Sources */,
 				0CBB6760222029DC009E0733 /* HomeVC.swift in Sources */,
+				0C136B9D22289A0700680619 /* ReadJsonFile.swift in Sources */,
 				0C2D7A3B222435B600EBFDEC /* ZodiacsVC.swift in Sources */,
 				0CBB671922202988009E0733 /* MagicView.swift in Sources */,
 				0CBB673322202988009E0733 /* Extension.swift in Sources */,

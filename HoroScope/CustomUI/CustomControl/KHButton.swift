@@ -75,6 +75,12 @@ class KHButton: UIButton {
             titleLabel?.font = Common.getFontForDeviceWithFontDefault(fontDefault: font)
         }
     }
+    
+    override var isHighlighted: Bool {
+        didSet {
+            self.backgroundColor = isHighlighted ? UIColor.init(white: 0, alpha: 0.1) : .clear
+        }
+    }
 }
 
 
