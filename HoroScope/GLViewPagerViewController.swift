@@ -113,7 +113,7 @@ open class GLViewPagerViewController: UIViewController, UIPageViewControllerData
     
     // MARK: - const
     let  kTabTagBegin:Int = 0xA0
-    let  kTabHeight:CGFloat = 44.0
+    var  kTabHeight:CGFloat = 44.0
     
     
     struct _datasourceHas{
@@ -195,18 +195,6 @@ open class GLViewPagerViewController: UIViewController, UIPageViewControllerData
         self ._reloadDataIfNeed()
         self ._layoutSubviews()
     }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 
     // MARK: - Data Source
     open func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
@@ -411,7 +399,7 @@ open class GLViewPagerViewController: UIViewController, UIPageViewControllerData
             
             var preTabView:UIView?
             var tabContentWidth:CGFloat = 0.0
-         
+            
             for index in 0 ... numberOfTabs - 1 {
                 var tabView:UIView! = UIView.init()
                 if self.supportArabic {
@@ -435,9 +423,9 @@ open class GLViewPagerViewController: UIViewController, UIPageViewControllerData
                 if preTabView == nil {
                     var rect:CGRect = tabView.frame
                     rect.size.width = self.fixTabWidth ? self.tabWidth : self ._getTabWidthAtIndex(tabIndex: index)
-                    rect.size.height = self.tabHeight/2
+                    rect.size.height = self.tabHeight*2/3
                     rect.origin.x = self.leadingPadding
-                    rect.origin.y = self.tabHeight/4
+                    rect.origin.y = rect.size.height/4
                     tabView.frame = rect
                     preTabView = tabView
                     tabContentWidth +=  self.fixTabWidth ? (self.tabWidth + self.leadingPadding) : (self._getTabWidthAtIndex(tabIndex: self.supportArabic ? 0 : index) + self.leadingPadding)
@@ -445,9 +433,9 @@ open class GLViewPagerViewController: UIViewController, UIPageViewControllerData
                 else {
                     var rect:CGRect = tabView.frame
                     rect.size.width = self.fixTabWidth ? self.tabWidth : self ._getTabWidthAtIndex(tabIndex: self.supportArabic ? 0 : index)
-                    rect.size.height = self.tabHeight/2
+                    rect.size.height = self.tabHeight*2/3
                     rect.origin.x = preTabView!.frame.maxX + self.padding
-                    rect.origin.y = self.tabHeight/4
+                    rect.origin.y = rect.size.height/4
                     tabView.frame = rect
                     preTabView = tabView
                     tabContentWidth += (self.fixTabWidth ? self.tabWidth : self._getTabWidthAtIndex(tabIndex: self.supportArabic ? 0 : index)) + self.padding
@@ -458,6 +446,7 @@ open class GLViewPagerViewController: UIViewController, UIPageViewControllerData
                 }
             }
             self.tabContentView.contentSize = CGSize(width: tabContentWidth, height: kTabHeight)
+
         }
         
         self.contentViews .removeAll()
@@ -508,6 +497,7 @@ open class GLViewPagerViewController: UIViewController, UIPageViewControllerData
         self._setActiveTabIndex(tabIndex: tabIndex)
         self._caculateTabOffsetWidth(pageIndex: tabIndex)
         _currentPageIndex = tabIndex
+        
         _enableTabAnimationWhileScrolling = false
         self ._enableViewPagerScroll()
         
@@ -560,9 +550,11 @@ open class GLViewPagerViewController: UIViewController, UIPageViewControllerData
             self.indicatorView.frame = frameOfIndicatorView
         }
         
-        let tabView:UIView = self.tabViews[tabIndex] 
-        var frame:CGRect = tabView.frame
+        let tabView:UIView = self.tabViews[tabIndex]
+        tabView.layer.cornerRadius = tabView.frame.height/2
+        tabView.layer.masksToBounds = true
         
+        var frame:CGRect = tabView.frame
         frame.origin.x += frame.width / 2
         frame.origin.x -= self.view.frame.width / 2
         frame.size.width = self.view.frame.width

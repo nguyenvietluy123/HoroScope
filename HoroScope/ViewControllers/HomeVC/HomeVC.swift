@@ -12,6 +12,7 @@ class HomeVC: GLViewPagerViewController {
     
     var viewControllers: NSArray = NSArray()
     var tabTitles: NSArray = NSArray()
+    let fonDefault: UIFont = Common.getFontForDeviceWithFontDefault(fontDefault: UIFont.systemFont(ofSize: 25))
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,12 +40,10 @@ extension HomeVC {
         self.leadingPadding = 10
         self.trailingPadding = 10
         self.defaultDisplayPageIndex = 0
+        self.kTabHeight = 44*heightRatio
+        self.tabHeight = self.kTabHeight
         self.tabAnimationType = GLTabAnimationType.GLTabAnimationType_WhileScrolling
-        self.indicatorColor = UIColor.clear
-        self.supportArabic = false
         self.fixTabWidth = false
-        self.fixIndicatorWidth = true
-        self.indicatorWidth = 20.0
         
         self.tabTitles = [ "Today",
                            "Tomorrow",
@@ -67,6 +66,7 @@ extension HomeVC: GLViewPagerViewControllerDataSource {
     
     func viewForTabIndex(_ viewPager: GLViewPagerViewController, index: Int) -> UIView {
         let label:UILabel = UILabel()
+        label.font = fonDefault
         label.text = self.tabTitles.object(at: index) as? String
         label.textColor = UIColor.white
         if index == 0 {
@@ -74,7 +74,6 @@ extension HomeVC: GLViewPagerViewControllerDataSource {
         }
         label.textAlignment = NSTextAlignment.center
         label.transform = CGAffineTransform.init(scaleX: 1, y: 1)
-        label.layer.cornerRadius = 11
         label.layer.masksToBounds = true
         return label
     }
@@ -118,11 +117,11 @@ extension HomeVC: GLViewPagerViewControllerDelegate {
         let prototypeLabel:UILabel = UILabel.init()
         prototypeLabel.text = self.tabTitles.object(at: index) as? String
         prototypeLabel.textAlignment = NSTextAlignment.center
-        prototypeLabel.font = UIFont.systemFont(ofSize: 16.0)
+        prototypeLabel.font = fonDefault
         if index == 0 {
             self.tabViews[0].backgroundColor = .white
         }
-        return prototypeLabel.intrinsicContentSize.width + 20
+        return prototypeLabel.intrinsicContentSize.width + (isIPad ? 80 : 25)
     }
 }
 
