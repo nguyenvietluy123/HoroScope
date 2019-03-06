@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CameraView" customModule="HoroScope" customModuleProvider="target">
+            <connections>
+                <outlet property="viewCamera" destination="QIY-Jg-wWF" id="LEW-ta-qp4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="656"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QIY-Jg-wWF">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="656"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FzY-R9-ER3">
+                    <rect key="frame" x="169" y="586" width="76" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.55402815419999996" blue="0.41727157310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="wdP-EZ-4OY"/>
+                    </constraints>
+                    <state key="normal" title="Take Photo"/>
+                    <connections>
+                        <action selector="action_takePhoto:" destination="-1" eventType="touchUpInside" id="HPF-iP-2Od"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="QIY-Jg-wWF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2AE-HH-dmp"/>
+                <constraint firstAttribute="bottom" secondItem="QIY-Jg-wWF" secondAttribute="bottom" id="feN-TA-Q8O"/>
+                <constraint firstAttribute="trailing" secondItem="QIY-Jg-wWF" secondAttribute="trailing" id="ftE-ec-BSl"/>
+                <constraint firstItem="FzY-R9-ER3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gPl-ZH-Fh4"/>
+                <constraint firstAttribute="bottom" secondItem="FzY-R9-ER3" secondAttribute="bottom" constant="20" id="jkY-ov-Bjt"/>
+                <constraint firstItem="QIY-Jg-wWF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rf6-tf-rJN"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="57.971014492753625" y="251.9021739130435"/>
+        </view>
+    </objects>
+</document>

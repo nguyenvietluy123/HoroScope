@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 //        GADMobileAds.configure(withApplicationID: kAdmobAppID)
 //        initMainVC()
-        initTabVC(0)
+        initTabVC(2)
         return true
     }
     

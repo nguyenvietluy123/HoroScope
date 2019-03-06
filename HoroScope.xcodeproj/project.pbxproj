@@ -17,6 +17,8 @@
 		0C2D7A3C222435B600EBFDEC /* ZodiacsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C2D7A3A222435B600EBFDEC /* ZodiacsVC.xib */; };
 		0C2D7A4322243BF100EBFDEC /* CellZodiac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D7A4222243BF100EBFDEC /* CellZodiac.swift */; };
 		0C2D7A4522243C1800EBFDEC /* CellZodiac.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C2D7A4422243C1800EBFDEC /* CellZodiac.xib */; };
+		0C9A8979222BDA40002A871D /* CellCompetition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A8977222BDA40002A871D /* CellCompetition.swift */; };
+		0C9A897A222BDA40002A871D /* CellCompetition.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C9A8978222BDA40002A871D /* CellCompetition.xib */; };
 		0CA9EF55221C3A320053CDBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA9EF54221C3A320053CDBA /* AppDelegate.swift */; };
 		0CA9EF57221C3A320053CDBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA9EF56221C3A320053CDBA /* ViewController.swift */; };
 		0CA9EF5A221C3A320053CDBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CA9EF58221C3A320053CDBA /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 		0CA9EF62221C3A330053CDBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CA9EF60221C3A330053CDBA /* LaunchScreen.storyboard */; };
 		0CA9EF6D221C3A330053CDBA /* HoroScopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA9EF6C221C3A330053CDBA /* HoroScopeTests.swift */; };
 		0CA9EF78221C3A330053CDBA /* HoroScopeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA9EF77221C3A330053CDBA /* HoroScopeUITests.swift */; };
+		0CB7FB24222C8A6400615D8D /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB7FB22222C8A6400615D8D /* CameraView.swift */; };
+		0CB7FB25222C8A6400615D8D /* CameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CB7FB23222C8A6400615D8D /* CameraView.xib */; };
 		0CBB671922202988009E0733 /* MagicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB66F022202988009E0733 /* MagicView.swift */; };
 		0CBB671A22202988009E0733 /* MagicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CBB66F122202988009E0733 /* MagicView.xib */; };
 		0CBB671B22202988009E0733 /* ButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CBB66F322202988009E0733 /* ButtonView.xib */; };
@@ -111,6 +115,8 @@
 		0C2D7A3A222435B600EBFDEC /* ZodiacsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZodiacsVC.xib; sourceTree = "<group>"; };
 		0C2D7A4222243BF100EBFDEC /* CellZodiac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellZodiac.swift; sourceTree = "<group>"; };
 		0C2D7A4422243C1800EBFDEC /* CellZodiac.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellZodiac.xib; sourceTree = "<group>"; };
+		0C9A8977222BDA40002A871D /* CellCompetition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCompetition.swift; sourceTree = "<group>"; };
+		0C9A8978222BDA40002A871D /* CellCompetition.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellCompetition.xib; sourceTree = "<group>"; };
 		0CA9EF51221C3A320053CDBA /* HoroScope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoroScope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CA9EF54221C3A320053CDBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CA9EF56221C3A320053CDBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +131,8 @@
 		0CA9EF73221C3A330053CDBA /* HoroScopeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoroScopeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CA9EF77221C3A330053CDBA /* HoroScopeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroScopeUITests.swift; sourceTree = "<group>"; };
 		0CA9EF79221C3A330053CDBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CB7FB22222C8A6400615D8D /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		0CB7FB23222C8A6400615D8D /* CameraView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraView.xib; sourceTree = "<group>"; };
 		0CBB66F022202988009E0733 /* MagicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicView.swift; sourceTree = "<group>"; };
 		0CBB66F122202988009E0733 /* MagicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MagicView.xib; sourceTree = "<group>"; };
 		0CBB66F322202988009E0733 /* ButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonView.xib; sourceTree = "<group>"; };
@@ -241,6 +249,15 @@
 			path = CellZodiac;
 			sourceTree = "<group>";
 		};
+		0C9A8972222BDA15002A871D /* CellCompetition */ = {
+			isa = PBXGroup;
+			children = (
+				0C9A8977222BDA40002A871D /* CellCompetition.swift */,
+				0C9A8978222BDA40002A871D /* CellCompetition.xib */,
+			);
+			path = CellCompetition;
+			sourceTree = "<group>";
+		};
 		0CA9EF48221C3A320053CDBA = {
 			isa = PBXGroup;
 			children = (
@@ -300,9 +317,19 @@
 			path = HoroScopeUITests;
 			sourceTree = "<group>";
 		};
+		0CB7FB21222C8A6400615D8D /* CameraView */ = {
+			isa = PBXGroup;
+			children = (
+				0CB7FB22222C8A6400615D8D /* CameraView.swift */,
+				0CB7FB23222C8A6400615D8D /* CameraView.xib */,
+			);
+			path = CameraView;
+			sourceTree = "<group>";
+		};
 		0CBB66EE22202988009E0733 /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
+				0CB7FB21222C8A6400615D8D /* CameraView */,
 				0CBB66EF22202988009E0733 /* MagicView */,
 				0CBB66F222202988009E0733 /* ButtonView */,
 				0CBB66F522202988009E0733 /* NavigationView */,
@@ -464,6 +491,7 @@
 		0CBB6751222029DB009E0733 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				0C9A8972222BDA15002A871D /* CellCompetition */,
 				0C2D7A3D2224397800EBFDEC /* CellZodiac */,
 			);
 			path = Cell;
@@ -634,11 +662,13 @@
 				0C136B9A2228988C00680619 /* aquarius.json in Resources */,
 				0C2D7A4522243C1800EBFDEC /* CellZodiac.xib in Resources */,
 				0CA9EF5A221C3A320053CDBA /* Main.storyboard in Resources */,
+				0C9A897A222BDA40002A871D /* CellCompetition.xib in Resources */,
 				0CBB672222202988009E0733 /* TabbarView.xib in Resources */,
 				0CBB671F22202988009E0733 /* InputView.xib in Resources */,
 				0C2D7A3722241A9B00EBFDEC /* TodayVC.xib in Resources */,
 				0CBB675F222029DC009E0733 /* HomeVC.xib in Resources */,
 				0CBB6767222029DC009E0733 /* Privacy_PolicyVC.xib in Resources */,
+				0CB7FB25222C8A6400615D8D /* CameraView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -739,6 +769,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CBB672922202988009E0733 /* KHTextField.swift in Sources */,
+				0C9A8979222BDA40002A871D /* CellCompetition.swift in Sources */,
 				0CBB6763222029DC009E0733 /* SettingVC.swift in Sources */,
 				0CA9EF57221C3A320053CDBA /* ViewController.swift in Sources */,
 				0CBB673122202988009E0733 /* CameraHelper.swift in Sources */,
@@ -763,6 +794,7 @@
 				0CA9EF55221C3A320053CDBA /* AppDelegate.swift in Sources */,
 				0CBB671C22202988009E0733 /* ButtonView.swift in Sources */,
 				0CBB673622202988009E0733 /* SaveHelper.swift in Sources */,
+				0CB7FB24222C8A6400615D8D /* CameraView.swift in Sources */,
 				0CBB673222202988009E0733 /* Common.swift in Sources */,
 				0CBB6760222029DC009E0733 /* HomeVC.swift in Sources */,
 				0C136B9D22289A0700680619 /* ReadJsonFile.swift in Sources */,
