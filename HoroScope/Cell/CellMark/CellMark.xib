@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="CellMark" customModule="HoroScope" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vep-Bb-FDG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eyes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBb-xb-blk" customClass="KHLabel" customModule="HoroScope" customModuleProvider="target">
+                                <rect key="frame" x="172.5" y="5" width="30.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZiQ-Ka-Gz0">
+                                <rect key="frame" x="56.5" y="38" width="262.5" height="8"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hz5-AL-iqh">
+                                        <rect key="frame" x="0.0" y="0.0" width="131" height="8"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="swo-Xc-BSR" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
+                                                <rect key="frame" x="52.5" y="0.0" width="78.5" height="8"/>
+                                                <color key="backgroundColor" red="0.99215686270000003" green="0.36078431370000003" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.99215686270000003" green="0.36078431370000003" blue="0.76862745099999996" alpha="0.18816887842465754" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="swo-Xc-BSR" firstAttribute="top" secondItem="hz5-AL-iqh" secondAttribute="top" id="0Ac-Bm-Lcb"/>
+                                            <constraint firstItem="swo-Xc-BSR" firstAttribute="width" secondItem="hz5-AL-iqh" secondAttribute="width" multiplier="0.6" id="Mwe-kI-KAS"/>
+                                            <constraint firstAttribute="bottom" secondItem="swo-Xc-BSR" secondAttribute="bottom" id="iQw-bv-Iz1"/>
+                                            <constraint firstAttribute="trailing" secondItem="swo-Xc-BSR" secondAttribute="trailing" id="jeR-SH-FNZ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gnr-cZ-uAl">
+                                        <rect key="frame" x="131" y="0.0" width="131.5" height="8"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="azF-My-Fdu">
+                                                <rect key="frame" x="0.0" y="0.0" width="105" height="8"/>
+                                                <color key="backgroundColor" red="0.56078431370000004" green="0.4823529412" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.56078431370000004" green="0.4823529412" blue="0.92549019610000005" alpha="0.18854345034246575" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="azF-My-Fdu" firstAttribute="top" secondItem="gnr-cZ-uAl" secondAttribute="top" id="Xg7-EU-c5C"/>
+                                            <constraint firstAttribute="bottom" secondItem="azF-My-Fdu" secondAttribute="bottom" id="g8c-Ao-BaT"/>
+                                            <constraint firstItem="azF-My-Fdu" firstAttribute="width" secondItem="gnr-cZ-uAl" secondAttribute="width" multiplier="0.8" id="i88-9o-noD"/>
+                                            <constraint firstItem="azF-My-Fdu" firstAttribute="leading" secondItem="gnr-cZ-uAl" secondAttribute="leading" id="rp6-7M-ace"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="gnr-cZ-uAl" secondAttribute="bottom" id="2cQ-60-nHa"/>
+                                    <constraint firstAttribute="bottom" secondItem="hz5-AL-iqh" secondAttribute="bottom" id="6Dg-Db-9KH"/>
+                                    <constraint firstItem="hz5-AL-iqh" firstAttribute="leading" secondItem="ZiQ-Ka-Gz0" secondAttribute="leading" id="7mf-bv-juh"/>
+                                    <constraint firstItem="gnr-cZ-uAl" firstAttribute="top" secondItem="ZiQ-Ka-Gz0" secondAttribute="top" id="95z-gQ-702"/>
+                                    <constraint firstItem="hz5-AL-iqh" firstAttribute="top" secondItem="ZiQ-Ka-Gz0" secondAttribute="top" id="EuN-Id-OaO"/>
+                                    <constraint firstAttribute="trailing" secondItem="gnr-cZ-uAl" secondAttribute="trailing" id="YlJ-Bd-tBt"/>
+                                    <constraint firstItem="gnr-cZ-uAl" firstAttribute="leading" secondItem="hz5-AL-iqh" secondAttribute="trailing" id="cUW-es-8eQ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAE-8V-AqL" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
+                                <rect key="frame" x="172.5" y="27" width="30" height="30"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mark_eye" translatesAutoresizingMaskIntoConstraints="NO" id="yVC-jY-yLk" customClass="KHImageView" customModule="HoroScope" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="yVC-jY-yLk" secondAttribute="bottom" id="1JY-AE-XLF"/>
+                                    <constraint firstItem="yVC-jY-yLk" firstAttribute="leading" secondItem="PAE-8V-AqL" secondAttribute="leading" id="Iiz-gN-8ZS"/>
+                                    <constraint firstItem="yVC-jY-yLk" firstAttribute="top" secondItem="PAE-8V-AqL" secondAttribute="top" id="LBu-5Z-hsB"/>
+                                    <constraint firstAttribute="trailing" secondItem="yVC-jY-yLk" secondAttribute="trailing" id="iSy-Bm-qni"/>
+                                    <constraint firstAttribute="width" secondItem="PAE-8V-AqL" secondAttribute="height" multiplier="1:1" id="yQS-W0-eoB"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="84" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmt-hS-aEG" customClass="KHLabel" customModule="HoroScope" customModuleProvider="target">
+                                <rect key="frame" x="88.5" y="34.5" width="15.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.99215686270000003" green="0.36078431370000003" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="84" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEb-3G-eYS" customClass="KHLabel" customModule="HoroScope" customModuleProvider="target">
+                                <rect key="frame" x="297.5" y="34.5" width="15.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.56078431370000004" green="0.4823529412" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dGk-v5-qfL" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="14" width="17" height="16.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mark_crown" translatesAutoresizingMaskIntoConstraints="NO" id="NUI-oQ-juy" customClass="KHImageView" customModule="HoroScope" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="17" height="16.5"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dGk-v5-qfL" secondAttribute="height" multiplier="1:1" id="D1d-ir-mDK"/>
+                                    <constraint firstItem="NUI-oQ-juy" firstAttribute="top" secondItem="dGk-v5-qfL" secondAttribute="top" id="Jqa-Dv-QdB"/>
+                                    <constraint firstItem="NUI-oQ-juy" firstAttribute="leading" secondItem="dGk-v5-qfL" secondAttribute="leading" id="f0W-fB-fuP"/>
+                                    <constraint firstAttribute="bottom" secondItem="NUI-oQ-juy" secondAttribute="bottom" id="laf-Tt-NVR"/>
+                                    <constraint firstAttribute="trailing" secondItem="NUI-oQ-juy" secondAttribute="trailing" id="pGI-wE-Dfh"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0bA-EP-Ti3" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
+                                <rect key="frame" x="297" y="14" width="16.5" height="16.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mark_crown" translatesAutoresizingMaskIntoConstraints="NO" id="lhg-o4-QfW" customClass="KHImageView" customModule="HoroScope" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="16.5" height="16.5"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="lhg-o4-QfW" firstAttribute="leading" secondItem="0bA-EP-Ti3" secondAttribute="leading" id="6kd-h1-KNo"/>
+                                    <constraint firstAttribute="trailing" secondItem="lhg-o4-QfW" secondAttribute="trailing" id="IEX-z3-Sfo"/>
+                                    <constraint firstAttribute="width" secondItem="0bA-EP-Ti3" secondAttribute="height" multiplier="1:1" id="URU-PY-qh7"/>
+                                    <constraint firstItem="lhg-o4-QfW" firstAttribute="top" secondItem="0bA-EP-Ti3" secondAttribute="top" id="VtN-py-8Yu"/>
+                                    <constraint firstAttribute="bottom" secondItem="lhg-o4-QfW" secondAttribute="bottom" id="flh-8C-Z7k"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PAE-8V-AqL" firstAttribute="height" secondItem="vep-Bb-FDG" secondAttribute="height" multiplier="1:2" id="0Qz-jX-e2M"/>
+                            <constraint firstItem="mBb-xb-blk" firstAttribute="centerX" secondItem="jp3-2G-AF2" secondAttribute="centerX" id="3nA-Rg-vUt"/>
+                            <constraint firstItem="hz5-AL-iqh" firstAttribute="trailing" secondItem="yVC-jY-yLk" secondAttribute="centerX" id="3yY-34-Dkz"/>
+                            <constraint firstItem="ZiQ-Ka-Gz0" firstAttribute="centerY" secondItem="PAE-8V-AqL" secondAttribute="centerY" id="3yz-zZ-enP"/>
+                            <constraint firstItem="ZiQ-Ka-Gz0" firstAttribute="width" secondItem="vep-Bb-FDG" secondAttribute="width" multiplier="0.7:1" id="4tB-2q-sx7"/>
+                            <constraint firstItem="dGk-v5-qfL" firstAttribute="height" secondItem="vep-Bb-FDG" secondAttribute="height" multiplier="17:60" id="5zq-7i-w3F"/>
+                            <constraint firstItem="ZiQ-Ka-Gz0" firstAttribute="centerX" secondItem="PAE-8V-AqL" secondAttribute="centerX" id="CDw-Ib-qYz"/>
+                            <constraint firstItem="0bA-EP-Ti3" firstAttribute="height" secondItem="dGk-v5-qfL" secondAttribute="height" id="DOF-TJ-ZSc"/>
+                            <constraint firstItem="PAE-8V-AqL" firstAttribute="centerX" secondItem="jp3-2G-AF2" secondAttribute="centerX" id="GlW-ET-ynI"/>
+                            <constraint firstItem="ZiQ-Ka-Gz0" firstAttribute="height" secondItem="PAE-8V-AqL" secondAttribute="height" multiplier="1:3.8" id="I0f-SX-e94"/>
+                            <constraint firstItem="0bA-EP-Ti3" firstAttribute="centerX" secondItem="BEb-3G-eYS" secondAttribute="centerX" id="Iou-gS-Aju"/>
+                            <constraint firstItem="vmt-hS-aEG" firstAttribute="top" secondItem="dGk-v5-qfL" secondAttribute="bottom" constant="4" id="KFK-Sf-Yvd"/>
+                            <constraint firstItem="BEb-3G-eYS" firstAttribute="leading" secondItem="azF-My-Fdu" secondAttribute="trailing" constant="5" id="NGP-aw-sJd"/>
+                            <constraint firstItem="vmt-hS-aEG" firstAttribute="trailing" secondItem="swo-Xc-BSR" secondAttribute="leading" constant="-5" id="OC3-GU-VBJ"/>
+                            <constraint firstItem="vmt-hS-aEG" firstAttribute="centerY" secondItem="hz5-AL-iqh" secondAttribute="centerY" id="a2Y-Uz-q67"/>
+                            <constraint firstItem="0bA-EP-Ti3" firstAttribute="bottom" secondItem="dGk-v5-qfL" secondAttribute="bottom" id="fK6-M5-Zkm"/>
+                            <constraint firstItem="dGk-v5-qfL" firstAttribute="centerX" secondItem="vmt-hS-aEG" secondAttribute="centerX" id="kol-Aw-rPp"/>
+                            <constraint firstItem="BEb-3G-eYS" firstAttribute="centerY" secondItem="gnr-cZ-uAl" secondAttribute="centerY" id="nIV-GK-xfd"/>
+                            <constraint firstItem="mBb-xb-blk" firstAttribute="top" secondItem="jp3-2G-AF2" secondAttribute="top" constant="5" id="rm0-Up-BbS"/>
+                            <constraint firstItem="PAE-8V-AqL" firstAttribute="top" secondItem="mBb-xb-blk" secondAttribute="bottom" constant="5" id="wBa-52-Sdr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jp3-2G-AF2"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vep-Bb-FDG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8cz-7C-ZF1"/>
+                    <constraint firstAttribute="bottom" secondItem="vep-Bb-FDG" secondAttribute="bottom" id="FcK-5B-fVm"/>
+                    <constraint firstItem="vep-Bb-FDG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="YOZ-2I-lP0"/>
+                    <constraint firstAttribute="trailing" secondItem="vep-Bb-FDG" secondAttribute="trailing" id="lrF-BM-I4S"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ctrViewScoreLeft" destination="Mwe-kI-KAS" id="TCW-Ru-alA"/>
+                <outlet property="ctrViewScoreRight" destination="i88-9o-noD" id="c73-Z1-9hR"/>
+                <outlet property="imgMain" destination="yVC-jY-yLk" id="9o8-sn-m6R"/>
+                <outlet property="lbScoreLeft" destination="vmt-hS-aEG" id="5J7-TU-2lo"/>
+                <outlet property="lbScoreRight" destination="BEb-3G-eYS" id="Wzg-6l-ufj"/>
+                <outlet property="lbTitle" destination="mBb-xb-blk" id="qMt-Gg-w2F"/>
+                <outlet property="viewCrownLeft" destination="dGk-v5-qfL" id="k5A-KT-N4K"/>
+                <outlet property="viewCrownRight" destination="0bA-EP-Ti3" id="ZzA-2E-Kyd"/>
+                <outlet property="viewScoreLeft" destination="swo-Xc-BSR" id="xxp-5q-g57"/>
+                <outlet property="viewScoreRight" destination="azF-My-Fdu" id="RjM-Mc-hmd"/>
+            </connections>
+            <point key="canvasLocation" x="52" y="60.26986506746627"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mark_crown" width="45" height="45"/>
+        <image name="mark_eye" width="36" height="36"/>
+    </resources>
+</document>

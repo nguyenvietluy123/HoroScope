@@ -62,12 +62,22 @@ class KHView: UIView {
         }
     }
     
+    @IBInspectable var isGradientColor: Bool = false
+    @IBInspectable public var minColor:UIColor = UIColor.blue
+    @IBInspectable public var maxColor:UIColor = UIColor.orange
+    
     override open func layoutSubviews() {
         super.layoutSubviews()
         layoutIfNeeded()
         if circle {
             layer.cornerRadius = self.bounds.height/2
             layer.masksToBounds = true
+        }
+        
+        if isGradientColor {
+            GCDCommon.mainQueue {
+                Common.gradient(self.minColor, self.maxColor, view: self)
+            }
         }
     }
     

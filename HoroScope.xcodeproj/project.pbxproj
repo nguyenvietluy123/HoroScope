@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03E88D1A91C75262E4F64574 /* Pods_HoroScopeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828FA28549C5DE1B7EE7E1A5 /* Pods_HoroScopeTests.framework */; };
 		0C136B9A2228988C00680619 /* aquarius.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C136B992228988C00680619 /* aquarius.json */; };
 		0C136B9D22289A0700680619 /* ReadJsonFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C136B9C22289A0700680619 /* ReadJsonFile.swift */; };
 		0C2D7A322224174700EBFDEC /* GLViewPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D7A312224174700EBFDEC /* GLViewPagerViewController.swift */; };
@@ -17,8 +16,14 @@
 		0C2D7A3C222435B600EBFDEC /* ZodiacsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C2D7A3A222435B600EBFDEC /* ZodiacsVC.xib */; };
 		0C2D7A4322243BF100EBFDEC /* CellZodiac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D7A4222243BF100EBFDEC /* CellZodiac.swift */; };
 		0C2D7A4522243C1800EBFDEC /* CellZodiac.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C2D7A4422243C1800EBFDEC /* CellZodiac.xib */; };
+		0C681B60223AA6E500374A4B /* BeautyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C681B5F223AA6E500374A4B /* BeautyVC.swift */; };
+		0C681B64223AA70C00374A4B /* BeautyCompetitionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C681B62223AA70C00374A4B /* BeautyCompetitionVC.xib */; };
+		0C681B68223AB35B00374A4B /* ScanningVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C681B66223AB35B00374A4B /* ScanningVC.swift */; };
+		0C681B69223AB35B00374A4B /* ScanningVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C681B67223AB35B00374A4B /* ScanningVC.xib */; };
 		0C9A8979222BDA40002A871D /* CellCompetition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A8977222BDA40002A871D /* CellCompetition.swift */; };
 		0C9A897A222BDA40002A871D /* CellCompetition.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C9A8978222BDA40002A871D /* CellCompetition.xib */; };
+		0C9D97B0223936CF005FBAB2 /* AnalysisVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D97AE223936CF005FBAB2 /* AnalysisVC.swift */; };
+		0C9D97B1223936CF005FBAB2 /* AnalysisVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C9D97AF223936CF005FBAB2 /* AnalysisVC.xib */; };
 		0CA9EF55221C3A320053CDBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA9EF54221C3A320053CDBA /* AppDelegate.swift */; };
 		0CA9EF57221C3A320053CDBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA9EF56221C3A320053CDBA /* ViewController.swift */; };
 		0CA9EF5A221C3A320053CDBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CA9EF58221C3A320053CDBA /* Main.storyboard */; };
@@ -69,10 +74,17 @@
 		0CBB6768222029DC009E0733 /* Privacy_PolicyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB6750222029DB009E0733 /* Privacy_PolicyVC.swift */; };
 		0CBB677322202B6F009E0733 /* LoveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB677122202B6F009E0733 /* LoveVC.swift */; };
 		0CBB677422202B6F009E0733 /* LoveVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CBB677222202B6F009E0733 /* LoveVC.xib */; };
-		0CBB677822202B92009E0733 /* CompetitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB677622202B92009E0733 /* CompetitionVC.swift */; };
-		0CBB677922202B92009E0733 /* CompetitionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CBB677722202B92009E0733 /* CompetitionVC.xib */; };
-		C0DA67E6C42FFF5CCADE1538 /* Pods_HoroScopeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E01897D7A9DD0D842394200 /* Pods_HoroScopeUITests.framework */; };
-		E9E09CB92BCA20C1DD183243 /* Pods_HoroScope.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7AC680374F4DF3A51A95C9 /* Pods_HoroScope.framework */; };
+		0CBB677922202B92009E0733 /* BeautyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CBB677722202B92009E0733 /* BeautyVC.xib */; };
+		0CDE70FF223CFE6A00B41601 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDE70FE223CFE6A00B41601 /* BaseVC.swift */; };
+		0CDE7103223E212600B41601 /* BeautyContestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDE7101223E212600B41601 /* BeautyContestVC.swift */; };
+		0CDE7104223E212600B41601 /* BeautyContestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CDE7102223E212600B41601 /* BeautyContestVC.xib */; };
+		0CDE710D223E29E600B41601 /* CellMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDE710B223E29E600B41601 /* CellMark.swift */; };
+		0CDE710E223E29E600B41601 /* CellMark.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CDE710C223E29E600B41601 /* CellMark.xib */; };
+		0CDE7111223E2B5B00B41601 /* MarkObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDE7110223E2B5B00B41601 /* MarkObj.swift */; };
+		0CDE7114223E7C4900B41601 /* AnalysisScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDE7112223E7C4900B41601 /* AnalysisScanVC.swift */; };
+		0CDE7115223E7C4900B41601 /* AnalysisScanVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CDE7113223E7C4900B41601 /* AnalysisScanVC.xib */; };
+		0CDE7117223E895700B41601 /* BeautyCompetitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDE7116223E895700B41601 /* BeautyCompetitionVC.swift */; };
+		2B6A736E5521280A17A47526 /* libPods-HoroScope.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9107D228DA2EBF2A1DED8561 /* libPods-HoroScope.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,8 +127,15 @@
 		0C2D7A3A222435B600EBFDEC /* ZodiacsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZodiacsVC.xib; sourceTree = "<group>"; };
 		0C2D7A4222243BF100EBFDEC /* CellZodiac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellZodiac.swift; sourceTree = "<group>"; };
 		0C2D7A4422243C1800EBFDEC /* CellZodiac.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellZodiac.xib; sourceTree = "<group>"; };
+		0C681B5D223AA31900374A4B /* HoroScope-Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HoroScope-Bridging_Header.h"; sourceTree = "<group>"; };
+		0C681B5F223AA6E500374A4B /* BeautyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeautyVC.swift; sourceTree = "<group>"; };
+		0C681B62223AA70C00374A4B /* BeautyCompetitionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeautyCompetitionVC.xib; sourceTree = "<group>"; };
+		0C681B66223AB35B00374A4B /* ScanningVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanningVC.swift; sourceTree = "<group>"; };
+		0C681B67223AB35B00374A4B /* ScanningVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanningVC.xib; sourceTree = "<group>"; };
 		0C9A8977222BDA40002A871D /* CellCompetition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCompetition.swift; sourceTree = "<group>"; };
 		0C9A8978222BDA40002A871D /* CellCompetition.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellCompetition.xib; sourceTree = "<group>"; };
+		0C9D97AE223936CF005FBAB2 /* AnalysisVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisVC.swift; sourceTree = "<group>"; };
+		0C9D97AF223936CF005FBAB2 /* AnalysisVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnalysisVC.xib; sourceTree = "<group>"; };
 		0CA9EF51221C3A320053CDBA /* HoroScope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoroScope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CA9EF54221C3A320053CDBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CA9EF56221C3A320053CDBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -173,17 +192,21 @@
 		0CBB6750222029DB009E0733 /* Privacy_PolicyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Privacy_PolicyVC.swift; sourceTree = "<group>"; };
 		0CBB677122202B6F009E0733 /* LoveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveVC.swift; sourceTree = "<group>"; };
 		0CBB677222202B6F009E0733 /* LoveVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoveVC.xib; sourceTree = "<group>"; };
-		0CBB677622202B92009E0733 /* CompetitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionVC.swift; sourceTree = "<group>"; };
-		0CBB677722202B92009E0733 /* CompetitionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompetitionVC.xib; sourceTree = "<group>"; };
+		0CBB677722202B92009E0733 /* BeautyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeautyVC.xib; sourceTree = "<group>"; };
+		0CDE70FE223CFE6A00B41601 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		0CDE7101223E212600B41601 /* BeautyContestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautyContestVC.swift; sourceTree = "<group>"; };
+		0CDE7102223E212600B41601 /* BeautyContestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeautyContestVC.xib; sourceTree = "<group>"; };
+		0CDE710B223E29E600B41601 /* CellMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellMark.swift; sourceTree = "<group>"; };
+		0CDE710C223E29E600B41601 /* CellMark.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellMark.xib; sourceTree = "<group>"; };
+		0CDE7110223E2B5B00B41601 /* MarkObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkObj.swift; sourceTree = "<group>"; };
+		0CDE7112223E7C4900B41601 /* AnalysisScanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisScanVC.swift; sourceTree = "<group>"; };
+		0CDE7113223E7C4900B41601 /* AnalysisScanVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnalysisScanVC.xib; sourceTree = "<group>"; };
+		0CDE7116223E895700B41601 /* BeautyCompetitionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeautyCompetitionVC.swift; sourceTree = "<group>"; };
 		1547B22AB613116E2126EB83 /* Pods-HoroScope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoroScope.release.xcconfig"; path = "Pods/Target Support Files/Pods-HoroScope/Pods-HoroScope.release.xcconfig"; sourceTree = "<group>"; };
 		3E01897D7A9DD0D842394200 /* Pods_HoroScopeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HoroScopeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BF51A343C47E61445B21A35 /* Pods-HoroScopeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoroScopeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HoroScopeUITests/Pods-HoroScopeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5722D8E44A73774C658791C4 /* Pods-HoroScope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoroScope.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HoroScope/Pods-HoroScope.debug.xcconfig"; sourceTree = "<group>"; };
-		5F7AC680374F4DF3A51A95C9 /* Pods_HoroScope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HoroScope.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		828FA28549C5DE1B7EE7E1A5 /* Pods_HoroScopeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HoroScopeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		95370E0BC4118365D7FF328F /* Pods-HoroScopeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoroScopeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HoroScopeTests/Pods-HoroScopeTests.release.xcconfig"; sourceTree = "<group>"; };
-		B0A00B3D4F7215EE9234A8BF /* Pods-HoroScopeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoroScopeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HoroScopeTests/Pods-HoroScopeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D354C59BFD06965025DABB84 /* Pods-HoroScopeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoroScopeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HoroScopeUITests/Pods-HoroScopeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9107D228DA2EBF2A1DED8561 /* libPods-HoroScope.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HoroScope.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,7 +214,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9E09CB92BCA20C1DD183243 /* Pods_HoroScope.framework in Frameworks */,
+				2B6A736E5521280A17A47526 /* libPods-HoroScope.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +222,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03E88D1A91C75262E4F64574 /* Pods_HoroScopeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +229,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0DA67E6C42FFF5CCADE1538 /* Pods_HoroScopeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +270,26 @@
 			path = CellZodiac;
 			sourceTree = "<group>";
 		};
+		0C681B5E223AA6AE00374A4B /* BeautyCompetitionVC */ = {
+			isa = PBXGroup;
+			children = (
+				0CDE7116223E895700B41601 /* BeautyCompetitionVC.swift */,
+				0C681B62223AA70C00374A4B /* BeautyCompetitionVC.xib */,
+				0C681B65223AB34E00374A4B /* ScanningVC */,
+			);
+			path = BeautyCompetitionVC;
+			sourceTree = "<group>";
+		};
+		0C681B65223AB34E00374A4B /* ScanningVC */ = {
+			isa = PBXGroup;
+			children = (
+				0C681B66223AB35B00374A4B /* ScanningVC.swift */,
+				0C681B67223AB35B00374A4B /* ScanningVC.xib */,
+				0CDE7100223E210600B41601 /* BeautyContestVC */,
+			);
+			path = ScanningVC;
+			sourceTree = "<group>";
+		};
 		0C9A8972222BDA15002A871D /* CellCompetition */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +297,17 @@
 				0C9A8978222BDA40002A871D /* CellCompetition.xib */,
 			);
 			path = CellCompetition;
+			sourceTree = "<group>";
+		};
+		0C9D97AD223936AC005FBAB2 /* AnalysisVC */ = {
+			isa = PBXGroup;
+			children = (
+				0CDE7112223E7C4900B41601 /* AnalysisScanVC.swift */,
+				0CDE7113223E7C4900B41601 /* AnalysisScanVC.xib */,
+				0C9D97AE223936CF005FBAB2 /* AnalysisVC.swift */,
+				0C9D97AF223936CF005FBAB2 /* AnalysisVC.xib */,
+			);
+			path = AnalysisVC;
 			sourceTree = "<group>";
 		};
 		0CA9EF48221C3A320053CDBA = {
@@ -285,6 +337,7 @@
 			children = (
 				0CBB670E22202988009E0733 /* Common */,
 				0CBB66EE22202988009E0733 /* CustomUI */,
+				0CDE710F223E2B4C00B41601 /* Model */,
 				0CBB6751222029DB009E0733 /* Cell */,
 				0CBB6739222029DB009E0733 /* ViewControllers */,
 				0C136B9B2228989600680619 /* Resources */,
@@ -292,9 +345,11 @@
 				0CA9EF56221C3A320053CDBA /* ViewController.swift */,
 				0CA9EF58221C3A320053CDBA /* Main.storyboard */,
 				0CA9EF5E221C3A330053CDBA /* Assets.xcassets */,
+				0CDE710A223E263000B41601 /* New Group */,
 				0CA9EF60221C3A330053CDBA /* LaunchScreen.storyboard */,
 				0CA9EF63221C3A330053CDBA /* Info.plist */,
 				0CA9EF5B221C3A320053CDBA /* HoroScope.xcdatamodeld */,
+				0C681B5D223AA31900374A4B /* HoroScope-Bridging_Header.h */,
 			);
 			path = HoroScope;
 			sourceTree = "<group>";
@@ -449,10 +504,11 @@
 		0CBB6739222029DB009E0733 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0CDE70FE223CFE6A00B41601 /* BaseVC.swift */,
 				0C2D7A312224174700EBFDEC /* GLViewPagerViewController.swift */,
 				0CBB673A222029DB009E0733 /* HomeVC */,
 				0CBB676F22202AC3009E0733 /* LoveVC */,
-				0CBB677522202B7B009E0733 /* CompetitionVC */,
+				0CBB677522202B7B009E0733 /* BeautyVC */,
 				0CBB6746222029DB009E0733 /* SettingVC */,
 			);
 			path = ViewControllers;
@@ -491,6 +547,7 @@
 		0CBB6751222029DB009E0733 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				0CDE7105223E236800B41601 /* CellMark */,
 				0C9A8972222BDA15002A871D /* CellCompetition */,
 				0C2D7A3D2224397800EBFDEC /* CellZodiac */,
 			);
@@ -506,13 +563,48 @@
 			path = LoveVC;
 			sourceTree = "<group>";
 		};
-		0CBB677522202B7B009E0733 /* CompetitionVC */ = {
+		0CBB677522202B7B009E0733 /* BeautyVC */ = {
 			isa = PBXGroup;
 			children = (
-				0CBB677622202B92009E0733 /* CompetitionVC.swift */,
-				0CBB677722202B92009E0733 /* CompetitionVC.xib */,
+				0C681B5F223AA6E500374A4B /* BeautyVC.swift */,
+				0CBB677722202B92009E0733 /* BeautyVC.xib */,
+				0C9D97AD223936AC005FBAB2 /* AnalysisVC */,
+				0C681B5E223AA6AE00374A4B /* BeautyCompetitionVC */,
 			);
-			path = CompetitionVC;
+			path = BeautyVC;
+			sourceTree = "<group>";
+		};
+		0CDE7100223E210600B41601 /* BeautyContestVC */ = {
+			isa = PBXGroup;
+			children = (
+				0CDE7101223E212600B41601 /* BeautyContestVC.swift */,
+				0CDE7102223E212600B41601 /* BeautyContestVC.xib */,
+			);
+			path = BeautyContestVC;
+			sourceTree = "<group>";
+		};
+		0CDE7105223E236800B41601 /* CellMark */ = {
+			isa = PBXGroup;
+			children = (
+				0CDE710B223E29E600B41601 /* CellMark.swift */,
+				0CDE710C223E29E600B41601 /* CellMark.xib */,
+			);
+			path = CellMark;
+			sourceTree = "<group>";
+		};
+		0CDE710A223E263000B41601 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		0CDE710F223E2B4C00B41601 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0CDE7110223E2B5B00B41601 /* MarkObj.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		247B7F065FC5D5FBECC1B13B /* Pods */ = {
@@ -520,10 +612,6 @@
 			children = (
 				5722D8E44A73774C658791C4 /* Pods-HoroScope.debug.xcconfig */,
 				1547B22AB613116E2126EB83 /* Pods-HoroScope.release.xcconfig */,
-				B0A00B3D4F7215EE9234A8BF /* Pods-HoroScopeTests.debug.xcconfig */,
-				95370E0BC4118365D7FF328F /* Pods-HoroScopeTests.release.xcconfig */,
-				4BF51A343C47E61445B21A35 /* Pods-HoroScopeUITests.debug.xcconfig */,
-				D354C59BFD06965025DABB84 /* Pods-HoroScopeUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -531,9 +619,9 @@
 		D9AEF8584003D4EB470A2896 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5F7AC680374F4DF3A51A95C9 /* Pods_HoroScope.framework */,
 				828FA28549C5DE1B7EE7E1A5 /* Pods_HoroScopeTests.framework */,
 				3E01897D7A9DD0D842394200 /* Pods_HoroScopeUITests.framework */,
+				9107D228DA2EBF2A1DED8561 /* libPods-HoroScope.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -550,7 +638,7 @@
 				0CA9EF4E221C3A320053CDBA /* Frameworks */,
 				0CA9EF4F221C3A320053CDBA /* Resources */,
 				0C11293D2220707100AC9A7C /* Embed Frameworks */,
-				D861EC834C772E40A17FD719 /* [CP] Embed Pods Frameworks */,
+				D03893182F09305421C34651 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -565,7 +653,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CA9EF7F221C3A330053CDBA /* Build configuration list for PBXNativeTarget "HoroScopeTests" */;
 			buildPhases = (
-				EB75DECEDC316631663611DE /* [CP] Check Pods Manifest.lock */,
 				0CA9EF64221C3A330053CDBA /* Sources */,
 				0CA9EF65221C3A330053CDBA /* Frameworks */,
 				0CA9EF66221C3A330053CDBA /* Resources */,
@@ -584,7 +671,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CA9EF82221C3A330053CDBA /* Build configuration list for PBXNativeTarget "HoroScopeUITests" */;
 			buildPhases = (
-				98AB5BD30588284CB32608FC /* [CP] Check Pods Manifest.lock */,
 				0CA9EF6F221C3A330053CDBA /* Sources */,
 				0CA9EF70221C3A330053CDBA /* Frameworks */,
 				0CA9EF71221C3A330053CDBA /* Resources */,
@@ -654,20 +740,26 @@
 				0CBB672822202988009E0733 /* SearchView.xib in Resources */,
 				0CBB6764222029DC009E0733 /* SettingVC.xib in Resources */,
 				0C2D7A3C222435B600EBFDEC /* ZodiacsVC.xib in Resources */,
-				0CBB677922202B92009E0733 /* CompetitionVC.xib in Resources */,
+				0CDE7104223E212600B41601 /* BeautyContestVC.xib in Resources */,
+				0CBB677922202B92009E0733 /* BeautyVC.xib in Resources */,
 				0CBB671D22202988009E0733 /* NavigationView.xib in Resources */,
 				0CBB671A22202988009E0733 /* MagicView.xib in Resources */,
 				0CBB671B22202988009E0733 /* ButtonView.xib in Resources */,
 				0CBB672622202988009E0733 /* ToolBarView.xib in Resources */,
+				0CDE7115223E7C4900B41601 /* AnalysisScanVC.xib in Resources */,
 				0C136B9A2228988C00680619 /* aquarius.json in Resources */,
 				0C2D7A4522243C1800EBFDEC /* CellZodiac.xib in Resources */,
 				0CA9EF5A221C3A320053CDBA /* Main.storyboard in Resources */,
 				0C9A897A222BDA40002A871D /* CellCompetition.xib in Resources */,
+				0C9D97B1223936CF005FBAB2 /* AnalysisVC.xib in Resources */,
 				0CBB672222202988009E0733 /* TabbarView.xib in Resources */,
+				0CDE710E223E29E600B41601 /* CellMark.xib in Resources */,
 				0CBB671F22202988009E0733 /* InputView.xib in Resources */,
 				0C2D7A3722241A9B00EBFDEC /* TodayVC.xib in Resources */,
 				0CBB675F222029DC009E0733 /* HomeVC.xib in Resources */,
+				0C681B69223AB35B00374A4B /* ScanningVC.xib in Resources */,
 				0CBB6767222029DC009E0733 /* Privacy_PolicyVC.xib in Resources */,
+				0C681B64223AA70C00374A4B /* BeautyCompetitionVC.xib in Resources */,
 				0CB7FB25222C8A6400615D8D /* CameraView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -689,24 +781,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		98AB5BD30588284CB32608FC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HoroScopeUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C9787AB6B3388A4979E4207E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -725,40 +799,22 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D861EC834C772E40A17FD719 /* [CP] Embed Pods Frameworks */ = {
+		D03893182F09305421C34651 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-HoroScope/Pods-HoroScope-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${SRCROOT}/Pods/Target Support Files/Pods-HoroScope/Pods-HoroScope-resources.sh",
+				"${PODS_ROOT}/RSKImageCropper/RSKImageCropper/RSKImageCropperStrings.bundle",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RSKImageCropperStrings.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HoroScope/Pods-HoroScope-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EB75DECEDC316631663611DE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HoroScopeTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HoroScope/Pods-HoroScope-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -770,14 +826,21 @@
 			files = (
 				0CBB672922202988009E0733 /* KHTextField.swift in Sources */,
 				0C9A8979222BDA40002A871D /* CellCompetition.swift in Sources */,
+				0CDE7117223E895700B41601 /* BeautyCompetitionVC.swift in Sources */,
+				0CDE7111223E2B5B00B41601 /* MarkObj.swift in Sources */,
 				0CBB6763222029DC009E0733 /* SettingVC.swift in Sources */,
+				0CDE70FF223CFE6A00B41601 /* BaseVC.swift in Sources */,
 				0CA9EF57221C3A320053CDBA /* ViewController.swift in Sources */,
 				0CBB673122202988009E0733 /* CameraHelper.swift in Sources */,
 				0CBB673822202988009E0733 /* Device.swift in Sources */,
+				0CDE7103223E212600B41601 /* BeautyContestVC.swift in Sources */,
 				0CBB672022202988009E0733 /* InputView.swift in Sources */,
+				0CDE7114223E7C4900B41601 /* AnalysisScanVC.swift in Sources */,
 				0CBB673522202988009E0733 /* GCDHelpers.swift in Sources */,
+				0C9D97B0223936CF005FBAB2 /* AnalysisVC.swift in Sources */,
 				0CBB672F22202988009E0733 /* TimerHelper.swift in Sources */,
 				0CBB672A22202988009E0733 /* KHButton.swift in Sources */,
+				0C681B68223AB35B00374A4B /* ScanningVC.swift in Sources */,
 				0CBB673422202988009E0733 /* Define.swift in Sources */,
 				0CBB672522202988009E0733 /* ToolBarView.swift in Sources */,
 				0CBB672C22202988009E0733 /* KHImageView.swift in Sources */,
@@ -790,7 +853,6 @@
 				0C2D7A322224174700EBFDEC /* GLViewPagerViewController.swift in Sources */,
 				0CBB672E22202988009E0733 /* KHLabel.swift in Sources */,
 				0CBB673022202988009E0733 /* AlertHelper.swift in Sources */,
-				0CBB677822202B92009E0733 /* CompetitionVC.swift in Sources */,
 				0CA9EF55221C3A320053CDBA /* AppDelegate.swift in Sources */,
 				0CBB671C22202988009E0733 /* ButtonView.swift in Sources */,
 				0CBB673622202988009E0733 /* SaveHelper.swift in Sources */,
@@ -802,8 +864,10 @@
 				0CBB671922202988009E0733 /* MagicView.swift in Sources */,
 				0CBB673322202988009E0733 /* Extension.swift in Sources */,
 				0CBB671E22202988009E0733 /* NavigationView.swift in Sources */,
+				0C681B60223AA6E500374A4B /* BeautyVC.swift in Sources */,
 				0CA9EF5D221C3A320053CDBA /* HoroScope.xcdatamodeld in Sources */,
 				0CBB672B22202988009E0733 /* KHView.swift in Sources */,
+				0CDE710D223E29E600B41601 /* CellMark.swift in Sources */,
 				0CBB672322202988009E0733 /* TextFieldView.swift in Sources */,
 				0CBB672D22202988009E0733 /* KHTextView.swift in Sources */,
 				0CBB672722202988009E0733 /* SearchView.swift in Sources */,
@@ -983,7 +1047,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y379B58WJ3;
+				DEVELOPMENT_TEAM = 4FB6S889YR;
 				INFOPLIST_FILE = HoroScope/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -991,6 +1055,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Luy.HoroScope;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HoroScope/HoroScope-Bridging_Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1002,7 +1067,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y379B58WJ3;
+				DEVELOPMENT_TEAM = 4FB6S889YR;
 				INFOPLIST_FILE = HoroScope/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1010,6 +1075,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Luy.HoroScope;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HoroScope/HoroScope-Bridging_Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1017,7 +1083,6 @@
 		};
 		0CA9EF80221C3A330053CDBA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0A00B3D4F7215EE9234A8BF /* Pods-HoroScopeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1039,7 +1104,6 @@
 		};
 		0CA9EF81221C3A330053CDBA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95370E0BC4118365D7FF328F /* Pods-HoroScopeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1061,7 +1125,6 @@
 		};
 		0CA9EF83221C3A330053CDBA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BF51A343C47E61445B21A35 /* Pods-HoroScopeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1082,7 +1145,6 @@
 		};
 		0CA9EF84221C3A330053CDBA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D354C59BFD06965025DABB84 /* Pods-HoroScopeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

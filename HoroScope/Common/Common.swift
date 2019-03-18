@@ -17,7 +17,7 @@ let TAppDelegate = UIApplication.shared.delegate as! AppDelegate
 class Common {
     static func showAlert(_ strMessage: String){
         self.dismissAllAlert()
-        let alert = AlertController(title: "app_name".localized, message: strMessage.localized, preferredStyle: UIAlertController.Style.alert)
+        let alert = AlertController(title: "Horoscope".localized, message: strMessage.localized, preferredStyle: UIAlertController.Style.alert)
         let okAction: UIAlertAction = UIAlertAction(title: "txt_ok".localized, style: .cancel) { action -> Void in
             
         }
@@ -92,10 +92,16 @@ class Common {
     class func gradient(_ firstColor: UIColor = UIColor.init("ffa45f", alpha: 1.0), _ secondColor: UIColor = UIColor.init("ff8769", alpha: 1.0), view: UIView){
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = view.bounds
-        gradientLayer.colors = [secondColor.cgColor, firstColor.cgColor]
+        gradientLayer.colors = [firstColor.cgColor, secondColor.cgColor]
         gradientLayer.locations = [0.0, 1.0]
-        gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.0)
-        gradientLayer.endPoint = CGPoint(x: 0.5, y: 1.0)
+        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
+        gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.0)
         view.layer.insertSublayer(gradientLayer, at: 0)
+    }
+}
+
+extension NSLayoutConstraint {
+    func constraintWithMultiplier(_ multiplier: CGFloat) -> NSLayoutConstraint {
+        return NSLayoutConstraint(item: self.firstItem, attribute: self.firstAttribute, relatedBy: self.relation, toItem: self.secondItem, attribute: self.secondAttribute, multiplier: multiplier, constant: self.constant)
     }
 }

@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CameraView" customModule="HoroScope" customModuleProvider="target">
             <connections>
+                <outlet property="img" destination="dc0-OA-fXf" id="WPi-9p-vYE"/>
                 <outlet property="viewCamera" destination="QIY-Jg-wWF" id="LEW-ta-qp4"/>
             </connections>
         </placeholder>
@@ -23,6 +24,12 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="656"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dc0-OA-fXf">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="sau-sc-0VW"/>
+                    </constraints>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FzY-R9-ER3">
                     <rect key="frame" x="169" y="586" width="76" height="50"/>
                     <color key="backgroundColor" red="1" green="0.55402815419999996" blue="0.41727157310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -38,11 +45,14 @@
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="QIY-Jg-wWF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2AE-HH-dmp"/>
+                <constraint firstItem="dc0-OA-fXf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="65T-Cw-8Mg"/>
+                <constraint firstAttribute="trailing" secondItem="dc0-OA-fXf" secondAttribute="trailing" id="Ud7-6N-l3n"/>
                 <constraint firstAttribute="bottom" secondItem="QIY-Jg-wWF" secondAttribute="bottom" id="feN-TA-Q8O"/>
                 <constraint firstAttribute="trailing" secondItem="QIY-Jg-wWF" secondAttribute="trailing" id="ftE-ec-BSl"/>
                 <constraint firstItem="FzY-R9-ER3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gPl-ZH-Fh4"/>
                 <constraint firstAttribute="bottom" secondItem="FzY-R9-ER3" secondAttribute="bottom" constant="20" id="jkY-ov-Bjt"/>
                 <constraint firstItem="QIY-Jg-wWF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rf6-tf-rJN"/>
+                <constraint firstItem="dc0-OA-fXf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="veD-L4-Lzs"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>

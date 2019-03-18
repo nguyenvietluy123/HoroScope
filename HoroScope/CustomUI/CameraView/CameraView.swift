@@ -12,6 +12,37 @@ import UIKit
 
 class CameraView: UIView {
     @IBOutlet weak var viewCamera: UIView!
+    @IBOutlet weak var img: UIImageView!
+    
+    var photoOutput: AVCapturePhotoOutput = {
+        let p = AVCapturePhotoOutput()
+        p.setPreparedPhotoSettingsArray([AVCapturePhotoSettings(format: [AVVideoCodecKey : AVVideoCodecType.jpeg])], completionHandler: nil)
+        return p
+    }()
+    
+    lazy var videoDataOutput: AVCaptureVideoDataOutput = {
+        let v = AVCaptureVideoDataOutput()
+        v.alwaysDiscardsLateVideoFrames = true
+        v.setSampleBufferDelegate(self, queue: videoDataOutputQueue)
+        v.connection(with: .video)?.isEnabled = true
+        return v
+    }()
+    
+    let videoDataOutputQueue: DispatchQueue = DispatchQueue(label: "JKVideoDataOutputQueue")
+    
+    lazy var previewLayer: AVCaptureVideoPreviewLayer = {
+        let l = AVCaptureVideoPreviewLayer(session: session)
+        l.videoGravity = .resizeAspectFill
+        return l
+    }()
+    
+    let captureDevice: AVCaptureDevice? = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: AVCaptureDevice.Position.front)
+    
+    var session: AVCaptureSession = {
+        let s = AVCaptureSession()
+        s.sessionPreset = .hd1280x720
+        return s
+    }()
     
     @IBInspectable var cornerRadius: CGFloat = 0.0 {
         didSet {
@@ -43,42 +74,19 @@ class CameraView: UIView {
         commonInit()
     }
     
-    private func commonInit() {
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        previewLayer.frame = bounds
+    }
+}
+
+extension CameraView {
+    func commonInit() {
         contentMode = .scaleAspectFill
         beginSession()
     }
     
-    private lazy var photoOutput: AVCapturePhotoOutput = {
-        let p = AVCapturePhotoOutput()
-        p.setPreparedPhotoSettingsArray([AVCapturePhotoSettings(format: [AVVideoCodecKey : AVVideoCodecType.jpeg])], completionHandler: nil)
-        return p
-    }()
-    
-    private lazy var videoDataOutput: AVCaptureVideoDataOutput = {
-        let v = AVCaptureVideoDataOutput()
-        v.alwaysDiscardsLateVideoFrames = true
-        v.setSampleBufferDelegate(self, queue: videoDataOutputQueue)
-        v.connection(with: .video)?.isEnabled = true
-        return v
-    }()
-    
-    private let videoDataOutputQueue: DispatchQueue = DispatchQueue(label: "JKVideoDataOutputQueue")
-    
-    private lazy var previewLayer: AVCaptureVideoPreviewLayer = {
-        let l = AVCaptureVideoPreviewLayer(session: session)
-        l.videoGravity = .resizeAspectFill
-        return l
-    }()
-    
-    private let captureDevice: AVCaptureDevice? = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front)
-    
-    private lazy var session: AVCaptureSession = {
-        let s = AVCaptureSession()
-        s.sessionPreset = .hd1280x720
-        return s
-    }()
-    
-    private func beginSession() {
+    func beginSession() {
         do {
             guard let captureDevice = captureDevice else {
                 fatalError("Camera doesn't work on the simulator! You have to test this on an actual device!")
@@ -87,7 +95,7 @@ class CameraView: UIView {
             if session.canAddInput(deviceInput) {
                 session.addInput(deviceInput)
             }
-
+            
             if session.canAddOutput(photoOutput) {
                 session.addOutput(photoOutput)
             }
@@ -129,17 +137,52 @@ class CameraView: UIView {
         self.viewCamera.addSubview(whiteView)
     }
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        previewLayer.frame = bounds
-    }
 }
 
 extension CameraView: AVCapturePhotoCaptureDelegate {
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
         if let imageData = photo.fileDataRepresentation() {
             print(imageData)
+            let imageView = UIImageView()
+            imageView.frame = self.bounds
+            imageView.image = UIImage(data: imageData) ?? UIImage()
+            let cropImage = cropToBounds(image: imageView.image!, width: Double(imageView.frame.width/2), height: Double(imageView.frame.height/2))
+            img.image = cropImage
         }
+    }
+    
+    func cropToBounds(image: UIImage, width: Double, height: Double) -> UIImage {
+        
+        let cgimage = image.cgImage!
+        let contextImage: UIImage = UIImage(cgImage: cgimage)
+        let contextSize: CGSize = contextImage.size
+        var posX: CGFloat = 0.0
+        var posY: CGFloat = 0.0
+        var cgwidth: CGFloat = CGFloat(width)
+        var cgheight: CGFloat = CGFloat(height)
+        
+        // See what size is longer and create the center off of that
+        if contextSize.width > contextSize.height {
+            posX = ((contextSize.width - contextSize.height) / 2)
+            posY = 0
+            cgwidth = contextSize.height
+            cgheight = contextSize.height
+        } else {
+            posX = 0
+            posY = ((contextSize.height - contextSize.width) / 2)
+            cgwidth = contextSize.width
+            cgheight = contextSize.width
+        }
+        
+        let rect: CGRect = CGRect(x: posX, y: posY, width: cgwidth, height: cgheight)
+        
+        // Create bitmap image from context using the rect
+        let imageRef: CGImage = cgimage.cropping(to: rect)!
+        
+        // Create a new image based on the imageRef and rotate back to the original orientation
+        let image: UIImage = UIImage(cgImage: imageRef, scale: image.scale, orientation: image.imageOrientation)
+        
+        return image
     }
 }
 

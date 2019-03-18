@@ -64,7 +64,7 @@ enum ZodiacDate: String {
 class NotificationCenterKey {
     static let SelectedMenu = "SelectedMenu"
     static let DismissAllAlert = "DismissAllAlert"
-    static let ReloadMap = "ReloadMap"
+    static let CantDetectFace = "CantDetectFace"
 }
 
 class Key {

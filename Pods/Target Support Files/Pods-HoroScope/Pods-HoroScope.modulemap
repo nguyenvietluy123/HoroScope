@@ -1,4 +1,4 @@
-framework module Pods_HoroScope {
+module Pods_HoroScope {
   umbrella header "Pods-HoroScope-umbrella.h"
 
   export *

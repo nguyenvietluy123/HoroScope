@@ -7,168 +7,177 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E934630E2C65AA084033F1B67F122E7 /* Pods-HoroScopeUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1924F22BFBC3AC9B2E837CBDC2896FBE /* Pods-HoroScopeUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21EE6FB5E13F319664AA24426AED89B1 /* Pods-HoroScope-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4A92B4FBAAD0ABCDB66EA361AF3136 /* Pods-HoroScope-dummy.m */; };
-		2D0A4BBDC8F095D451567E6A55D3B1A9 /* Pods-HoroScope-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 704DFE7EE335A78061F031DDDB97FBFE /* Pods-HoroScope-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3FE30B6D67C4BA89267BCFD310934AF2 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2545A43F22D33A594021F5DC0CEB3AD /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		781F5C7554813264FBE4F5F5C01DF39F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		A3DDBEB56AC8EBC48FE0BA3625D16A8E /* Pods-HoroScopeUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8E011A37104871B384BE8963B01518 /* Pods-HoroScopeUITests-dummy.m */; };
-		A9DD4A49AE5C112B8B40D3692223FCCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		C0FB9CEF9F27E6C4374F7701466843AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		D1EF044E056D37B63A2E2063EE170370 /* Pods-HoroScopeTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AB0F74D821FC1F6C35B12B7E10465815 /* Pods-HoroScopeTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E4C38A31A1BCBB53463F3442BFC9AE16 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 519F97488515DDE14F549C4A2F8CC247 /* SwiftyJSON-dummy.m */; };
-		E55D7F7394A6E0A43A8299536E1DB016 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */; };
-		E8FEB12EBD079A8C9E33C14997503B2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		F66BE6205A37A9A371A66E04EF659D7E /* Pods-HoroScopeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DF04E3BEAA511066606DE8810D2DDF /* Pods-HoroScopeTests-dummy.m */; };
+		05641EB1973F9CDB3EDC525BB9FE1E14 /* RSKImageCropViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C92D866CEF294282B1E3701AF9D7DFE2 /* RSKImageCropViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0A8EE96392493C33F85EF727801941D7 /* RSKImageCropper.h in Headers */ = {isa = PBXBuildFile; fileRef = AA04D178E7706F8DC37B6741A41A9558 /* RSKImageCropper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0B1B7ADC7FD5561A223E9CB084D25B56 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA08EB53EA5345FD7140B51205E8D62 /* QuartzCore.framework */; };
+		0FA10465664EBE8492F33CA26F165FA0 /* UIImage+RSKImageCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C14FE6E5732E005278EA50835BC503 /* UIImage+RSKImageCropper.m */; };
+		151819EB65953D0048C8160A60D6C4AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2DF18D0B2AAE7E9717A95D9C69F7525 /* UIKit.framework */; };
+		1AEC52B0C80F334CBCF3E971C7F66EA4 /* RSKImageCropper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D550E763FFECBCB5F55746C6D2D6F63 /* RSKImageCropper-dummy.m */; };
+		35A9D83399BF5A8B08A34FAECD811A8F /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B98F330F7CBF03B3462151BDB224717 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		372751227628DD9E891806F3F9B7B9D4 /* RSKImageScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = F3C321A1FA37507FA48A7A274DBB62D8 /* RSKImageScrollView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3A0046C770771D0C4A534BCB992C4CFB /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B62195754BEA5C0CEC102FA664064 /* SwiftyJSON.swift */; };
+		402D923B889C5B358E35B6D04B892137 /* RSKImageCropViewController+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CFD3F60F595726527A822E1DEC15E17 /* RSKImageCropViewController+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5173D66CF40553D145CE97DA6BFFF237 /* RSKTouchView.h in Headers */ = {isa = PBXBuildFile; fileRef = FFA4E3A7A2749995E8FA1C9F18532E48 /* RSKTouchView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		53FC3A4415516A57C845CA5D702A65F0 /* UIApplication+RSKImageCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F23BC35D3DD19D8C96C6A7B8927E57 /* UIApplication+RSKImageCropper.m */; };
+		5BE0435180F3E9F6DE4F0656EA6CC091 /* Pods-HoroScope-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1171C2DBA9D80957F4DB2793C84CCEE /* Pods-HoroScope-dummy.m */; };
+		629B4E5ED87E72EA71FC7C798181C10F /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04881D3960FED4165F912C87ED6B202C /* SwiftyJSON-dummy.m */; };
+		6E01FC4D2DE6B6CED33BD288C53B5D75 /* RSKTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B5D0A4DA08B260AB78DA238B635C0FC /* RSKTouchView.m */; };
+		773BC7F8EA809BE78F20827A9C92C695 /* RSKImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDE814ABB0B3480BA16A86C3D627664 /* RSKImageScrollView.m */; };
+		A494359CCDEF0CB8EA0F7A6292EF9118 /* RSKInternalUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 66AE89C74938C4A7109C7F1F8246F472 /* RSKInternalUtility.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B7C4BD32FF9AB107D71F8A2B649473B4 /* RSKImageCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB22C5B3E83816327D24779ABE2FC9C7 /* RSKImageCropViewController.m */; };
+		C2138084D7B8E2A1958391051E5E98E9 /* UIApplication+RSKImageCropper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A35B158C4FEC2E962F4A94FCA618AA4 /* UIApplication+RSKImageCropper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C6F4370157A9F3D59C90A0CEA60DE4D4 /* Pods-HoroScope-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B3A167152F70A18A2DF85DEE4F680CDA /* Pods-HoroScope-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D0CF83D8CFE82840FA762A1CD5EBB0C4 /* CGGeometry+RSKImageCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF16C130AB32E9117CAA76A8D0E25E5 /* CGGeometry+RSKImageCropper.m */; };
+		D2AD19FD69D79084DDBDFC0E0687B6DD /* CGGeometry+RSKImageCropper.h in Headers */ = {isa = PBXBuildFile; fileRef = 983356A10B5E8402078C676BE4160C1F /* CGGeometry+RSKImageCropper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E28917AC8554764C2BA7536496A41866 /* RSKInternalUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6388F8DF3D682AE2D8CF509642B48BD0 /* RSKInternalUtility.m */; };
+		FE9F3207691D954430780A3ACA081877 /* UIImage+RSKImageCropper.h in Headers */ = {isa = PBXBuildFile; fileRef = 27493B501044A19B2936011E5422634F /* UIImage+RSKImageCropper.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		38BBC04271CBADB000861EC803AFB4A3 /* PBXContainerItemProxy */ = {
+		634EF9665A1AF658F361399A7F255DA9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6FD521D2BE861B4917EB359204A0AE3E;
-			remoteInfo = "Pods-HoroScope";
+			remoteGlobalIDString = 87E159564B8FBB02059C3C0D4130317F;
+			remoteInfo = RSKImageCropper;
 		};
-		68DD0F34FF56E66ACD4F68100562EEBB /* PBXContainerItemProxy */ = {
+		89A837D97C11EE3A9BB2F50C72B47DE2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C7831814707A58C7EFA9FD2BE3F7BE4D;
+			remoteGlobalIDString = 1BC3B4C95B56ECEAE7ECD1824EE52E66;
 			remoteInfo = SwiftyJSON;
-		};
-		7F3CF7AC76B13C773EB8C90F810F2D83 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6FD521D2BE861B4917EB359204A0AE3E;
-			remoteInfo = "Pods-HoroScope";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		039A6E9C5F8C470EAB539D85721FE43A /* Pods-HoroScopeUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HoroScopeUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		09A63C1965CCA195542DA61167C0F7FC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A8D2C9797600DAFE46822A8D3CA101D /* Pods-HoroScopeUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HoroScopeUITests-resources.sh"; sourceTree = "<group>"; };
-		0CCE4ED113592D2A2712086C2D031516 /* Pods-HoroScopeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HoroScopeTests.release.xcconfig"; sourceTree = "<group>"; };
-		1466912116CCB7F57C76F22A0127A898 /* Pods-HoroScope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HoroScope.debug.xcconfig"; sourceTree = "<group>"; };
-		1924F22BFBC3AC9B2E837CBDC2896FBE /* Pods-HoroScopeUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HoroScopeUITests-umbrella.h"; sourceTree = "<group>"; };
-		29A5989C41D0B0F8203E0219D848FF81 /* Pods-HoroScopeTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HoroScopeTests-frameworks.sh"; sourceTree = "<group>"; };
-		2E02EF0C317FB94007469574244B9F3D /* Pods-HoroScopeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HoroScopeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		339723E10E2456C1B2BEDDEF8B1B58B3 /* Pods-HoroScopeUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HoroScopeUITests-frameworks.sh"; sourceTree = "<group>"; };
-		39E3BFFE43D1A02A58551AD654479349 /* Pods-HoroScopeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HoroScopeTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		402134DF8CE95DC4C54EE410AAF219D1 /* Pods-HoroScope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HoroScope.release.xcconfig"; sourceTree = "<group>"; };
-		519F97488515DDE14F549C4A2F8CC247 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6297F6DA2F8CE36FF59405BB1232865B /* Pods-HoroScope-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HoroScope-resources.sh"; sourceTree = "<group>"; };
-		704DFE7EE335A78061F031DDDB97FBFE /* Pods-HoroScope-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HoroScope-umbrella.h"; sourceTree = "<group>"; };
-		71E70888226C41D41DE843697656E1F6 /* Pods-HoroScopeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HoroScopeUITests.release.xcconfig"; sourceTree = "<group>"; };
-		72B4C9F83E3A702138C8C043DE792C4F /* Pods-HoroScopeUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HoroScopeUITests.modulemap"; sourceTree = "<group>"; };
-		72DF04E3BEAA511066606DE8810D2DDF /* Pods-HoroScopeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HoroScopeTests-dummy.m"; sourceTree = "<group>"; };
-		7E923F424D44140A834F56F5DCA444D3 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F4A92B4FBAAD0ABCDB66EA361AF3136 /* Pods-HoroScope-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HoroScope-dummy.m"; sourceTree = "<group>"; };
-		83B82F63FAD4271C84265BEC3F20EEFF /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
-		8CA559A0B50A0E5B432677B24CD191FB /* Pods-HoroScope.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HoroScope.modulemap"; sourceTree = "<group>"; };
-		8DFC035CEA4252CC8534FFBA04DE1830 /* Pods-HoroScope-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HoroScope-acknowledgements.plist"; sourceTree = "<group>"; };
+		00E1E2B284DEEF9AB1C1BBF514DA5671 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = SwiftyJSON.modulemap; path = ../../Headers/Public/SwiftyJSON/SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		04881D3960FED4165F912C87ED6B202C /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		0B5D0A4DA08B260AB78DA238B635C0FC /* RSKTouchView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSKTouchView.m; path = RSKImageCropper/RSKTouchView.m; sourceTree = "<group>"; };
+		0DC05A22A84CB4DC9272734AC4301E8B /* libSwiftyJSON.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSwiftyJSON.a; path = libSwiftyJSON.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		13F23BC35D3DD19D8C96C6A7B8927E57 /* UIApplication+RSKImageCropper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+RSKImageCropper.m"; path = "RSKImageCropper/UIApplication+RSKImageCropper.m"; sourceTree = "<group>"; };
+		1432DB6294D24F589AD9F747CAB661A4 /* libRSKImageCropper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRSKImageCropper.a; path = libRSKImageCropper.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AF16C130AB32E9117CAA76A8D0E25E5 /* CGGeometry+RSKImageCropper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CGGeometry+RSKImageCropper.m"; path = "RSKImageCropper/CGGeometry+RSKImageCropper.m"; sourceTree = "<group>"; };
+		1D550E763FFECBCB5F55746C6D2D6F63 /* RSKImageCropper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSKImageCropper-dummy.m"; sourceTree = "<group>"; };
+		27493B501044A19B2936011E5422634F /* UIImage+RSKImageCropper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+RSKImageCropper.h"; path = "RSKImageCropper/UIImage+RSKImageCropper.h"; sourceTree = "<group>"; };
+		28C1DF59EB06A17674BFAAD5BA065DB4 /* Pods-HoroScope-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HoroScope-frameworks.sh"; sourceTree = "<group>"; };
+		2954C6EC4E3838FC0B12189250B6B075 /* libPods-HoroScope.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-HoroScope.a"; path = "libPods-HoroScope.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A35B158C4FEC2E962F4A94FCA618AA4 /* UIApplication+RSKImageCropper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+RSKImageCropper.h"; path = "RSKImageCropper/UIApplication+RSKImageCropper.h"; sourceTree = "<group>"; };
+		3B98F330F7CBF03B3462151BDB224717 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SwiftyJSON-umbrella.h"; path = "../../Headers/Public/SwiftyJSON/SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		3CFD3F60F595726527A822E1DEC15E17 /* RSKImageCropViewController+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RSKImageCropViewController+Protected.h"; path = "RSKImageCropper/RSKImageCropViewController+Protected.h"; sourceTree = "<group>"; };
+		453C18D90711BCA96FDD9211224A71B1 /* RSKImageCropperStrings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = RSKImageCropperStrings.bundle; path = RSKImageCropper/RSKImageCropperStrings.bundle; sourceTree = "<group>"; };
+		51EAF8FD7456964A1EAF7C67BC9F4732 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		6388F8DF3D682AE2D8CF509642B48BD0 /* RSKInternalUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSKInternalUtility.m; path = RSKImageCropper/RSKInternalUtility.m; sourceTree = "<group>"; };
+		66AE89C74938C4A7109C7F1F8246F472 /* RSKInternalUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSKInternalUtility.h; path = RSKImageCropper/RSKInternalUtility.h; sourceTree = "<group>"; };
+		6EDE814ABB0B3480BA16A86C3D627664 /* RSKImageScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSKImageScrollView.m; path = RSKImageCropper/RSKImageScrollView.m; sourceTree = "<group>"; };
+		72560098E01A68B616254D68484AD99B /* Pods-HoroScope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HoroScope.debug.xcconfig"; sourceTree = "<group>"; };
+		8526C93695D3393F0041246FF907490F /* Pods-HoroScope-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HoroScope-acknowledgements.plist"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9565B53CB826BC62B9248676C7AB7979 /* Pods-HoroScopeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HoroScopeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		AA1776A45C717D72EB480EE422B16F07 /* Pods_HoroScopeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HoroScopeTests.framework; path = "Pods-HoroScopeTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB0F74D821FC1F6C35B12B7E10465815 /* Pods-HoroScopeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HoroScopeTests-umbrella.h"; sourceTree = "<group>"; };
-		B08D9A37880DBD4BB5C2AE1ECDB6FD45 /* Pods-HoroScopeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HoroScopeTests.modulemap"; sourceTree = "<group>"; };
-		B4072C212F0BC9EEDA0746693DFCC6C6 /* Pods-HoroScopeUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HoroScopeUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B7E6EE79CABEF63B4EF2DB21010C164D /* Pods-HoroScopeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HoroScopeUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		BC9104B2FE92A7F4B12D2B6B01FE46B9 /* Pods_HoroScopeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HoroScopeUITests.framework; path = "Pods-HoroScopeUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		C60C20A812BEE1B94C13B1CD6C024947 /* Pods-HoroScope-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HoroScope-frameworks.sh"; sourceTree = "<group>"; };
-		C71F1A6C2A7E22D7D66D191CB3ADFD3F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D04BC2C8C4D4630E7FE8CA1C124FEDFB /* Pods-HoroScope-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HoroScope-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D21EF79A0DE4EDFC757EE852FE857C73 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		D2545A43F22D33A594021F5DC0CEB3AD /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		DF405F3AB1D088C0B4BEDEFE92E96C46 /* Pods-HoroScopeTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HoroScopeTests-resources.sh"; sourceTree = "<group>"; };
-		E45022699EDA438A046AD43BC3926B01 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
-		ECEA92E182BA77F227E4165B4260E0FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE7619D0D8A0C329AEDFBC5D279B1214 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE8E011A37104871B384BE8963B01518 /* Pods-HoroScopeUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HoroScopeUITests-dummy.m"; sourceTree = "<group>"; };
-		FC17285E1A87A528F344D5EFBE41F411 /* Pods_HoroScope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HoroScope.framework; path = "Pods-HoroScope.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		983356A10B5E8402078C676BE4160C1F /* CGGeometry+RSKImageCropper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CGGeometry+RSKImageCropper.h"; path = "RSKImageCropper/CGGeometry+RSKImageCropper.h"; sourceTree = "<group>"; };
+		A1171C2DBA9D80957F4DB2793C84CCEE /* Pods-HoroScope-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HoroScope-dummy.m"; sourceTree = "<group>"; };
+		A2DF18D0B2AAE7E9717A95D9C69F7525 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		A6944F5A64FFBE12BEB970B33A980FA6 /* Pods-HoroScope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HoroScope.release.xcconfig"; sourceTree = "<group>"; };
+		AA04D178E7706F8DC37B6741A41A9558 /* RSKImageCropper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSKImageCropper.h; path = RSKImageCropper/RSKImageCropper.h; sourceTree = "<group>"; };
+		AAF5784BF63CD465FCF95BDCA65FDD6F /* Pods-HoroScope-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HoroScope-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ACA08EB53EA5345FD7140B51205E8D62 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		AFE979EA3C8C0E50699EA5CDDE06893D /* Pods-HoroScope.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HoroScope.modulemap"; sourceTree = "<group>"; };
+		B3A167152F70A18A2DF85DEE4F680CDA /* Pods-HoroScope-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HoroScope-umbrella.h"; sourceTree = "<group>"; };
+		B73F3E5102BA528E8AF6E63B9F464880 /* RSKImageCropper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSKImageCropper-prefix.pch"; sourceTree = "<group>"; };
+		C5377A20351975EE287222EDBF2CCBE4 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		C838A53B715AA3AFC53699B2F94DC61B /* RSKImageCropper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSKImageCropper.xcconfig; sourceTree = "<group>"; };
+		C8C14FE6E5732E005278EA50835BC503 /* UIImage+RSKImageCropper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+RSKImageCropper.m"; path = "RSKImageCropper/UIImage+RSKImageCropper.m"; sourceTree = "<group>"; };
+		C92D866CEF294282B1E3701AF9D7DFE2 /* RSKImageCropViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSKImageCropViewController.h; path = RSKImageCropper/RSKImageCropViewController.h; sourceTree = "<group>"; };
+		CE4B62195754BEA5C0CEC102FA664064 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		CFCD9EA4CC39176D3BCDF63E4E436C0D /* Pods-HoroScope-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HoroScope-resources.sh"; sourceTree = "<group>"; };
+		DB22C5B3E83816327D24779ABE2FC9C7 /* RSKImageCropViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSKImageCropViewController.m; path = RSKImageCropper/RSKImageCropViewController.m; sourceTree = "<group>"; };
+		F3C321A1FA37507FA48A7A274DBB62D8 /* RSKImageScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSKImageScrollView.h; path = RSKImageCropper/RSKImageScrollView.h; sourceTree = "<group>"; };
+		FFA4E3A7A2749995E8FA1C9F18532E48 /* RSKTouchView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSKTouchView.h; path = RSKImageCropper/RSKTouchView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		877DCA643BE5EF6E1A0D4748323B1208 /* Frameworks */ = {
+		1B9ABEB8B6611952D34EA9190BABA68A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9DD4A49AE5C112B8B40D3692223FCCD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A79B82B7730D73472AA06F2F2FB9123F /* Frameworks */ = {
+		3B3C1D7EA944F81C913F62346435D9DE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0FB9CEF9F27E6C4374F7701466843AB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C700F93E291D74D8C9749FC7DA38D3B1 /* Frameworks */ = {
+		CF1FCBB63C8F4E38501A1CC97C6C3696 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				781F5C7554813264FBE4F5F5C01DF39F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EB675C5DC84CAFBF9E88A884402E4AA3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E8FEB12EBD079A8C9E33C14997503B2B /* Foundation.framework in Frameworks */,
+				0B1B7ADC7FD5561A223E9CB084D25B56 /* QuartzCore.framework in Frameworks */,
+				151819EB65953D0048C8160A60D6C4AA /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		48517790E64CDA0BDA25BF44F0E8B0D8 /* Pods-HoroScopeTests */ = {
+		16869B35A5E756BC0CC3A8A6BC1F26A9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EE7619D0D8A0C329AEDFBC5D279B1214 /* Info.plist */,
-				B08D9A37880DBD4BB5C2AE1ECDB6FD45 /* Pods-HoroScopeTests.modulemap */,
-				9565B53CB826BC62B9248676C7AB7979 /* Pods-HoroScopeTests-acknowledgements.markdown */,
-				39E3BFFE43D1A02A58551AD654479349 /* Pods-HoroScopeTests-acknowledgements.plist */,
-				72DF04E3BEAA511066606DE8810D2DDF /* Pods-HoroScopeTests-dummy.m */,
-				29A5989C41D0B0F8203E0219D848FF81 /* Pods-HoroScopeTests-frameworks.sh */,
-				DF405F3AB1D088C0B4BEDEFE92E96C46 /* Pods-HoroScopeTests-resources.sh */,
-				AB0F74D821FC1F6C35B12B7E10465815 /* Pods-HoroScopeTests-umbrella.h */,
-				2E02EF0C317FB94007469574244B9F3D /* Pods-HoroScopeTests.debug.xcconfig */,
-				0CCE4ED113592D2A2712086C2D031516 /* Pods-HoroScopeTests.release.xcconfig */,
+				2954C6EC4E3838FC0B12189250B6B075 /* libPods-HoroScope.a */,
+				1432DB6294D24F589AD9F747CAB661A4 /* libRSKImageCropper.a */,
+				0DC05A22A84CB4DC9272734AC4301E8B /* libSwiftyJSON.a */,
 			);
-			name = "Pods-HoroScopeTests";
-			path = "Target Support Files/Pods-HoroScopeTests";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		4AC12B951439F7687D1C31687F9061FF /* Targets Support Files */ = {
+		16E70873D7359D233C907624F0E1CC3E /* Pods-HoroScope */ = {
 			isa = PBXGroup;
 			children = (
-				A7AC54AD302AB248BF51D2D18150BB7D /* Pods-HoroScope */,
-				48517790E64CDA0BDA25BF44F0E8B0D8 /* Pods-HoroScopeTests */,
-				F3FA765FF114F1E09168F082321122EF /* Pods-HoroScopeUITests */,
+				AFE979EA3C8C0E50699EA5CDDE06893D /* Pods-HoroScope.modulemap */,
+				AAF5784BF63CD465FCF95BDCA65FDD6F /* Pods-HoroScope-acknowledgements.markdown */,
+				8526C93695D3393F0041246FF907490F /* Pods-HoroScope-acknowledgements.plist */,
+				A1171C2DBA9D80957F4DB2793C84CCEE /* Pods-HoroScope-dummy.m */,
+				28C1DF59EB06A17674BFAAD5BA065DB4 /* Pods-HoroScope-frameworks.sh */,
+				CFCD9EA4CC39176D3BCDF63E4E436C0D /* Pods-HoroScope-resources.sh */,
+				B3A167152F70A18A2DF85DEE4F680CDA /* Pods-HoroScope-umbrella.h */,
+				72560098E01A68B616254D68484AD99B /* Pods-HoroScope.debug.xcconfig */,
+				A6944F5A64FFBE12BEB970B33A980FA6 /* Pods-HoroScope.release.xcconfig */,
 			);
-			name = "Targets Support Files";
+			name = "Pods-HoroScope";
+			path = "Target Support Files/Pods-HoroScope";
 			sourceTree = "<group>";
 		};
-		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+		2A6036A6E2F7EA6DE135B01FAAAF1AB4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+				453C18D90711BCA96FDD9211224A71B1 /* RSKImageCropperStrings.bundle */,
 			);
-			name = iOS;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */ = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */,
-				A82FB0ABA1BB1D08F4FA0D68E7D324CB /* Support Files */,
+				984694A3022BF6DBD9AA9E4250A5B52B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DB83B1A05C8398DFCCC84D40F71DBF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD72BF08A1379E90625466A4E805CD69 /* RSKImageCropper */,
+				671394E5A5CBB6404191CD2ED60DA416 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		671394E5A5CBB6404191CD2ED60DA416 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				CE4B62195754BEA5C0CEC102FA664064 /* SwiftyJSON.swift */,
+				92B5173DC7646998A5D7A43665F956F7 /* Support Files */,
 			);
 			name = SwiftyJSON;
 			path = SwiftyJSON;
@@ -178,189 +187,126 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */,
-				AD7053BDFEDA463525A7FD5EE848A994 /* Products */,
-				4AC12B951439F7687D1C31687F9061FF /* Targets Support Files */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				5DB83B1A05C8398DFCCC84D40F71DBF7 /* Pods */,
+				16869B35A5E756BC0CC3A8A6BC1F26A9 /* Products */,
+				EACD563A444F018CBFB68D3E755B1C3C /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A7AC54AD302AB248BF51D2D18150BB7D /* Pods-HoroScope */ = {
+		92B5173DC7646998A5D7A43665F956F7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				09A63C1965CCA195542DA61167C0F7FC /* Info.plist */,
-				8CA559A0B50A0E5B432677B24CD191FB /* Pods-HoroScope.modulemap */,
-				D04BC2C8C4D4630E7FE8CA1C124FEDFB /* Pods-HoroScope-acknowledgements.markdown */,
-				8DFC035CEA4252CC8534FFBA04DE1830 /* Pods-HoroScope-acknowledgements.plist */,
-				7F4A92B4FBAAD0ABCDB66EA361AF3136 /* Pods-HoroScope-dummy.m */,
-				C60C20A812BEE1B94C13B1CD6C024947 /* Pods-HoroScope-frameworks.sh */,
-				6297F6DA2F8CE36FF59405BB1232865B /* Pods-HoroScope-resources.sh */,
-				704DFE7EE335A78061F031DDDB97FBFE /* Pods-HoroScope-umbrella.h */,
-				1466912116CCB7F57C76F22A0127A898 /* Pods-HoroScope.debug.xcconfig */,
-				402134DF8CE95DC4C54EE410AAF219D1 /* Pods-HoroScope.release.xcconfig */,
-			);
-			name = "Pods-HoroScope";
-			path = "Target Support Files/Pods-HoroScope";
-			sourceTree = "<group>";
-		};
-		A82FB0ABA1BB1D08F4FA0D68E7D324CB /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				ECEA92E182BA77F227E4165B4260E0FA /* Info.plist */,
-				E45022699EDA438A046AD43BC3926B01 /* SwiftyJSON.modulemap */,
-				83B82F63FAD4271C84265BEC3F20EEFF /* SwiftyJSON.xcconfig */,
-				519F97488515DDE14F549C4A2F8CC247 /* SwiftyJSON-dummy.m */,
-				D21EF79A0DE4EDFC757EE852FE857C73 /* SwiftyJSON-prefix.pch */,
-				D2545A43F22D33A594021F5DC0CEB3AD /* SwiftyJSON-umbrella.h */,
+				00E1E2B284DEEF9AB1C1BBF514DA5671 /* SwiftyJSON.modulemap */,
+				51EAF8FD7456964A1EAF7C67BC9F4732 /* SwiftyJSON.xcconfig */,
+				04881D3960FED4165F912C87ED6B202C /* SwiftyJSON-dummy.m */,
+				C5377A20351975EE287222EDBF2CCBE4 /* SwiftyJSON-prefix.pch */,
+				3B98F330F7CBF03B3462151BDB224717 /* SwiftyJSON-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftyJSON";
 			sourceTree = "<group>";
 		};
-		AD7053BDFEDA463525A7FD5EE848A994 /* Products */ = {
+		984694A3022BF6DBD9AA9E4250A5B52B /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				FC17285E1A87A528F344D5EFBE41F411 /* Pods_HoroScope.framework */,
-				AA1776A45C717D72EB480EE422B16F07 /* Pods_HoroScopeTests.framework */,
-				BC9104B2FE92A7F4B12D2B6B01FE46B9 /* Pods_HoroScopeUITests.framework */,
-				7E923F424D44140A834F56F5DCA444D3 /* SwiftyJSON.framework */,
+				ACA08EB53EA5345FD7140B51205E8D62 /* QuartzCore.framework */,
+				A2DF18D0B2AAE7E9717A95D9C69F7525 /* UIKit.framework */,
 			);
-			name = Products;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		AD72BF08A1379E90625466A4E805CD69 /* RSKImageCropper */ = {
 			isa = PBXGroup;
 			children = (
-				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+				983356A10B5E8402078C676BE4160C1F /* CGGeometry+RSKImageCropper.h */,
+				1AF16C130AB32E9117CAA76A8D0E25E5 /* CGGeometry+RSKImageCropper.m */,
+				AA04D178E7706F8DC37B6741A41A9558 /* RSKImageCropper.h */,
+				C92D866CEF294282B1E3701AF9D7DFE2 /* RSKImageCropViewController.h */,
+				DB22C5B3E83816327D24779ABE2FC9C7 /* RSKImageCropViewController.m */,
+				3CFD3F60F595726527A822E1DEC15E17 /* RSKImageCropViewController+Protected.h */,
+				F3C321A1FA37507FA48A7A274DBB62D8 /* RSKImageScrollView.h */,
+				6EDE814ABB0B3480BA16A86C3D627664 /* RSKImageScrollView.m */,
+				66AE89C74938C4A7109C7F1F8246F472 /* RSKInternalUtility.h */,
+				6388F8DF3D682AE2D8CF509642B48BD0 /* RSKInternalUtility.m */,
+				FFA4E3A7A2749995E8FA1C9F18532E48 /* RSKTouchView.h */,
+				0B5D0A4DA08B260AB78DA238B635C0FC /* RSKTouchView.m */,
+				3A35B158C4FEC2E962F4A94FCA618AA4 /* UIApplication+RSKImageCropper.h */,
+				13F23BC35D3DD19D8C96C6A7B8927E57 /* UIApplication+RSKImageCropper.m */,
+				27493B501044A19B2936011E5422634F /* UIImage+RSKImageCropper.h */,
+				C8C14FE6E5732E005278EA50835BC503 /* UIImage+RSKImageCropper.m */,
+				2A6036A6E2F7EA6DE135B01FAAAF1AB4 /* Resources */,
+				B930BF8B550FA0980C7F90CEC77C0E34 /* Support Files */,
 			);
-			name = Frameworks;
+			name = RSKImageCropper;
+			path = RSKImageCropper;
 			sourceTree = "<group>";
 		};
-		BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */ = {
+		B930BF8B550FA0980C7F90CEC77C0E34 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */,
+				C838A53B715AA3AFC53699B2F94DC61B /* RSKImageCropper.xcconfig */,
+				1D550E763FFECBCB5F55746C6D2D6F63 /* RSKImageCropper-dummy.m */,
+				B73F3E5102BA528E8AF6E63B9F464880 /* RSKImageCropper-prefix.pch */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/RSKImageCropper";
 			sourceTree = "<group>";
 		};
-		F3FA765FF114F1E09168F082321122EF /* Pods-HoroScopeUITests */ = {
+		EACD563A444F018CBFB68D3E755B1C3C /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C71F1A6C2A7E22D7D66D191CB3ADFD3F /* Info.plist */,
-				72B4C9F83E3A702138C8C043DE792C4F /* Pods-HoroScopeUITests.modulemap */,
-				B4072C212F0BC9EEDA0746693DFCC6C6 /* Pods-HoroScopeUITests-acknowledgements.markdown */,
-				039A6E9C5F8C470EAB539D85721FE43A /* Pods-HoroScopeUITests-acknowledgements.plist */,
-				EE8E011A37104871B384BE8963B01518 /* Pods-HoroScopeUITests-dummy.m */,
-				339723E10E2456C1B2BEDDEF8B1B58B3 /* Pods-HoroScopeUITests-frameworks.sh */,
-				0A8D2C9797600DAFE46822A8D3CA101D /* Pods-HoroScopeUITests-resources.sh */,
-				1924F22BFBC3AC9B2E837CBDC2896FBE /* Pods-HoroScopeUITests-umbrella.h */,
-				B7E6EE79CABEF63B4EF2DB21010C164D /* Pods-HoroScopeUITests.debug.xcconfig */,
-				71E70888226C41D41DE843697656E1F6 /* Pods-HoroScopeUITests.release.xcconfig */,
+				16E70873D7359D233C907624F0E1CC3E /* Pods-HoroScope */,
 			);
-			name = "Pods-HoroScopeUITests";
-			path = "Target Support Files/Pods-HoroScopeUITests";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		03AE21D1092C5DC60B4F2F2F78C7E481 /* Headers */ = {
+		B572A90FC76D02BCB268AA1DBFC53D8D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D0A4BBDC8F095D451567E6A55D3B1A9 /* Pods-HoroScope-umbrella.h in Headers */,
+				C6F4370157A9F3D59C90A0CEA60DE4D4 /* Pods-HoroScope-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4CC3565C348EBD7E1A3B850E44ADB886 /* Headers */ = {
+		F696365E5EE0885901AB0C039D2A8C3A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1EF044E056D37B63A2E2063EE170370 /* Pods-HoroScopeTests-umbrella.h in Headers */,
+				35A9D83399BF5A8B08A34FAECD811A8F /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E955747B4BAB9F9F29EDCFB7DF1FBFBE /* Headers */ = {
+		F6F21ABB6218A6D7982874A014D7AAAA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E934630E2C65AA084033F1B67F122E7 /* Pods-HoroScopeUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FE0C494359551977D843FAF53D25807F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3FE30B6D67C4BA89267BCFD310934AF2 /* SwiftyJSON-umbrella.h in Headers */,
+				D2AD19FD69D79084DDBDFC0E0687B6DD /* CGGeometry+RSKImageCropper.h in Headers */,
+				0A8EE96392493C33F85EF727801941D7 /* RSKImageCropper.h in Headers */,
+				402D923B889C5B358E35B6D04B892137 /* RSKImageCropViewController+Protected.h in Headers */,
+				05641EB1973F9CDB3EDC525BB9FE1E14 /* RSKImageCropViewController.h in Headers */,
+				372751227628DD9E891806F3F9B7B9D4 /* RSKImageScrollView.h in Headers */,
+				A494359CCDEF0CB8EA0F7A6292EF9118 /* RSKInternalUtility.h in Headers */,
+				5173D66CF40553D145CE97DA6BFFF237 /* RSKTouchView.h in Headers */,
+				C2138084D7B8E2A1958391051E5E98E9 /* UIApplication+RSKImageCropper.h in Headers */,
+				FE9F3207691D954430780A3ACA081877 /* UIImage+RSKImageCropper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6846EC6A1D62F978DD039B399D01112F /* Pods-HoroScopeTests */ = {
+		1BC3B4C95B56ECEAE7ECD1824EE52E66 /* SwiftyJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 191E227553172F6FE935EFD287ED03EF /* Build configuration list for PBXNativeTarget "Pods-HoroScopeTests" */;
+			buildConfigurationList = CB1F4203F62A238E4403E2DA26F5257C /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
 			buildPhases = (
-				583DCCE48A526A88A6FABDBBC1F767AE /* Sources */,
-				EB675C5DC84CAFBF9E88A884402E4AA3 /* Frameworks */,
-				4CC3565C348EBD7E1A3B850E44ADB886 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				833E03257169CE5A4B5C383D3271A066 /* PBXTargetDependency */,
-			);
-			name = "Pods-HoroScopeTests";
-			productName = "Pods-HoroScopeTests";
-			productReference = AA1776A45C717D72EB480EE422B16F07 /* Pods_HoroScopeTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		6FD521D2BE861B4917EB359204A0AE3E /* Pods-HoroScope */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D37DF1160EA444DF0BAE067027541726 /* Build configuration list for PBXNativeTarget "Pods-HoroScope" */;
-			buildPhases = (
-				CFD1E5856FDD6994FEF00704B5EE7695 /* Sources */,
-				A79B82B7730D73472AA06F2F2FB9123F /* Frameworks */,
-				03AE21D1092C5DC60B4F2F2F78C7E481 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				705688A479ADE96543B3FA797C78D355 /* PBXTargetDependency */,
-			);
-			name = "Pods-HoroScope";
-			productName = "Pods-HoroScope";
-			productReference = FC17285E1A87A528F344D5EFBE41F411 /* Pods_HoroScope.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		75750AE15B7F5DB474A6769FC270587F /* Pods-HoroScopeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E5DBEF08701E59D3035D6BE2F56B2962 /* Build configuration list for PBXNativeTarget "Pods-HoroScopeUITests" */;
-			buildPhases = (
-				18A3D43186DD1B4AABEB53E999F5E589 /* Sources */,
-				C700F93E291D74D8C9749FC7DA38D3B1 /* Frameworks */,
-				E955747B4BAB9F9F29EDCFB7DF1FBFBE /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				64B2AFF2D139D7773BAC7BF23670F61C /* PBXTargetDependency */,
-			);
-			name = "Pods-HoroScopeUITests";
-			productName = "Pods-HoroScopeUITests";
-			productReference = BC9104B2FE92A7F4B12D2B6B01FE46B9 /* Pods_HoroScopeUITests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C7831814707A58C7EFA9FD2BE3F7BE4D /* SwiftyJSON */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F358EADABB0529EAE52ACBD1730619AE /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
-			buildPhases = (
-				CFC6E1CA6067968C3DB8B9FF583C3502 /* Sources */,
-				877DCA643BE5EF6E1A0D4748323B1208 /* Frameworks */,
-				FE0C494359551977D843FAF53D25807F /* Headers */,
+				0EC32DDC1D54113427389D6C29421694 /* Sources */,
+				1B9ABEB8B6611952D34EA9190BABA68A /* Frameworks */,
+				F696365E5EE0885901AB0C039D2A8C3A /* Headers */,
+				29BDE9C58A3E468713DFFC17255EACF6 /* Copy generated compatibility header */,
 			);
 			buildRules = (
 			);
@@ -368,8 +314,44 @@
 			);
 			name = SwiftyJSON;
 			productName = SwiftyJSON;
-			productReference = 7E923F424D44140A834F56F5DCA444D3 /* SwiftyJSON.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = 0DC05A22A84CB4DC9272734AC4301E8B /* libSwiftyJSON.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2C852DF4E10482D6EB9B968DCFBA5793 /* Pods-HoroScope */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 201C2B25815392AC62FD7AFAF2F9DEF4 /* Build configuration list for PBXNativeTarget "Pods-HoroScope" */;
+			buildPhases = (
+				3CAF15ECD7E72E10259AE972F9969DE1 /* Sources */,
+				3B3C1D7EA944F81C913F62346435D9DE /* Frameworks */,
+				B572A90FC76D02BCB268AA1DBFC53D8D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E5383A240A305A8B7971C88A3C13168 /* PBXTargetDependency */,
+				448372792D5A69CBF1D0CEFB4E403B52 /* PBXTargetDependency */,
+			);
+			name = "Pods-HoroScope";
+			productName = "Pods-HoroScope";
+			productReference = 2954C6EC4E3838FC0B12189250B6B075 /* libPods-HoroScope.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		87E159564B8FBB02059C3C0D4130317F /* RSKImageCropper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 472D35BBC2FFDF669A9BC7F7B2CF1D2F /* Build configuration list for PBXNativeTarget "RSKImageCropper" */;
+			buildPhases = (
+				B263180270CAAC1CFB5915A91FD8CAB2 /* Sources */,
+				CF1FCBB63C8F4E38501A1CC97C6C3696 /* Frameworks */,
+				F6F21ABB6218A6D7982874A014D7AAAA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSKImageCropper;
+			productName = RSKImageCropper;
+			productReference = 1432DB6294D24F589AD9F747CAB661A4 /* libRSKImageCropper.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -388,72 +370,88 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = AD7053BDFEDA463525A7FD5EE848A994 /* Products */;
+			productRefGroup = 16869B35A5E756BC0CC3A8A6BC1F26A9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6FD521D2BE861B4917EB359204A0AE3E /* Pods-HoroScope */,
-				6846EC6A1D62F978DD039B399D01112F /* Pods-HoroScopeTests */,
-				75750AE15B7F5DB474A6769FC270587F /* Pods-HoroScopeUITests */,
-				C7831814707A58C7EFA9FD2BE3F7BE4D /* SwiftyJSON */,
+				2C852DF4E10482D6EB9B968DCFBA5793 /* Pods-HoroScope */,
+				87E159564B8FBB02059C3C0D4130317F /* RSKImageCropper */,
+				1BC3B4C95B56ECEAE7ECD1824EE52E66 /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29BDE9C58A3E468713DFFC17255EACF6 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/SwiftyJSON/SwiftyJSON.modulemap",
+				"${PODS_ROOT}/Headers/Public/SwiftyJSON/SwiftyJSON-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/SwiftyJSON/SwiftyJSON.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/SwiftyJSON/SwiftyJSON-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+			showEnvVarsInLog = 1;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		18A3D43186DD1B4AABEB53E999F5E589 /* Sources */ = {
+		0EC32DDC1D54113427389D6C29421694 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3DDBEB56AC8EBC48FE0BA3625D16A8E /* Pods-HoroScopeUITests-dummy.m in Sources */,
+				629B4E5ED87E72EA71FC7C798181C10F /* SwiftyJSON-dummy.m in Sources */,
+				3A0046C770771D0C4A534BCB992C4CFB /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		583DCCE48A526A88A6FABDBBC1F767AE /* Sources */ = {
+		3CAF15ECD7E72E10259AE972F9969DE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F66BE6205A37A9A371A66E04EF659D7E /* Pods-HoroScopeTests-dummy.m in Sources */,
+				5BE0435180F3E9F6DE4F0656EA6CC091 /* Pods-HoroScope-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CFC6E1CA6067968C3DB8B9FF583C3502 /* Sources */ = {
+		B263180270CAAC1CFB5915A91FD8CAB2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4C38A31A1BCBB53463F3442BFC9AE16 /* SwiftyJSON-dummy.m in Sources */,
-				E55D7F7394A6E0A43A8299536E1DB016 /* SwiftyJSON.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CFD1E5856FDD6994FEF00704B5EE7695 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				21EE6FB5E13F319664AA24426AED89B1 /* Pods-HoroScope-dummy.m in Sources */,
+				D0CF83D8CFE82840FA762A1CD5EBB0C4 /* CGGeometry+RSKImageCropper.m in Sources */,
+				1AEC52B0C80F334CBCF3E971C7F66EA4 /* RSKImageCropper-dummy.m in Sources */,
+				B7C4BD32FF9AB107D71F8A2B649473B4 /* RSKImageCropViewController.m in Sources */,
+				773BC7F8EA809BE78F20827A9C92C695 /* RSKImageScrollView.m in Sources */,
+				E28917AC8554764C2BA7536496A41866 /* RSKInternalUtility.m in Sources */,
+				6E01FC4D2DE6B6CED33BD288C53B5D75 /* RSKTouchView.m in Sources */,
+				53FC3A4415516A57C845CA5D702A65F0 /* UIApplication+RSKImageCropper.m in Sources */,
+				0FA10465664EBE8492F33CA26F165FA0 /* UIImage+RSKImageCropper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		64B2AFF2D139D7773BAC7BF23670F61C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-HoroScope";
-			target = 6FD521D2BE861B4917EB359204A0AE3E /* Pods-HoroScope */;
-			targetProxy = 7F3CF7AC76B13C773EB8C90F810F2D83 /* PBXContainerItemProxy */;
-		};
-		705688A479ADE96543B3FA797C78D355 /* PBXTargetDependency */ = {
+		448372792D5A69CBF1D0CEFB4E403B52 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyJSON;
-			target = C7831814707A58C7EFA9FD2BE3F7BE4D /* SwiftyJSON */;
-			targetProxy = 68DD0F34FF56E66ACD4F68100562EEBB /* PBXContainerItemProxy */;
+			target = 1BC3B4C95B56ECEAE7ECD1824EE52E66 /* SwiftyJSON */;
+			targetProxy = 89A837D97C11EE3A9BB2F50C72B47DE2 /* PBXContainerItemProxy */;
 		};
-		833E03257169CE5A4B5C383D3271A066 /* PBXTargetDependency */ = {
+		4E5383A240A305A8B7971C88A3C13168 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-HoroScope";
-			target = 6FD521D2BE861B4917EB359204A0AE3E /* Pods-HoroScope */;
-			targetProxy = 38BBC04271CBADB000861EC803AFB4A3 /* PBXContainerItemProxy */;
+			name = RSKImageCropper;
+			target = 87E159564B8FBB02059C3C0D4130317F /* RSKImageCropper */;
+			targetProxy = 634EF9665A1AF658F361399A7F255DA9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -516,160 +514,29 @@
 			};
 			name = Release;
 		};
-		12E391CBD3667E36B0FCBE8B8BDE19C4 /* Debug */ = {
+		766F6403119E5254AA53170DF00FC217 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7E6EE79CABEF63B4EF2DB21010C164D /* Pods-HoroScopeUITests.debug.xcconfig */;
+			baseConfigurationReference = 51EAF8FD7456964A1EAF7C67BC9F4732 /* SwiftyJSON.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HoroScopeUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HoroScopeUITests/Pods-HoroScopeUITests.modulemap";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/SwiftyJSON/SwiftyJSON.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1D7621998954A6A0B54FBA43D3BB4A7A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 402134DF8CE95DC4C54EE410AAF219D1 /* Pods-HoroScope.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HoroScope/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HoroScope/Pods-HoroScope.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4DB1238E38CA790D81B6479B035F23B4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71E70888226C41D41DE843697656E1F6 /* Pods-HoroScopeUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HoroScopeUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HoroScopeUITests/Pods-HoroScopeUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5E5298DFDAA586C35A8CD093301F4312 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1466912116CCB7F57C76F22A0127A898 /* Pods-HoroScope.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HoroScope/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HoroScope/Pods-HoroScope.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -736,106 +603,122 @@
 			};
 			name = Debug;
 		};
-		9393D529FD2CDDE8FC89997010132770 /* Release */ = {
+		895C0318EDAED48D0ADE9C5F9CF16C8A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CCE4ED113592D2A2712086C2D031516 /* Pods-HoroScopeTests.release.xcconfig */;
+			baseConfigurationReference = C838A53B715AA3AFC53699B2F94DC61B /* RSKImageCropper.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HoroScopeTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				GCC_PREFIX_HEADER = "Target Support Files/RSKImageCropper/RSKImageCropper-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = RSKImageCropper;
+				PRODUCT_NAME = RSKImageCropper;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CA80A311B3134C1C8A526CFEE112C56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72560098E01A68B616254D68484AD99B /* Pods-HoroScope.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HoroScopeTests/Pods-HoroScopeTests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-HoroScope/Pods-HoroScope.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A1C80B21A157029156606F1C7C2241F0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83B82F63FAD4271C84265BEC3F20EEFF /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				PRODUCT_MODULE_NAME = SwiftyJSON;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		DCF5DB383DC5582EDE5A00A793B28470 /* Release */ = {
+		A6CADB9CC0E07D445BFDED2C65EA4FAC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83B82F63FAD4271C84265BEC3F20EEFF /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = C838A53B715AA3AFC53699B2F94DC61B /* RSKImageCropper.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RSKImageCropper/RSKImageCropper-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = RSKImageCropper;
+				PRODUCT_NAME = RSKImageCropper;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF5AE357A4708F29527517A770195FFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6944F5A64FFBE12BEB970B33A980FA6 /* Pods-HoroScope.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HoroScope/Pods-HoroScope.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3CB92D7F50B7C6AF4FF19A987571880 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51EAF8FD7456964A1EAF7C67BC9F4732 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MODULEMAP_FILE = Headers/Public/SwiftyJSON/SwiftyJSON.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_MODULE_NAME = SwiftyJSON;
 				PRODUCT_NAME = SwiftyJSON;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -843,57 +726,17 @@
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		F10CA8F4515F58D508CAF63FDDCC85F9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E02EF0C317FB94007469574244B9F3D /* Pods-HoroScopeTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HoroScopeTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HoroScopeTests/Pods-HoroScopeTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		191E227553172F6FE935EFD287ED03EF /* Build configuration list for PBXNativeTarget "Pods-HoroScopeTests" */ = {
+		201C2B25815392AC62FD7AFAF2F9DEF4 /* Build configuration list for PBXNativeTarget "Pods-HoroScope" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F10CA8F4515F58D508CAF63FDDCC85F9 /* Debug */,
-				9393D529FD2CDDE8FC89997010132770 /* Release */,
+				9CA80A311B3134C1C8A526CFEE112C56 /* Debug */,
+				BF5AE357A4708F29527517A770195FFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -907,29 +750,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D37DF1160EA444DF0BAE067027541726 /* Build configuration list for PBXNativeTarget "Pods-HoroScope" */ = {
+		472D35BBC2FFDF669A9BC7F7B2CF1D2F /* Build configuration list for PBXNativeTarget "RSKImageCropper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5E5298DFDAA586C35A8CD093301F4312 /* Debug */,
-				1D7621998954A6A0B54FBA43D3BB4A7A /* Release */,
+				895C0318EDAED48D0ADE9C5F9CF16C8A /* Debug */,
+				A6CADB9CC0E07D445BFDED2C65EA4FAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E5DBEF08701E59D3035D6BE2F56B2962 /* Build configuration list for PBXNativeTarget "Pods-HoroScopeUITests" */ = {
+		CB1F4203F62A238E4403E2DA26F5257C /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				12E391CBD3667E36B0FCBE8B8BDE19C4 /* Debug */,
-				4DB1238E38CA790D81B6479B035F23B4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F358EADABB0529EAE52ACBD1730619AE /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A1C80B21A157029156606F1C7C2241F0 /* Debug */,
-				DCF5DB383DC5582EDE5A00A793B28470 /* Release */,
+				766F6403119E5254AA53170DF00FC217 /* Debug */,
+				F3CB92D7F50B7C6AF4FF19A987571880 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -8,9 +8,9 @@
 
 import UIKit
 
-class CompetitionVC: UIViewController {
+class BeautyVC: BaseVC {
     @IBOutlet weak var tableView: UITableView!
-    
+
     var arrData: [UIImage] = [#imageLiteral(resourceName: "competition_1st"), #imageLiteral(resourceName: "competiton_2nd"), #imageLiteral(resourceName: "competition_3rd")]
     
     override func viewDidLoad() {
@@ -20,7 +20,7 @@ class CompetitionVC: UIViewController {
     }
 }
 
-extension CompetitionVC {
+extension BeautyVC {
     func initUI() {
         tableView.register(CellCompetition.self)
     }
@@ -30,7 +30,7 @@ extension CompetitionVC {
     }
 }
 
-extension CompetitionVC: UITableViewDataSource {
+extension BeautyVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrData.count
     }
@@ -42,35 +42,41 @@ extension CompetitionVC: UITableViewDataSource {
     }
 }
 
-extension CompetitionVC: UITableViewDelegate {
+extension BeautyVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 170*heightRatio
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         switch indexPath.item {
         case 0:
-            addCameraView()
+            openCamera()
+            break
+        case 1:
+            let vc = BeautyCompetitionVC.init(nibName: "CompetitionVC", bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
             break
         default:
             break
         }
     }
-    
-    func addCameraView() {
-        let cameraView = CameraView(frame: CGRect(x: 0, y: 0, width: ScreenSize.SCREEN_WIDTH, height: ScreenSize.SCREEN_HEIGHT))
-        cameraView.backgroundColor = .yellow
-        hideTabbar(true)
-        self.view.addSubview(cameraView)
+}
+
+extension BeautyVC {
+    override func imageCropViewControllerDidCancelCrop(_ controller: RSKImageCropViewController) {
+        dismiss(animated: true, completion: nil)
     }
-    
-    func hideTabbar(_ hide: Bool) {
-        if hide {
-            TAppDelegate.tabVC?.tabBar.isHidden = true
-            TAppDelegate.tabVC?.tabBar.isTranslucent = true
-        } else {
-            TAppDelegate.tabVC?.tabBar.isHidden = false
-            TAppDelegate.tabVC?.tabBar.isTranslucent = false
-        }
+
+    override func imageCropViewController(_ controller: RSKImageCropViewController, didCropImage croppedImage: UIImage, usingCropRect cropRect: CGRect, rotationAngle: CGFloat) {
+        let vc = AnalysisScanVC.init(nibName: "AnalysisScanVC", bundle: nil)
+        vc.imgToScan = croppedImage
+        self.navigationController?.pushViewController(vc, animated: true)
+        dismiss(animated: true, completion: nil)
+        
+    }
+
+    func imageCropViewController(_ controller: RSKImageCropViewController, willCropImage originalImage: UIImage) {
+
     }
 }

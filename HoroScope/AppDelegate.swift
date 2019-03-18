@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func initMainVC() {
-        let vc = ZodiacsVC.init(nibName: "ZodiacsVC", bundle: nil)
+        let vc = AnalysisScanVC.init(nibName: "AnalysisScanVC", bundle: nil)
         let navi = UINavigationController.init(rootViewController: vc)
         window?.rootViewController = navi
         window?.makeKeyAndVisible()
@@ -51,8 +51,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         tabLove.tabBarItem = UITabBarItem(title: "Love", image: #imageLiteral(resourceName: "tabbar_competition").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "tabbar_competition").withRenderingMode(.alwaysOriginal))
         let navLove = UINavigationController(rootViewController: tabLove)
         navLove.isNavigationBarHidden = true
-        let tabCompetition = CompetitionVC(nibName:"CompetitionVC",bundle: nil)
-        tabCompetition.tabBarItem = UITabBarItem(title: "Competition", image: #imageLiteral(resourceName: "tabbar_competition").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "tabbar_competition").withRenderingMode(.alwaysOriginal))
+        let tabCompetition = BeautyVC(nibName:"BeautyVC",bundle: nil)
+        tabCompetition.tabBarItem = UITabBarItem(title: "BeautyVC", image: #imageLiteral(resourceName: "tabbar_competition").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "tabbar_competition").withRenderingMode(.alwaysOriginal))
         let navCompetition = UINavigationController(rootViewController: tabCompetition)
         navCompetition.isNavigationBarHidden = true
         let tabSetting = SettingVC(nibName:"SettingVC",bundle: nil)
