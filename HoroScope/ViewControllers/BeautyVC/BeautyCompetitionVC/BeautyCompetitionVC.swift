@@ -13,6 +13,7 @@ class BeautyCompetitionVC: BaseVC {
     @IBOutlet weak var image2: KHImageView!
     @IBOutlet weak var navi: NavigationView!
     
+    var isBeautyPrediction: Bool = false
     var takeForImage1: Bool = false
     
     override func viewDidLoad() {
@@ -32,7 +33,8 @@ class BeautyCompetitionVC: BaseVC {
     
     @IBAction func action_Scan(_ sender: Any) {
         if image1.image != #imageLiteral(resourceName: "compe_user") && image2.image != #imageLiteral(resourceName: "compe_user") {
-            let vc = ScanningVC.init(nibName: "ScanVC", bundle: nil)
+            let vc = ScanningVC.init(nibName: "ScanningVC", bundle: nil)
+            vc.isBeautyPrediction = self.isBeautyPrediction
             vc.img1 = image1.image
             vc.img2 = image2.image
             self.navigationController?.pushViewController(vc, animated: true)

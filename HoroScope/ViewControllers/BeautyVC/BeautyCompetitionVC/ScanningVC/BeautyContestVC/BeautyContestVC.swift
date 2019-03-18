@@ -33,6 +33,8 @@ extension BeautyContestVC {
         navi.handleBack = {
             self.navigationController?.popToRootViewController(animated: true)
         }
+        imgLeft.image = imgLeftTranfer
+        imgRight.image = imgRightTranfer
         tableView.register(CellMark.self)
     }
     

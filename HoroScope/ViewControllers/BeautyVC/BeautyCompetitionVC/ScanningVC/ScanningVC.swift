@@ -16,8 +16,10 @@ class ScanningVC: BaseVC {
     @IBOutlet weak var progressView: UIProgressView!
     @IBOutlet weak var lbProgress: KHLabel!
     @IBOutlet weak var viewScan: UIView!
+    @IBOutlet weak var lbStatus: KHLabel!
     
     var isDetect: Bool = true
+    var isBeautyPrediction: Bool = false
     var timer: Timer = Timer()
     var img1: UIImage?
     var img2: UIImage?
@@ -93,11 +95,19 @@ extension ScanningVC {
             self.timer.invalidate()
             if self.isDetect {
                 self.progressView.setProgress(1, animated: true)
+                self.lbStatus.text = "Your baby is generating"
+            } else {
+                return
             }
         }, completion: { (completed) in
-            GCDCommon.mainQueueWithDelay(1, {
-                if self.isDetect {
-                    let vc = BeautyContestVC.init(nibName: "MarkVC", bundle: nil)
+            GCDCommon.mainQueueWithDelay(1.5, {
+                if self.isBeautyPrediction {
+                    let vc = BabyPredictionVC.init(nibName: "BabyPredictionVC", bundle: nil)
+                    vc.imgLeftTranfer = self.imageView1.image
+                    vc.imgRightTranfer = self.imageView2.image
+                    self.navigationController?.pushViewController(vc, animated: true)
+                } else {
+                    let vc = BeautyContestVC.init(nibName: "BeautyContestVC", bundle: nil)
                     vc.imgLeftTranfer = self.imageView1.image
                     vc.imgRightTranfer = self.imageView2.image
                     self.navigationController?.pushViewController(vc, animated: true)

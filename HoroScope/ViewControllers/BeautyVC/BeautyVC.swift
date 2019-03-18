@@ -54,7 +54,13 @@ extension BeautyVC: UITableViewDelegate {
             openCamera()
             break
         case 1:
-            let vc = BeautyCompetitionVC.init(nibName: "CompetitionVC", bundle: nil)
+            let vc = BeautyCompetitionVC.init(nibName: "BeautyCompetitionVC", bundle: nil)
+            vc.isBeautyPrediction = false
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        case 2:
+            let vc = BeautyCompetitionVC.init(nibName: "BeautyCompetitionVC", bundle: nil)
+            vc.isBeautyPrediction = true
             self.navigationController?.pushViewController(vc, animated: true)
             break
         default:

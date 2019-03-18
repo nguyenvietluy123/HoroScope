@@ -32,6 +32,8 @@
 		0CA9EF62221C3A330053CDBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CA9EF60221C3A330053CDBA /* LaunchScreen.storyboard */; };
 		0CA9EF6D221C3A330053CDBA /* HoroScopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA9EF6C221C3A330053CDBA /* HoroScopeTests.swift */; };
 		0CA9EF78221C3A330053CDBA /* HoroScopeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA9EF77221C3A330053CDBA /* HoroScopeUITests.swift */; };
+		0CB41C6C223FA4D00016728B /* BabyPredictionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB41C6A223FA4D00016728B /* BabyPredictionVC.swift */; };
+		0CB41C6D223FA4D00016728B /* BabyPredictionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CB41C6B223FA4D00016728B /* BabyPredictionVC.xib */; };
 		0CB7FB24222C8A6400615D8D /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB7FB22222C8A6400615D8D /* CameraView.swift */; };
 		0CB7FB25222C8A6400615D8D /* CameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CB7FB23222C8A6400615D8D /* CameraView.xib */; };
 		0CBB671922202988009E0733 /* MagicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB66F022202988009E0733 /* MagicView.swift */; };
@@ -150,6 +152,8 @@
 		0CA9EF73221C3A330053CDBA /* HoroScopeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoroScopeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CA9EF77221C3A330053CDBA /* HoroScopeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroScopeUITests.swift; sourceTree = "<group>"; };
 		0CA9EF79221C3A330053CDBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CB41C6A223FA4D00016728B /* BabyPredictionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyPredictionVC.swift; sourceTree = "<group>"; };
+		0CB41C6B223FA4D00016728B /* BabyPredictionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BabyPredictionVC.xib; sourceTree = "<group>"; };
 		0CB7FB22222C8A6400615D8D /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		0CB7FB23222C8A6400615D8D /* CameraView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraView.xib; sourceTree = "<group>"; };
 		0CBB66F022202988009E0733 /* MagicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicView.swift; sourceTree = "<group>"; };
@@ -299,7 +303,7 @@
 			path = CellCompetition;
 			sourceTree = "<group>";
 		};
-		0C9D97AD223936AC005FBAB2 /* AnalysisVC */ = {
+		0C9D97AD223936AC005FBAB2 /* BeautyAnalysisVC */ = {
 			isa = PBXGroup;
 			children = (
 				0CDE7112223E7C4900B41601 /* AnalysisScanVC.swift */,
@@ -307,7 +311,7 @@
 				0C9D97AE223936CF005FBAB2 /* AnalysisVC.swift */,
 				0C9D97AF223936CF005FBAB2 /* AnalysisVC.xib */,
 			);
-			path = AnalysisVC;
+			path = BeautyAnalysisVC;
 			sourceTree = "<group>";
 		};
 		0CA9EF48221C3A320053CDBA = {
@@ -345,7 +349,6 @@
 				0CA9EF56221C3A320053CDBA /* ViewController.swift */,
 				0CA9EF58221C3A320053CDBA /* Main.storyboard */,
 				0CA9EF5E221C3A330053CDBA /* Assets.xcassets */,
-				0CDE710A223E263000B41601 /* New Group */,
 				0CA9EF60221C3A330053CDBA /* LaunchScreen.storyboard */,
 				0CA9EF63221C3A330053CDBA /* Info.plist */,
 				0CA9EF5B221C3A320053CDBA /* HoroScope.xcdatamodeld */,
@@ -370,6 +373,15 @@
 				0CA9EF79221C3A330053CDBA /* Info.plist */,
 			);
 			path = HoroScopeUITests;
+			sourceTree = "<group>";
+		};
+		0CB41C69223FA4B10016728B /* BabyPredictionVC */ = {
+			isa = PBXGroup;
+			children = (
+				0CB41C6A223FA4D00016728B /* BabyPredictionVC.swift */,
+				0CB41C6B223FA4D00016728B /* BabyPredictionVC.xib */,
+			);
+			path = BabyPredictionVC;
 			sourceTree = "<group>";
 		};
 		0CB7FB21222C8A6400615D8D /* CameraView */ = {
@@ -568,8 +580,9 @@
 			children = (
 				0C681B5F223AA6E500374A4B /* BeautyVC.swift */,
 				0CBB677722202B92009E0733 /* BeautyVC.xib */,
-				0C9D97AD223936AC005FBAB2 /* AnalysisVC */,
+				0C9D97AD223936AC005FBAB2 /* BeautyAnalysisVC */,
 				0C681B5E223AA6AE00374A4B /* BeautyCompetitionVC */,
+				0CB41C69223FA4B10016728B /* BabyPredictionVC */,
 			);
 			path = BeautyVC;
 			sourceTree = "<group>";
@@ -590,13 +603,6 @@
 				0CDE710C223E29E600B41601 /* CellMark.xib */,
 			);
 			path = CellMark;
-			sourceTree = "<group>";
-		};
-		0CDE710A223E263000B41601 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		0CDE710F223E2B4C00B41601 /* Model */ = {
@@ -760,6 +766,7 @@
 				0C681B69223AB35B00374A4B /* ScanningVC.xib in Resources */,
 				0CBB6767222029DC009E0733 /* Privacy_PolicyVC.xib in Resources */,
 				0C681B64223AA70C00374A4B /* BeautyCompetitionVC.xib in Resources */,
+				0CB41C6D223FA4D00016728B /* BabyPredictionVC.xib in Resources */,
 				0CB7FB25222C8A6400615D8D /* CameraView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -833,6 +840,7 @@
 				0CA9EF57221C3A320053CDBA /* ViewController.swift in Sources */,
 				0CBB673122202988009E0733 /* CameraHelper.swift in Sources */,
 				0CBB673822202988009E0733 /* Device.swift in Sources */,
+				0CB41C6C223FA4D00016728B /* BabyPredictionVC.swift in Sources */,
 				0CDE7103223E212600B41601 /* BeautyContestVC.swift in Sources */,
 				0CBB672022202988009E0733 /* InputView.swift in Sources */,
 				0CDE7114223E7C4900B41601 /* AnalysisScanVC.swift in Sources */,

@@ -15,6 +15,7 @@
                 <outlet property="imageView1" destination="yRI-wX-Kvv" id="fpz-nb-fQd"/>
                 <outlet property="imageView2" destination="hJz-L2-ypX" id="1Q6-mK-n70"/>
                 <outlet property="lbProgress" destination="axE-EM-Xiy" id="wJ2-3V-WgD"/>
+                <outlet property="lbStatus" destination="in5-PQ-1oC" id="028-yq-ajK"/>
                 <outlet property="navi" destination="eJo-e0-8HH" id="NyO-Ko-a7R"/>
                 <outlet property="progressView" destination="TBa-DL-ecg" id="TZn-2T-xwz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -44,7 +45,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7be-Ap-1Xf" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="260" width="167" height="167"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taylor" translatesAutoresizingMaskIntoConstraints="NO" id="yRI-wX-Kvv" customClass="KHImageView" customModule="HoroScope" customModuleProvider="target">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yRI-wX-Kvv" customClass="KHImageView" customModule="HoroScope" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="167" height="167"/>
                         </imageView>
                     </subviews>
@@ -68,7 +69,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aUa-P9-1Qu" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
                     <rect key="frame" x="208.5" y="260" width="166.5" height="167"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabbar_horoscope" translatesAutoresizingMaskIntoConstraints="NO" id="hJz-L2-ypX" customClass="KHImageView" customModule="HoroScope" customModuleProvider="target">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hJz-L2-ypX" customClass="KHImageView" customModule="HoroScope" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="166.5" height="167"/>
                         </imageView>
                     </subviews>
@@ -103,7 +104,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tips: Font view of face can improve accuracy." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="in5-PQ-1oC">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tips: Font view of face can improve accuracy." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="in5-PQ-1oC" customClass="KHLabel" customModule="HoroScope" customModuleProvider="target">
                     <rect key="frame" x="14" y="506" width="347.5" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
@@ -139,8 +140,4 @@
             <point key="canvasLocation" x="52" y="60.719640179910051"/>
         </view>
     </objects>
-    <resources>
-        <image name="tabbar_horoscope" width="28" height="28"/>
-        <image name="taylor" width="276" height="182"/>
-    </resources>
 </document>
