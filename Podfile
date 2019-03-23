@@ -5,5 +5,8 @@ target 'HoroScope' do
 
 pod 'SwiftyJSON', '~> 4.0'
 pod 'RSKImageCropper'
-
+pod 'Alamofire'
+pod 'KRProgressHUD'
+pod 'AnimatedMaskLabel'
+pod 'KRActivityIndicatorView'
 end

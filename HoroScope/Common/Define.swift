@@ -47,24 +47,34 @@ enum Zodiac: String {
 }
 
 enum ZodiacDate: String {
-    case Aquarius = "January 20 - February 18"
-    case Pisces = "February 19 - March 20"
-    case Aries = "March 21 - April 19"
-    case Taurus = "April 20 - May 20"
-    case Gemini = "May 21 - June 20"
-    case Cancer = "June 21 - July 22"
-    case Leo = "July 23 - August 22"
-    case Virgo = "August 23 - September 22"
-    case Libra = "September 23 - October 22"
-    case Scorpio = "October 23 - November 21"
-    case Sagittarius = "November 22 - December 21"
-    case Capricorn = "December 22 - January 19"
+    case Aquarius = "20/01 ~ 18/02"
+    case Pisces = "19/02 ~ 20/03"
+    case Aries = "21/03 ~ 20/04"
+    case Taurus = "21/04 ~ 20/05"
+    case Gemini = "21/05 ~ 21/06"
+    case Cancer = "22/06 ~ 22/07"
+    case Leo = "23/07 ~ 22/08"
+    case Virgo = "23/08 ~ 22/09"
+    case Libra = "23/09 ~ 22/10"
+    case Scorpio = "23/10 ~ 21/11"
+    case Sagittarius = "22/11 ~ 21/12"
+    case Capricorn = "22/12 ~ 19/01"
+}
+
+enum TimeType: String {
+    case general = "general"
+    case today = "today"
+    case week = "week"
+    case month = "month"
+    case year = "year"
 }
 
 class NotificationCenterKey {
     static let SelectedMenu = "SelectedMenu"
     static let DismissAllAlert = "DismissAllAlert"
     static let CantDetectFace = "CantDetectFace"
+    static let ReloadData = "ReloadData"
+    static let ShowZodiacsVC = "ShowZodiacsVC"
 }
 
 class Key {

@@ -62,7 +62,15 @@ class KHView: UIView {
         }
     }
     
-    @IBInspectable var isGradientColor: Bool = false
+    @IBInspectable var isGradientColor: Bool = false {
+        didSet {
+            if isGradientColor {
+                GCDCommon.mainQueue {
+                    Common.gradient(self.minColor, self.maxColor, view: self)
+                }
+            }
+        }
+    }
     @IBInspectable public var minColor:UIColor = UIColor.blue
     @IBInspectable public var maxColor:UIColor = UIColor.orange
     
@@ -73,12 +81,16 @@ class KHView: UIView {
             layer.cornerRadius = self.bounds.height/2
             layer.masksToBounds = true
         }
-        
-        if isGradientColor {
-            GCDCommon.mainQueue {
-                Common.gradient(self.minColor, self.maxColor, view: self)
-            }
-        }
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+//        initializeSubviews()
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+//        initializeSubviews()
     }
     
     override func awakeFromNib() {
@@ -86,6 +98,12 @@ class KHView: UIView {
         if circle {
             layer.cornerRadius = self.bounds.height/2
             layer.masksToBounds = true
+        }
+        
+        if isGradientColor {
+            GCDCommon.mainQueue {
+                Common.gradient(self.minColor, self.maxColor, view: self)
+            }
         }
     }
 }

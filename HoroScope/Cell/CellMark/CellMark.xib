@@ -23,23 +23,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eyes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBb-xb-blk" customClass="KHLabel" customModule="HoroScope" customModuleProvider="target">
-                                <rect key="frame" x="172.5" y="5" width="30.5" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <rect key="frame" x="171.5" y="5" width="32" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZiQ-Ka-Gz0">
-                                <rect key="frame" x="56.5" y="38" width="262.5" height="8"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZiQ-Ka-Gz0" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
+                                <rect key="frame" x="56.5" y="36" width="262.5" height="11.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hz5-AL-iqh">
-                                        <rect key="frame" x="0.0" y="0.0" width="131" height="8"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="131" height="11.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="swo-Xc-BSR" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
-                                                <rect key="frame" x="52.5" y="0.0" width="78.5" height="8"/>
-                                                <color key="backgroundColor" red="0.99215686270000003" green="0.36078431370000003" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <rect key="frame" x="52.5" y="0.0" width="78.5" height="11.5"/>
+                                                <color key="backgroundColor" red="0.3411764706" green="0.73333333329999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isGradientColor" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="minColor">
+                                                        <color key="value" red="0.3411764705882353" green="0.73333333333333328" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="maxColor">
+                                                        <color key="value" red="0.59999999999999998" green="0.41176470588235292" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.99215686270000003" green="0.36078431370000003" blue="0.76862745099999996" alpha="0.18816887842465754" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.3411764705882353" green="0.73333333333333328" blue="1" alpha="0.18816887842465754" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="swo-Xc-BSR" firstAttribute="top" secondItem="hz5-AL-iqh" secondAttribute="top" id="0Ac-Bm-Lcb"/>
                                             <constraint firstItem="swo-Xc-BSR" firstAttribute="width" secondItem="hz5-AL-iqh" secondAttribute="width" multiplier="0.6" id="Mwe-kI-KAS"/>
@@ -48,14 +58,24 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gnr-cZ-uAl">
-                                        <rect key="frame" x="131" y="0.0" width="131.5" height="8"/>
+                                        <rect key="frame" x="131" y="0.0" width="131.5" height="11.5"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="azF-My-Fdu">
-                                                <rect key="frame" x="0.0" y="0.0" width="105" height="8"/>
-                                                <color key="backgroundColor" red="0.56078431370000004" green="0.4823529412" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="azF-My-Fdu" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="105" height="11.5"/>
+                                                <color key="backgroundColor" red="0.92549019610000005" green="0.25490196079999999" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isGradientColor" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="minColor">
+                                                        <color key="value" red="0.92549019607843142" green="0.25490196078431371" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="maxColor">
+                                                        <color key="value" red="0.99607843137254903" green="0.59215686274509804" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.56078431370000004" green="0.4823529412" blue="0.92549019610000005" alpha="0.18854345034246575" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.92549019607843142" green="0.25490196078431371" blue="0.84705882352941175" alpha="0.18854345034246575" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="azF-My-Fdu" firstAttribute="top" secondItem="gnr-cZ-uAl" secondAttribute="top" id="Xg7-EU-c5C"/>
                                             <constraint firstAttribute="bottom" secondItem="azF-My-Fdu" secondAttribute="bottom" id="g8c-Ao-BaT"/>
@@ -74,11 +94,14 @@
                                     <constraint firstAttribute="trailing" secondItem="gnr-cZ-uAl" secondAttribute="trailing" id="YlJ-Bd-tBt"/>
                                     <constraint firstItem="gnr-cZ-uAl" firstAttribute="leading" secondItem="hz5-AL-iqh" secondAttribute="trailing" id="cUW-es-8eQ"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAE-8V-AqL" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
                                 <rect key="frame" x="172.5" y="27" width="30" height="30"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mark_eye" translatesAutoresizingMaskIntoConstraints="NO" id="yVC-jY-yLk" customClass="KHImageView" customModule="HoroScope" customModuleProvider="target">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compe_eyes" translatesAutoresizingMaskIntoConstraints="NO" id="yVC-jY-yLk" customClass="KHImageView" customModule="HoroScope" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                     </imageView>
                                 </subviews>
@@ -147,7 +170,7 @@
                             <constraint firstItem="ZiQ-Ka-Gz0" firstAttribute="centerX" secondItem="PAE-8V-AqL" secondAttribute="centerX" id="CDw-Ib-qYz"/>
                             <constraint firstItem="0bA-EP-Ti3" firstAttribute="height" secondItem="dGk-v5-qfL" secondAttribute="height" id="DOF-TJ-ZSc"/>
                             <constraint firstItem="PAE-8V-AqL" firstAttribute="centerX" secondItem="jp3-2G-AF2" secondAttribute="centerX" id="GlW-ET-ynI"/>
-                            <constraint firstItem="ZiQ-Ka-Gz0" firstAttribute="height" secondItem="PAE-8V-AqL" secondAttribute="height" multiplier="1:3.8" id="I0f-SX-e94"/>
+                            <constraint firstItem="ZiQ-Ka-Gz0" firstAttribute="height" secondItem="PAE-8V-AqL" secondAttribute="height" multiplier="1.5:3.8" id="I0f-SX-e94"/>
                             <constraint firstItem="0bA-EP-Ti3" firstAttribute="centerX" secondItem="BEb-3G-eYS" secondAttribute="centerX" id="Iou-gS-Aju"/>
                             <constraint firstItem="vmt-hS-aEG" firstAttribute="top" secondItem="dGk-v5-qfL" secondAttribute="bottom" constant="4" id="KFK-Sf-Yvd"/>
                             <constraint firstItem="BEb-3G-eYS" firstAttribute="leading" secondItem="azF-My-Fdu" secondAttribute="trailing" constant="5" id="NGP-aw-sJd"/>
@@ -186,7 +209,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="compe_eyes" width="80" height="80"/>
         <image name="mark_crown" width="45" height="45"/>
-        <image name="mark_eye" width="36" height="36"/>
     </resources>
 </document>

@@ -18,7 +18,7 @@ class Common {
     static func showAlert(_ strMessage: String){
         self.dismissAllAlert()
         let alert = AlertController(title: "Horoscope".localized, message: strMessage.localized, preferredStyle: UIAlertController.Style.alert)
-        let okAction: UIAlertAction = UIAlertAction(title: "Ok".localized, style: .cancel) { action -> Void in
+        let okAction: UIAlertAction = UIAlertAction(title: "OK".localized, style: .cancel) { action -> Void in
             
         }
         self.addNotificationCenter(observer: alert, selector: #selector(AlertController.hideAlertController), key: NotificationCenterKey.DismissAllAlert)
@@ -61,11 +61,12 @@ class Common {
     }
     
     class func addNotificationCenter(observer: Any,selector: Selector, key: String) {
+        removeNotificationCenter(observer: observer, key: key)
         NotificationCenter.default.addObserver(observer, selector: selector, name: NSNotification.Name(rawValue: key), object: nil)
     }
     
-    class func removeNotificationCenter(observer: Any) {
-        NotificationCenter.default.removeObserver(observer)
+    class func removeNotificationCenter(observer: Any, key: String) {
+        NotificationCenter.default.removeObserver(observer, name: NSNotification.Name(rawValue: key), object: nil)
     }
     
     class func formatNumber(number : Int) -> String {
@@ -97,6 +98,54 @@ class Common {
         gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
         gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.0)
         view.layer.insertSublayer(gradientLayer, at: 0)
+    }
+    
+    class func rotateImageAnimation(imageView:UIImageView,duration: CFTimeInterval = 2.0, followClockWise: Bool = true) {
+        let rotateAnimation = CABasicAnimation(keyPath: "transform.rotation")
+        rotateAnimation.fromValue = 0.0
+        rotateAnimation.toValue = followClockWise ? CGFloat(.pi * 2.0) : -CGFloat(.pi * 2.0)
+        rotateAnimation.duration = duration
+        rotateAnimation.repeatCount = .greatestFiniteMagnitude
+        
+        imageView.layer.add(rotateAnimation, forKey: nil)
+    }
+    
+    class func addGradientAnimation(view: UIView, colors: [CGColor]) {
+        let gradient = CAGradientLayer()
+        gradient.colors = colors
+        gradient.locations = [0.0, 0.75, 1.0]
+        gradient.startPoint = CGPoint(x: 0, y: 0)
+        gradient.endPoint = CGPoint(x: 0, y: 1)
+        gradient.frame = view.bounds
+        view.layer.addSublayer(gradient)
+        let gradientAnimation = CABasicAnimation(keyPath: "locations")
+        gradientAnimation.fromValue = [0, 0, 0.1]
+        gradientAnimation.toValue = [0.9, 1, 1.0]
+        gradientAnimation.duration = 3
+        gradientAnimation.autoreverses = true
+        gradientAnimation.repeatCount = Float.infinity
+        gradient.add(gradientAnimation, forKey: nil)
+    }
+    
+    class func takeScreenshotAndSaveToLibrary() {
+//        _ = AlertController.present(style: .alert, title: "HoroScope", message: "Do you want to take Screenshot and save to Library?", actionTitles: ["Cancel", "OK"], handler: { (action) in
+//            if action.title == "OK" {
+                let image = UIApplication.shared.screenShot
+                UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
+                
+                Common.showAlert("Took a screenshot")
+//            }
+//        })
+    }
+    
+    class func takeScreenshotAndShare(vc: UIViewController) {
+        let imageView = UIImageView()
+        imageView.image = UIApplication.shared.screenShot
+        //        let text = "This is the text...."
+        let imageShare = [ imageView.image! ]
+        let activityViewController = UIActivityViewController(activityItems: imageShare , applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = vc.view
+        vc.present(activityViewController, animated: true, completion: nil)
     }
 }
 

@@ -23,12 +23,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 //        GADMobileAds.configure(withApplicationID: kAdmobAppID)
 //        initMainVC()
-        initTabVC(2)
+        initTabVC(0)
         return true
     }
     
     func initMainVC() {
-        let vc = AnalysisScanVC.init(nibName: "AnalysisScanVC", bundle: nil)
+        let vc = BeautyContestVC.init(nibName: "BeautyContestVC", bundle: nil)
         let navi = UINavigationController.init(rootViewController: vc)
         window?.rootViewController = navi
         window?.makeKeyAndVisible()
@@ -41,25 +41,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         tabVC?.tabBar.layer.borderWidth = 0.0
         tabVC?.tabBar.clipsToBounds = true
         tabVC?.tabBar.contentMode = .scaleToFill
-        tabVC?.tabBar.isTranslucent = false
+        tabVC?.tabBar.isTranslucent = true
         
-        let tabHome = HomeVC(nibName:"HomeVC",bundle: nil)
-        tabHome.tabBarItem = UITabBarItem(title: "Home", image: #imageLiteral(resourceName: "tabbar_horoscope").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "tabbar_horoscope").withRenderingMode(.alwaysOriginal))
-        let navHome = UINavigationController(rootViewController: tabHome)
-        navHome.isNavigationBarHidden = true
-        let tabLove = LoveVC(nibName:"LoveVC",bundle: nil)
-        tabLove.tabBarItem = UITabBarItem(title: "Love", image: #imageLiteral(resourceName: "tabbar_competition").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "tabbar_competition").withRenderingMode(.alwaysOriginal))
-        let navLove = UINavigationController(rootViewController: tabLove)
-        navLove.isNavigationBarHidden = true
-        let tabCompetition = BeautyVC(nibName:"BeautyVC",bundle: nil)
-        tabCompetition.tabBarItem = UITabBarItem(title: "BeautyVC", image: #imageLiteral(resourceName: "tabbar_competition").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "tabbar_competition").withRenderingMode(.alwaysOriginal))
-        let navCompetition = UINavigationController(rootViewController: tabCompetition)
-        navCompetition.isNavigationBarHidden = true
+        let tabHoro = HoroscopeVC(nibName:"HoroscopeVC",bundle: nil)
+        tabHoro.tabBarItem = UITabBarItem(title: "Horoscope", image: #imageLiteral(resourceName: "tabbar_horoscope").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "tabbar_horoscopeSelected").withRenderingMode(.alwaysOriginal))
+        let navHoro = UINavigationController(rootViewController: tabHoro)
+        navHoro.isNavigationBarHidden = true
+        let tabCompatibility = CompatibilityVC(nibName:"CompatibilityVC",bundle: nil)
+        tabCompatibility.tabBarItem = UITabBarItem(title: "Compatibility", image: #imageLiteral(resourceName: "tabbar_compatibility").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "tabbar_compatibilitySelected").withRenderingMode(.alwaysOriginal))
+        let navCompatibility = UINavigationController(rootViewController: tabCompatibility)
+        navCompatibility.isNavigationBarHidden = true
+        let tabFeatures = FeaturesVC(nibName:"FeaturesVC",bundle: nil)
+        tabFeatures.tabBarItem = UITabBarItem(title: "Features", image: #imageLiteral(resourceName: "tabbar_features").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "tabbar_featuresSelected").withRenderingMode(.alwaysOriginal))
+        let navFeatures = UINavigationController(rootViewController: tabFeatures)
+        navFeatures.isNavigationBarHidden = true
         let tabSetting = SettingVC(nibName:"SettingVC",bundle: nil)
-        tabSetting.tabBarItem = UITabBarItem(title: "Setting", image: #imageLiteral(resourceName: "tabbar_setting").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "tabbar_setting").withRenderingMode(.alwaysOriginal))
+        tabSetting.tabBarItem = UITabBarItem(title: "Setting", image: #imageLiteral(resourceName: "tabbar_setting").withRenderingMode(.alwaysOriginal), selectedImage: #imageLiteral(resourceName: "tabbar_settingSelected").withRenderingMode(.alwaysOriginal))
         let navSetting = UINavigationController(rootViewController: tabSetting)
         navSetting.isNavigationBarHidden = true
-        tabVC?.viewControllers = [navHome, navLove, navCompetition, navSetting]
+        tabVC?.viewControllers = [navHoro, navCompatibility, navFeatures, navSetting]
         tabVC?.selectedIndex = index
         window?.rootViewController = tabVC
         window?.makeKeyAndVisible()

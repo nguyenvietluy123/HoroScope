@@ -7,128 +7,282 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05641EB1973F9CDB3EDC525BB9FE1E14 /* RSKImageCropViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C92D866CEF294282B1E3701AF9D7DFE2 /* RSKImageCropViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0A8EE96392493C33F85EF727801941D7 /* RSKImageCropper.h in Headers */ = {isa = PBXBuildFile; fileRef = AA04D178E7706F8DC37B6741A41A9558 /* RSKImageCropper.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0B1B7ADC7FD5561A223E9CB084D25B56 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA08EB53EA5345FD7140B51205E8D62 /* QuartzCore.framework */; };
-		0FA10465664EBE8492F33CA26F165FA0 /* UIImage+RSKImageCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C14FE6E5732E005278EA50835BC503 /* UIImage+RSKImageCropper.m */; };
-		151819EB65953D0048C8160A60D6C4AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2DF18D0B2AAE7E9717A95D9C69F7525 /* UIKit.framework */; };
-		1AEC52B0C80F334CBCF3E971C7F66EA4 /* RSKImageCropper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D550E763FFECBCB5F55746C6D2D6F63 /* RSKImageCropper-dummy.m */; };
-		35A9D83399BF5A8B08A34FAECD811A8F /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B98F330F7CBF03B3462151BDB224717 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		372751227628DD9E891806F3F9B7B9D4 /* RSKImageScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = F3C321A1FA37507FA48A7A274DBB62D8 /* RSKImageScrollView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3A0046C770771D0C4A534BCB992C4CFB /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B62195754BEA5C0CEC102FA664064 /* SwiftyJSON.swift */; };
-		402D923B889C5B358E35B6D04B892137 /* RSKImageCropViewController+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CFD3F60F595726527A822E1DEC15E17 /* RSKImageCropViewController+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5173D66CF40553D145CE97DA6BFFF237 /* RSKTouchView.h in Headers */ = {isa = PBXBuildFile; fileRef = FFA4E3A7A2749995E8FA1C9F18532E48 /* RSKTouchView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		53FC3A4415516A57C845CA5D702A65F0 /* UIApplication+RSKImageCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F23BC35D3DD19D8C96C6A7B8927E57 /* UIApplication+RSKImageCropper.m */; };
-		5BE0435180F3E9F6DE4F0656EA6CC091 /* Pods-HoroScope-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1171C2DBA9D80957F4DB2793C84CCEE /* Pods-HoroScope-dummy.m */; };
-		629B4E5ED87E72EA71FC7C798181C10F /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04881D3960FED4165F912C87ED6B202C /* SwiftyJSON-dummy.m */; };
-		6E01FC4D2DE6B6CED33BD288C53B5D75 /* RSKTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B5D0A4DA08B260AB78DA238B635C0FC /* RSKTouchView.m */; };
-		773BC7F8EA809BE78F20827A9C92C695 /* RSKImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDE814ABB0B3480BA16A86C3D627664 /* RSKImageScrollView.m */; };
-		A494359CCDEF0CB8EA0F7A6292EF9118 /* RSKInternalUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 66AE89C74938C4A7109C7F1F8246F472 /* RSKInternalUtility.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B7C4BD32FF9AB107D71F8A2B649473B4 /* RSKImageCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB22C5B3E83816327D24779ABE2FC9C7 /* RSKImageCropViewController.m */; };
-		C2138084D7B8E2A1958391051E5E98E9 /* UIApplication+RSKImageCropper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A35B158C4FEC2E962F4A94FCA618AA4 /* UIApplication+RSKImageCropper.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C6F4370157A9F3D59C90A0CEA60DE4D4 /* Pods-HoroScope-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B3A167152F70A18A2DF85DEE4F680CDA /* Pods-HoroScope-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D0CF83D8CFE82840FA762A1CD5EBB0C4 /* CGGeometry+RSKImageCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF16C130AB32E9117CAA76A8D0E25E5 /* CGGeometry+RSKImageCropper.m */; };
-		D2AD19FD69D79084DDBDFC0E0687B6DD /* CGGeometry+RSKImageCropper.h in Headers */ = {isa = PBXBuildFile; fileRef = 983356A10B5E8402078C676BE4160C1F /* CGGeometry+RSKImageCropper.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E28917AC8554764C2BA7536496A41866 /* RSKInternalUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6388F8DF3D682AE2D8CF509642B48BD0 /* RSKInternalUtility.m */; };
-		FE9F3207691D954430780A3ACA081877 /* UIImage+RSKImageCropper.h in Headers */ = {isa = PBXBuildFile; fileRef = 27493B501044A19B2936011E5422634F /* UIImage+RSKImageCropper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		035BBBD64966762C44C77FDEE30E907A /* KRProgressHUDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BEDEE42868054920D53B871690C829 /* KRProgressHUDViewController.swift */; };
+		054020A0B396F220718220B72497D72B /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB92A455C4745E0075A8A880C48AEAE /* MultipartFormData.swift */; };
+		0C64D4C8DCECEEDD51BC6AA3F95016FE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2415D445175D0A425F515CE9DA6DF3EF /* Extensions.swift */; };
+		1025C3C060258F81D0DAEE80341A1FB2 /* KRActivityIndicatorView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A625FACDE57DDEEE74D5A95471A47A /* KRActivityIndicatorView-dummy.m */; };
+		15B6BF8E92A2053CE1EDCCE15B37B1E7 /* RSKImageCropper.h in Headers */ = {isa = PBXBuildFile; fileRef = DEAB6B4692BC275895B7787F6D1AFA61 /* RSKImageCropper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		23CF43A5E50F725F17761FF094D0BD1F /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 604DEA5929393E998D6DF25CA4FC4F91 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		24D84E7CCF5B9E6D0D8BE6897FFF4609 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D0966D481F3FE0B8669BD5A6593DE1 /* ResponseSerialization.swift */; };
+		2F4966D51707358AC46CADFFCE55A8AD /* AnimatedMaskLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3F43EB5B396DB0DC91D8B2239E951D /* AnimatedMaskLabel-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3573F6983068A5EDA92B31E566438B22 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AB62C3449C6C7E264AFA6754271FFC /* Timeline.swift */; };
+		3641C4E0BF0A14B9416692ADAFA9B729 /* RSKImageCropViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B9C181121AA2A72FC2D90278372AAC83 /* RSKImageCropViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3D770487B49187FB9923C5FD0CA8AB3D /* UIApplication+RSKImageCropper.h in Headers */ = {isa = PBXBuildFile; fileRef = C8FDE5ABA2ABF2BC5C9EF62C702D34F0 /* UIApplication+RSKImageCropper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3E2774C027426785827811684CE7DC3A /* AnimatedMaskLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EB6C31372E7C9DBB736C15E39AC77C /* AnimatedMaskLabel-dummy.m */; };
+		3F5BA154ADCE51B47E36715918F74E60 /* RSKImageScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 37CE80BB071079E41ECFBC7D8A63C190 /* RSKImageScrollView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4BAAC77259D6946FB0EADD522947C970 /* KRActivityIndicatorView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37DA57E2EC10BEBBEA61C86BF0F65585 /* KRActivityIndicatorView-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4FB3A851B716BAA32464F3072C56D10B /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E0A48D9BAD02087F5B7E8FBB9FB64B /* Validation.swift */; };
+		509A7354833A9116D2A547E570925A0A /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F817C144447A76B6FAC925E7BB57039B /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		540780C279ED3C9BB892AF2C378496EA /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD690DAB1A428C4D840D2887DB46F3F /* Alamofire-dummy.m */; };
+		54F51770478B8425A8006B7BFDCE4CC7 /* AnimatedMaskLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B924F59E5F6723D897CE46ECB5033CA /* AnimatedMaskLabel.swift */; };
+		56D788406041B40CD6F07C02B1B41FD3 /* RSKTouchView.h in Headers */ = {isa = PBXBuildFile; fileRef = B4366AE9D33D350AAA1C3737C91288CE /* RSKTouchView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5F05BEAAB1DE3BDF7EC2F058F6AA59C5 /* UIImage+RSKImageCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8840E451E61708090CB2623543B4CFE5 /* UIImage+RSKImageCropper.m */; };
+		60B899F8FAC6F674B0EE6F5A69E2B2A3 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82651A582535E9EBAE6CE067BAA4F3D /* DispatchQueue+Alamofire.swift */; };
+		62DE6EB02EBF9B5831DC1043E2FFD2A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2DF18D0B2AAE7E9717A95D9C69F7525 /* UIKit.framework */; };
+		63BA06EABDF7EF27ACC54C9E4A7CEE99 /* KRActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF65C0CB5242E2F6C37C5B14A6909000 /* KRActivityIndicatorView.swift */; };
+		6DE57A833C2743A1161DB1A3FE20BFFE /* UIImage+RSKImageCropper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A1F8EDAEE64CDDB837746D8736275EA /* UIImage+RSKImageCropper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		748417656E5626EE579AD7675B8435C9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA08EB53EA5345FD7140B51205E8D62 /* QuartzCore.framework */; };
+		78829C9DD063A19752F2904CA89C8134 /* CGGeometry+RSKImageCropper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9992CE0932BEDD35F5DC26DE033EDCED /* CGGeometry+RSKImageCropper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		797C24094FE27BBFF25C7F395ABBB90B /* CGGeometry+RSKImageCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F7189CD737AA62FF348CAEFB2390C4 /* CGGeometry+RSKImageCropper.m */; };
+		799E396711C53475EEED5A3E3C15ED30 /* Pods-HoroScope-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1171C2DBA9D80957F4DB2793C84CCEE /* Pods-HoroScope-dummy.m */; };
+		7B02E84B6522A96BC9747947007EE132 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9565D88A9CA5EA6813DE868D1EC38CD2 /* ParameterEncoding.swift */; };
+		7E3D3794AEC0F0DE985CB848BF68EC01 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C6F44D7BF6E66D3A04A72B243A8F5E /* AFError.swift */; };
+		7FFC212EDF93CAF60E7F16A1373B3655 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804B7C4CDED48B5304DBD0D7B8FBC53E /* Notifications.swift */; };
+		83813BDF00D751059AB1A1045FB7A240 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F85786408B22C9B3100A19922B1261 /* Alamofire.swift */; };
+		83863CD37B6BFB6F42887C452A4DA288 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0777456DD863E6DD05282718FBB8A27 /* ServerTrustPolicy.swift */; };
+		876CC862F3B15FB840ABDE177FA1AF45 /* RSKInternalUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 5747BE7240DBDC7C9C19CBAA4E7BA478 /* RSKInternalUtility.m */; };
+		8B7EBC65ED1F5DB98D0D7C496E4273BB /* KRProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01007C76B97FFECE5DF2835624A1C9BC /* KRProgressHUD.swift */; };
+		8C83F84F29D7DDE046923E0B96E4213E /* UIApplication+RSKImageCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = B829AE32C9FFDF44043A6F93DE8B4DDA /* UIApplication+RSKImageCropper.m */; };
+		8E698D719D43B4A8713417AF20EFBBE4 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E41C587548AFE3B146B0B4B531121C /* Result.swift */; };
+		8E9A1C19F213541EE36EE2D1D02D36C5 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F749035AD31AD5A15BF1B6476D6E01B2 /* SwiftyJSON.swift */; };
+		95638606564452201D545FA4119C270A /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E8299592938B2FA517BCF4B21783C7 /* SessionDelegate.swift */; };
+		9D7A4C1026B3CA107A066F5A5BBD6D22 /* RSKImageCropViewController+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = DE9B145ED6D7A09090D62ADC9C3FD714 /* RSKImageCropViewController+Protected.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A485A2799CD1458AEFD58D7658A84036 /* RSKImageCropper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD38F3D201272B9FD50F776BEBA0E21 /* RSKImageCropper-dummy.m */; };
+		A6C26370A334B5FD8F89949AF13412CB /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E70B7D35E356243705DB07D7FE7E7A /* SessionManager.swift */; };
+		B08BA0E7C3BC376AD01CF5B98A7520FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2DF18D0B2AAE7E9717A95D9C69F7525 /* UIKit.framework */; };
+		B5C10F6DBB810F6DBF24DAE0692370D1 /* RSKTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BDA3B09D55209A7B676EB552A65709 /* RSKTouchView.m */; };
+		B929CA9E74943C99F4697DE31DD2233D /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3490F02BD563A5FB7C8428A89E4AC856 /* NetworkReachabilityManager.swift */; };
+		BA9F074579ED380322BC3CC13678A016 /* Pods-HoroScope-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B3A167152F70A18A2DF85DEE4F680CDA /* Pods-HoroScope-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C0F12085301719C7B9B853CEF3A48FDB /* RSKImageCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 653981A0E843A7C7D1A5C3A0FF944674 /* RSKImageCropViewController.m */; };
+		C31B8FE295B2A3DBE86355E773A105E9 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5648F9D3DAE4EFF374A7584CD0C54C8 /* SwiftyJSON-dummy.m */; };
+		C57B9415FFC4B11ABE0CD02972B0ED5B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB6059217F962ADD90D493E6AC91E4B /* Extensions.swift */; };
+		C961AA98D4A8792CB40417BABB346786 /* RSKInternalUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = E8E795E505C50ED2E25949F469160859 /* RSKInternalUtility.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D9B1DE008604918A7E382F046A33CC36 /* KRActivityIndicatorViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AEBCBB94F4BA76896BF6B75EDED4A /* KRActivityIndicatorViewStyle.swift */; };
+		E4235BE468010B5B2B6DE4B1B4054A19 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AEE1D8C1979193AA5DCD0111A1FF86 /* TaskDelegate.swift */; };
+		E9414D625DACA18BCA04C51266F3896B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA08EB53EA5345FD7140B51205E8D62 /* QuartzCore.framework */; };
+		EA8CBFD46150620E0740CA5766EA6656 /* InnerKRProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E924600E9A11892DB919322476BE4B /* InnerKRProgressHUD.swift */; };
+		EF7424BF084B0A8D3310C05D4490193B /* KRProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C82C40A23AD75FF0522F86FC151413EF /* KRProgressHUD-dummy.m */; };
+		F447C73D9ACAC59E04218B6770EBF04E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B4BE78D0086B9A47016EB58491F993 /* Request.swift */; };
+		F8A4F06035481ECC97D7C83D6FF85385 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9BC4725B30732DA969E286964A48AA /* Response.swift */; };
+		F9CFBF77590234E5CB58C2D5419D2110 /* RSKImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EADEE64536C4C9C43D0CBCA907D03F7A /* RSKImageScrollView.m */; };
+		FAD7E97E9E004AB41A5BF40A15D61D39 /* KRProgressHUDIconType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E992A9D9B5AA7C99170CD5B25CED4F /* KRProgressHUDIconType.swift */; };
+		FF51FD8819ED0F4EF6B1021963CA3080 /* KRProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AABFBDD9F772A96D3806317F5F1929F /* KRProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		634EF9665A1AF658F361399A7F255DA9 /* PBXContainerItemProxy */ = {
+		12919B8CC854438AC232C658A25A8ACF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 87E159564B8FBB02059C3C0D4130317F;
-			remoteInfo = RSKImageCropper;
+			remoteGlobalIDString = 7222E0CF79E88E8E6E9928D4E981C608;
+			remoteInfo = KRProgressHUD;
 		};
-		89A837D97C11EE3A9BB2F50C72B47DE2 /* PBXContainerItemProxy */ = {
+		71FB01C082857FEE4258E4B1D471EC41 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1BC3B4C95B56ECEAE7ECD1824EE52E66;
+			remoteGlobalIDString = 7D2A91F4D6AB7C34E36707C222F6D8A9;
+			remoteInfo = KRActivityIndicatorView;
+		};
+		A3EA01FC8DDF0826455D0827C29C6F07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFE6BC232CB468725ACA26D6B1A56B3D;
 			remoteInfo = SwiftyJSON;
+		};
+		B267C3076D70D88C88FEC59091DB5331 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95C31791CC30F4487BB91E6A0F9757CE;
+			remoteInfo = Alamofire;
+		};
+		D285796AB1738A291F686B01FD89CE30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D2A91F4D6AB7C34E36707C222F6D8A9;
+			remoteInfo = KRActivityIndicatorView;
+		};
+		D9BF3E877A5F176107849C05514DC9B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82E2BA017F738EAB164E44DCB9F6BD06;
+			remoteInfo = AnimatedMaskLabel;
+		};
+		EFAA4024F0BC0F839A5E79B40D2F99E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2DCD7FD6F32209A8ADCC4753A63640F;
+			remoteInfo = RSKImageCropper;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E1E2B284DEEF9AB1C1BBF514DA5671 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = SwiftyJSON.modulemap; path = ../../Headers/Public/SwiftyJSON/SwiftyJSON.modulemap; sourceTree = "<group>"; };
-		04881D3960FED4165F912C87ED6B202C /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		0B5D0A4DA08B260AB78DA238B635C0FC /* RSKTouchView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSKTouchView.m; path = RSKImageCropper/RSKTouchView.m; sourceTree = "<group>"; };
-		0DC05A22A84CB4DC9272734AC4301E8B /* libSwiftyJSON.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSwiftyJSON.a; path = libSwiftyJSON.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		13F23BC35D3DD19D8C96C6A7B8927E57 /* UIApplication+RSKImageCropper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+RSKImageCropper.m"; path = "RSKImageCropper/UIApplication+RSKImageCropper.m"; sourceTree = "<group>"; };
-		1432DB6294D24F589AD9F747CAB661A4 /* libRSKImageCropper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRSKImageCropper.a; path = libRSKImageCropper.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AF16C130AB32E9117CAA76A8D0E25E5 /* CGGeometry+RSKImageCropper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CGGeometry+RSKImageCropper.m"; path = "RSKImageCropper/CGGeometry+RSKImageCropper.m"; sourceTree = "<group>"; };
-		1D550E763FFECBCB5F55746C6D2D6F63 /* RSKImageCropper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSKImageCropper-dummy.m"; sourceTree = "<group>"; };
-		27493B501044A19B2936011E5422634F /* UIImage+RSKImageCropper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+RSKImageCropper.h"; path = "RSKImageCropper/UIImage+RSKImageCropper.h"; sourceTree = "<group>"; };
+		01007C76B97FFECE5DF2835624A1C9BC /* KRProgressHUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KRProgressHUD.swift; path = KRProgressHUD/Classes/KRProgressHUD.swift; sourceTree = "<group>"; };
+		06D512B0E663BD5911DB1A273EA122B8 /* libKRActivityIndicatorView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libKRActivityIndicatorView.a; path = libKRActivityIndicatorView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AE5EC2DA9201942A81F2701C4AD6BE5 /* KRProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KRProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		19258F53E128C971BFD2BEC492D8D08A /* libRSKImageCropper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRSKImageCropper.a; path = libRSKImageCropper.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B924F59E5F6723D897CE46ECB5033CA /* AnimatedMaskLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedMaskLabel.swift; path = AnimatedMaskLabel/Classes/AnimatedMaskLabel.swift; sourceTree = "<group>"; };
+		1C532834CB2A21D49EBBBFEEE6C94522 /* KRProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KRProgressHUD.xcconfig; sourceTree = "<group>"; };
+		23EB6C31372E7C9DBB736C15E39AC77C /* AnimatedMaskLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AnimatedMaskLabel-dummy.m"; sourceTree = "<group>"; };
+		2415D445175D0A425F515CE9DA6DF3EF /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = KRActivityIndicatorView/Classes/Extensions.swift; sourceTree = "<group>"; };
 		28C1DF59EB06A17674BFAAD5BA065DB4 /* Pods-HoroScope-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HoroScope-frameworks.sh"; sourceTree = "<group>"; };
-		2954C6EC4E3838FC0B12189250B6B075 /* libPods-HoroScope.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-HoroScope.a"; path = "libPods-HoroScope.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A35B158C4FEC2E962F4A94FCA618AA4 /* UIApplication+RSKImageCropper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+RSKImageCropper.h"; path = "RSKImageCropper/UIApplication+RSKImageCropper.h"; sourceTree = "<group>"; };
-		3B98F330F7CBF03B3462151BDB224717 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SwiftyJSON-umbrella.h"; path = "../../Headers/Public/SwiftyJSON/SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		3CFD3F60F595726527A822E1DEC15E17 /* RSKImageCropViewController+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RSKImageCropViewController+Protected.h"; path = "RSKImageCropper/RSKImageCropViewController+Protected.h"; sourceTree = "<group>"; };
-		453C18D90711BCA96FDD9211224A71B1 /* RSKImageCropperStrings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = RSKImageCropperStrings.bundle; path = RSKImageCropper/RSKImageCropperStrings.bundle; sourceTree = "<group>"; };
-		51EAF8FD7456964A1EAF7C67BC9F4732 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
-		6388F8DF3D682AE2D8CF509642B48BD0 /* RSKInternalUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSKInternalUtility.m; path = RSKImageCropper/RSKInternalUtility.m; sourceTree = "<group>"; };
-		66AE89C74938C4A7109C7F1F8246F472 /* RSKInternalUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSKInternalUtility.h; path = RSKImageCropper/RSKInternalUtility.h; sourceTree = "<group>"; };
-		6EDE814ABB0B3480BA16A86C3D627664 /* RSKImageScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSKImageScrollView.m; path = RSKImageCropper/RSKImageScrollView.m; sourceTree = "<group>"; };
+		2C9BC4725B30732DA969E286964A48AA /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		31ADE8AB866BCA3A08DAFF6AA9AB3B6C /* KRProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = KRProgressHUD.modulemap; path = ../../Headers/Public/KRProgressHUD/KRProgressHUD.modulemap; sourceTree = "<group>"; };
+		3490F02BD563A5FB7C8428A89E4AC856 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		37CE80BB071079E41ECFBC7D8A63C190 /* RSKImageScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSKImageScrollView.h; path = RSKImageCropper/RSKImageScrollView.h; sourceTree = "<group>"; };
+		37DA57E2EC10BEBBEA61C86BF0F65585 /* KRActivityIndicatorView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "KRActivityIndicatorView-umbrella.h"; path = "../../Headers/Public/KRActivityIndicatorView/KRActivityIndicatorView-umbrella.h"; sourceTree = "<group>"; };
+		39FE69B3F73C38CFB74AD0EEE1DA4054 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		3B3EC6D9D8A523E042DABCDFF9F76098 /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAlamofire.a; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FB6059217F962ADD90D493E6AC91E4B /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = KRProgressHUD/Classes/Extensions.swift; sourceTree = "<group>"; };
+		480DE19299F83C0D3A61F42151051E9B /* libPods-HoroScope.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-HoroScope.a"; path = "libPods-HoroScope.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AABFBDD9F772A96D3806317F5F1929F /* KRProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "KRProgressHUD-umbrella.h"; path = "../../Headers/Public/KRProgressHUD/KRProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		4BD38F3D201272B9FD50F776BEBA0E21 /* RSKImageCropper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSKImageCropper-dummy.m"; sourceTree = "<group>"; };
+		4E243EF8D87B53E6821BDEFE070F6A99 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = Alamofire.modulemap; path = ../../Headers/Public/Alamofire/Alamofire.modulemap; sourceTree = "<group>"; };
+		4FD8D7D56379815183227BC9BA9E5602 /* KRActivityIndicatorView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KRActivityIndicatorView-prefix.pch"; sourceTree = "<group>"; };
+		5747BE7240DBDC7C9C19CBAA4E7BA478 /* RSKInternalUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSKInternalUtility.m; path = RSKImageCropper/RSKInternalUtility.m; sourceTree = "<group>"; };
+		5A16DCFFB49E9CB783A7A6739D9A4EFB /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		5D3F43EB5B396DB0DC91D8B2239E951D /* AnimatedMaskLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AnimatedMaskLabel-umbrella.h"; path = "../../Headers/Public/AnimatedMaskLabel/AnimatedMaskLabel-umbrella.h"; sourceTree = "<group>"; };
+		5E6E1021FC999D21F626D32486FE3933 /* AnimatedMaskLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AnimatedMaskLabel.xcconfig; sourceTree = "<group>"; };
+		604DEA5929393E998D6DF25CA4FC4F91 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Alamofire-umbrella.h"; path = "../../Headers/Public/Alamofire/Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		61A625FACDE57DDEEE74D5A95471A47A /* KRActivityIndicatorView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KRActivityIndicatorView-dummy.m"; sourceTree = "<group>"; };
+		629DA59B8D565727019EC15B70E530CA /* libAnimatedMaskLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAnimatedMaskLabel.a; path = libAnimatedMaskLabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		653981A0E843A7C7D1A5C3A0FF944674 /* RSKImageCropViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSKImageCropViewController.m; path = RSKImageCropper/RSKImageCropViewController.m; sourceTree = "<group>"; };
+		67AB62C3449C6C7E264AFA6754271FFC /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		67E992A9D9B5AA7C99170CD5B25CED4F /* KRProgressHUDIconType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KRProgressHUDIconType.swift; path = KRProgressHUD/Classes/KRProgressHUDIconType.swift; sourceTree = "<group>"; };
+		6A1F8EDAEE64CDDB837746D8736275EA /* UIImage+RSKImageCropper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+RSKImageCropper.h"; path = "RSKImageCropper/UIImage+RSKImageCropper.h"; sourceTree = "<group>"; };
+		6EB92A455C4745E0075A8A880C48AEAE /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		71E41C587548AFE3B146B0B4B531121C /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		71F7189CD737AA62FF348CAEFB2390C4 /* CGGeometry+RSKImageCropper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CGGeometry+RSKImageCropper.m"; path = "RSKImageCropper/CGGeometry+RSKImageCropper.m"; sourceTree = "<group>"; };
 		72560098E01A68B616254D68484AD99B /* Pods-HoroScope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HoroScope.debug.xcconfig"; sourceTree = "<group>"; };
+		72BDA3B09D55209A7B676EB552A65709 /* RSKTouchView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSKTouchView.m; path = RSKImageCropper/RSKTouchView.m; sourceTree = "<group>"; };
+		73B3620D232965CBEDC5D462D33DCEE6 /* KRActivityIndicatorView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KRActivityIndicatorView.xcconfig; sourceTree = "<group>"; };
+		74AEE1D8C1979193AA5DCD0111A1FF86 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		7F49C67347F75F48699E8927A0EDD554 /* AnimatedMaskLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = AnimatedMaskLabel.modulemap; path = ../../Headers/Public/AnimatedMaskLabel/AnimatedMaskLabel.modulemap; sourceTree = "<group>"; };
+		804B7C4CDED48B5304DBD0D7B8FBC53E /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		8526C93695D3393F0041246FF907490F /* Pods-HoroScope-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HoroScope-acknowledgements.plist"; sourceTree = "<group>"; };
+		86BEDEE42868054920D53B871690C829 /* KRProgressHUDViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KRProgressHUDViewController.swift; path = KRProgressHUD/Classes/KRProgressHUDViewController.swift; sourceTree = "<group>"; };
+		8840E451E61708090CB2623543B4CFE5 /* UIImage+RSKImageCropper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+RSKImageCropper.m"; path = "RSKImageCropper/UIImage+RSKImageCropper.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		983356A10B5E8402078C676BE4160C1F /* CGGeometry+RSKImageCropper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CGGeometry+RSKImageCropper.h"; path = "RSKImageCropper/CGGeometry+RSKImageCropper.h"; sourceTree = "<group>"; };
+		93E8299592938B2FA517BCF4B21783C7 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		9565D88A9CA5EA6813DE868D1EC38CD2 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		956DC8B690EDD56678412E3E7A95D43C /* libSwiftyJSON.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSwiftyJSON.a; path = libSwiftyJSON.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		967F18EA9178D7A0072FFF00FB73EF3B /* KRActivityIndicatorView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = KRActivityIndicatorView.modulemap; path = ../../Headers/Public/KRActivityIndicatorView/KRActivityIndicatorView.modulemap; sourceTree = "<group>"; };
+		9992CE0932BEDD35F5DC26DE033EDCED /* CGGeometry+RSKImageCropper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CGGeometry+RSKImageCropper.h"; path = "RSKImageCropper/CGGeometry+RSKImageCropper.h"; sourceTree = "<group>"; };
+		9B2E41949C2F12F19E0A88160E92D8DD /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		9D2DED7595547F7F859DB37F4BBB81E3 /* RSKImageCropper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSKImageCropper.xcconfig; sourceTree = "<group>"; };
 		A1171C2DBA9D80957F4DB2793C84CCEE /* Pods-HoroScope-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HoroScope-dummy.m"; sourceTree = "<group>"; };
 		A2DF18D0B2AAE7E9717A95D9C69F7525 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		A3E70B7D35E356243705DB07D7FE7E7A /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		A6944F5A64FFBE12BEB970B33A980FA6 /* Pods-HoroScope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HoroScope.release.xcconfig"; sourceTree = "<group>"; };
-		AA04D178E7706F8DC37B6741A41A9558 /* RSKImageCropper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSKImageCropper.h; path = RSKImageCropper/RSKImageCropper.h; sourceTree = "<group>"; };
+		A82651A582535E9EBAE6CE067BAA4F3D /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		AAF5784BF63CD465FCF95BDCA65FDD6F /* Pods-HoroScope-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HoroScope-acknowledgements.markdown"; sourceTree = "<group>"; };
 		ACA08EB53EA5345FD7140B51205E8D62 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		ACD4449B25E77FED41C5B3FB6B86B378 /* RSKImageCropper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSKImageCropper-prefix.pch"; sourceTree = "<group>"; };
+		AE4A287213E60DF74FCA151DB8188B5E /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = SwiftyJSON.modulemap; path = ../../Headers/Public/SwiftyJSON/SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		AFE979EA3C8C0E50699EA5CDDE06893D /* Pods-HoroScope.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HoroScope.modulemap"; sourceTree = "<group>"; };
 		B3A167152F70A18A2DF85DEE4F680CDA /* Pods-HoroScope-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HoroScope-umbrella.h"; sourceTree = "<group>"; };
-		B73F3E5102BA528E8AF6E63B9F464880 /* RSKImageCropper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSKImageCropper-prefix.pch"; sourceTree = "<group>"; };
-		C5377A20351975EE287222EDBF2CCBE4 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		C838A53B715AA3AFC53699B2F94DC61B /* RSKImageCropper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSKImageCropper.xcconfig; sourceTree = "<group>"; };
-		C8C14FE6E5732E005278EA50835BC503 /* UIImage+RSKImageCropper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+RSKImageCropper.m"; path = "RSKImageCropper/UIImage+RSKImageCropper.m"; sourceTree = "<group>"; };
-		C92D866CEF294282B1E3701AF9D7DFE2 /* RSKImageCropViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSKImageCropViewController.h; path = RSKImageCropper/RSKImageCropViewController.h; sourceTree = "<group>"; };
-		CE4B62195754BEA5C0CEC102FA664064 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		B4366AE9D33D350AAA1C3737C91288CE /* RSKTouchView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSKTouchView.h; path = RSKImageCropper/RSKTouchView.h; sourceTree = "<group>"; };
+		B829AE32C9FFDF44043A6F93DE8B4DDA /* UIApplication+RSKImageCropper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+RSKImageCropper.m"; path = "RSKImageCropper/UIApplication+RSKImageCropper.m"; sourceTree = "<group>"; };
+		B9C181121AA2A72FC2D90278372AAC83 /* RSKImageCropViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSKImageCropViewController.h; path = RSKImageCropper/RSKImageCropViewController.h; sourceTree = "<group>"; };
+		B9C6F44D7BF6E66D3A04A72B243A8F5E /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		BC1249E13873C46B6CE26C96AF2D1554 /* AnimatedMaskLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnimatedMaskLabel-prefix.pch"; sourceTree = "<group>"; };
+		BF65C0CB5242E2F6C37C5B14A6909000 /* KRActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KRActivityIndicatorView.swift; path = KRActivityIndicatorView/Classes/KRActivityIndicatorView.swift; sourceTree = "<group>"; };
+		C5648F9D3DAE4EFF374A7584CD0C54C8 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		C740E12FC83DF27741DFB6507C554219 /* RSKImageCropperStrings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = RSKImageCropperStrings.bundle; path = RSKImageCropper/RSKImageCropperStrings.bundle; sourceTree = "<group>"; };
+		C82C40A23AD75FF0522F86FC151413EF /* KRProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KRProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		C8D13794780AADFD9381ED97797DB965 /* libKRProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libKRProgressHUD.a; path = libKRProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8FDE5ABA2ABF2BC5C9EF62C702D34F0 /* UIApplication+RSKImageCropper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+RSKImageCropper.h"; path = "RSKImageCropper/UIApplication+RSKImageCropper.h"; sourceTree = "<group>"; };
 		CFCD9EA4CC39176D3BCDF63E4E436C0D /* Pods-HoroScope-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HoroScope-resources.sh"; sourceTree = "<group>"; };
-		DB22C5B3E83816327D24779ABE2FC9C7 /* RSKImageCropViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSKImageCropViewController.m; path = RSKImageCropper/RSKImageCropViewController.m; sourceTree = "<group>"; };
-		F3C321A1FA37507FA48A7A274DBB62D8 /* RSKImageScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSKImageScrollView.h; path = RSKImageCropper/RSKImageScrollView.h; sourceTree = "<group>"; };
-		FFA4E3A7A2749995E8FA1C9F18532E48 /* RSKTouchView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSKTouchView.h; path = RSKImageCropper/RSKTouchView.h; sourceTree = "<group>"; };
+		D4E924600E9A11892DB919322476BE4B /* InnerKRProgressHUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InnerKRProgressHUD.swift; path = KRProgressHUD/Classes/InnerKRProgressHUD.swift; sourceTree = "<group>"; };
+		DE9B145ED6D7A09090D62ADC9C3FD714 /* RSKImageCropViewController+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RSKImageCropViewController+Protected.h"; path = "RSKImageCropper/RSKImageCropViewController+Protected.h"; sourceTree = "<group>"; };
+		DEAB6B4692BC275895B7787F6D1AFA61 /* RSKImageCropper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSKImageCropper.h; path = RSKImageCropper/RSKImageCropper.h; sourceTree = "<group>"; };
+		E0777456DD863E6DD05282718FBB8A27 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		E6E0A48D9BAD02087F5B7E8FBB9FB64B /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		E8E795E505C50ED2E25949F469160859 /* RSKInternalUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSKInternalUtility.h; path = RSKImageCropper/RSKInternalUtility.h; sourceTree = "<group>"; };
+		EADEE64536C4C9C43D0CBCA907D03F7A /* RSKImageScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSKImageScrollView.m; path = RSKImageCropper/RSKImageScrollView.m; sourceTree = "<group>"; };
+		EDD690DAB1A428C4D840D2887DB46F3F /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		F1B4BE78D0086B9A47016EB58491F993 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		F6F85786408B22C9B3100A19922B1261 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		F749035AD31AD5A15BF1B6476D6E01B2 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		F817C144447A76B6FAC925E7BB57039B /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SwiftyJSON-umbrella.h"; path = "../../Headers/Public/SwiftyJSON/SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		F9D0966D481F3FE0B8669BD5A6593DE1 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		FA1AEBCBB94F4BA76896BF6B75EDED4A /* KRActivityIndicatorViewStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KRActivityIndicatorViewStyle.swift; path = KRActivityIndicatorView/Classes/KRActivityIndicatorViewStyle.swift; sourceTree = "<group>"; };
+		FB30F41B81DAE96CF59C07A2FE06738C /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1B9ABEB8B6611952D34EA9190BABA68A /* Frameworks */ = {
+		578E2F378C0445526D4EF2BFA6967908 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3B3C1D7EA944F81C913F62346435D9DE /* Frameworks */ = {
+		7A480CFF236EEE022E18FC558B843D9D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CF1FCBB63C8F4E38501A1CC97C6C3696 /* Frameworks */ = {
+		8AA5B9D83D42894665A57A308326EBEE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B1B7ADC7FD5561A223E9CB084D25B56 /* QuartzCore.framework in Frameworks */,
-				151819EB65953D0048C8160A60D6C4AA /* UIKit.framework in Frameworks */,
+				E9414D625DACA18BCA04C51266F3896B /* QuartzCore.framework in Frameworks */,
+				62DE6EB02EBF9B5831DC1043E2FFD2A2 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D61C8D50FBBE6BEC9900BECDC8CBCB58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEF00DCCCF4B70B56A734408C10A485B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				748417656E5626EE579AD7675B8435C9 /* QuartzCore.framework in Frameworks */,
+				B08BA0E7C3BC376AD01CF5B98A7520FE /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1330876AC45DBD5F588D1C7CF9847D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3B04FE4064999D61FEED4777AF41AE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		16869B35A5E756BC0CC3A8A6BC1F26A9 /* Products */ = {
+		08B91287CEA0389FDF5CC349D5AA852D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2954C6EC4E3838FC0B12189250B6B075 /* libPods-HoroScope.a */,
-				1432DB6294D24F589AD9F747CAB661A4 /* libRSKImageCropper.a */,
-				0DC05A22A84CB4DC9272734AC4301E8B /* libSwiftyJSON.a */,
+				AE4A287213E60DF74FCA151DB8188B5E /* SwiftyJSON.modulemap */,
+				5A16DCFFB49E9CB783A7A6739D9A4EFB /* SwiftyJSON.xcconfig */,
+				C5648F9D3DAE4EFF374A7584CD0C54C8 /* SwiftyJSON-dummy.m */,
+				39FE69B3F73C38CFB74AD0EEE1DA4054 /* SwiftyJSON-prefix.pch */,
+				F817C144447A76B6FAC925E7BB57039B /* SwiftyJSON-umbrella.h */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
 			sourceTree = "<group>";
 		};
 		16E70873D7359D233C907624F0E1CC3E /* Pods-HoroScope */ = {
@@ -148,12 +302,53 @@
 			path = "Target Support Files/Pods-HoroScope";
 			sourceTree = "<group>";
 		};
-		2A6036A6E2F7EA6DE135B01FAAAF1AB4 /* Resources */ = {
+		25473DB8093FE53FF53FCDCF31FCF38D /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				453C18D90711BCA96FDD9211224A71B1 /* RSKImageCropperStrings.bundle */,
+				B9C6F44D7BF6E66D3A04A72B243A8F5E /* AFError.swift */,
+				F6F85786408B22C9B3100A19922B1261 /* Alamofire.swift */,
+				A82651A582535E9EBAE6CE067BAA4F3D /* DispatchQueue+Alamofire.swift */,
+				6EB92A455C4745E0075A8A880C48AEAE /* MultipartFormData.swift */,
+				3490F02BD563A5FB7C8428A89E4AC856 /* NetworkReachabilityManager.swift */,
+				804B7C4CDED48B5304DBD0D7B8FBC53E /* Notifications.swift */,
+				9565D88A9CA5EA6813DE868D1EC38CD2 /* ParameterEncoding.swift */,
+				F1B4BE78D0086B9A47016EB58491F993 /* Request.swift */,
+				2C9BC4725B30732DA969E286964A48AA /* Response.swift */,
+				F9D0966D481F3FE0B8669BD5A6593DE1 /* ResponseSerialization.swift */,
+				71E41C587548AFE3B146B0B4B531121C /* Result.swift */,
+				E0777456DD863E6DD05282718FBB8A27 /* ServerTrustPolicy.swift */,
+				93E8299592938B2FA517BCF4B21783C7 /* SessionDelegate.swift */,
+				A3E70B7D35E356243705DB07D7FE7E7A /* SessionManager.swift */,
+				74AEE1D8C1979193AA5DCD0111A1FF86 /* TaskDelegate.swift */,
+				67AB62C3449C6C7E264AFA6754271FFC /* Timeline.swift */,
+				E6E0A48D9BAD02087F5B7E8FBB9FB64B /* Validation.swift */,
+				6AE4CD86A7A1702D7CF145F9DE0FB29D /* Support Files */,
 			);
-			name = Resources;
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		27CBF12A3FFAC9AEF05E5D772D32D62E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				967F18EA9178D7A0072FFF00FB73EF3B /* KRActivityIndicatorView.modulemap */,
+				73B3620D232965CBEDC5D462D33DCEE6 /* KRActivityIndicatorView.xcconfig */,
+				61A625FACDE57DDEEE74D5A95471A47A /* KRActivityIndicatorView-dummy.m */,
+				4FD8D7D56379815183227BC9BA9E5602 /* KRActivityIndicatorView-prefix.pch */,
+				37DA57E2EC10BEBBEA61C86BF0F65585 /* KRActivityIndicatorView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KRActivityIndicatorView";
+			sourceTree = "<group>";
+		};
+		2CD07106D19889D86ACB6F043D6E8528 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				F749035AD31AD5A15BF1B6476D6E01B2 /* SwiftyJSON.swift */,
+				08B91287CEA0389FDF5CC349D5AA852D /* Support Files */,
+			);
+			name = SwiftyJSON;
+			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -164,23 +359,93 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5DB83B1A05C8398DFCCC84D40F71DBF7 /* Pods */ = {
+		497F1B1756C18A8F5162988A814D2DAF /* RSKImageCropper */ = {
 			isa = PBXGroup;
 			children = (
-				AD72BF08A1379E90625466A4E805CD69 /* RSKImageCropper */,
-				671394E5A5CBB6404191CD2ED60DA416 /* SwiftyJSON */,
+				9992CE0932BEDD35F5DC26DE033EDCED /* CGGeometry+RSKImageCropper.h */,
+				71F7189CD737AA62FF348CAEFB2390C4 /* CGGeometry+RSKImageCropper.m */,
+				DEAB6B4692BC275895B7787F6D1AFA61 /* RSKImageCropper.h */,
+				B9C181121AA2A72FC2D90278372AAC83 /* RSKImageCropViewController.h */,
+				653981A0E843A7C7D1A5C3A0FF944674 /* RSKImageCropViewController.m */,
+				DE9B145ED6D7A09090D62ADC9C3FD714 /* RSKImageCropViewController+Protected.h */,
+				37CE80BB071079E41ECFBC7D8A63C190 /* RSKImageScrollView.h */,
+				EADEE64536C4C9C43D0CBCA907D03F7A /* RSKImageScrollView.m */,
+				E8E795E505C50ED2E25949F469160859 /* RSKInternalUtility.h */,
+				5747BE7240DBDC7C9C19CBAA4E7BA478 /* RSKInternalUtility.m */,
+				B4366AE9D33D350AAA1C3737C91288CE /* RSKTouchView.h */,
+				72BDA3B09D55209A7B676EB552A65709 /* RSKTouchView.m */,
+				C8FDE5ABA2ABF2BC5C9EF62C702D34F0 /* UIApplication+RSKImageCropper.h */,
+				B829AE32C9FFDF44043A6F93DE8B4DDA /* UIApplication+RSKImageCropper.m */,
+				6A1F8EDAEE64CDDB837746D8736275EA /* UIImage+RSKImageCropper.h */,
+				8840E451E61708090CB2623543B4CFE5 /* UIImage+RSKImageCropper.m */,
+				D2EEC61F9C0D78B774E956FFD596B2B3 /* Resources */,
+				588EC14CF2EB88221F73B70472BDFCFE /* Support Files */,
 			);
-			name = Pods;
+			name = RSKImageCropper;
+			path = RSKImageCropper;
 			sourceTree = "<group>";
 		};
-		671394E5A5CBB6404191CD2ED60DA416 /* SwiftyJSON */ = {
+		588EC14CF2EB88221F73B70472BDFCFE /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CE4B62195754BEA5C0CEC102FA664064 /* SwiftyJSON.swift */,
-				92B5173DC7646998A5D7A43665F956F7 /* Support Files */,
+				9D2DED7595547F7F859DB37F4BBB81E3 /* RSKImageCropper.xcconfig */,
+				4BD38F3D201272B9FD50F776BEBA0E21 /* RSKImageCropper-dummy.m */,
+				ACD4449B25E77FED41C5B3FB6B86B378 /* RSKImageCropper-prefix.pch */,
 			);
-			name = SwiftyJSON;
-			path = SwiftyJSON;
+			name = "Support Files";
+			path = "../Target Support Files/RSKImageCropper";
+			sourceTree = "<group>";
+		};
+		62BD0432ED4BFB6166F54F3278625AD8 /* KRProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				3FB6059217F962ADD90D493E6AC91E4B /* Extensions.swift */,
+				D4E924600E9A11892DB919322476BE4B /* InnerKRProgressHUD.swift */,
+				01007C76B97FFECE5DF2835624A1C9BC /* KRProgressHUD.swift */,
+				67E992A9D9B5AA7C99170CD5B25CED4F /* KRProgressHUDIconType.swift */,
+				86BEDEE42868054920D53B871690C829 /* KRProgressHUDViewController.swift */,
+				A96DAC4B887DC0CFD72C6014356B8CCA /* Support Files */,
+			);
+			name = KRProgressHUD;
+			path = KRProgressHUD;
+			sourceTree = "<group>";
+		};
+		6AE4CD86A7A1702D7CF145F9DE0FB29D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4E243EF8D87B53E6821BDEFE070F6A99 /* Alamofire.modulemap */,
+				9B2E41949C2F12F19E0A88160E92D8DD /* Alamofire.xcconfig */,
+				EDD690DAB1A428C4D840D2887DB46F3F /* Alamofire-dummy.m */,
+				FB30F41B81DAE96CF59C07A2FE06738C /* Alamofire-prefix.pch */,
+				604DEA5929393E998D6DF25CA4FC4F91 /* Alamofire-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		73C7E7BE0ED4E4FAD2DABA95B63A7437 /* KRActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				2415D445175D0A425F515CE9DA6DF3EF /* Extensions.swift */,
+				BF65C0CB5242E2F6C37C5B14A6909000 /* KRActivityIndicatorView.swift */,
+				FA1AEBCBB94F4BA76896BF6B75EDED4A /* KRActivityIndicatorViewStyle.swift */,
+				27CBF12A3FFAC9AEF05E5D772D32D62E /* Support Files */,
+			);
+			name = KRActivityIndicatorView;
+			path = KRActivityIndicatorView;
+			sourceTree = "<group>";
+		};
+		77EC9D53282138C04DDCB61B3D5161D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25473DB8093FE53FF53FCDCF31FCF38D /* Alamofire */,
+				8BC76B4B480CADEE51663237C1FFE762 /* AnimatedMaskLabel */,
+				73C7E7BE0ED4E4FAD2DABA95B63A7437 /* KRActivityIndicatorView */,
+				62BD0432ED4BFB6166F54F3278625AD8 /* KRProgressHUD */,
+				497F1B1756C18A8F5162988A814D2DAF /* RSKImageCropper */,
+				2CD07106D19889D86ACB6F043D6E8528 /* SwiftyJSON */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -188,23 +453,33 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				5DB83B1A05C8398DFCCC84D40F71DBF7 /* Pods */,
-				16869B35A5E756BC0CC3A8A6BC1F26A9 /* Products */,
+				77EC9D53282138C04DDCB61B3D5161D7 /* Pods */,
+				E2EABE1D5C46E4E669F1C8E9789ABD94 /* Products */,
 				EACD563A444F018CBFB68D3E755B1C3C /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		92B5173DC7646998A5D7A43665F956F7 /* Support Files */ = {
+		82ACE5493F1C841DCC1865D1CDF6E22C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				00E1E2B284DEEF9AB1C1BBF514DA5671 /* SwiftyJSON.modulemap */,
-				51EAF8FD7456964A1EAF7C67BC9F4732 /* SwiftyJSON.xcconfig */,
-				04881D3960FED4165F912C87ED6B202C /* SwiftyJSON-dummy.m */,
-				C5377A20351975EE287222EDBF2CCBE4 /* SwiftyJSON-prefix.pch */,
-				3B98F330F7CBF03B3462151BDB224717 /* SwiftyJSON-umbrella.h */,
+				7F49C67347F75F48699E8927A0EDD554 /* AnimatedMaskLabel.modulemap */,
+				5E6E1021FC999D21F626D32486FE3933 /* AnimatedMaskLabel.xcconfig */,
+				23EB6C31372E7C9DBB736C15E39AC77C /* AnimatedMaskLabel-dummy.m */,
+				BC1249E13873C46B6CE26C96AF2D1554 /* AnimatedMaskLabel-prefix.pch */,
+				5D3F43EB5B396DB0DC91D8B2239E951D /* AnimatedMaskLabel-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SwiftyJSON";
+			path = "../Target Support Files/AnimatedMaskLabel";
+			sourceTree = "<group>";
+		};
+		8BC76B4B480CADEE51663237C1FFE762 /* AnimatedMaskLabel */ = {
+			isa = PBXGroup;
+			children = (
+				1B924F59E5F6723D897CE46ECB5033CA /* AnimatedMaskLabel.swift */,
+				82ACE5493F1C841DCC1865D1CDF6E22C /* Support Files */,
+			);
+			name = AnimatedMaskLabel;
+			path = AnimatedMaskLabel;
 			sourceTree = "<group>";
 		};
 		984694A3022BF6DBD9AA9E4250A5B52B /* iOS */ = {
@@ -216,41 +491,39 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		AD72BF08A1379E90625466A4E805CD69 /* RSKImageCropper */ = {
+		A96DAC4B887DC0CFD72C6014356B8CCA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				983356A10B5E8402078C676BE4160C1F /* CGGeometry+RSKImageCropper.h */,
-				1AF16C130AB32E9117CAA76A8D0E25E5 /* CGGeometry+RSKImageCropper.m */,
-				AA04D178E7706F8DC37B6741A41A9558 /* RSKImageCropper.h */,
-				C92D866CEF294282B1E3701AF9D7DFE2 /* RSKImageCropViewController.h */,
-				DB22C5B3E83816327D24779ABE2FC9C7 /* RSKImageCropViewController.m */,
-				3CFD3F60F595726527A822E1DEC15E17 /* RSKImageCropViewController+Protected.h */,
-				F3C321A1FA37507FA48A7A274DBB62D8 /* RSKImageScrollView.h */,
-				6EDE814ABB0B3480BA16A86C3D627664 /* RSKImageScrollView.m */,
-				66AE89C74938C4A7109C7F1F8246F472 /* RSKInternalUtility.h */,
-				6388F8DF3D682AE2D8CF509642B48BD0 /* RSKInternalUtility.m */,
-				FFA4E3A7A2749995E8FA1C9F18532E48 /* RSKTouchView.h */,
-				0B5D0A4DA08B260AB78DA238B635C0FC /* RSKTouchView.m */,
-				3A35B158C4FEC2E962F4A94FCA618AA4 /* UIApplication+RSKImageCropper.h */,
-				13F23BC35D3DD19D8C96C6A7B8927E57 /* UIApplication+RSKImageCropper.m */,
-				27493B501044A19B2936011E5422634F /* UIImage+RSKImageCropper.h */,
-				C8C14FE6E5732E005278EA50835BC503 /* UIImage+RSKImageCropper.m */,
-				2A6036A6E2F7EA6DE135B01FAAAF1AB4 /* Resources */,
-				B930BF8B550FA0980C7F90CEC77C0E34 /* Support Files */,
-			);
-			name = RSKImageCropper;
-			path = RSKImageCropper;
-			sourceTree = "<group>";
-		};
-		B930BF8B550FA0980C7F90CEC77C0E34 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C838A53B715AA3AFC53699B2F94DC61B /* RSKImageCropper.xcconfig */,
-				1D550E763FFECBCB5F55746C6D2D6F63 /* RSKImageCropper-dummy.m */,
-				B73F3E5102BA528E8AF6E63B9F464880 /* RSKImageCropper-prefix.pch */,
+				31ADE8AB866BCA3A08DAFF6AA9AB3B6C /* KRProgressHUD.modulemap */,
+				1C532834CB2A21D49EBBBFEEE6C94522 /* KRProgressHUD.xcconfig */,
+				C82C40A23AD75FF0522F86FC151413EF /* KRProgressHUD-dummy.m */,
+				0AE5EC2DA9201942A81F2701C4AD6BE5 /* KRProgressHUD-prefix.pch */,
+				4AABFBDD9F772A96D3806317F5F1929F /* KRProgressHUD-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/RSKImageCropper";
+			path = "../Target Support Files/KRProgressHUD";
+			sourceTree = "<group>";
+		};
+		D2EEC61F9C0D78B774E956FFD596B2B3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C740E12FC83DF27741DFB6507C554219 /* RSKImageCropperStrings.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E2EABE1D5C46E4E669F1C8E9789ABD94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B3EC6D9D8A523E042DABCDFF9F76098 /* libAlamofire.a */,
+				629DA59B8D565727019EC15B70E530CA /* libAnimatedMaskLabel.a */,
+				06D512B0E663BD5911DB1A273EA122B8 /* libKRActivityIndicatorView.a */,
+				C8D13794780AADFD9381ED97797DB965 /* libKRProgressHUD.a */,
+				480DE19299F83C0D3A61F42151051E9B /* libPods-HoroScope.a */,
+				19258F53E128C971BFD2BEC492D8D08A /* libRSKImageCropper.a */,
+				956DC8B690EDD56678412E3E7A95D43C /* libSwiftyJSON.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		EACD563A444F018CBFB68D3E755B1C3C /* Targets Support Files */ = {
@@ -264,49 +537,177 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		B572A90FC76D02BCB268AA1DBFC53D8D /* Headers */ = {
+		05D3CCDCCFF624AAD9213DC3336CE9A4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6F4370157A9F3D59C90A0CEA60DE4D4 /* Pods-HoroScope-umbrella.h in Headers */,
+				BA9F074579ED380322BC3CC13678A016 /* Pods-HoroScope-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F696365E5EE0885901AB0C039D2A8C3A /* Headers */ = {
+		15781B91E270DE223041FEBDCF423C48 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35A9D83399BF5A8B08A34FAECD811A8F /* SwiftyJSON-umbrella.h in Headers */,
+				FF51FD8819ED0F4EF6B1021963CA3080 /* KRProgressHUD-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F6F21ABB6218A6D7982874A014D7AAAA /* Headers */ = {
+		463639E561BB345C36A42601724D241C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2AD19FD69D79084DDBDFC0E0687B6DD /* CGGeometry+RSKImageCropper.h in Headers */,
-				0A8EE96392493C33F85EF727801941D7 /* RSKImageCropper.h in Headers */,
-				402D923B889C5B358E35B6D04B892137 /* RSKImageCropViewController+Protected.h in Headers */,
-				05641EB1973F9CDB3EDC525BB9FE1E14 /* RSKImageCropViewController.h in Headers */,
-				372751227628DD9E891806F3F9B7B9D4 /* RSKImageScrollView.h in Headers */,
-				A494359CCDEF0CB8EA0F7A6292EF9118 /* RSKInternalUtility.h in Headers */,
-				5173D66CF40553D145CE97DA6BFFF237 /* RSKTouchView.h in Headers */,
-				C2138084D7B8E2A1958391051E5E98E9 /* UIApplication+RSKImageCropper.h in Headers */,
-				FE9F3207691D954430780A3ACA081877 /* UIImage+RSKImageCropper.h in Headers */,
+				23CF43A5E50F725F17761FF094D0BD1F /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74BE99E767C71BCE3B2B25D631CCA0E5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BAAC77259D6946FB0EADD522947C970 /* KRActivityIndicatorView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B115D648EF8A91696D86840977B10E81 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F4966D51707358AC46CADFFCE55A8AD /* AnimatedMaskLabel-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1FCD62DDC11D23D02C226E0F4173177 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78829C9DD063A19752F2904CA89C8134 /* CGGeometry+RSKImageCropper.h in Headers */,
+				15B6BF8E92A2053CE1EDCCE15B37B1E7 /* RSKImageCropper.h in Headers */,
+				9D7A4C1026B3CA107A066F5A5BBD6D22 /* RSKImageCropViewController+Protected.h in Headers */,
+				3641C4E0BF0A14B9416692ADAFA9B729 /* RSKImageCropViewController.h in Headers */,
+				3F5BA154ADCE51B47E36715918F74E60 /* RSKImageScrollView.h in Headers */,
+				C961AA98D4A8792CB40417BABB346786 /* RSKInternalUtility.h in Headers */,
+				56D788406041B40CD6F07C02B1B41FD3 /* RSKTouchView.h in Headers */,
+				3D770487B49187FB9923C5FD0CA8AB3D /* UIApplication+RSKImageCropper.h in Headers */,
+				6DE57A833C2743A1161DB1A3FE20BFFE /* UIImage+RSKImageCropper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F34422DF28597B4703F48FA859A1B156 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				509A7354833A9116D2A547E570925A0A /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1BC3B4C95B56ECEAE7ECD1824EE52E66 /* SwiftyJSON */ = {
+		7222E0CF79E88E8E6E9928D4E981C608 /* KRProgressHUD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB1F4203F62A238E4403E2DA26F5257C /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildConfigurationList = 51F89420C247D1A4463793FA653526D2 /* Build configuration list for PBXNativeTarget "KRProgressHUD" */;
 			buildPhases = (
-				0EC32DDC1D54113427389D6C29421694 /* Sources */,
-				1B9ABEB8B6611952D34EA9190BABA68A /* Frameworks */,
-				F696365E5EE0885901AB0C039D2A8C3A /* Headers */,
-				29BDE9C58A3E468713DFFC17255EACF6 /* Copy generated compatibility header */,
+				B21B480F93EC65BFC5522320DF34096B /* Sources */,
+				E3B04FE4064999D61FEED4777AF41AE5 /* Frameworks */,
+				15781B91E270DE223041FEBDCF423C48 /* Headers */,
+				451E121C8BBBD8FBB403AE0A983C1065 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85D527CFC1B1F203F03101E560C8A468 /* PBXTargetDependency */,
+			);
+			name = KRProgressHUD;
+			productName = KRProgressHUD;
+			productReference = C8D13794780AADFD9381ED97797DB965 /* libKRProgressHUD.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7D2A91F4D6AB7C34E36707C222F6D8A9 /* KRActivityIndicatorView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25250A594DDAFAD934A5388783160DE2 /* Build configuration list for PBXNativeTarget "KRActivityIndicatorView" */;
+			buildPhases = (
+				CF1CDCC6FAC9D7E11163BD3B34510956 /* Sources */,
+				D61C8D50FBBE6BEC9900BECDC8CBCB58 /* Frameworks */,
+				74BE99E767C71BCE3B2B25D631CCA0E5 /* Headers */,
+				40D10950CE5A834482A79309FA56F3F2 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KRActivityIndicatorView;
+			productName = KRActivityIndicatorView;
+			productReference = 06D512B0E663BD5911DB1A273EA122B8 /* libKRActivityIndicatorView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		82E2BA017F738EAB164E44DCB9F6BD06 /* AnimatedMaskLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3512CDC1FF0AFADBE4F8A232A145EF11 /* Build configuration list for PBXNativeTarget "AnimatedMaskLabel" */;
+			buildPhases = (
+				681A6B59C70B1251D0670D272F14114B /* Sources */,
+				DEF00DCCCF4B70B56A734408C10A485B /* Frameworks */,
+				B115D648EF8A91696D86840977B10E81 /* Headers */,
+				49485117EBF88D0AA6B65AD31EDF88F3 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnimatedMaskLabel;
+			productName = AnimatedMaskLabel;
+			productReference = 629DA59B8D565727019EC15B70E530CA /* libAnimatedMaskLabel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		95C31791CC30F4487BB91E6A0F9757CE /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 775DFD92C55B9A8C0336550FB7770AD2 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				EAF8CBAF390BD440442C442B91C73A73 /* Sources */,
+				578E2F378C0445526D4EF2BFA6967908 /* Frameworks */,
+				463639E561BB345C36A42601724D241C /* Headers */,
+				5D257AE991614B2667ECDFDA62B94519 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 3B3EC6D9D8A523E042DABCDFF9F76098 /* libAlamofire.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A10E3ADB1B34C7F11398ADA39966AD7A /* Pods-HoroScope */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3414958BB0A51F4D05F12670FBB5BC25 /* Build configuration list for PBXNativeTarget "Pods-HoroScope" */;
+			buildPhases = (
+				274BF7A585DEB2C2D430BB31A8AFC977 /* Sources */,
+				7A480CFF236EEE022E18FC558B843D9D /* Frameworks */,
+				05D3CCDCCFF624AAD9213DC3336CE9A4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36E2A81ECB8AB1F4B3B38EB0766AB225 /* PBXTargetDependency */,
+				A8FC77F9C43A8AB92C2C5AE874E51B6D /* PBXTargetDependency */,
+				05D19C1E8EBC7589951D9F0B3A5287AE /* PBXTargetDependency */,
+				F6F436C2D10711FFFC8669E292BD89FB /* PBXTargetDependency */,
+				84D4074C463B3A9202D0900E88CF6B8E /* PBXTargetDependency */,
+				D4F6A224794952DC611F635E1FDC52C0 /* PBXTargetDependency */,
+			);
+			name = "Pods-HoroScope";
+			productName = "Pods-HoroScope";
+			productReference = 480DE19299F83C0D3A61F42151051E9B /* libPods-HoroScope.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AFE6BC232CB468725ACA26D6B1A56B3D /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D601B3B5B16880ECE24883F76D523607 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				9D976BA008D22A54B88B72D04A20A12F /* Sources */,
+				E1330876AC45DBD5F588D1C7CF9847D6 /* Frameworks */,
+				F34422DF28597B4703F48FA859A1B156 /* Headers */,
+				DFBB4B36F43628AB4E6D15F565E8810B /* Copy generated compatibility header */,
 			);
 			buildRules = (
 			);
@@ -314,35 +715,16 @@
 			);
 			name = SwiftyJSON;
 			productName = SwiftyJSON;
-			productReference = 0DC05A22A84CB4DC9272734AC4301E8B /* libSwiftyJSON.a */;
+			productReference = 956DC8B690EDD56678412E3E7A95D43C /* libSwiftyJSON.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		2C852DF4E10482D6EB9B968DCFBA5793 /* Pods-HoroScope */ = {
+		F2DCD7FD6F32209A8ADCC4753A63640F /* RSKImageCropper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 201C2B25815392AC62FD7AFAF2F9DEF4 /* Build configuration list for PBXNativeTarget "Pods-HoroScope" */;
+			buildConfigurationList = DBAACE9E0593D31ADCD7F13DD42DD983 /* Build configuration list for PBXNativeTarget "RSKImageCropper" */;
 			buildPhases = (
-				3CAF15ECD7E72E10259AE972F9969DE1 /* Sources */,
-				3B3C1D7EA944F81C913F62346435D9DE /* Frameworks */,
-				B572A90FC76D02BCB268AA1DBFC53D8D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4E5383A240A305A8B7971C88A3C13168 /* PBXTargetDependency */,
-				448372792D5A69CBF1D0CEFB4E403B52 /* PBXTargetDependency */,
-			);
-			name = "Pods-HoroScope";
-			productName = "Pods-HoroScope";
-			productReference = 2954C6EC4E3838FC0B12189250B6B075 /* libPods-HoroScope.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		87E159564B8FBB02059C3C0D4130317F /* RSKImageCropper */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 472D35BBC2FFDF669A9BC7F7B2CF1D2F /* Build configuration list for PBXNativeTarget "RSKImageCropper" */;
-			buildPhases = (
-				B263180270CAAC1CFB5915A91FD8CAB2 /* Sources */,
-				CF1FCBB63C8F4E38501A1CC97C6C3696 /* Frameworks */,
-				F6F21ABB6218A6D7982874A014D7AAAA /* Headers */,
+				FB7A60AF3C4091B1D7768F5F098E93CA /* Sources */,
+				8AA5B9D83D42894665A57A308326EBEE /* Frameworks */,
+				F1FCD62DDC11D23D02C226E0F4173177 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -350,7 +732,7 @@
 			);
 			name = RSKImageCropper;
 			productName = RSKImageCropper;
-			productReference = 1432DB6294D24F589AD9F747CAB661A4 /* libRSKImageCropper.a */;
+			productReference = 19258F53E128C971BFD2BEC492D8D08A /* libRSKImageCropper.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -370,19 +752,107 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 16869B35A5E756BC0CC3A8A6BC1F26A9 /* Products */;
+			productRefGroup = E2EABE1D5C46E4E669F1C8E9789ABD94 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C852DF4E10482D6EB9B968DCFBA5793 /* Pods-HoroScope */,
-				87E159564B8FBB02059C3C0D4130317F /* RSKImageCropper */,
-				1BC3B4C95B56ECEAE7ECD1824EE52E66 /* SwiftyJSON */,
+				95C31791CC30F4487BB91E6A0F9757CE /* Alamofire */,
+				82E2BA017F738EAB164E44DCB9F6BD06 /* AnimatedMaskLabel */,
+				7D2A91F4D6AB7C34E36707C222F6D8A9 /* KRActivityIndicatorView */,
+				7222E0CF79E88E8E6E9928D4E981C608 /* KRProgressHUD */,
+				A10E3ADB1B34C7F11398ADA39966AD7A /* Pods-HoroScope */,
+				F2DCD7FD6F32209A8ADCC4753A63640F /* RSKImageCropper */,
+				AFE6BC232CB468725ACA26D6B1A56B3D /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		29BDE9C58A3E468713DFFC17255EACF6 /* Copy generated compatibility header */ = {
+		40D10950CE5A834482A79309FA56F3F2 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/KRActivityIndicatorView/KRActivityIndicatorView.modulemap",
+				"${PODS_ROOT}/Headers/Public/KRActivityIndicatorView/KRActivityIndicatorView-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/KRActivityIndicatorView-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/KRActivityIndicatorView/KRActivityIndicatorView.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/KRActivityIndicatorView/KRActivityIndicatorView-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+			showEnvVarsInLog = 1;
+		};
+		451E121C8BBBD8FBB403AE0A983C1065 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/KRProgressHUD/KRProgressHUD.modulemap",
+				"${PODS_ROOT}/Headers/Public/KRProgressHUD/KRProgressHUD-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/KRProgressHUD-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/KRProgressHUD/KRProgressHUD.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/KRProgressHUD/KRProgressHUD-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+			showEnvVarsInLog = 1;
+		};
+		49485117EBF88D0AA6B65AD31EDF88F3 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/AnimatedMaskLabel/AnimatedMaskLabel.modulemap",
+				"${PODS_ROOT}/Headers/Public/AnimatedMaskLabel/AnimatedMaskLabel-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/AnimatedMaskLabel-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/AnimatedMaskLabel/AnimatedMaskLabel.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/AnimatedMaskLabel/AnimatedMaskLabel-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+			showEnvVarsInLog = 1;
+		};
+		5D257AE991614B2667ECDFDA62B94519 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/Alamofire/Alamofire.modulemap",
+				"${PODS_ROOT}/Headers/Public/Alamofire/Alamofire-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Alamofire/Alamofire.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Alamofire/Alamofire-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+			showEnvVarsInLog = 1;
+		};
+		DFBB4B36F43628AB4E6D15F565E8810B /* Copy generated compatibility header */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -406,57 +876,145 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0EC32DDC1D54113427389D6C29421694 /* Sources */ = {
+		274BF7A585DEB2C2D430BB31A8AFC977 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				629B4E5ED87E72EA71FC7C798181C10F /* SwiftyJSON-dummy.m in Sources */,
-				3A0046C770771D0C4A534BCB992C4CFB /* SwiftyJSON.swift in Sources */,
+				799E396711C53475EEED5A3E3C15ED30 /* Pods-HoroScope-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3CAF15ECD7E72E10259AE972F9969DE1 /* Sources */ = {
+		681A6B59C70B1251D0670D272F14114B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BE0435180F3E9F6DE4F0656EA6CC091 /* Pods-HoroScope-dummy.m in Sources */,
+				3E2774C027426785827811684CE7DC3A /* AnimatedMaskLabel-dummy.m in Sources */,
+				54F51770478B8425A8006B7BFDCE4CC7 /* AnimatedMaskLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B263180270CAAC1CFB5915A91FD8CAB2 /* Sources */ = {
+		9D976BA008D22A54B88B72D04A20A12F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0CF83D8CFE82840FA762A1CD5EBB0C4 /* CGGeometry+RSKImageCropper.m in Sources */,
-				1AEC52B0C80F334CBCF3E971C7F66EA4 /* RSKImageCropper-dummy.m in Sources */,
-				B7C4BD32FF9AB107D71F8A2B649473B4 /* RSKImageCropViewController.m in Sources */,
-				773BC7F8EA809BE78F20827A9C92C695 /* RSKImageScrollView.m in Sources */,
-				E28917AC8554764C2BA7536496A41866 /* RSKInternalUtility.m in Sources */,
-				6E01FC4D2DE6B6CED33BD288C53B5D75 /* RSKTouchView.m in Sources */,
-				53FC3A4415516A57C845CA5D702A65F0 /* UIApplication+RSKImageCropper.m in Sources */,
-				0FA10465664EBE8492F33CA26F165FA0 /* UIImage+RSKImageCropper.m in Sources */,
+				C31B8FE295B2A3DBE86355E773A105E9 /* SwiftyJSON-dummy.m in Sources */,
+				8E9A1C19F213541EE36EE2D1D02D36C5 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B21B480F93EC65BFC5522320DF34096B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C57B9415FFC4B11ABE0CD02972B0ED5B /* Extensions.swift in Sources */,
+				EA8CBFD46150620E0740CA5766EA6656 /* InnerKRProgressHUD.swift in Sources */,
+				EF7424BF084B0A8D3310C05D4490193B /* KRProgressHUD-dummy.m in Sources */,
+				8B7EBC65ED1F5DB98D0D7C496E4273BB /* KRProgressHUD.swift in Sources */,
+				FAD7E97E9E004AB41A5BF40A15D61D39 /* KRProgressHUDIconType.swift in Sources */,
+				035BBBD64966762C44C77FDEE30E907A /* KRProgressHUDViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF1CDCC6FAC9D7E11163BD3B34510956 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C64D4C8DCECEEDD51BC6AA3F95016FE /* Extensions.swift in Sources */,
+				1025C3C060258F81D0DAEE80341A1FB2 /* KRActivityIndicatorView-dummy.m in Sources */,
+				63BA06EABDF7EF27ACC54C9E4A7CEE99 /* KRActivityIndicatorView.swift in Sources */,
+				D9B1DE008604918A7E382F046A33CC36 /* KRActivityIndicatorViewStyle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAF8CBAF390BD440442C442B91C73A73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3D3794AEC0F0DE985CB848BF68EC01 /* AFError.swift in Sources */,
+				540780C279ED3C9BB892AF2C378496EA /* Alamofire-dummy.m in Sources */,
+				83813BDF00D751059AB1A1045FB7A240 /* Alamofire.swift in Sources */,
+				60B899F8FAC6F674B0EE6F5A69E2B2A3 /* DispatchQueue+Alamofire.swift in Sources */,
+				054020A0B396F220718220B72497D72B /* MultipartFormData.swift in Sources */,
+				B929CA9E74943C99F4697DE31DD2233D /* NetworkReachabilityManager.swift in Sources */,
+				7FFC212EDF93CAF60E7F16A1373B3655 /* Notifications.swift in Sources */,
+				7B02E84B6522A96BC9747947007EE132 /* ParameterEncoding.swift in Sources */,
+				F447C73D9ACAC59E04218B6770EBF04E /* Request.swift in Sources */,
+				F8A4F06035481ECC97D7C83D6FF85385 /* Response.swift in Sources */,
+				24D84E7CCF5B9E6D0D8BE6897FFF4609 /* ResponseSerialization.swift in Sources */,
+				8E698D719D43B4A8713417AF20EFBBE4 /* Result.swift in Sources */,
+				83863CD37B6BFB6F42887C452A4DA288 /* ServerTrustPolicy.swift in Sources */,
+				95638606564452201D545FA4119C270A /* SessionDelegate.swift in Sources */,
+				A6C26370A334B5FD8F89949AF13412CB /* SessionManager.swift in Sources */,
+				E4235BE468010B5B2B6DE4B1B4054A19 /* TaskDelegate.swift in Sources */,
+				3573F6983068A5EDA92B31E566438B22 /* Timeline.swift in Sources */,
+				4FB3A851B716BAA32464F3072C56D10B /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB7A60AF3C4091B1D7768F5F098E93CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				797C24094FE27BBFF25C7F395ABBB90B /* CGGeometry+RSKImageCropper.m in Sources */,
+				A485A2799CD1458AEFD58D7658A84036 /* RSKImageCropper-dummy.m in Sources */,
+				C0F12085301719C7B9B853CEF3A48FDB /* RSKImageCropViewController.m in Sources */,
+				F9CFBF77590234E5CB58C2D5419D2110 /* RSKImageScrollView.m in Sources */,
+				876CC862F3B15FB840ABDE177FA1AF45 /* RSKInternalUtility.m in Sources */,
+				B5C10F6DBB810F6DBF24DAE0692370D1 /* RSKTouchView.m in Sources */,
+				8C83F84F29D7DDE046923E0B96E4213E /* UIApplication+RSKImageCropper.m in Sources */,
+				5F05BEAAB1DE3BDF7EC2F058F6AA59C5 /* UIImage+RSKImageCropper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		448372792D5A69CBF1D0CEFB4E403B52 /* PBXTargetDependency */ = {
+		05D19C1E8EBC7589951D9F0B3A5287AE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SwiftyJSON;
-			target = 1BC3B4C95B56ECEAE7ECD1824EE52E66 /* SwiftyJSON */;
-			targetProxy = 89A837D97C11EE3A9BB2F50C72B47DE2 /* PBXContainerItemProxy */;
+			name = KRActivityIndicatorView;
+			target = 7D2A91F4D6AB7C34E36707C222F6D8A9 /* KRActivityIndicatorView */;
+			targetProxy = 71FB01C082857FEE4258E4B1D471EC41 /* PBXContainerItemProxy */;
 		};
-		4E5383A240A305A8B7971C88A3C13168 /* PBXTargetDependency */ = {
+		36E2A81ECB8AB1F4B3B38EB0766AB225 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 95C31791CC30F4487BB91E6A0F9757CE /* Alamofire */;
+			targetProxy = B267C3076D70D88C88FEC59091DB5331 /* PBXContainerItemProxy */;
+		};
+		84D4074C463B3A9202D0900E88CF6B8E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RSKImageCropper;
-			target = 87E159564B8FBB02059C3C0D4130317F /* RSKImageCropper */;
-			targetProxy = 634EF9665A1AF658F361399A7F255DA9 /* PBXContainerItemProxy */;
+			target = F2DCD7FD6F32209A8ADCC4753A63640F /* RSKImageCropper */;
+			targetProxy = EFAA4024F0BC0F839A5E79B40D2F99E7 /* PBXContainerItemProxy */;
+		};
+		85D527CFC1B1F203F03101E560C8A468 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KRActivityIndicatorView;
+			target = 7D2A91F4D6AB7C34E36707C222F6D8A9 /* KRActivityIndicatorView */;
+			targetProxy = D285796AB1738A291F686B01FD89CE30 /* PBXContainerItemProxy */;
+		};
+		A8FC77F9C43A8AB92C2C5AE874E51B6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AnimatedMaskLabel;
+			target = 82E2BA017F738EAB164E44DCB9F6BD06 /* AnimatedMaskLabel */;
+			targetProxy = D9BF3E877A5F176107849C05514DC9B1 /* PBXContainerItemProxy */;
+		};
+		D4F6A224794952DC611F635E1FDC52C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = AFE6BC232CB468725ACA26D6B1A56B3D /* SwiftyJSON */;
+			targetProxy = A3EA01FC8DDF0826455D0827C29C6F07 /* PBXContainerItemProxy */;
+		};
+		F6F436C2D10711FFFC8669E292BD89FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KRProgressHUD;
+			target = 7222E0CF79E88E8E6E9928D4E981C608 /* KRProgressHUD */;
+			targetProxy = 12919B8CC854438AC232C658A25A8ACF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		063198AB09B9CDB3A695432FC17AD8CA /* Release */ = {
+		08638A96A528B1EC32DE62F8A728389D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -506,7 +1064,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -514,9 +1072,61 @@
 			};
 			name = Release;
 		};
-		766F6403119E5254AA53170DF00FC217 /* Debug */ = {
+		1ADEEE7386FD258DABE47E60FCC9D23E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51EAF8FD7456964A1EAF7C67BC9F4732 /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 5A16DCFFB49E9CB783A7A6739D9A4EFB /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/SwiftyJSON/SwiftyJSON.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1E0BDF2B9170079AD234D76D3BAF996A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6944F5A64FFBE12BEB970B33A980FA6 /* Pods-HoroScope.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HoroScope/Pods-HoroScope.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3EE560448CFD480ECF2F33CC66BD7175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A16DCFFB49E9CB783A7A6739D9A4EFB /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -540,7 +1150,86 @@
 			};
 			name = Debug;
 		};
-		87EAC867385563488A6D8F1E74AC46B4 /* Debug */ = {
+		668BCC7F5A2F28A03F59AC676CBACB83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73B3620D232965CBEDC5D462D33DCEE6 /* KRActivityIndicatorView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/KRActivityIndicatorView/KRActivityIndicatorView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/KRActivityIndicatorView/KRActivityIndicatorView.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = KRActivityIndicatorView;
+				PRODUCT_NAME = KRActivityIndicatorView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		866801900BB4BA7E088884EB12852DD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72560098E01A68B616254D68484AD99B /* Pods-HoroScope.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HoroScope/Pods-HoroScope.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		950655770C0C537806D6850964C7F05E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E6E1021FC999D21F626D32486FE3933 /* AnimatedMaskLabel.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/AnimatedMaskLabel/AnimatedMaskLabel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MODULEMAP_FILE = Headers/Public/AnimatedMaskLabel/AnimatedMaskLabel.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = AnimatedMaskLabel;
+				PRODUCT_NAME = AnimatedMaskLabel;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -593,7 +1282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -603,121 +1292,50 @@
 			};
 			name = Debug;
 		};
-		895C0318EDAED48D0ADE9C5F9CF16C8A /* Debug */ = {
+		A3F9F8701BB0932484D2E983261BFB63 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C838A53B715AA3AFC53699B2F94DC61B /* RSKImageCropper.xcconfig */;
+			baseConfigurationReference = 5E6E1021FC999D21F626D32486FE3933 /* AnimatedMaskLabel.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/RSKImageCropper/RSKImageCropper-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = RSKImageCropper;
-				PRODUCT_NAME = RSKImageCropper;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		9CA80A311B3134C1C8A526CFEE112C56 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72560098E01A68B616254D68484AD99B /* Pods-HoroScope.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HoroScope/Pods-HoroScope.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		A6CADB9CC0E07D445BFDED2C65EA4FAC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C838A53B715AA3AFC53699B2F94DC61B /* RSKImageCropper.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/RSKImageCropper/RSKImageCropper-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				GCC_PREFIX_HEADER = "Target Support Files/AnimatedMaskLabel/AnimatedMaskLabel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MODULEMAP_FILE = Headers/Public/AnimatedMaskLabel/AnimatedMaskLabel.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = RSKImageCropper;
-				PRODUCT_NAME = RSKImageCropper;
+				PRODUCT_MODULE_NAME = AnimatedMaskLabel;
+				PRODUCT_NAME = AnimatedMaskLabel;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		BF5AE357A4708F29527517A770195FFE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6944F5A64FFBE12BEB970B33A980FA6 /* Pods-HoroScope.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HoroScope/Pods-HoroScope.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		F3CB92D7F50B7C6AF4FF19A987571880 /* Release */ = {
+		AEC778C69949FE9F68CBFC7FB16E3D5E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51EAF8FD7456964A1EAF7C67BC9F4732 /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 1C532834CB2A21D49EBBBFEEE6C94522 /* KRProgressHUD.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/KRProgressHUD/KRProgressHUD-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MODULEMAP_FILE = Headers/Public/SwiftyJSON/SwiftyJSON.modulemap;
+				MODULEMAP_FILE = Headers/Public/KRProgressHUD/KRProgressHUD.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = SwiftyJSON;
-				PRODUCT_NAME = SwiftyJSON;
+				PRODUCT_MODULE_NAME = KRProgressHUD;
+				PRODUCT_NAME = KRProgressHUD;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -728,15 +1346,169 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		B9086A1255106E750AB123A093FF820E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B2E41949C2F12F19E0A88160E92D8DD /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/Alamofire/Alamofire.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF643F6967D92156E5E3222DE5A194D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73B3620D232965CBEDC5D462D33DCEE6 /* KRActivityIndicatorView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/KRActivityIndicatorView/KRActivityIndicatorView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/KRActivityIndicatorView/KRActivityIndicatorView.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = KRActivityIndicatorView;
+				PRODUCT_NAME = KRActivityIndicatorView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFF49B2A6017FA588105D3FD2F6B9363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D2DED7595547F7F859DB37F4BBB81E3 /* RSKImageCropper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/RSKImageCropper/RSKImageCropper-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = RSKImageCropper;
+				PRODUCT_NAME = RSKImageCropper;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D02FCD980A8F1A9B09EFB87444F0E2E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D2DED7595547F7F859DB37F4BBB81E3 /* RSKImageCropper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/RSKImageCropper/RSKImageCropper-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = RSKImageCropper;
+				PRODUCT_NAME = RSKImageCropper;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E7EF46DF1997336E895BD0C6AFEF0159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C532834CB2A21D49EBBBFEEE6C94522 /* KRProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/KRProgressHUD/KRProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/KRProgressHUD/KRProgressHUD.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = KRProgressHUD;
+				PRODUCT_NAME = KRProgressHUD;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF7A755847255DC3EFE5F2DCC596F029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B2E41949C2F12F19E0A88160E92D8DD /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/Alamofire/Alamofire.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		201C2B25815392AC62FD7AFAF2F9DEF4 /* Build configuration list for PBXNativeTarget "Pods-HoroScope" */ = {
+		25250A594DDAFAD934A5388783160DE2 /* Build configuration list for PBXNativeTarget "KRActivityIndicatorView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9CA80A311B3134C1C8A526CFEE112C56 /* Debug */,
-				BF5AE357A4708F29527517A770195FFE /* Release */,
+				BF643F6967D92156E5E3222DE5A194D8 /* Debug */,
+				668BCC7F5A2F28A03F59AC676CBACB83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -744,26 +1516,62 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				87EAC867385563488A6D8F1E74AC46B4 /* Debug */,
-				063198AB09B9CDB3A695432FC17AD8CA /* Release */,
+				9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */,
+				08638A96A528B1EC32DE62F8A728389D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		472D35BBC2FFDF669A9BC7F7B2CF1D2F /* Build configuration list for PBXNativeTarget "RSKImageCropper" */ = {
+		3414958BB0A51F4D05F12670FBB5BC25 /* Build configuration list for PBXNativeTarget "Pods-HoroScope" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				895C0318EDAED48D0ADE9C5F9CF16C8A /* Debug */,
-				A6CADB9CC0E07D445BFDED2C65EA4FAC /* Release */,
+				866801900BB4BA7E088884EB12852DD4 /* Debug */,
+				1E0BDF2B9170079AD234D76D3BAF996A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB1F4203F62A238E4403E2DA26F5257C /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+		3512CDC1FF0AFADBE4F8A232A145EF11 /* Build configuration list for PBXNativeTarget "AnimatedMaskLabel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				766F6403119E5254AA53170DF00FC217 /* Debug */,
-				F3CB92D7F50B7C6AF4FF19A987571880 /* Release */,
+				950655770C0C537806D6850964C7F05E /* Debug */,
+				A3F9F8701BB0932484D2E983261BFB63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51F89420C247D1A4463793FA653526D2 /* Build configuration list for PBXNativeTarget "KRProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7EF46DF1997336E895BD0C6AFEF0159 /* Debug */,
+				AEC778C69949FE9F68CBFC7FB16E3D5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		775DFD92C55B9A8C0336550FB7770AD2 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7A755847255DC3EFE5F2DCC596F029 /* Debug */,
+				B9086A1255106E750AB123A093FF820E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D601B3B5B16880ECE24883F76D523607 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EE560448CFD480ECF2F33CC66BD7175 /* Debug */,
+				1ADEEE7386FD258DABE47E60FCC9D23E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBAACE9E0593D31ADCD7F13DD42DD983 /* Build configuration list for PBXNativeTarget "RSKImageCropper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D02FCD980A8F1A9B09EFB87444F0E2E3 /* Debug */,
+				BFF49B2A6017FA588105D3FD2F6B9363 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

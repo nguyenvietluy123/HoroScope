@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BeautyCompetitionVC" customModule="HoroScope" customModuleProvider="target">
+            <connections>
+                <outlet property="compe_VS" destination="MMx-Qx-eNE" id="NcE-S2-0Xr"/>
+                <outlet property="compe_cupid" destination="CBu-Hp-0Vl" id="zTB-G3-MAU"/>
+                <outlet property="image1" destination="gqO-Ik-Rrb" id="gSf-2Q-dJn"/>
+                <outlet property="image2" destination="39N-ZD-2BM" id="Yvk-4s-pOc"/>
+                <outlet property="lbDaddy" destination="ekX-Nd-dYl" id="Fbn-MY-HjS"/>
+                <outlet property="lbMommy" destination="SaX-ds-1VA" id="HeD-wA-ItH"/>
+                <outlet property="navi" destination="NfP-iT-apj" id="eNj-Yz-JAS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NfP-iT-apj" customClass="NavigationView" customModule="HoroScope" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <color key="backgroundColor" red="1" green="0.55402815419999996" blue="0.41727157310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="Kp4-D0-LfN"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Beauty Competition"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="hasLeft" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isGradient" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                            <color key="value" red="0.8980392157" green="0.20000000000000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                            <color key="value" red="1" green="0.64313725489999995" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compe_background" translatesAutoresizingMaskIntoConstraints="NO" id="5uY-SJ-aLj">
+                    <rect key="frame" x="0.0" y="60" width="375" height="607"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daddy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekX-Nd-dYl" customClass="KHLabel" customModule="HoroScope" customModuleProvider="target">
+                    <rect key="frame" x="145" y="90.5" width="85.5" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="REA-Nh-yxL" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
+                    <rect key="frame" x="125" y="138.5" width="125" height="124.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compe_daddy" translatesAutoresizingMaskIntoConstraints="NO" id="qh4-0Q-kZT" customClass="KHImageView" customModule="HoroScope" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="125" height="124.5"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gqO-Ik-Rrb" customClass="KHImageView" customModule="HoroScope" customModuleProvider="target">
+                            <rect key="frame" x="6" y="5.5" width="113" height="113.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="gqO-Ik-Rrb" secondAttribute="height" multiplier="1:1" id="KpH-Fn-jSn"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhS-yj-yFA" customClass="KHButton" customModule="HoroScope" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="125" height="124.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="action_image1:" destination="-1" eventType="touchUpInside" id="GC8-fZ-cp9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="qh4-0Q-kZT" secondAttribute="trailing" id="5h2-B2-fgc"/>
+                        <constraint firstItem="gqO-Ik-Rrb" firstAttribute="centerY" secondItem="REA-Nh-yxL" secondAttribute="centerY" id="AS7-g6-anV"/>
+                        <constraint firstAttribute="width" secondItem="REA-Nh-yxL" secondAttribute="height" multiplier="1:1" id="HwU-qz-WOG"/>
+                        <constraint firstItem="gqO-Ik-Rrb" firstAttribute="centerX" secondItem="REA-Nh-yxL" secondAttribute="centerX" id="IKt-Sq-Xcc"/>
+                        <constraint firstAttribute="trailing" secondItem="XhS-yj-yFA" secondAttribute="trailing" id="JXH-Wy-pd7"/>
+                        <constraint firstItem="qh4-0Q-kZT" firstAttribute="top" secondItem="REA-Nh-yxL" secondAttribute="top" id="Lbz-hX-t2M"/>
+                        <constraint firstItem="qh4-0Q-kZT" firstAttribute="leading" secondItem="REA-Nh-yxL" secondAttribute="leading" id="RWA-k9-k1x"/>
+                        <constraint firstAttribute="bottom" secondItem="qh4-0Q-kZT" secondAttribute="bottom" id="SX8-S6-hko"/>
+                        <constraint firstItem="gqO-Ik-Rrb" firstAttribute="height" secondItem="REA-Nh-yxL" secondAttribute="height" multiplier="1:1.1" id="XWt-Vd-TaA"/>
+                        <constraint firstItem="XhS-yj-yFA" firstAttribute="leading" secondItem="REA-Nh-yxL" secondAttribute="leading" id="bXR-WR-bbj"/>
+                        <constraint firstItem="XhS-yj-yFA" firstAttribute="top" secondItem="REA-Nh-yxL" secondAttribute="top" id="gTm-ss-XIQ"/>
+                        <constraint firstAttribute="bottom" secondItem="XhS-yj-yFA" secondAttribute="bottom" id="oWq-mK-Vud"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CBu-Hp-0Vl" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
+                    <rect key="frame" x="173" y="283" width="29" height="88.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compe_cupid" translatesAutoresizingMaskIntoConstraints="NO" id="OxB-aJ-QOa" customClass="KHImageView" customModule="HoroScope" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="29" height="88.5"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="OxB-aJ-QOa" secondAttribute="bottom" id="9Nv-iV-mpn"/>
+                        <constraint firstItem="OxB-aJ-QOa" firstAttribute="leading" secondItem="CBu-Hp-0Vl" secondAttribute="leading" id="YjI-rv-oYy"/>
+                        <constraint firstAttribute="trailing" secondItem="OxB-aJ-QOa" secondAttribute="trailing" id="b82-lm-boz"/>
+                        <constraint firstItem="OxB-aJ-QOa" firstAttribute="top" secondItem="CBu-Hp-0Vl" secondAttribute="top" id="fhF-8B-hlj"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MMx-Qx-eNE">
+                    <rect key="frame" x="150.5" y="283" width="74" height="88.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compe_VS" translatesAutoresizingMaskIntoConstraints="NO" id="hvj-7C-91j">
+                            <rect key="frame" x="0.0" y="0.0" width="74" height="88.5"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="hvj-7C-91j" secondAttribute="bottom" id="338-ES-ve4"/>
+                        <constraint firstItem="hvj-7C-91j" firstAttribute="leading" secondItem="MMx-Qx-eNE" secondAttribute="leading" id="94z-Lv-E4V"/>
+                        <constraint firstItem="hvj-7C-91j" firstAttribute="top" secondItem="MMx-Qx-eNE" secondAttribute="top" id="BH7-QR-M9c"/>
+                        <constraint firstAttribute="trailing" secondItem="hvj-7C-91j" secondAttribute="trailing" id="o8c-f5-855"/>
+                        <constraint firstAttribute="width" secondItem="MMx-Qx-eNE" secondAttribute="height" multiplier="137:164" id="s8f-qc-7tu"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UkM-vi-gFf" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
+                    <rect key="frame" x="125" y="391.5" width="125" height="124.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compe_mommy" translatesAutoresizingMaskIntoConstraints="NO" id="Efo-AO-sP8">
+                            <rect key="frame" x="0.0" y="0.0" width="125" height="124.5"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="39N-ZD-2BM" customClass="KHImageView" customModule="HoroScope" customModuleProvider="target">
+                            <rect key="frame" x="6" y="5.5" width="113" height="113"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="39N-ZD-2BM" secondAttribute="height" multiplier="1:1" id="7iS-Kw-Cp2"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MxK-36-Gbd" customClass="KHButton" customModule="HoroScope" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="125" height="124.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="action_image2:" destination="-1" eventType="touchUpInside" id="Wh6-rN-KnD"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Efo-AO-sP8" firstAttribute="top" secondItem="UkM-vi-gFf" secondAttribute="top" id="2jy-PA-qDq"/>
+                        <constraint firstAttribute="bottom" secondItem="MxK-36-Gbd" secondAttribute="bottom" id="9Ql-9J-S6o"/>
+                        <constraint firstAttribute="width" secondItem="UkM-vi-gFf" secondAttribute="height" multiplier="1:1" id="JyW-Qt-Avu"/>
+                        <constraint firstItem="39N-ZD-2BM" firstAttribute="centerX" secondItem="UkM-vi-gFf" secondAttribute="centerX" id="PB5-yw-gpZ"/>
+                        <constraint firstAttribute="bottom" secondItem="Efo-AO-sP8" secondAttribute="bottom" id="UtD-ra-mcO"/>
+                        <constraint firstAttribute="trailing" secondItem="MxK-36-Gbd" secondAttribute="trailing" id="bAA-Lr-hLc"/>
+                        <constraint firstAttribute="trailing" secondItem="Efo-AO-sP8" secondAttribute="trailing" id="dAQ-xM-E5A"/>
+                        <constraint firstItem="39N-ZD-2BM" firstAttribute="centerY" secondItem="UkM-vi-gFf" secondAttribute="centerY" id="ef6-C4-E1F"/>
+                        <constraint firstItem="MxK-36-Gbd" firstAttribute="leading" secondItem="UkM-vi-gFf" secondAttribute="leading" id="m2H-IA-KCq"/>
+                        <constraint firstItem="MxK-36-Gbd" firstAttribute="top" secondItem="UkM-vi-gFf" secondAttribute="top" id="v5Z-me-5Vg"/>
+                        <constraint firstItem="Efo-AO-sP8" firstAttribute="leading" secondItem="UkM-vi-gFf" secondAttribute="leading" id="yra-2V-r8Q"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mommy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaX-ds-1VA" customClass="KHLabel" customModule="HoroScope" customModuleProvider="target">
+                    <rect key="frame" x="135" y="528" width="105.5" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GKH-iw-Dg1">
+                    <rect key="frame" x="0.0" y="564" width="375" height="59"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fwy-g0-6H3" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
+                    <rect key="frame" x="146.5" y="578" width="82" height="31"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hoa-LQ-Nbv" customClass="KHLabel" customModule="HoroScope" customModuleProvider="target">
+                            <rect key="frame" x="22" y="5" width="38.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vim-DE-pnH" customClass="KHButton" customModule="HoroScope" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="82" height="31"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="action_Scan:" destination="-1" eventType="touchUpInside" id="oyj-gB-xY3"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Vim-DE-pnH" firstAttribute="leading" secondItem="Fwy-g0-6H3" secondAttribute="leading" id="BQz-aE-hLT"/>
+                        <constraint firstAttribute="width" secondItem="Fwy-g0-6H3" secondAttribute="height" multiplier="240:91" id="Kdd-rm-mFi"/>
+                        <constraint firstItem="Hoa-LQ-Nbv" firstAttribute="centerX" secondItem="Fwy-g0-6H3" secondAttribute="centerX" id="OPM-Mf-j22"/>
+                        <constraint firstItem="Hoa-LQ-Nbv" firstAttribute="centerY" secondItem="Fwy-g0-6H3" secondAttribute="centerY" id="Wei-gh-cqO"/>
+                        <constraint firstAttribute="bottom" secondItem="Vim-DE-pnH" secondAttribute="bottom" id="ZE5-rX-hpR"/>
+                        <constraint firstAttribute="trailing" secondItem="Vim-DE-pnH" secondAttribute="trailing" id="oCy-6g-EF8"/>
+                        <constraint firstItem="Vim-DE-pnH" firstAttribute="top" secondItem="Fwy-g0-6H3" secondAttribute="top" id="qMe-eO-a62"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isGradientColor" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="minColor">
+                            <color key="value" red="0.8980392157" green="0.20000000000000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="maxColor">
+                            <color key="value" red="1" green="0.64313725489999995" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SKY-AY-Cwl">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="zvx-vd-eO6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CBu-Hp-0Vl" firstAttribute="centerX" secondItem="5uY-SJ-aLj" secondAttribute="centerX" id="0x3-mZ-NgI"/>
+                <constraint firstAttribute="bottom" secondItem="5uY-SJ-aLj" secondAttribute="bottom" id="1gd-Xu-xQ3"/>
+                <constraint firstItem="SKY-AY-Cwl" firstAttribute="top" secondItem="GKH-iw-Dg1" secondAttribute="bottom" id="47a-7M-3SC"/>
+                <constraint firstItem="GKH-iw-Dg1" firstAttribute="top" secondItem="SaX-ds-1VA" secondAttribute="bottom" id="4r4-Kb-x2b"/>
+                <constraint firstItem="SaX-ds-1VA" firstAttribute="top" secondItem="UkM-vi-gFf" secondAttribute="bottom" constant="12" id="5uB-R2-opE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GKH-iw-Dg1" secondAttribute="trailing" id="6Uy-ej-QSt"/>
+                <constraint firstItem="REA-Nh-yxL" firstAttribute="top" secondItem="ekX-Nd-dYl" secondAttribute="bottom" constant="12" id="7gE-OF-8f0"/>
+                <constraint firstItem="GKH-iw-Dg1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8tJ-XL-RFC"/>
+                <constraint firstItem="5uY-SJ-aLj" firstAttribute="top" secondItem="NfP-iT-apj" secondAttribute="bottom" id="94X-d2-Ipx"/>
+                <constraint firstItem="SKY-AY-Cwl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="99Q-Eo-qTE"/>
+                <constraint firstItem="MMx-Qx-eNE" firstAttribute="centerX" secondItem="CBu-Hp-0Vl" secondAttribute="centerX" id="9G8-J7-19Z"/>
+                <constraint firstItem="Fwy-g0-6H3" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="31:667" id="Aeh-66-gaV"/>
+                <constraint firstItem="SKY-AY-Cwl" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="HF9-29-7AB"/>
+                <constraint firstItem="CBu-Hp-0Vl" firstAttribute="centerY" secondItem="5uY-SJ-aLj" secondAttribute="centerY" multiplier="0.9" id="Je5-bd-4uj"/>
+                <constraint firstItem="SKY-AY-Cwl" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Jxr-PG-Ysm"/>
+                <constraint firstItem="NfP-iT-apj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="M22-oq-F9u"/>
+                <constraint firstItem="UkM-vi-gFf" firstAttribute="centerX" secondItem="5uY-SJ-aLj" secondAttribute="centerX" id="NWH-Ax-yUX"/>
+                <constraint firstItem="REA-Nh-yxL" firstAttribute="centerX" secondItem="5uY-SJ-aLj" secondAttribute="centerX" id="OM0-Dy-ldc"/>
+                <constraint firstAttribute="trailing" secondItem="NfP-iT-apj" secondAttribute="trailing" id="PjH-Ni-99k"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5uY-SJ-aLj" secondAttribute="trailing" id="SVa-eh-Zme"/>
+                <constraint firstItem="MMx-Qx-eNE" firstAttribute="height" secondItem="CBu-Hp-0Vl" secondAttribute="height" id="TK6-zB-Ar5"/>
+                <constraint firstItem="5uY-SJ-aLj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UCx-re-0Fc"/>
+                <constraint firstItem="Fwy-g0-6H3" firstAttribute="centerX" secondItem="5uY-SJ-aLj" secondAttribute="centerX" id="YkW-8X-fDC"/>
+                <constraint firstItem="REA-Nh-yxL" firstAttribute="height" secondItem="UkM-vi-gFf" secondAttribute="height" id="Z4P-oQ-sIs"/>
+                <constraint firstItem="MMx-Qx-eNE" firstAttribute="centerY" secondItem="CBu-Hp-0Vl" secondAttribute="centerY" id="ajf-5d-Ic2"/>
+                <constraint firstItem="39N-ZD-2BM" firstAttribute="height" secondItem="gqO-Ik-Rrb" secondAttribute="height" id="bVQ-JF-Cks"/>
+                <constraint firstItem="NfP-iT-apj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gLw-Z5-ZBT"/>
+                <constraint firstItem="UkM-vi-gFf" firstAttribute="top" secondItem="CBu-Hp-0Vl" secondAttribute="bottom" constant="20" id="hQO-OV-91x"/>
+                <constraint firstItem="CBu-Hp-0Vl" firstAttribute="height" secondItem="5uY-SJ-aLj" secondAttribute="height" multiplier="186:1280" id="mwv-vE-1mz"/>
+                <constraint firstItem="UkM-vi-gFf" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="239:1280" id="uCS-vx-pXy"/>
+                <constraint firstItem="Fwy-g0-6H3" firstAttribute="centerY" secondItem="GKH-iw-Dg1" secondAttribute="centerY" id="uY7-rN-o3E"/>
+                <constraint firstItem="SaX-ds-1VA" firstAttribute="centerX" secondItem="5uY-SJ-aLj" secondAttribute="centerX" id="x2p-i9-daP"/>
+                <constraint firstItem="CBu-Hp-0Vl" firstAttribute="top" secondItem="REA-Nh-yxL" secondAttribute="bottom" constant="20" id="yqG-LL-Cxy"/>
+                <constraint firstItem="CBu-Hp-0Vl" firstAttribute="width" secondItem="5uY-SJ-aLj" secondAttribute="width" multiplier="55:720" id="z8C-97-hJI"/>
+                <constraint firstItem="ekX-Nd-dYl" firstAttribute="centerX" secondItem="5uY-SJ-aLj" secondAttribute="centerX" id="zJS-Fp-kHi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="52" y="48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="compe_VS" width="137" height="164"/>
+        <image name="compe_background" width="403" height="671"/>
+        <image name="compe_cupid" width="55" height="186"/>
+        <image name="compe_daddy" width="213" height="213"/>
+        <image name="compe_mommy" width="213" height="213"/>
+    </resources>
+</document>

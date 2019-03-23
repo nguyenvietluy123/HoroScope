@@ -12,8 +12,25 @@ import SwiftyJSON
 class ReadJsonFile: NSObject {
     static let shared = ReadJsonFile()
     
-    func checkLove(zodiac1: String, zodiac2: String, success:@escaping (String) -> ()) {
-        if let path = Bundle.main.path(forResource: "\(zodiac1.lowercased())_\(zodiac2.lowercased())", ofType: "json") {
+    func getContentZodiac(zodiac: ZodiacObj, success: @escaping () -> ()) {
+        if let path = Bundle.main.path(forResource: zodiac.name.lowercased(), ofType: "json") {
+            do {
+                let jsonString = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
+                let data = JSON(parseJSON: jsonString)
+                zodiac.content.removeAll()
+                for json in data["card"].arrayValue {
+                    let item = Content(data: json)
+                    zodiac.content.append(item)
+                }
+                success()
+            } catch {
+                print("Can't read json file")
+            }
+        }
+    }
+    
+    func checkLove(resource: String, success: @escaping (String) -> ()) {
+        if let path = Bundle.main.path(forResource: resource, ofType: "json") {
             do {
                 let jsonString = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
                 let json = JSON(parseJSON: jsonString)

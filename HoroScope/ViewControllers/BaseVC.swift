@@ -41,13 +41,12 @@ extension BaseVC {
 extension BaseVC: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-            dismiss(animated: false) {
                 let imageCropVC = RSKImageCropViewController(image: pickedImage, cropMode: .circle)
                 imageCropVC.delegate = self
-                self.present(imageCropVC, animated: true, completion: nil)
-            }
+                picker.present(imageCropVC, animated: true, completion: nil)
         }
     }
+    
 }
 
 extension BaseVC : RSKImageCropViewControllerDelegate {

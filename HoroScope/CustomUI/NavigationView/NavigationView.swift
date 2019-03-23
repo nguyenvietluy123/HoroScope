@@ -11,6 +11,7 @@ import UIKit
 class NavigationView: UIView {
     @IBOutlet weak var lbTitleNav: KHLabel!
     @IBOutlet weak var viewLeft: UIView!
+    @IBOutlet weak var imgLeft: UIImageView!
     
     @IBInspectable open var title: String = "" {
         didSet {
@@ -23,6 +24,24 @@ class NavigationView: UIView {
             viewLeft.isHidden = !hasLeft
         }
     }
+    
+    @IBInspectable open var hasCancel: Bool = false {
+        didSet {
+            imgLeft.image = hasCancel ? #imageLiteral(resourceName: "icon_delete") : #imageLiteral(resourceName: "navi_back")
+        }
+    }
+    
+    @IBInspectable open var isGradient: Bool = false {
+        didSet {
+            GCDCommon.mainQueue {
+                if self.isGradient {
+                    Common.gradient(self.firstColor, self.secondColor, view: self)
+                }
+            }
+        }
+    }
+    @IBInspectable open var firstColor: UIColor = .clear
+    @IBInspectable open var secondColor: UIColor = .clear
     
     var handleBack: (() -> Void)?
     
@@ -54,6 +73,12 @@ class NavigationView: UIView {
                 } else {
                     ctr.constant = 69*ScreenSize.SCREEN_HEIGHT/736
                 }
+            }
+        }
+        
+        GCDCommon.mainQueue {
+            if self.isGradient {
+                Common.gradient(self.firstColor, self.secondColor, view: self)
             }
         }
     }

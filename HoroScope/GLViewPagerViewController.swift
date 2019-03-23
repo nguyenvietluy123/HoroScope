@@ -164,7 +164,6 @@ open class GLViewPagerViewController: UIViewController, UIPageViewControllerData
         
         let navi = NavigationView()
         parentView.addSubview(navi)
-        navi.hasLeft = true
         navi.translatesAutoresizingMaskIntoConstraints = false
         navi.topAnchor.constraint(equalTo: parentView.topAnchor).isActive = true
         navi.leadingAnchor.constraint(equalTo: parentView.leadingAnchor).isActive = true
@@ -178,14 +177,17 @@ open class GLViewPagerViewController: UIViewController, UIPageViewControllerData
         containView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
         containView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
         containView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
-
-        let imgView = UIImageView(frame: UIScreen.main.bounds)
-        imgView.image = #imageLiteral(resourceName: "launcher")
+        
+        let backgroundView = KHView(frame: UIScreen.main.bounds)
+        backgroundView.isGradientColor = true
+        backgroundView.minColor = UIColor.init("E53330", alpha: 1)
+        backgroundView.maxColor = UIColor.init("FFA459", alpha: 1)
+        
         containView.backgroundColor = UIColor.clear
         containView.addSubview(self.tabContentView)
         containView.addSubview(self.pageViewController.view)
         
-        parentView.addSubview(imgView)
+        parentView.addSubview(backgroundView)
         parentView.addSubview(navi)
         parentView.addSubview(containView)
         

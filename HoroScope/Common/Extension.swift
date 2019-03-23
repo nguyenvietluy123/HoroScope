@@ -543,6 +543,25 @@ extension UIImage {
         return resizedImage!
         
     }
+    
+    static func gradientImage(with bounds: CGRect,
+                              colors: [CGColor],
+                              locations: [NSNumber]?) -> UIImage? {
+        
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = bounds
+        gradientLayer.colors = colors
+        // This makes it horizontal
+        gradientLayer.startPoint = CGPoint(x: 0.0,
+                                           y: 0.0)
+        gradientLayer.endPoint = CGPoint(x: 0.0,
+                                         y: 0.8)
+        UIGraphicsBeginImageContext(gradientLayer.bounds.size)
+        gradientLayer.render(in: UIGraphicsGetCurrentContext()!)
+        guard let image = UIGraphicsGetImageFromCurrentImageContext() else { return nil }
+        UIGraphicsEndImageContext()
+        return image
+    }
 }
 
 protocol NibReusable: class {
@@ -603,3 +622,28 @@ extension UITableView: UITableViewDelegate {
         return header
     }
 }
+
+
+//extension take screenshot
+extension UIApplication {
+    
+    var screenShot: UIImage?  {
+        return keyWindow?.layer.screenShot
+    }
+}
+
+extension CALayer {
+    
+    var screenShot: UIImage?  {
+        let scale = UIScreen.main.scale
+        UIGraphicsBeginImageContextWithOptions(frame.size, false, scale)
+        if let context = UIGraphicsGetCurrentContext() {
+            render(in: context)
+            let screenshot = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            return screenshot
+        }
+        return nil
+    }
+}
+//

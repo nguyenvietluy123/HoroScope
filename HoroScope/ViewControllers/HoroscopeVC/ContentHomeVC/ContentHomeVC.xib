@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContentHomeVC" customModule="HoroScope" customModuleProvider="target">
+            <connections>
+                <outlet property="imgMain" destination="32S-Yw-hHc" id="iHl-hv-9TS"/>
+                <outlet property="lbDate" destination="U9P-yp-Y7Q" id="KJO-IZ-L6k"/>
+                <outlet property="lbName" destination="e8J-6c-laO" id="GJ0-4o-r5P"/>
+                <outlet property="textView" destination="aqk-yu-8b7" id="InY-Oa-V6M"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="556"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6HO-CE-W4H" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
+                    <rect key="frame" x="12" y="32" width="301" height="468"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xw9-Ag-3zK">
+                            <rect key="frame" x="0.0" y="0.0" width="301" height="81.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aries" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8J-6c-laO" customClass="KHLabel" customModule="HoroScope" customModuleProvider="target">
+                                    <rect key="frame" x="12" y="26.5" width="57" height="29"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21/03 ~ 20/04" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9P-yp-Y7Q" customClass="KHLabel" customModule="HoroScope" customModuleProvider="target">
+                                    <rect key="frame" x="12" y="57.5" width="92.5" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9mO-mo-Nkb" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
+                                    <rect key="frame" x="12" y="74.5" width="92.5" height="4"/>
+                                    <color key="backgroundColor" red="0.8980392157" green="0.20000000000000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isGradientColor" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="minColor">
+                                            <color key="value" red="1" green="0.64313725489999995" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="maxColor">
+                                            <color key="value" red="0.8980392157" green="0.20000000000000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YV7-hA-fC0">
+                                    <rect key="frame" x="12" y="26.5" width="92.5" height="52"/>
+                                    <connections>
+                                        <action selector="action_tapImage:" destination="-1" eventType="touchUpInside" id="b58-fy-a3Y"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="9mO-mo-Nkb" firstAttribute="height" secondItem="U9P-yp-Y7Q" secondAttribute="height" multiplier="4:17" id="5cW-O0-3pj"/>
+                                <constraint firstItem="9mO-mo-Nkb" firstAttribute="leading" secondItem="U9P-yp-Y7Q" secondAttribute="leading" id="6gi-mk-NXY"/>
+                                <constraint firstItem="U9P-yp-Y7Q" firstAttribute="top" secondItem="e8J-6c-laO" secondAttribute="bottom" constant="2" id="9OP-HL-8Q4"/>
+                                <constraint firstItem="e8J-6c-laO" firstAttribute="leading" secondItem="xw9-Ag-3zK" secondAttribute="leading" constant="12" id="DfV-ER-n9y"/>
+                                <constraint firstItem="e8J-6c-laO" firstAttribute="centerY" secondItem="xw9-Ag-3zK" secondAttribute="centerY" id="HD6-kD-QqN"/>
+                                <constraint firstItem="U9P-yp-Y7Q" firstAttribute="leading" secondItem="e8J-6c-laO" secondAttribute="leading" id="IqL-Mw-vZI"/>
+                                <constraint firstItem="9mO-mo-Nkb" firstAttribute="trailing" secondItem="U9P-yp-Y7Q" secondAttribute="trailing" id="MIx-kR-hvW"/>
+                                <constraint firstItem="YV7-hA-fC0" firstAttribute="bottom" secondItem="9mO-mo-Nkb" secondAttribute="bottom" id="Nfg-uz-gLc"/>
+                                <constraint firstItem="YV7-hA-fC0" firstAttribute="trailing" secondItem="U9P-yp-Y7Q" secondAttribute="trailing" id="YwI-NV-dgX"/>
+                                <constraint firstItem="YV7-hA-fC0" firstAttribute="leading" secondItem="e8J-6c-laO" secondAttribute="leading" id="dRT-Yi-PjE"/>
+                                <constraint firstItem="YV7-hA-fC0" firstAttribute="top" secondItem="e8J-6c-laO" secondAttribute="top" id="e9y-vM-pm7"/>
+                                <constraint firstItem="9mO-mo-Nkb" firstAttribute="top" secondItem="U9P-yp-Y7Q" secondAttribute="bottom" id="zfx-p7-q7I"/>
+                            </constraints>
+                        </view>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqk-yu-8b7" customClass="KHTextView" customModule="HoroScope" customModuleProvider="target">
+                            <rect key="frame" x="12" y="81.5" width="277" height="374.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="aqk-yu-8b7" firstAttribute="leading" secondItem="6HO-CE-W4H" secondAttribute="leading" constant="12" id="8Hx-1k-FC1"/>
+                        <constraint firstItem="aqk-yu-8b7" firstAttribute="top" secondItem="xw9-Ag-3zK" secondAttribute="bottom" id="Jen-ge-hTy"/>
+                        <constraint firstItem="xw9-Ag-3zK" firstAttribute="height" secondItem="6HO-CE-W4H" secondAttribute="height" multiplier="146:838" id="egq-RM-P5P"/>
+                        <constraint firstAttribute="trailing" secondItem="xw9-Ag-3zK" secondAttribute="trailing" id="lla-SZ-cX9"/>
+                        <constraint firstAttribute="trailing" secondItem="aqk-yu-8b7" secondAttribute="trailing" constant="12" id="nNs-Tb-i7V"/>
+                        <constraint firstItem="xw9-Ag-3zK" firstAttribute="top" secondItem="6HO-CE-W4H" secondAttribute="top" id="pAH-Ln-9XY"/>
+                        <constraint firstAttribute="bottom" secondItem="aqk-yu-8b7" secondAttribute="bottom" constant="12" id="xEV-9h-asd"/>
+                        <constraint firstItem="xw9-Ag-3zK" firstAttribute="leading" secondItem="6HO-CE-W4H" secondAttribute="leading" id="xgl-P2-uMR"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="14"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2sB-ru-dCp">
+                    <rect key="frame" x="191" y="15.5" width="98" height="98"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Aquarius" translatesAutoresizingMaskIntoConstraints="NO" id="32S-Yw-hHc">
+                            <rect key="frame" x="0.0" y="0.0" width="98" height="98"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pY6-B2-doF">
+                            <rect key="frame" x="0.0" y="0.0" width="98" height="98"/>
+                            <connections>
+                                <action selector="action_tapImage:" destination="-1" eventType="touchUpInside" id="gVl-sz-nAf"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="32S-Yw-hHc" secondAttribute="trailing" id="F4f-c1-elB"/>
+                        <constraint firstAttribute="bottom" secondItem="32S-Yw-hHc" secondAttribute="bottom" id="HZo-va-yJd"/>
+                        <constraint firstItem="pY6-B2-doF" firstAttribute="leading" secondItem="2sB-ru-dCp" secondAttribute="leading" id="I9I-iD-H5L"/>
+                        <constraint firstAttribute="bottom" secondItem="pY6-B2-doF" secondAttribute="bottom" id="OGu-Ht-dUJ"/>
+                        <constraint firstItem="32S-Yw-hHc" firstAttribute="leading" secondItem="2sB-ru-dCp" secondAttribute="leading" id="bOw-BR-J7U"/>
+                        <constraint firstItem="pY6-B2-doF" firstAttribute="top" secondItem="2sB-ru-dCp" secondAttribute="top" id="ofM-L9-2Pn"/>
+                        <constraint firstItem="32S-Yw-hHc" firstAttribute="top" secondItem="2sB-ru-dCp" secondAttribute="top" id="p2c-Sj-xyI"/>
+                        <constraint firstAttribute="trailing" secondItem="pY6-B2-doF" secondAttribute="trailing" id="sdz-4o-doV"/>
+                        <constraint firstAttribute="width" secondItem="2sB-ru-dCp" secondAttribute="height" multiplier="1:1" id="yua-26-LCl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6HO-CE-W4H" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="5KI-4K-adL"/>
+                <constraint firstItem="6HO-CE-W4H" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1:1" constant="-88" id="NJq-aM-tKS"/>
+                <constraint firstItem="2sB-ru-dCp" firstAttribute="height" secondItem="xw9-Ag-3zK" secondAttribute="height" multiplier="1.2" id="WH5-j9-3p8"/>
+                <constraint firstItem="2sB-ru-dCp" firstAttribute="centerY" secondItem="xw9-Ag-3zK" secondAttribute="centerY" multiplier="0.8" id="f12-nQ-tmS"/>
+                <constraint firstItem="2sB-ru-dCp" firstAttribute="trailing" secondItem="xw9-Ag-3zK" secondAttribute="trailing" constant="-24" id="iXe-BW-zoW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6HO-CE-W4H" secondAttribute="trailing" constant="12" id="ojZ-kb-ZIV"/>
+                <constraint firstItem="6HO-CE-W4H" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="12" id="s02-Ws-0ij"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="90.400000000000006" y="89.055472263868069"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Aquarius" width="420" height="420"/>
+    </resources>
+</document>

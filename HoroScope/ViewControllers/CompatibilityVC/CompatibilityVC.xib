@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CompatibilityVC" customModule="HoroScope" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="Qat-jM-ug0" id="ZZK-3g-bib"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XqS-P0-45Q" customClass="NavigationView" customModule="HoroScope" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <color key="backgroundColor" red="1" green="0.55402815419999996" blue="0.41727157310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="R49-PJ-jEj"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Competition"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isGradient" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                            <color key="value" red="0.8980392157" green="0.20000000000000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                            <color key="value" red="1" green="0.64313725489999995" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5VI-t2-gYO">
+                    <rect key="frame" x="0.0" y="60" width="375" height="607"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qat-jM-ug0">
+                            <rect key="frame" x="19" y="0.0" width="337.5" height="607"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="y3K-Do-b4z"/>
+                                <outlet property="delegate" destination="-1" id="S8p-6B-cjY"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Qat-jM-ug0" firstAttribute="width" secondItem="5VI-t2-gYO" secondAttribute="width" multiplier="0.9" id="ThT-DS-nkm"/>
+                        <constraint firstAttribute="bottom" secondItem="Qat-jM-ug0" secondAttribute="bottom" id="qFu-Oo-im6"/>
+                        <constraint firstItem="Qat-jM-ug0" firstAttribute="centerX" secondItem="5VI-t2-gYO" secondAttribute="centerX" id="ru9-1G-xg9"/>
+                        <constraint firstItem="Qat-jM-ug0" firstAttribute="top" secondItem="5VI-t2-gYO" secondAttribute="top" id="z7H-Kb-xV8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XqS-P0-45Q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2rX-XW-Zfy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="5VI-t2-gYO" secondAttribute="bottom" id="OKj-bt-P4p"/>
+                <constraint firstItem="5VI-t2-gYO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Vd9-vK-LzH"/>
+                <constraint firstItem="XqS-P0-45Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="f7T-vP-1Rh"/>
+                <constraint firstItem="5VI-t2-gYO" firstAttribute="top" secondItem="XqS-P0-45Q" secondAttribute="bottom" id="lP2-9Y-r0u"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5VI-t2-gYO" secondAttribute="trailing" id="mcN-wI-FUK"/>
+                <constraint firstAttribute="trailing" secondItem="XqS-P0-45Q" secondAttribute="trailing" id="uxY-h5-vCV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="130.40000000000001" y="116.49175412293854"/>
+        </view>
+    </objects>
+</document>

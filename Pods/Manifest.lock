@@ -1,20 +1,37 @@
 PODS:
+  - Alamofire (4.8.1)
+  - AnimatedMaskLabel (1.0.1)
+  - KRActivityIndicatorView (3.0.0)
+  - KRProgressHUD (3.4.0):
+    - KRActivityIndicatorView (= 3.0.0)
   - RSKImageCropper (2.2.1)
   - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
+  - Alamofire
+  - AnimatedMaskLabel
+  - KRActivityIndicatorView
+  - KRProgressHUD
   - RSKImageCropper
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AnimatedMaskLabel
+    - KRActivityIndicatorView
+    - KRProgressHUD
     - RSKImageCropper
     - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  AnimatedMaskLabel: 995f1cdcae80700be58126d70e0fe05619d86b77
+  KRActivityIndicatorView: c414000730a6f4969eeb354bee4f2aebc89c2c2e
+  KRProgressHUD: 79c8703f82179fe34b3602f10b30726f887983fa
   RSKImageCropper: 98296ad26b41753f796b6898d015509598f13d97
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: ce465054ea2eb8ff2d5f328350da01115cd7f7ed
+PODFILE CHECKSUM: 0181f367f62e3b35e98e3d8b37e75e28a5c9aade
 
 COCOAPODS: 1.5.3
