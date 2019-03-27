@@ -41,7 +41,6 @@
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="title" value="Scanning"/>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="hasLeft" value="YES"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isGradient" value="YES"/>
                         <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
                             <color key="value" red="0.8980392157" green="0.20000000000000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

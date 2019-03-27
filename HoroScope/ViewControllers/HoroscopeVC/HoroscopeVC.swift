@@ -19,9 +19,6 @@ class HoroscopeVC: GLViewPagerViewController {
         super.viewDidLoad()
         initUI()
         initData()
-        //        initAdmob()
-        //        UnderlineFocusView
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,6 +33,7 @@ class HoroscopeVC: GLViewPagerViewController {
 
 extension HoroscopeVC {
     func initUI() {
+        SwiftyAd.shared.delegate = self
         Common.addNotificationCenter(observer: self, selector: #selector(showZodiacVC), key: NotificationCenterKey.ShowZodiacsVC)
         Common.addNotificationCenter(observer: self, selector: #selector(reloadData(notifi:)), key: NotificationCenterKey.ReloadData)
     }
@@ -50,7 +48,6 @@ extension HoroscopeVC {
     }
     
     func initTabPage() {
-//        self.navigationController?.navigationBar.isHidden = true
         self.setDataSource(newDataSource: self)
         self.setDelegate(newDelegate: self)
         self.padding = 10
@@ -60,7 +57,6 @@ extension HoroscopeVC {
         self.kTabHeight = 44*heightRatio
         self.tabHeight = self.kTabHeight
         self.tabAnimationType = GLTabAnimationType.GLTabAnimationType_WhileScrolling
-        self.fixTabWidth = false
         
         self.tabTitles = [ "General",
                            "Today",
@@ -73,6 +69,9 @@ extension HoroscopeVC {
                                  ContentHomeVC(type: .week, zodiac: self.zodiac),
                                  ContentHomeVC(type: .month, zodiac: self.zodiac),
                                  ContentHomeVC(type: .year, zodiac: self.zodiac) ]
+        
+        self.fixTabWidth = isIPad
+        self.tabWidth = UIScreen.main.bounds.width/CGFloat((self.viewControllers.count))
 //        self.reloadData()
     }
     
@@ -128,11 +127,15 @@ extension HoroscopeVC: GLViewPagerViewControllerDelegate {
         currentLabel.textColor = UIColor.black
         currentLabel.backgroundColor = UIColor.white
         prevLabel.backgroundColor = UIColor.clear
+        
+        GCDCommon.mainQueueWithDelay(0.1) {
+            SwiftyAd.shared.showInterstitial(from: self, withInterval: 3)
+        }
     }
     
     func willChangeTabToIndex(_ viewPager: GLViewPagerViewController, index: Int, fromTabIndex: Int, progress: CGFloat) {
         if fromTabIndex == index {
-            return;
+            return
         }
         
         let prevLabel:UILabel = viewPager.tabViewAtIndex(index: fromTabIndex) as! UILabel
@@ -155,36 +158,51 @@ extension HoroscopeVC: GLViewPagerViewControllerDelegate {
     }
 }
 
-
-class GLPresentViewController: UIViewController {
-    
-    var presentLabel: UILabel = UILabel()
-    
-    internal var _title : NSString = "Page Zero"
-    internal var _setupSubViews:Bool = true
-    
-    init(title : NSString) {
-        _title = title
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+extension HoroscopeVC: SwiftyAdDelegate {
+    func swiftyAdDidOpen(_ swiftyAd: SwiftyAd) {
         
-        self.presentLabel.text = self._title as String
-        self.presentLabel.textColor = .white
-        self.presentLabel.sizeToFit()
-        self.view.addSubview(self.presentLabel)
-        self.presentLabel.center = self.view.center
-        //    self.view.backgroundColor = .white
     }
     
-    override func viewWillLayoutSubviews() {
-        self.presentLabel.center = self.view.center
+    func swiftyAdDidClose(_ swiftyAd: SwiftyAd) {
+        
     }
+    
+    func swiftyAd(_ swiftyAd: SwiftyAd, didRewardUserWithAmount rewardAmount: Int) {
+        
+    }
+    
+    
 }
+
+//class GLPresentViewController: UIViewController {
+//
+//    var presentLabel: UILabel = UILabel()
+//
+//    internal var _title : NSString = "Page Zero"
+//    internal var _setupSubViews:Bool = true
+//
+//    init(title : NSString) {
+//        _title = title
+//        super.init(nibName: nil, bundle: nil)
+//    }
+//
+//    required init?(coder aDecoder: NSCoder) {
+//        super.init(coder: aDecoder)
+//        fatalError("init(coder:) has not been implemented")
+//    }
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//        self.presentLabel.text = self._title as String
+//        self.presentLabel.textColor = .white
+//        self.presentLabel.sizeToFit()
+//        self.view.addSubview(self.presentLabel)
+//        self.presentLabel.center = self.view.center
+//        //    self.view.backgroundColor = .white
+//    }
+//
+//    override func viewWillLayoutSubviews() {
+//        self.presentLabel.center = self.view.center
+//    }
+//}

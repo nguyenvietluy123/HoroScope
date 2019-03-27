@@ -26,8 +26,6 @@ class CompaLoveVC: BaseVC {
     @IBOutlet weak var img_compaHeart: KHImageView!
     
     var pointer = CGPoint()
-    var leftHaveImg: Bool = false
-    var rightHaveImg: Bool = false
     var isShowContentView: Bool = false
     var isLoveCompatibility: Bool = false
     var arrData: [ZodiacObj] = []
@@ -44,7 +42,6 @@ class CompaLoveVC: BaseVC {
 
     @IBAction func btn_imgLeft(_ sender: Any) {
         guard isShowContentView != true else { return }
-//        leftHaveImg = false
         zodiacLeft = ZodiacObj()
         imgLeft.image = #imageLiteral(resourceName: "compa_questionMark")
         lbLeft.text = ""
@@ -52,7 +49,6 @@ class CompaLoveVC: BaseVC {
     
     @IBAction func btn_imgRight(_ sender: Any) {
         guard isShowContentView != true else { return }
-//        rightHaveImg = false
         zodiacRight = ZodiacObj()
         imgRight.image = #imageLiteral(resourceName: "compa_questionMark")
         lbRight.text = ""
@@ -63,22 +59,9 @@ class CompaLoveVC: BaseVC {
             Common.showAlert("Please choose Zodiac")
             return
         }
-        GCDCommon.mainQueue {
-            self.tabBarController?.setTabBarVisible(visible: false, duration: 0.2, animated: true)
-        }
-        
-        UIView.animate(withDuration: 0.3, animations: {
-            self.viewContent.alpha = 1
-            self.collectionView.alpha = 0
-            self.viewButtonCheck.alpha = 0
-            self.viewButtonDone.alpha = 1
-        })
-        isShowContentView = true
-        
-        readJsonShared.checkLove(resource: (isLoveCompatibility ? "" : "old_") + "\(zodiacLeft.name.lowercased())_\(zodiacRight.name.lowercased())") { (str) in
-            self.textView.setContentOffset(.zero, animated: false)
-            self.textView.text = str
-        }
+        SwiftyAd.shared.delegate = self
+        SwiftyAd.shared.showInterstitial(from: self)
+        //show content when did close Admob, at delegate protocol
     }
     
     @IBAction func action_Done(_ sender: Any) {
@@ -97,10 +80,29 @@ class CompaLoveVC: BaseVC {
     @objc func showCoor(sender: UITapGestureRecognizer) {
         pointer = sender.location(in: self.view)
     }
+    
+    func showContent() {
+        GCDCommon.mainQueue {
+            self.tabBarController?.setTabBarVisible(visible: false, duration: 0.2, animated: true)
+        }
+        UIView.animate(withDuration: 0.3, animations: {
+            self.viewContent.alpha = 1
+            self.collectionView.alpha = 0
+            self.viewButtonCheck.alpha = 0
+            self.viewButtonDone.alpha = 1
+        })
+        isShowContentView = true
+        
+        readJsonShared.checkLove(resource: (isLoveCompatibility ? "" : "old_") + "\(zodiacLeft.name.lowercased())_\(zodiacRight.name.lowercased())") { (str) in
+            self.textView.setContentOffset(.zero, animated: false)
+            self.textView.text = str
+        }
+    }
 }
 
 extension CompaLoveVC {
     func initUI() {
+        navi.title = isLoveCompatibility ? "Love Compatibility" : "Zodiac Compatibility"
         navi.handleBack = {
             self.clickBack()
             self.tabBarController?.setTabBarVisible(visible: true, duration: 0.15, animated: true)
@@ -166,7 +168,6 @@ extension CompaLoveVC: UICollectionViewDelegate {
             
             UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseOut, animations: {
                 var convertToWindow = CGRect()
-//                if self.leftHaveImg == false {
                 if self.zodiacLeft.name == "" {
                     convertToWindow = self.imgLeft.convert(self.imgLeft.bounds, to: self.view)
                 } else {
@@ -176,14 +177,13 @@ extension CompaLoveVC: UICollectionViewDelegate {
                 self.view.layoutIfNeeded()
             }) { (completed) in
                 if self.zodiacLeft.name != ""  {
-                    self.imgRight.image = self.isLoveCompatibility ? self.arrImgLove[indexPath.item] : self.arrIconZodiac[indexPath.item]
+                    self.imgRight.image = self.isLoveCompatibility ? self.arrIconZodiac[indexPath.item] : self.arrImgLove[indexPath.item]
                     self.zodiacRight = self.arrData[indexPath.item]
                     self.lbRight.text = self.arrData[indexPath.item].name
                 } else {
-                    self.imgLeft.image = self.isLoveCompatibility ?self.arrImgLove[indexPath.item] : self.arrIconZodiac[indexPath.item]
+                    self.imgLeft.image = self.isLoveCompatibility ?self.arrIconZodiac[indexPath.item] : self.arrImgLove[indexPath.item]
                     self.zodiacLeft = self.arrData[indexPath.item]
                     self.lbLeft.text = self.arrData[indexPath.item].name
-//                    self.leftHaveImg = true
                 }
                 UIView.animate(withDuration: 0.3, animations: {
                     imgView.alpha = 0
@@ -229,5 +229,19 @@ extension UITabBarController {
     
     func tabBarIsVisible() ->Bool {
         return self.tabBar.frame.origin.y < UIScreen.main.bounds.height
+    }
+}
+
+extension CompaLoveVC: SwiftyAdDelegate {
+    func swiftyAdDidOpen(_ swiftyAd: SwiftyAd) {
+        
+    }
+    
+    func swiftyAdDidClose(_ swiftyAd: SwiftyAd) {
+        showContent()
+    }
+    
+    func swiftyAd(_ swiftyAd: SwiftyAd, didRewardUserWithAmount rewardAmount: Int) {
+        
     }
 }

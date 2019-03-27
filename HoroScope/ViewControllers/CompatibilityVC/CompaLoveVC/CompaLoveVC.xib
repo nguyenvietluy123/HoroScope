@@ -34,7 +34,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dmT-A8-jXf" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="204"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="181.5"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5H5-kt-XbQ" customClass="NavigationView" customModule="HoroScope" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -48,25 +48,25 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wK0-bb-GZI" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="60" width="375" height="144"/>
+                            <rect key="frame" x="0.0" y="60" width="375" height="121.5"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compa_sound" translatesAutoresizingMaskIntoConstraints="NO" id="7wJ-AQ-T7O" customClass="KHImageView" customModule="HoroScope" customModuleProvider="target">
-                                    <rect key="frame" x="145.5" y="33.5" width="84" height="48"/>
+                                    <rect key="frame" x="152" y="28" width="71" height="41"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="7wJ-AQ-T7O" secondAttribute="height" multiplier="153:88" id="sBf-RI-GJ5"/>
                                     </constraints>
                                 </imageView>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compa_heart" translatesAutoresizingMaskIntoConstraints="NO" id="QSb-7c-u4N" customClass="KHImageView" customModule="HoroScope" customModuleProvider="target">
-                                    <rect key="frame" x="120.5" y="40.5" width="134" height="34"/>
+                                    <rect key="frame" x="131" y="34" width="113" height="29"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="QSb-7c-u4N" secondAttribute="height" multiplier="211:54" id="UM3-aE-MxG"/>
                                     </constraints>
                                 </imageView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3x-Gb-IhZ" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
-                                    <rect key="frame" x="40.5" y="0.0" width="75" height="144"/>
+                                    <rect key="frame" x="44" y="0.0" width="75" height="121.5"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compa_questionMark" translatesAutoresizingMaskIntoConstraints="NO" id="jo9-nO-IbE" customClass="KHImageView" customModule="HoroScope" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="20" width="75" height="75"/>
+                                            <rect key="frame" x="0.0" y="11" width="75" height="75"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="jo9-nO-IbE" secondAttribute="height" multiplier="1:1" id="T3d-Fz-3Xu"/>
                                             </constraints>
@@ -81,14 +81,14 @@
                                             </userDefinedRuntimeAttributes>
                                         </imageView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A84-mv-CFv">
-                                            <rect key="frame" x="0.0" y="20" width="75" height="75"/>
+                                            <rect key="frame" x="0.0" y="11" width="75" height="75"/>
                                             <state key="normal" title="Button"/>
                                             <connections>
                                                 <action selector="btn_imgLeft:" destination="-1" eventType="touchUpInside" id="qOn-tG-NYH"/>
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aries" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8d-Hg-lSp" customClass="KHLabel" customModule="HoroScope" customModuleProvider="target">
-                                            <rect key="frame" x="16" y="105" width="43" height="21"/>
+                                            <rect key="frame" x="16" y="96" width="43" height="21"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -108,10 +108,10 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPi-S2-0AW" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
-                                    <rect key="frame" x="259.5" y="0.0" width="75" height="144"/>
+                                    <rect key="frame" x="256" y="0.0" width="75" height="121.5"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compa_questionMark" translatesAutoresizingMaskIntoConstraints="NO" id="2gc-pi-Q3v" customClass="KHImageView" customModule="HoroScope" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="20" width="75" height="75"/>
+                                            <rect key="frame" x="0.0" y="11" width="75" height="75"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="2gc-pi-Q3v" secondAttribute="height" multiplier="1:1" id="DQN-kL-fla"/>
                                             </constraints>
@@ -126,14 +126,14 @@
                                             </userDefinedRuntimeAttributes>
                                         </imageView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o32-mR-YAq">
-                                            <rect key="frame" x="0.0" y="20" width="75" height="75"/>
+                                            <rect key="frame" x="0.0" y="11" width="75" height="75"/>
                                             <state key="normal" title="Button"/>
                                             <connections>
                                                 <action selector="btn_imgRight:" destination="-1" eventType="touchUpInside" id="FNd-zD-0S1"/>
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aries" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ba8-Pu-HjQ" customClass="KHLabel" customModule="HoroScope" customModuleProvider="target">
-                                            <rect key="frame" x="16" y="105" width="43" height="21"/>
+                                            <rect key="frame" x="16" y="96" width="43" height="21"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -160,11 +160,11 @@
                                 <constraint firstItem="lPi-S2-0AW" firstAttribute="width" secondItem="p3x-Gb-IhZ" secondAttribute="width" id="H0d-HR-x3e"/>
                                 <constraint firstItem="QSb-7c-u4N" firstAttribute="height" secondItem="wK0-bb-GZI" secondAttribute="height" multiplier="66:277" id="T3M-V3-3Vf"/>
                                 <constraint firstAttribute="bottom" secondItem="p3x-Gb-IhZ" secondAttribute="bottom" id="Uhg-sP-tyj"/>
-                                <constraint firstItem="QSb-7c-u4N" firstAttribute="leading" secondItem="p3x-Gb-IhZ" secondAttribute="trailing" constant="5" id="Vxp-pD-2wI"/>
+                                <constraint firstItem="QSb-7c-u4N" firstAttribute="leading" secondItem="p3x-Gb-IhZ" secondAttribute="trailing" constant="12" id="Vxp-pD-2wI"/>
                                 <constraint firstItem="jo9-nO-IbE" firstAttribute="centerY" secondItem="QSb-7c-u4N" secondAttribute="centerY" id="Wir-Hb-lD0"/>
                                 <constraint firstItem="7wJ-AQ-T7O" firstAttribute="width" secondItem="QSb-7c-u4N" secondAttribute="width" multiplier="1:1.6" id="Ysv-Bx-ct7"/>
                                 <constraint firstItem="p3x-Gb-IhZ" firstAttribute="width" secondItem="wK0-bb-GZI" secondAttribute="width" multiplier="1:5" id="blW-q5-HqT"/>
-                                <constraint firstItem="lPi-S2-0AW" firstAttribute="leading" secondItem="QSb-7c-u4N" secondAttribute="trailing" constant="5" id="f1A-E8-UHw"/>
+                                <constraint firstItem="lPi-S2-0AW" firstAttribute="leading" secondItem="QSb-7c-u4N" secondAttribute="trailing" constant="12" id="f1A-E8-UHw"/>
                                 <constraint firstItem="lPi-S2-0AW" firstAttribute="top" secondItem="wK0-bb-GZI" secondAttribute="top" id="jcr-1S-knu"/>
                                 <constraint firstItem="QSb-7c-u4N" firstAttribute="centerY" secondItem="wK0-bb-GZI" secondAttribute="centerY" multiplier="0.8" id="juz-yz-Y57"/>
                                 <constraint firstItem="7wJ-AQ-T7O" firstAttribute="centerX" secondItem="QSb-7c-u4N" secondAttribute="centerX" id="p3d-eB-5ad"/>
@@ -195,7 +195,7 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="imv-u6-06Y">
-                    <rect key="frame" x="0.0" y="204" width="375" height="463"/>
+                    <rect key="frame" x="0.0" y="181.5" width="375" height="485.5"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="0.0" id="iw2-LM-tDv">
                         <size key="itemSize" width="50" height="50"/>
@@ -209,13 +209,13 @@
                     </connections>
                 </collectionView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6sd-Tk-ygv" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
-                    <rect key="frame" x="12" y="216" width="351" height="388"/>
+                    <rect key="frame" x="12" y="181.5" width="351" height="422.5"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kzh-vI-D9I" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
-                            <rect key="frame" x="9" y="9.5" width="333" height="368.5"/>
+                            <rect key="frame" x="9" y="10.5" width="333" height="401"/>
                             <subviews>
                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VGe-yf-7Ru" customClass="KHTextView" customModule="HoroScope" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="333" height="368.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="333" height="401"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <string key="text">When two individuals with the same sun sign meet, there is often immediate compatibility. The big question is whether your Aquarian mirror image can complement you and bring to the relationship enough qualities that you need and do not already possess. You are intellectually independent, original and eccentric.\nYour Aquarian just may be as quirky as you are, but this may or may not work. If you've each been pulled into different lifestyles, it may be impossible for you to find a compromise as to how you live your life.\nYou'll each need to give the other wide latitude, allowing free expression to override emotional attachment. This need for freedom can be so strong that it takes precedence over the relationship itself, and can doom this partnership to an early, but amicable ending.\nIf either of you -- both is better -- have the Moon or Mars in an earth sign (Taurus, Virgo or Capricorn) or in an water sign (Cancer, Scorpio or Pisces), chances for a long-term relationship are increased. Regardless of the other planetary placements, the two of you will probably be busy in groups and friendship circles, sharing the same inspiration from political, global, and community news. In giving each other plenty of emotional space, you can behave as best pals, even if you are lovers.\nRomantically, you'll need to pay special attention to find ways to spice up the emotional and physical aspects of making love if you want to share a fulfilling life. Without conscious attention to this, you may be more mechanical and less sensual in your expression. Nevertheless, the two of you can create a totally unique relationship that defies all categorization, and one that enriches you both.\n</string>
                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -336,7 +336,7 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="dmT-A8-jXf" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="225:736" id="8na-P9-ohU"/>
+                <constraint firstItem="dmT-A8-jXf" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="200:736" id="8na-P9-ohU"/>
                 <constraint firstItem="6sd-Tk-ygv" firstAttribute="trailing" secondItem="imv-u6-06Y" secondAttribute="trailing" constant="-12" id="DiF-kI-eTb"/>
                 <constraint firstItem="CUf-hT-82y" firstAttribute="top" secondItem="4k3-Dj-FdJ" secondAttribute="top" id="FEi-ga-SI1"/>
                 <constraint firstItem="dmT-A8-jXf" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Fc1-89-yVW"/>
@@ -349,7 +349,7 @@
                 <constraint firstItem="CUf-hT-82y" firstAttribute="top" secondItem="6sd-Tk-ygv" secondAttribute="bottom" constant="12" id="ln0-pT-9zM"/>
                 <constraint firstItem="CUf-hT-82y" firstAttribute="trailing" secondItem="4k3-Dj-FdJ" secondAttribute="trailing" id="o3j-Gp-zew"/>
                 <constraint firstItem="CUf-hT-82y" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="rGm-Go-MNw"/>
-                <constraint firstItem="6sd-Tk-ygv" firstAttribute="top" secondItem="imv-u6-06Y" secondAttribute="top" constant="12" id="sSl-IO-koH"/>
+                <constraint firstItem="6sd-Tk-ygv" firstAttribute="top" secondItem="imv-u6-06Y" secondAttribute="top" id="sSl-IO-koH"/>
                 <constraint firstItem="CUf-hT-82y" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="40:736" id="tRq-b2-Qer"/>
                 <constraint firstItem="dmT-A8-jXf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wIM-H5-btc"/>
                 <constraint firstItem="dmT-A8-jXf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="x7s-dx-hrt"/>

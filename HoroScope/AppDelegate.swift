@@ -8,10 +8,13 @@
 
 import UIKit
 import CoreData
+import GoogleMobileAds
 
-//let kAdmobAppID         = "ca-app-pub-1947012962477196~8459063867"
-//let kAdmobBanner        = "ca-app-pub-1947012962477196/2412530261"
-//let kAdmobInterstitial  = "ca-app-pub-1947012962477196/2272929463"
+let kAdmobAppID         = "ca-app-pub-1947012962477196~8459063867"
+let kAdmobBanner        = "ca-app-pub-1947012962477196/2412530261"
+let kAdmobInterstitial  = "ca-app-pub-1947012962477196/2272929463"
+let APPSTORE_ID = "1446879801"
+let APPSTORE_LINK = "https://itunes.apple.com/app/id\(APPSTORE_ID)"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,14 +24,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var orientationLock = UIInterfaceOrientationMask.portrait
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-//        GADMobileAds.configure(withApplicationID: kAdmobAppID)
 //        initMainVC()
         initTabVC(0)
+        GADMobileAds.configure(withApplicationID: kAdmobAppID)
+        SwiftyAd.shared.setup(withBannerID: kAdmobBanner, interstitialID: kAdmobInterstitial, rewardedVideoID: nil)
         return true
     }
     
     func initMainVC() {
-        let vc = BeautyContestVC.init(nibName: "BeautyContestVC", bundle: nil)
+        let vc = BabyPredictionVC.init(nibName: "BabyPredictionVC", bundle: nil)
         let navi = UINavigationController.init(rootViewController: vc)
         window?.rootViewController = navi
         window?.makeKeyAndVisible()

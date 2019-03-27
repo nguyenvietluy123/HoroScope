@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Light.otf">
+            <string>SFProDisplay-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CellSetting" customModule="HoroScope" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CME-3M-RUt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New York" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hf4-06-yIj" customClass="KHLabel" customModule="HoroScope" customModuleProvider="target">
+                                <rect key="frame" x="54" y="0.0" width="254" height="43.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAttributeString" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XbB-mW-dON">
+                                <rect key="frame" x="0.0" y="0.0" width="12" height="43.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="Vlu-pq-4HO"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sAr-dA-Uny">
+                                <rect key="frame" x="12" y="6.5" width="30" height="30.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sAr-dA-Uny" secondAttribute="height" multiplier="1:1" id="6Qg-2s-z32"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WKY-OX-1Sc">
+                                <rect key="frame" x="42" y="0.0" width="12" height="43.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="1eL-gK-IwF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WKY-OX-1Sc" firstAttribute="leading" secondItem="sAr-dA-Uny" secondAttribute="trailing" id="0RI-T0-P9e"/>
+                            <constraint firstItem="Hf4-06-yIj" firstAttribute="leading" secondItem="WKY-OX-1Sc" secondAttribute="trailing" id="53g-Fq-Ifl"/>
+                            <constraint firstItem="Hf4-06-yIj" firstAttribute="top" secondItem="CME-3M-RUt" secondAttribute="top" id="6cV-oI-Xpv"/>
+                            <constraint firstAttribute="trailing" secondItem="Hf4-06-yIj" secondAttribute="trailing" constant="12" id="Dbj-RC-bAJ"/>
+                            <constraint firstItem="WKY-OX-1Sc" firstAttribute="top" secondItem="CME-3M-RUt" secondAttribute="top" id="Fsk-Zl-MWd"/>
+                            <constraint firstItem="sAr-dA-Uny" firstAttribute="centerY" secondItem="CME-3M-RUt" secondAttribute="centerY" id="L3j-RW-UeF"/>
+                            <constraint firstItem="XbB-mW-dON" firstAttribute="top" secondItem="CME-3M-RUt" secondAttribute="top" id="OZn-b2-EgX"/>
+                            <constraint firstItem="XbB-mW-dON" firstAttribute="leading" secondItem="CME-3M-RUt" secondAttribute="leading" id="P6f-mH-ujA"/>
+                            <constraint firstItem="sAr-dA-Uny" firstAttribute="height" secondItem="CME-3M-RUt" secondAttribute="height" multiplier="38:55" id="Q6m-sD-J3j"/>
+                            <constraint firstAttribute="bottom" secondItem="Hf4-06-yIj" secondAttribute="bottom" id="aU8-cY-jv4"/>
+                            <constraint firstAttribute="bottom" secondItem="XbB-mW-dON" secondAttribute="bottom" id="aZ2-FI-jcp"/>
+                            <constraint firstAttribute="bottom" secondItem="WKY-OX-1Sc" secondAttribute="bottom" id="cQs-F9-tag"/>
+                            <constraint firstItem="sAr-dA-Uny" firstAttribute="leading" secondItem="XbB-mW-dON" secondAttribute="trailing" id="pXC-Tg-pXd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="CME-3M-RUt" secondAttribute="bottom" id="IDO-uw-hxx"/>
+                    <constraint firstAttribute="trailing" secondItem="CME-3M-RUt" secondAttribute="trailing" id="kuE-sf-kRZ"/>
+                    <constraint firstItem="CME-3M-RUt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="smi-PF-zA6"/>
+                    <constraint firstItem="CME-3M-RUt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="z19-1r-xvh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="img" destination="sAr-dA-Uny" id="kcB-FV-xE0"/>
+                <outlet property="lbName" destination="Hf4-06-yIj" id="T9A-iG-Bh8"/>
+            </connections>
+            <point key="canvasLocation" x="52.799999999999997" y="55.772113943028494"/>
+        </tableViewCell>
+    </objects>
+</document>

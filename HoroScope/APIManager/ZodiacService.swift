@@ -15,57 +15,54 @@ class ZodiacService: NSObject {
     var haveWeek: Bool = false
     var haveMonth: Bool = false
     var haveYear: Bool = false
-    
+    let mainApi: String = "http://horoscope-api.herokuapp.com/horoscope/"
+//    http://horoscope-api.herokuapp.com/horoscope/year/Libra
     override init() {
         super.init()
     }
     
     func getDataZodiac(zodiac: ZodiacObj, success: @escaping () -> ()) {
-        let url1 = "https://horoscope-free-api.herokuapp.com/?time=\(TimeType.today)&sign=\(zodiac.name)"
-        apiRequestShared.webServiceCall(url1, params: nil, isShowLoader: true, method: .get, isHasHeader: true) { (response) in
-            if response.responeJson["status"] == 200 {
-                zodiac.today = response.responeJson["data"].stringValue
-                self.haveToday = true
-                if self.haveToday && self.haveWeek && self.haveMonth && self.haveYear {
-                    success()
-                    self.initCondition()
-                }
+        let url1 = "\(mainApi)\(TimeType.today)/\(zodiac.name)"
+        apiRequestShared.webServiceCall(url1, params: nil, isShowLoader: true, method: .get, isHasHeader: false) { (response) in
+            zodiac.today.title = response.responeJson["date"].stringValue
+            zodiac.today.content = response.responeJson["horoscope"].stringValue
+            self.haveToday = true
+            if self.haveToday && self.haveWeek && self.haveMonth && self.haveYear {
+                success()
+                self.initCondition()
             }
         }
         
-        let url2 = "https://horoscope-free-api.herokuapp.com/?time=\(TimeType.week)&sign=\(zodiac.name)"
+        let url2 = "\(mainApi)\(TimeType.week)/\(zodiac.name)"
         apiRequestShared.webServiceCall(url2, params: nil, isShowLoader: true, method: .get, isHasHeader: true) { (response) in
-            if response.responeJson["status"] == 200 {
-                zodiac.week = response.responeJson["data"].stringValue
-                self.haveWeek = true
-                if self.haveToday && self.haveWeek && self.haveMonth && self.haveYear {
-                    success()
-                    self.initCondition()
-                }
+            zodiac.week.title = response.responeJson["week"].stringValue
+            zodiac.week.content = response.responeJson["horoscope"].stringValue
+            self.haveWeek = true
+            if self.haveToday && self.haveWeek && self.haveMonth && self.haveYear {
+                success()
+                self.initCondition()
             }
         }
-        
-        let url3 = "https://horoscope-free-api.herokuapp.com/?time=\(TimeType.month)&sign=\(zodiac.name)"
+
+        let url3 = "\(mainApi)\(TimeType.month)/\(zodiac.name)"
         apiRequestShared.webServiceCall(url3, params: nil, isShowLoader: true, method: .get, isHasHeader: true) { (response) in
-            if response.responeJson["status"] == 200 {
-                zodiac.month = response.responeJson["data"].stringValue
-                self.haveMonth = true
-                if self.haveToday && self.haveWeek && self.haveMonth && self.haveYear {
-                    success()
-                    self.initCondition()
-                }
+            zodiac.month.title = response.responeJson["month"].stringValue
+            zodiac.month.content = response.responeJson["horoscope"].stringValue
+            self.haveMonth = true
+            if self.haveToday && self.haveWeek && self.haveMonth && self.haveYear {
+                success()
+                self.initCondition()
             }
         }
-        
-        let url4 = "https://horoscope-free-api.herokuapp.com/?time=\(TimeType.year)&sign=\(zodiac.name)"
+
+        let url4 = "\(mainApi)\(TimeType.year)/\(zodiac.name)"
         apiRequestShared.webServiceCall(url4, params: nil, isShowLoader: true, method: .get, isHasHeader: true) { (response) in
-            if response.responeJson["status"] == 200 {
-                zodiac.year = response.responeJson["data"].stringValue
-                self.haveYear = true
-                if self.haveToday && self.haveWeek && self.haveMonth && self.haveYear {
-                    success()
-                    self.initCondition()
-                }
+            zodiac.year.title = response.responeJson["year"].stringValue
+            zodiac.year.content = response.responeJson["horoscope"].stringValue
+            self.haveYear = true
+            if self.haveToday && self.haveWeek && self.haveMonth && self.haveYear {
+                success()
+                self.initCondition()
             }
         }
     }

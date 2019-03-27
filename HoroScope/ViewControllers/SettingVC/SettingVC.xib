@@ -12,6 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingVC" customModule="HoroScope" customModuleProvider="target">
             <connections>
+                <outlet property="navi" destination="dfT-oa-cKl" id="QT0-4F-eI0"/>
+                <outlet property="tableView" destination="wzE-Uh-5XK" id="iwN-GQ-aBu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -29,14 +31,33 @@
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="title" value="Setting"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="hasLeft" value="NO"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isGradient" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                            <color key="value" red="0.8980392157" green="0.20000000000000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                            <color key="value" red="1" green="0.64313725489999995" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wzE-Uh-5XK">
+                    <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="FNc-OF-s48"/>
+                        <outlet property="delegate" destination="-1" id="Lgn-Of-pPN"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wzE-Uh-5XK" secondAttribute="trailing" id="HP2-Hy-ecZ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dfT-oa-cKl" secondAttribute="trailing" id="MIW-5X-6pw"/>
+                <constraint firstItem="wzE-Uh-5XK" firstAttribute="top" secondItem="dfT-oa-cKl" secondAttribute="bottom" id="Pe6-pu-UUd"/>
                 <constraint firstItem="dfT-oa-cKl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="THD-CD-nXg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wzE-Uh-5XK" secondAttribute="bottom" id="TvK-jU-Tji"/>
                 <constraint firstItem="dfT-oa-cKl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pXk-dT-hRD"/>
+                <constraint firstItem="wzE-Uh-5XK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wAj-cf-hgO"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="130.40000000000001" y="121.88905547226388"/>

@@ -12,7 +12,7 @@ class ContentHomeVC: BaseVC {
     @IBOutlet weak var imgMain: UIImageView!
     @IBOutlet weak var lbName: KHLabel!
     @IBOutlet weak var lbDate: KHLabel!
-    @IBOutlet weak var textView: KHTextView!
+    @IBOutlet weak var tableView: UITableView!
     
     var zodiac: ZodiacObj = ZodiacObj()
     var type: TimeType = .general
@@ -37,13 +37,12 @@ class ContentHomeVC: BaseVC {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         GCDCommon.mainQueue {
-            self.textView.setContentOffset(.zero, animated: false)
+            self.tableView.setContentOffset(.zero, animated: false)
         }
     }
 
     @IBAction func action_tapImage(_ sender: Any) {
         Common.postNotificationCenter(key: NotificationCenterKey.ShowZodiacsVC, object: nil)
-//        self.present(vc, animated: true, completion: nil)/
     }
     
 }
@@ -53,31 +52,47 @@ extension ContentHomeVC {
         self.lbName.text = zodiac.name
         self.lbDate.text = zodiac.date
         imgMain.image = zodiac.img
+        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: isIPad ? 70 : 44, right: 0)
+        tableView.register(CellContent.self)
     }
     
     func initData() {
+        
+    }
+}
+
+extension ContentHomeVC: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return type == .general ? zodiac.content.count : 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as CellContent
         switch type {
         case .general:
-            let attributeString = NSMutableAttributedString()
-            for i in zodiac.content.indices {
-                attributeString.append(NSAttributedString(string: zodiac.content[i].title + "\n\n", attributes: [NSAttributedString.Key.font : Common.getFontForDeviceWithFontDefault(fontDefault: UIFont.boldSystemFont(ofSize: 18)), NSAttributedString.Key.foregroundColor : (i%2 == 0) ? UIColor.green : UIColor.red]))
-                attributeString.append(NSAttributedString(string: zodiac.content[i].content + "\n\n", attributes: [NSAttributedString.Key.font : fontDefault]))
-            }
-            self.textView.attributedText = attributeString
+            cell.config(content: zodiac.content[indexPath.item])
             break
         case .today:
-            self.textView.text = zodiac.today
+            cell.config(content: zodiac.today)
             break
         case .week:
-            self.textView.text = zodiac.week
+            cell.config(content: zodiac.week)
             break
         case .month:
-            self.textView.text = zodiac.month
+            cell.config(content: zodiac.month)
             break
         case .year:
-            self.textView.text = zodiac.year
+            cell.config(content: zodiac.year)
             break
         }
-        
+        return cell
+    }
+    
+    
+}
+
+extension ContentHomeVC: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
     }
 }

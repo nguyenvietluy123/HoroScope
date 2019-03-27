@@ -28,7 +28,7 @@
                         <constraint firstAttribute="height" constant="60" id="R49-PJ-jEj"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Competition"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Compatibility"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isGradient" value="YES"/>
                         <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
                             <color key="value" red="0.8980392157" green="0.20000000000000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -42,7 +42,7 @@
                     <rect key="frame" x="0.0" y="60" width="375" height="607"/>
                     <subviews>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qat-jM-ug0">
-                            <rect key="frame" x="19" y="0.0" width="337.5" height="607"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="607"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <outlet property="dataSource" destination="-1" id="y3K-Do-b4z"/>
@@ -52,7 +52,7 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="Qat-jM-ug0" firstAttribute="width" secondItem="5VI-t2-gYO" secondAttribute="width" multiplier="0.9" id="ThT-DS-nkm"/>
+                        <constraint firstItem="Qat-jM-ug0" firstAttribute="width" secondItem="5VI-t2-gYO" secondAttribute="width" id="ThT-DS-nkm"/>
                         <constraint firstAttribute="bottom" secondItem="Qat-jM-ug0" secondAttribute="bottom" id="qFu-Oo-im6"/>
                         <constraint firstItem="Qat-jM-ug0" firstAttribute="centerX" secondItem="5VI-t2-gYO" secondAttribute="centerX" id="ru9-1G-xg9"/>
                         <constraint firstItem="Qat-jM-ug0" firstAttribute="top" secondItem="5VI-t2-gYO" secondAttribute="top" id="z7H-Kb-xV8"/>

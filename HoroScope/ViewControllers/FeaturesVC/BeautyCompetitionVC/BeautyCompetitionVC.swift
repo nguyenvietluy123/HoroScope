@@ -14,7 +14,7 @@ class BeautyCompetitionVC: BaseVC {
     @IBOutlet weak var navi: NavigationView!
     @IBOutlet weak var lbDaddy: KHLabel!
     @IBOutlet weak var lbMommy: KHLabel!
-//    @IBOutlet weak var compe_daddy: KHImageView!
+    @IBOutlet weak var compe_daddy: KHImageView!
     @IBOutlet weak var compe_cupid: KHView!
     @IBOutlet weak var compe_VS: UIView!
     
@@ -24,6 +24,14 @@ class BeautyCompetitionVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        GCDCommon.mainQueue {
+            self.tabBarController?.tabBar.isHidden = true
+        }
+        SwiftyAd.shared.showBanner(from: self, at: .bottom)
     }
 
     @IBAction func action_image1(_ sender: Any) {
@@ -54,9 +62,10 @@ extension BeautyCompetitionVC {
         navi.handleBack = {
             self.clickBack()
         }
+        navi.title = isBeautyPrediction ? "Baby Prediction" : "Beauty Competition"
         lbDaddy.text = isBeautyPrediction ? "Daddy" : "Miss 1"
         lbMommy.text = isBeautyPrediction ? "Mommy" : "Miss 2"
-//        compe_daddy.image = isBeautyPrediction ? #imageLiteral(resourceName: "compe_daddy") : #imageLiteral(resourceName: "compe_mommy")
+        compe_daddy.image = isBeautyPrediction ? #imageLiteral(resourceName: "compe_daddy") : #imageLiteral(resourceName: "compe_miss1")
         compe_cupid.isHidden = !isBeautyPrediction
         compe_VS.isHidden = isBeautyPrediction
     }

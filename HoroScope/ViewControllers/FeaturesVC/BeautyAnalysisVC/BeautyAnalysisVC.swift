@@ -30,6 +30,14 @@ class BeautyAnalysisVC: BaseVC {
             Common.showAlert("Please take the face!")
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        GCDCommon.mainQueue {
+            self.tabBarController?.tabBar.isHidden = true
+        }
+        SwiftyAd.shared.showBanner(from: self, at: .bottom)
+    }
 }
 
 extension BeautyAnalysisVC {

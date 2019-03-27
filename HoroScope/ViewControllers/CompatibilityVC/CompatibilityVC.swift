@@ -12,13 +12,17 @@ class CompatibilityVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var arrData: [UIImage] = [#imageLiteral(resourceName: "compa_love"), #imageLiteral(resourceName: "compa_zodiac")]
-    
+    var arrDataIpad: [UIImage] = [#imageLiteral(resourceName: "compa_love_ipad"), #imageLiteral(resourceName: "compa_zodiac_ipad")]
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
         initData()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        SwiftyAd.shared.showBanner(from: self, at: .bottom)
+    }
 }
 
 extension CompatibilityVC {
@@ -38,7 +42,7 @@ extension CompatibilityVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(forIndexPath: indexPath) as CellCompetition
-        cell.config(arrData[indexPath.item])
+        cell.config(isIPad ? arrDataIpad[indexPath.item] : arrData[indexPath.item])
         return cell
     }
 }

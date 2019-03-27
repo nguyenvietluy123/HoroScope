@@ -614,6 +614,7 @@ open class GLViewPagerViewController: UIViewController, UIPageViewControllerData
                 frameOfIndicatorView.origin.x =  CGFloat(tabIndex) * self.tabWidth + (CGFloat(tabIndex) * self.padding) + self.leadingPadding
                 frameOfIndicatorView.origin.y = self.tabHeight - self.indicatorHeight
                 frameOfIndicatorView.size.height = self.indicatorHeight
+                frameOfIndicatorView.size.width = self ._getTabWidthAtIndex(tabIndex: tabIndex)
                 frameOfIndicatorView.size.width = self.tabWidth
               
               if self.fixIndicatorWidth {

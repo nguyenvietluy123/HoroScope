@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="135" id="KGk-i7-Jjw" customClass="CellContent" customModule="HoroScope" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="361" height="135"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="361" height="134.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kYX-ot-269" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="361" height="122.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJM-FL-KSI" customClass="KHLabel" customModule="HoroScope" customModuleProvider="target">
+                                <rect key="frame" x="12" y="12" width="337" height="110.5"/>
+                                <mutableString key="text">In the 2018, the Aquarius born will reap the fruits of the hard work that you did in 2017.2018 will be the most important year of your life in terms of career and professional growth. Though you faced a lot of difficult times in 2017 but that tough time is passed now and you will see a new light of hope and positive energy in the coming 2018. Aquarius zodiac sign bearers will enjoy the year while indulging in adventures and new areas of interests. There is possibility of travelling abroad this year. In terms of relationship, look for a partner who seems loyal rather than getting hypnotized by what appeals to the eyes.Aquarians are family people and you love to be the center of any family function or get together. You possess the quality to bind the members of the family in the thread of love, respect and care. This year, you will get a chance to revive the magic moments you have lost with your family and loved ones during your struggling times of the past year.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="zJM-FL-KSI" secondAttribute="bottom" id="7YZ-im-Ys9"/>
+                            <constraint firstItem="zJM-FL-KSI" firstAttribute="leading" secondItem="kYX-ot-269" secondAttribute="leading" constant="12" id="Cvp-qK-HFN"/>
+                            <constraint firstAttribute="trailing" secondItem="zJM-FL-KSI" secondAttribute="trailing" constant="12" id="MLW-eT-nza"/>
+                            <constraint firstItem="zJM-FL-KSI" firstAttribute="top" secondItem="kYX-ot-269" secondAttribute="top" constant="12" id="qpM-TW-L35"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="14"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="kYX-ot-269" secondAttribute="trailing" id="8Dl-Tc-Qsv"/>
+                    <constraint firstAttribute="bottom" secondItem="kYX-ot-269" secondAttribute="bottom" constant="12" id="I3Q-fp-HM2"/>
+                    <constraint firstItem="kYX-ot-269" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="VbF-Mn-P1K"/>
+                    <constraint firstItem="kYX-ot-269" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="nPv-uA-6fu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lbContent" destination="zJM-FL-KSI" id="cRb-lY-iGH"/>
+            </connections>
+            <point key="canvasLocation" x="162.40000000000001" y="172.26386806596702"/>
+        </tableViewCell>
+    </objects>
+</document>

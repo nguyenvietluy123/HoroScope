@@ -20,6 +20,8 @@ class BabyPredictionVC: BaseVC {
     
     var imgLeftTranfer: UIImage?
     var imgRightTranfer: UIImage?
+    var arrboy: [String] = [ ]
+    var arrgirl: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +52,39 @@ extension BabyPredictionVC {
         frameBaby.image = isBoy ? #imageLiteral(resourceName: "baby_boy") : #imageLiteral(resourceName: "baby_girl")
         viewTextBoy.isHidden = !isBoy
         viewTextGirl.isHidden = isBoy
+        
+        filterImage(isBoy: isBoy)
+    }
+    
+    func filterImage(isBoy: Bool) {
+        let fm = FileManager.default
+        let path = Bundle.main.resourcePath!
+        do {
+            let items = try fm.contentsOfDirectory(atPath: path)
+            arrboy = items.filter({ (str) -> Bool in
+                return str.contains("babyboy")
+            })
+            
+            arrgirl = items.filter({ (str) -> Bool in
+                return str.contains("babygirl")
+            })
+            
+            if isBoy {
+                if let image = UIImage(named: arrboy.randomElement() ?? "") {
+                    imgBaby.image = image
+                } else {
+                    initUI()
+                }
+            } else {
+                if let image = UIImage(named: arrgirl.randomElement() ?? "") {
+                    imgBaby.image = image
+                } else {
+                    initUI()
+                }
+            }
+        } catch {
+            // failed to read directory – bad permissions, perhaps?
+        }
     }
     
     func randomBool() -> Bool {

@@ -47,16 +47,16 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XKo-Jh-OmG" userLabel="View1" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
-                    <rect key="frame" x="20" y="80" width="335" height="484"/>
+                    <rect key="frame" x="20" y="80" width="335" height="528"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QEe-va-umK">
-                            <rect key="frame" x="0.0" y="0.0" width="335" height="179.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="195.5"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Xc-DP-yJz">
-                                    <rect key="frame" x="135" y="73.5" width="65" height="32.5"/>
+                                    <rect key="frame" x="132" y="80" width="71" height="35.5"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compe_heart" translatesAutoresizingMaskIntoConstraints="NO" id="myF-16-eml">
-                                            <rect key="frame" x="0.0" y="0.0" width="65" height="32.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="71" height="35.5"/>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -69,13 +69,13 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XMG-LD-8y9" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
-                                    <rect key="frame" x="5" y="27" width="125" height="125"/>
+                                    <rect key="frame" x="5" y="37" width="122" height="122"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compe_circleBlue" translatesAutoresizingMaskIntoConstraints="NO" id="445-EM-equ">
-                                            <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="122" height="122"/>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wwi-XQ-CEo" customClass="KHImageView" customModule="HoroScope" customModuleProvider="target">
-                                            <rect key="frame" x="6.5" y="6.5" width="112" height="112.5"/>
+                                            <rect key="frame" x="6" y="6" width="110" height="110"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="wwi-XQ-CEo" secondAttribute="height" multiplier="1:1" id="VLo-Nt-w1y"/>
                                             </constraints>
@@ -103,13 +103,13 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tR9-BM-VXl" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
-                                    <rect key="frame" x="205" y="27" width="125" height="125"/>
+                                    <rect key="frame" x="208" y="37" width="122" height="122"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compe_circleOrange" translatesAutoresizingMaskIntoConstraints="NO" id="24x-Da-xCy">
-                                            <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="122" height="122"/>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uUN-c5-xoX" customClass="KHImageView" customModule="HoroScope" customModuleProvider="target">
-                                            <rect key="frame" x="6.5" y="6.5" width="112.5" height="112.5"/>
+                                            <rect key="frame" x="6" y="6" width="110" height="110"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="uUN-c5-xoX" secondAttribute="height" multiplier="1:1" id="mQw-fZ-Xsl"/>
                                             </constraints>
@@ -151,10 +151,10 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k2H-n1-Z5v">
-                            <rect key="frame" x="60.5" y="179.5" width="214" height="173.5"/>
+                            <rect key="frame" x="51" y="195.5" width="233" height="189.5"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taylor" translatesAutoresizingMaskIntoConstraints="NO" id="I10-BF-PXc" customClass="KHImageView" customModule="HoroScope" customModuleProvider="target">
-                                    <rect key="frame" x="46" y="17" width="122" height="122"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taylor" translatesAutoresizingMaskIntoConstraints="NO" id="I10-BF-PXc" customClass="KHImageView" customModule="HoroScope" customModuleProvider="target">
+                                    <rect key="frame" x="50" y="19" width="133" height="132.5"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="I10-BF-PXc" secondAttribute="height" multiplier="1:1" id="u9Z-Ex-8YW"/>
                                     </constraints>
@@ -163,7 +163,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </imageView>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baby_boy" translatesAutoresizingMaskIntoConstraints="NO" id="307-Dr-NsZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="214" height="173.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="233" height="189.5"/>
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -179,13 +179,13 @@
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-- Gender of your baby --" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njF-nK-dIM" customClass="KHLabel" customModule="HoroScope" customModuleProvider="target">
-                            <rect key="frame" x="57" y="358" width="221.5" height="24"/>
+                            <rect key="frame" x="57" y="390" width="221.5" height="24"/>
                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3oU-a0-rnd" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
-                            <rect key="frame" x="115" y="388" width="105" height="36"/>
+                            <rect key="frame" x="115" y="420" width="105" height="36"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Mm-3g-idF" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
                                     <rect key="frame" x="2" y="2" width="101" height="32"/>
@@ -259,7 +259,7 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cjd-Vy-THG" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
-                            <rect key="frame" x="115" y="388" width="105" height="36"/>
+                            <rect key="frame" x="115" y="420" width="105" height="36"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tz8-hq-Vof" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
                                     <rect key="frame" x="2" y="2" width="101" height="32"/>
@@ -358,7 +358,7 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dlc-mm-4Og">
-                    <rect key="frame" x="20" y="564" width="335" height="59"/>
+                    <rect key="frame" x="20" y="608" width="335" height="59"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NA2-C2-6Cf" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
                             <rect key="frame" x="30" y="11" width="111.5" height="37"/>
@@ -469,13 +469,6 @@
                         <constraint firstItem="Lnx-JG-pfL" firstAttribute="height" secondItem="BPp-8w-p1H" secondAttribute="height" id="zg7-fJ-GtP"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XUP-TQ-Vbj">
-                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="44" id="pYy-sk-fjP"/>
-                    </constraints>
-                </view>
             </subviews>
             <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -483,16 +476,13 @@
                 <constraint firstItem="dlc-mm-4Og" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="59:667" id="CKS-Rd-D94"/>
                 <constraint firstItem="eVn-oB-90X" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="CxF-o8-uut"/>
                 <constraint firstItem="XKo-Jh-OmG" firstAttribute="top" secondItem="eVn-oB-90X" secondAttribute="bottom" constant="20" id="G9n-73-9dC"/>
-                <constraint firstAttribute="bottom" secondItem="XUP-TQ-Vbj" secondAttribute="bottom" id="OcZ-by-V5L"/>
                 <constraint firstItem="3oU-a0-rnd" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="69:1280" id="YPx-or-10q"/>
                 <constraint firstItem="eVn-oB-90X" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZDi-ZR-iuo"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XUP-TQ-Vbj" secondAttribute="trailing" id="cLJ-sc-qMs"/>
                 <constraint firstItem="XKo-Jh-OmG" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="hW5-QQ-qab"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dlc-mm-4Og" secondAttribute="bottom" id="jw2-eO-fEA"/>
                 <constraint firstItem="XKo-Jh-OmG" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="335:375" id="meQ-ht-Ze9"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eVn-oB-90X" secondAttribute="trailing" id="n3f-x0-G4m"/>
                 <constraint firstItem="dlc-mm-4Og" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="ow8-4I-KDO"/>
-                <constraint firstItem="XUP-TQ-Vbj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="q7b-Tl-gO0"/>
-                <constraint firstItem="XUP-TQ-Vbj" firstAttribute="top" secondItem="dlc-mm-4Og" secondAttribute="bottom" id="sG7-rl-3IJ"/>
                 <constraint firstItem="dlc-mm-4Og" firstAttribute="width" secondItem="XKo-Jh-OmG" secondAttribute="width" id="woP-nc-XEk"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

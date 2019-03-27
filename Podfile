@@ -9,4 +9,5 @@ pod 'Alamofire'
 pod 'KRProgressHUD'
 pod 'AnimatedMaskLabel'
 pod 'KRActivityIndicatorView'
+pod 'Google-Mobile-Ads-SDK'
 end

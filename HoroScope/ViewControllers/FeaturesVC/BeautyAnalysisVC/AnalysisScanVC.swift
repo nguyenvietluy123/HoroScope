@@ -8,7 +8,7 @@
 
 import UIKit
 
-var timeDelay: Double = 2.25
+var timeDelay: Double = 1
 
 class AnalysisScanVC: BaseVC {
     @IBOutlet weak var navi: NavigationView!
@@ -49,7 +49,9 @@ extension AnalysisScanVC {
         self.imgMain.image = imgToScan
         Common.rotateImageAnimation(imageView: scanOrangeOut, duration: 4, followClockWise: true)
         Common.rotateImageAnimation(imageView: scanOrangeIn, duration: 4, followClockWise: false)
-        
+        GCDCommon.mainQueue {
+            Common.addGradientAnimation(view: self.imgMain, colors: [UIColor.clear.cgColor, UIColor.init("ffa31f", alpha: 1).cgColor, UIColor.clear.cgColor])
+        }
         let gradientImage = UIImage.gradientImage(with: progressView.frame,
                                                   colors: [UIColor.init("FFA459", alpha: 1).cgColor,
                                                            UIColor.init("E53330", alpha: 1).cgColor],
@@ -81,7 +83,7 @@ extension AnalysisScanVC {
     }
     
     func progressWhenCompleted() {
-        UIView.animate(withDuration: 1, delay: 0, options: UIView.AnimationOptions.curveEaseOut, animations: {
+        UIView.animate(withDuration: 2, delay: 0, options: UIView.AnimationOptions.curveEaseOut, animations: {
             ScanningVC.shared.scan(imageScan: self.imgMain, wantDraw: true)
             self.timer.invalidate()
             if self.isDetect {
@@ -90,11 +92,8 @@ extension AnalysisScanVC {
             }
         }, completion: { (completed) in
             if self.isDetect {
-                GCDCommon.mainQueueWithDelay(timeDelay, {
-                    let vc = AnalysisVC.init(nibName: "AnalysisVC", bundle: nil)
-                    vc.imgToMark = self.imgToScan
-                    self.navigationController?.pushViewController(vc, animated: true)
-                })
+                SwiftyAd.shared.delegate = self
+                SwiftyAd.shared.showInterstitial(from: self)
             }
         })
     }
@@ -114,3 +113,20 @@ extension AnalysisScanVC {
     }
 }
 
+extension AnalysisScanVC: SwiftyAdDelegate {
+    func swiftyAdDidOpen(_ swiftyAd: SwiftyAd) {
+        GCDCommon.mainQueueWithDelay(timeDelay, {
+            let vc = AnalysisVC.init(nibName: "AnalysisVC", bundle: nil)
+            vc.imgToMark = self.imgToScan
+            self.navigationController?.pushViewController(vc, animated: true)
+        })
+    }
+    
+    func swiftyAdDidClose(_ swiftyAd: SwiftyAd) {
+        
+    }
+    
+    func swiftyAd(_ swiftyAd: SwiftyAd, didRewardUserWithAmount rewardAmount: Int) {
+        
+    }
+}

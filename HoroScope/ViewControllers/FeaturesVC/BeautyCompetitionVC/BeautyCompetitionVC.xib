@@ -14,6 +14,7 @@
             <connections>
                 <outlet property="compe_VS" destination="MMx-Qx-eNE" id="NcE-S2-0Xr"/>
                 <outlet property="compe_cupid" destination="CBu-Hp-0Vl" id="zTB-G3-MAU"/>
+                <outlet property="compe_daddy" destination="qh4-0Q-kZT" id="s6G-9V-J2V"/>
                 <outlet property="image1" destination="gqO-Ik-Rrb" id="gSf-2Q-dJn"/>
                 <outlet property="image2" destination="39N-ZD-2BM" id="Yvk-4s-pOc"/>
                 <outlet property="lbDaddy" destination="ekX-Nd-dYl" id="Fbn-MY-HjS"/>
@@ -185,16 +186,16 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fwy-g0-6H3" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
-                    <rect key="frame" x="146.5" y="578" width="82" height="31"/>
+                    <rect key="frame" x="126.5" y="575" width="122" height="37"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hoa-LQ-Nbv" customClass="KHLabel" customModule="HoroScope" customModuleProvider="target">
-                            <rect key="frame" x="22" y="5" width="38.5" height="21"/>
+                            <rect key="frame" x="42" y="8" width="38.5" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vim-DE-pnH" customClass="KHButton" customModule="HoroScope" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="82" height="31"/>
+                            <rect key="frame" x="0.0" y="0.0" width="122" height="37"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="action_Scan:" destination="-1" eventType="touchUpInside" id="oyj-gB-xY3"/>
@@ -204,7 +205,7 @@
                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="Vim-DE-pnH" firstAttribute="leading" secondItem="Fwy-g0-6H3" secondAttribute="leading" id="BQz-aE-hLT"/>
-                        <constraint firstAttribute="width" secondItem="Fwy-g0-6H3" secondAttribute="height" multiplier="240:91" id="Kdd-rm-mFi"/>
+                        <constraint firstAttribute="width" secondItem="Fwy-g0-6H3" secondAttribute="height" multiplier="300:91" id="Kdd-rm-mFi"/>
                         <constraint firstItem="Hoa-LQ-Nbv" firstAttribute="centerX" secondItem="Fwy-g0-6H3" secondAttribute="centerX" id="OPM-Mf-j22"/>
                         <constraint firstItem="Hoa-LQ-Nbv" firstAttribute="centerY" secondItem="Fwy-g0-6H3" secondAttribute="centerY" id="Wei-gh-cqO"/>
                         <constraint firstAttribute="bottom" secondItem="Vim-DE-pnH" secondAttribute="bottom" id="ZE5-rX-hpR"/>
@@ -243,7 +244,7 @@
                 <constraint firstItem="5uY-SJ-aLj" firstAttribute="top" secondItem="NfP-iT-apj" secondAttribute="bottom" id="94X-d2-Ipx"/>
                 <constraint firstItem="SKY-AY-Cwl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="99Q-Eo-qTE"/>
                 <constraint firstItem="MMx-Qx-eNE" firstAttribute="centerX" secondItem="CBu-Hp-0Vl" secondAttribute="centerX" id="9G8-J7-19Z"/>
-                <constraint firstItem="Fwy-g0-6H3" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="31:667" id="Aeh-66-gaV"/>
+                <constraint firstItem="Fwy-g0-6H3" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="37:667" id="Aeh-66-gaV"/>
                 <constraint firstItem="SKY-AY-Cwl" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="HF9-29-7AB"/>
                 <constraint firstItem="CBu-Hp-0Vl" firstAttribute="centerY" secondItem="5uY-SJ-aLj" secondAttribute="centerY" multiplier="0.9" id="Je5-bd-4uj"/>
                 <constraint firstItem="SKY-AY-Cwl" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Jxr-PG-Ysm"/>

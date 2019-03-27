@@ -25,7 +25,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="guF-BK-RAD" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="0SI-bV-wmy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="guF-BK-RAD" secondAttribute="bottom" id="7B6-zV-yld"/>
+                            <constraint firstAttribute="bottom" secondItem="guF-BK-RAD" secondAttribute="bottom" id="7B6-zV-yld"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="guF-BK-RAD" secondAttribute="trailing" id="HG2-OV-c3a"/>
                             <constraint firstItem="guF-BK-RAD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UQZ-U7-ojy"/>
                         </constraints>

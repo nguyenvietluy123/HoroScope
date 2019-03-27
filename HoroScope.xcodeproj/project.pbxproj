@@ -154,6 +154,20 @@
 		0C01878822461BB8001B1319 /* old_aquarius_sagittarius.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C0186F822461BB8001B1319 /* old_aquarius_sagittarius.json */; };
 		0C01878922461BB8001B1319 /* old_aquarius_gemini.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C0186F922461BB8001B1319 /* old_aquarius_gemini.json */; };
 		0C136B9D22289A0700680619 /* ReadJsonFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C136B9C22289A0700680619 /* ReadJsonFile.swift */; };
+		0C1E2D5D2249315200683A5C /* babyboy7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C1E2D542249314D00683A5C /* babyboy7.jpg */; };
+		0C1E2D5E2249315200683A5C /* babyboy5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C1E2D552249314D00683A5C /* babyboy5.jpg */; };
+		0C1E2D5F2249315200683A5C /* babyboy1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C1E2D562249314E00683A5C /* babyboy1.jpg */; };
+		0C1E2D602249315200683A5C /* babyboy4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C1E2D572249314E00683A5C /* babyboy4.jpg */; };
+		0C1E2D612249315200683A5C /* babyboy3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C1E2D582249314E00683A5C /* babyboy3.jpg */; };
+		0C1E2D622249315200683A5C /* babyboy6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C1E2D592249314E00683A5C /* babyboy6.jpg */; };
+		0C1E2D632249315200683A5C /* babyboy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C1E2D5A2249315100683A5C /* babyboy.jpg */; };
+		0C1E2D642249315200683A5C /* babyboy2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C1E2D5B2249315200683A5C /* babyboy2.jpg */; };
+		0C1E2D652249315200683A5C /* babyboy8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C1E2D5C2249315200683A5C /* babyboy8.jpg */; };
+		0C1E2D6C2249316600683A5C /* babygirl1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C1E2D672249316600683A5C /* babygirl1.jpg */; };
+		0C1E2D6D2249316600683A5C /* babygirl4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C1E2D682249316600683A5C /* babygirl4.jpg */; };
+		0C1E2D6E2249316600683A5C /* babygirl3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0C1E2D692249316600683A5C /* babygirl3.jpeg */; };
+		0C1E2D6F2249316600683A5C /* babygirl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C1E2D6A2249316600683A5C /* babygirl.jpg */; };
+		0C1E2D702249316600683A5C /* babygirl2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C1E2D6B2249316600683A5C /* babygirl2.jpg */; };
 		0C221D842242589300F06BE3 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C221D822242589200F06BE3 /* APIRequest.swift */; };
 		0C221D852242589300F06BE3 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C221D832242589300F06BE3 /* API.swift */; };
 		0C221D872242591300F06BE3 /* ZodiacService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C221D862242591300F06BE3 /* ZodiacService.swift */; };
@@ -177,10 +191,14 @@
 		0C2D7A3C222435B600EBFDEC /* ZodiacsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C2D7A3A222435B600EBFDEC /* ZodiacsVC.xib */; };
 		0C2D7A4322243BF100EBFDEC /* CellZodiac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D7A4222243BF100EBFDEC /* CellZodiac.swift */; };
 		0C2D7A4522243C1800EBFDEC /* CellZodiac.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C2D7A4422243C1800EBFDEC /* CellZodiac.xib */; };
+		0C5520E822468D3E004AA024 /* CellContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5520E622468D3E004AA024 /* CellContent.swift */; };
+		0C5520E922468D3E004AA024 /* CellContent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C5520E722468D3E004AA024 /* CellContent.xib */; };
 		0C681B60223AA6E500374A4B /* FeaturesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C681B5F223AA6E500374A4B /* FeaturesVC.swift */; };
 		0C681B64223AA70C00374A4B /* BeautyCompetitionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C681B62223AA70C00374A4B /* BeautyCompetitionVC.xib */; };
 		0C681B68223AB35B00374A4B /* ScanningVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C681B66223AB35B00374A4B /* ScanningVC.swift */; };
 		0C681B69223AB35B00374A4B /* ScanningVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C681B67223AB35B00374A4B /* ScanningVC.xib */; };
+		0C8D2F872247CBE600A84B31 /* CellSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8D2F852247CBE600A84B31 /* CellSetting.swift */; };
+		0C8D2F882247CBE600A84B31 /* CellSetting.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C8D2F862247CBE600A84B31 /* CellSetting.xib */; };
 		0C9A8979222BDA40002A871D /* CellCompetition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A8977222BDA40002A871D /* CellCompetition.swift */; };
 		0C9A897A222BDA40002A871D /* CellCompetition.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C9A8978222BDA40002A871D /* CellCompetition.xib */; };
 		0C9D97B0223936CF005FBAB2 /* AnalysisVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9D97AE223936CF005FBAB2 /* AnalysisVC.swift */; };
@@ -392,6 +410,7 @@
 		0CDE7114223E7C4900B41601 /* AnalysisScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDE7112223E7C4900B41601 /* AnalysisScanVC.swift */; };
 		0CDE7115223E7C4900B41601 /* AnalysisScanVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CDE7113223E7C4900B41601 /* AnalysisScanVC.xib */; };
 		0CDE7117223E895700B41601 /* BeautyCompetitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDE7116223E895700B41601 /* BeautyCompetitionVC.swift */; };
+		0CE97C542247E35600AB0F78 /* SwiftyAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE97C532247E35600AB0F78 /* SwiftyAd.swift */; };
 		0CFA93FD2242771B0048AE38 /* BeautyAnalysisVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFA93FB2242771B0048AE38 /* BeautyAnalysisVC.swift */; };
 		0CFA93FE2242771B0048AE38 /* BeautyAnalysisVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CFA93FC2242771B0048AE38 /* BeautyAnalysisVC.xib */; };
 		2B6A736E5521280A17A47526 /* libPods-HoroScope.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9107D228DA2EBF2A1DED8561 /* libPods-HoroScope.a */; };
@@ -575,6 +594,20 @@
 		0C0186F822461BB8001B1319 /* old_aquarius_sagittarius.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = old_aquarius_sagittarius.json; sourceTree = "<group>"; };
 		0C0186F922461BB8001B1319 /* old_aquarius_gemini.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = old_aquarius_gemini.json; sourceTree = "<group>"; };
 		0C136B9C22289A0700680619 /* ReadJsonFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadJsonFile.swift; sourceTree = "<group>"; };
+		0C1E2D542249314D00683A5C /* babyboy7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = babyboy7.jpg; sourceTree = "<group>"; };
+		0C1E2D552249314D00683A5C /* babyboy5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = babyboy5.jpg; sourceTree = "<group>"; };
+		0C1E2D562249314E00683A5C /* babyboy1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = babyboy1.jpg; sourceTree = "<group>"; };
+		0C1E2D572249314E00683A5C /* babyboy4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = babyboy4.jpg; sourceTree = "<group>"; };
+		0C1E2D582249314E00683A5C /* babyboy3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = babyboy3.jpg; sourceTree = "<group>"; };
+		0C1E2D592249314E00683A5C /* babyboy6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = babyboy6.jpg; sourceTree = "<group>"; };
+		0C1E2D5A2249315100683A5C /* babyboy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = babyboy.jpg; sourceTree = "<group>"; };
+		0C1E2D5B2249315200683A5C /* babyboy2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = babyboy2.jpg; sourceTree = "<group>"; };
+		0C1E2D5C2249315200683A5C /* babyboy8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = babyboy8.jpg; sourceTree = "<group>"; };
+		0C1E2D672249316600683A5C /* babygirl1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = babygirl1.jpg; sourceTree = "<group>"; };
+		0C1E2D682249316600683A5C /* babygirl4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = babygirl4.jpg; sourceTree = "<group>"; };
+		0C1E2D692249316600683A5C /* babygirl3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = babygirl3.jpeg; sourceTree = "<group>"; };
+		0C1E2D6A2249316600683A5C /* babygirl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = babygirl.jpg; sourceTree = "<group>"; };
+		0C1E2D6B2249316600683A5C /* babygirl2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = babygirl2.jpg; sourceTree = "<group>"; };
 		0C221D822242589200F06BE3 /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		0C221D832242589300F06BE3 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		0C221D862242591300F06BE3 /* ZodiacService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacService.swift; sourceTree = "<group>"; };
@@ -598,11 +631,15 @@
 		0C2D7A3A222435B600EBFDEC /* ZodiacsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZodiacsVC.xib; sourceTree = "<group>"; };
 		0C2D7A4222243BF100EBFDEC /* CellZodiac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellZodiac.swift; sourceTree = "<group>"; };
 		0C2D7A4422243C1800EBFDEC /* CellZodiac.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellZodiac.xib; sourceTree = "<group>"; };
+		0C5520E622468D3E004AA024 /* CellContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellContent.swift; sourceTree = "<group>"; };
+		0C5520E722468D3E004AA024 /* CellContent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellContent.xib; sourceTree = "<group>"; };
 		0C681B5D223AA31900374A4B /* HoroScope-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HoroScope-Bridging-Header.h"; sourceTree = "<group>"; };
 		0C681B5F223AA6E500374A4B /* FeaturesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturesVC.swift; sourceTree = "<group>"; };
 		0C681B62223AA70C00374A4B /* BeautyCompetitionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeautyCompetitionVC.xib; sourceTree = "<group>"; };
 		0C681B66223AB35B00374A4B /* ScanningVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanningVC.swift; sourceTree = "<group>"; };
 		0C681B67223AB35B00374A4B /* ScanningVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanningVC.xib; sourceTree = "<group>"; };
+		0C8D2F852247CBE600A84B31 /* CellSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellSetting.swift; sourceTree = "<group>"; };
+		0C8D2F862247CBE600A84B31 /* CellSetting.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellSetting.xib; sourceTree = "<group>"; };
 		0C9A8977222BDA40002A871D /* CellCompetition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCompetition.swift; sourceTree = "<group>"; };
 		0C9A8978222BDA40002A871D /* CellCompetition.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellCompetition.xib; sourceTree = "<group>"; };
 		0C9D97AE223936CF005FBAB2 /* AnalysisVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisVC.swift; sourceTree = "<group>"; };
@@ -820,6 +857,7 @@
 		0CDE7112223E7C4900B41601 /* AnalysisScanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisScanVC.swift; sourceTree = "<group>"; };
 		0CDE7113223E7C4900B41601 /* AnalysisScanVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnalysisScanVC.xib; sourceTree = "<group>"; };
 		0CDE7116223E895700B41601 /* BeautyCompetitionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeautyCompetitionVC.swift; sourceTree = "<group>"; };
+		0CE97C532247E35600AB0F78 /* SwiftyAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyAd.swift; sourceTree = "<group>"; };
 		0CFA93FB2242771B0048AE38 /* BeautyAnalysisVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautyAnalysisVC.swift; sourceTree = "<group>"; };
 		0CFA93FC2242771B0048AE38 /* BeautyAnalysisVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeautyAnalysisVC.xib; sourceTree = "<group>"; };
 		1547B22AB613116E2126EB83 /* Pods-HoroScope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoroScope.release.xcconfig"; path = "Pods/Target Support Files/Pods-HoroScope/Pods-HoroScope.release.xcconfig"; sourceTree = "<group>"; };
@@ -1114,11 +1152,25 @@
 		0C136B9B2228989600680619 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0C1E2D662249315300683A5C /* imagesGirl */,
+				0C26F4F822491D17004A9AA2 /* imagesBoy */,
 				0C221D8822425BDD00F06BE3 /* characteristics_new */,
 				0CB41C76223FCADD0016728B /* matchLove */,
 				0C01865D224619EF001B1319 /* matchOld */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		0C1E2D662249315300683A5C /* imagesGirl */ = {
+			isa = PBXGroup;
+			children = (
+				0C1E2D6A2249316600683A5C /* babygirl.jpg */,
+				0C1E2D672249316600683A5C /* babygirl1.jpg */,
+				0C1E2D6B2249316600683A5C /* babygirl2.jpg */,
+				0C1E2D692249316600683A5C /* babygirl3.jpeg */,
+				0C1E2D682249316600683A5C /* babygirl4.jpg */,
+			);
+			path = imagesGirl;
 			sourceTree = "<group>";
 		};
 		0C221D812242587100F06BE3 /* APIManager */ = {
@@ -1151,6 +1203,22 @@
 			path = characteristics_new;
 			sourceTree = "<group>";
 		};
+		0C26F4F822491D17004A9AA2 /* imagesBoy */ = {
+			isa = PBXGroup;
+			children = (
+				0C1E2D5A2249315100683A5C /* babyboy.jpg */,
+				0C1E2D562249314E00683A5C /* babyboy1.jpg */,
+				0C1E2D5B2249315200683A5C /* babyboy2.jpg */,
+				0C1E2D582249314E00683A5C /* babyboy3.jpg */,
+				0C1E2D572249314E00683A5C /* babyboy4.jpg */,
+				0C1E2D552249314D00683A5C /* babyboy5.jpg */,
+				0C1E2D592249314E00683A5C /* babyboy6.jpg */,
+				0C1E2D542249314D00683A5C /* babyboy7.jpg */,
+				0C1E2D5C2249315200683A5C /* babyboy8.jpg */,
+			);
+			path = imagesBoy;
+			sourceTree = "<group>";
+		};
 		0C2D7A3322241A8700EBFDEC /* ContentHomeVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -1178,6 +1246,15 @@
 			path = CellZodiac;
 			sourceTree = "<group>";
 		};
+		0C5520E522468D29004AA024 /* CellContent */ = {
+			isa = PBXGroup;
+			children = (
+				0C5520E622468D3E004AA024 /* CellContent.swift */,
+				0C5520E722468D3E004AA024 /* CellContent.xib */,
+			);
+			path = CellContent;
+			sourceTree = "<group>";
+		};
 		0C681B5E223AA6AE00374A4B /* BeautyCompetitionVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -1196,6 +1273,15 @@
 				0CDE7100223E210600B41601 /* BeautyContestVC */,
 			);
 			path = ScanningVC;
+			sourceTree = "<group>";
+		};
+		0C8D2F842247CBE600A84B31 /* CellSetting */ = {
+			isa = PBXGroup;
+			children = (
+				0C8D2F852247CBE600A84B31 /* CellSetting.swift */,
+				0C8D2F862247CBE600A84B31 /* CellSetting.xib */,
+			);
+			path = CellSetting;
 			sourceTree = "<group>";
 		};
 		0C9A8972222BDA15002A871D /* CellCompetition */ = {
@@ -1652,6 +1738,7 @@
 		0CBB670E22202988009E0733 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				0CE97C532247E35600AB0F78 /* SwiftyAd.swift */,
 				0CBB670F22202988009E0733 /* TimerHelper.swift */,
 				0CBB671022202988009E0733 /* AlertHelper.swift */,
 				0CBB671122202988009E0733 /* CameraHelper.swift */,
@@ -1672,7 +1759,6 @@
 			children = (
 				0CDE70FE223CFE6A00B41601 /* BaseVC.swift */,
 				0C2D7A312224174700EBFDEC /* GLViewPagerViewController.swift */,
-				0C2D7A38222435A700EBFDEC /* ZodiacsVC */,
 				0CBB673A222029DB009E0733 /* HoroscopeVC */,
 				0CBB676F22202AC3009E0733 /* CompatibilityVC */,
 				0CBB677522202B7B009E0733 /* FeaturesVC */,
@@ -1686,6 +1772,7 @@
 			children = (
 				0CBB6742222029DB009E0733 /* HoroscopeVC.swift */,
 				0CBB6741222029DB009E0733 /* HoroscopeVC.xib */,
+				0C2D7A38222435A700EBFDEC /* ZodiacsVC */,
 				0C2D7A3322241A8700EBFDEC /* ContentHomeVC */,
 			);
 			path = HoroscopeVC;
@@ -1704,8 +1791,8 @@
 		0CBB674E222029DB009E0733 /* Privacy_PolicyVC */ = {
 			isa = PBXGroup;
 			children = (
-				0CBB674F222029DB009E0733 /* Privacy_PolicyVC.xib */,
 				0CBB6750222029DB009E0733 /* Privacy_PolicyVC.swift */,
+				0CBB674F222029DB009E0733 /* Privacy_PolicyVC.xib */,
 			);
 			path = Privacy_PolicyVC;
 			sourceTree = "<group>";
@@ -1713,6 +1800,8 @@
 		0CBB6751222029DB009E0733 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				0C8D2F842247CBE600A84B31 /* CellSetting */,
+				0C5520E522468D29004AA024 /* CellContent */,
 				0CDE7105223E236800B41601 /* CellMark */,
 				0C9A8972222BDA15002A871D /* CellCompetition */,
 				0C2D7A3D2224397800EBFDEC /* CellZodiac */,
@@ -1896,7 +1985,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CBB677422202B6F009E0733 /* CompaLoveVC.xib in Resources */,
+				0C1E2D6F2249316600683A5C /* babygirl.jpg in Resources */,
 				0CB41D5B223FCADD0016728B /* capricorn_pisces.json in Resources */,
+				0C1E2D632249315200683A5C /* babyboy.jpg in Resources */,
 				0CB41D52223FCADD0016728B /* aquarius_aries.json in Resources */,
 				0C221D9922425BDD00F06BE3 /* aquarius.json in Resources */,
 				0C01874D22461BB8001B1319 /* old_libra_scorpio.json in Resources */,
@@ -1905,6 +1996,7 @@
 				0CB41D21223FCADD0016728B /* scorpio_libra.json in Resources */,
 				0C01875122461BB8001B1319 /* old_cancer_aries.json in Resources */,
 				0CB41D9A223FCADD0016728B /* libra_aries.json in Resources */,
+				0C8D2F882247CBE600A84B31 /* CellSetting.xib in Resources */,
 				0CB41D80223FCADD0016728B /* leo_leo.json in Resources */,
 				0CB41D8E223FCADD0016728B /* virgo_pisces.json in Resources */,
 				0C221D9522425BDD00F06BE3 /* leo.json in Resources */,
@@ -1926,6 +2018,7 @@
 				0C01872222461BB8001B1319 /* old_gemini_cancer.json in Resources */,
 				0CB41D77223FCADD0016728B /* aries_gemini.json in Resources */,
 				0C01872922461BB8001B1319 /* old_gemini_taurus.json in Resources */,
+				0C1E2D6E2249316600683A5C /* babygirl3.jpeg in Resources */,
 				0C01874422461BB8001B1319 /* old_libra_virgo.json in Resources */,
 				0CB41D46223FCADD0016728B /* pisces_virgo.json in Resources */,
 				0C01870222461BB8001B1319 /* old_scorpio_scorpio.json in Resources */,
@@ -1934,6 +2027,7 @@
 				0CA9EF62221C3A330053CDBA /* LaunchScreen.storyboard in Resources */,
 				0C0186FD22461BB8001B1319 /* old_scorpio_virgo.json in Resources */,
 				0C221D9822425BDD00F06BE3 /* scorpio.json in Resources */,
+				0C1E2D6C2249316600683A5C /* babygirl1.jpg in Resources */,
 				0C01872B22461BB8001B1319 /* old_leo_leo.json in Resources */,
 				0CB41D75223FCADD0016728B /* aries_leo.json in Resources */,
 				0C01876A22461BB8001B1319 /* old_capricorn_virgo.json in Resources */,
@@ -1972,6 +2066,7 @@
 				0CB41D13223FCADD0016728B /* taurus_cancer.json in Resources */,
 				0CB41D8F223FCADD0016728B /* virgo_capricorn.json in Resources */,
 				0C01876F22461BB8001B1319 /* old_capricorn_pisces.json in Resources */,
+				0C5520E922468D3E004AA024 /* CellContent.xib in Resources */,
 				0CB41D87223FCADD0016728B /* leo_pisces.json in Resources */,
 				0CBB6764222029DC009E0733 /* SettingVC.xib in Resources */,
 				0C01871422461BB8001B1319 /* old_pisces_leo.json in Resources */,
@@ -2019,8 +2114,10 @@
 				0C221D9A22425BDD00F06BE3 /* capricorn.json in Resources */,
 				0CB41D28223FCADD0016728B /* scorpio_cancer.json in Resources */,
 				0C01878922461BB8001B1319 /* old_aquarius_gemini.json in Resources */,
+				0C1E2D702249316600683A5C /* babygirl2.jpg in Resources */,
 				0CB41D45223FCADD0016728B /* pisces_pisces.json in Resources */,
 				0CB41D74223FCADD0016728B /* aries_cancer.json in Resources */,
+				0C1E2D6D2249316600683A5C /* babygirl4.jpg in Resources */,
 				0C01871F22461BB8001B1319 /* old_gemini_virgo.json in Resources */,
 				0C01873022461BB8001B1319 /* old_leo_taurus.json in Resources */,
 				0C01870822461BB8001B1319 /* old_aries_cancer.json in Resources */,
@@ -2033,7 +2130,9 @@
 				0C01875C22461BB8001B1319 /* old_sagittarius_leo.json in Resources */,
 				0CB41D43223FCADD0016728B /* pisces_leo.json in Resources */,
 				0CB41D25223FCADD0016728B /* scorpio_aries.json in Resources */,
+				0C1E2D5D2249315200683A5C /* babyboy7.jpg in Resources */,
 				0CB41D3B223FCADD0016728B /* gemini_taurus.json in Resources */,
+				0C1E2D5F2249315200683A5C /* babyboy1.jpg in Resources */,
 				0C01872722461BB8001B1319 /* old_gemini_capricorn.json in Resources */,
 				0CB41D8A223FCADD0016728B /* leo_aquarius.json in Resources */,
 				0CB41D1D223FCADD0016728B /* taurus_pisces.json in Resources */,
@@ -2094,6 +2193,7 @@
 				0C01875622461BB8001B1319 /* old_cancer_sagittarius.json in Resources */,
 				0C01872D22461BB8001B1319 /* old_leo_gemini.json in Resources */,
 				0CB41D1C223FCADD0016728B /* taurus_aries.json in Resources */,
+				0C1E2D652249315200683A5C /* babyboy8.jpg in Resources */,
 				0CB41D4B223FCADD0016728B /* pisces_capricorn.json in Resources */,
 				0CB41D90223FCADD0016728B /* virgo_aquarius.json in Resources */,
 				0CB41D7F223FCADD0016728B /* leo_cancer.json in Resources */,
@@ -2106,6 +2206,7 @@
 				0C221D9622425BDD00F06BE3 /* pisces.json in Resources */,
 				0C01876522461BB8001B1319 /* old_sagittarius_scorpio.json in Resources */,
 				0C01877E22461BB8001B1319 /* old_aquarius_pisces.json in Resources */,
+				0C1E2D602249315200683A5C /* babyboy4.jpg in Resources */,
 				0CB41D40223FCADD0016728B /* gemini_leo.json in Resources */,
 				0C01874822461BB8001B1319 /* old_libra_aquarius.json in Resources */,
 				0CB41D42223FCADD0016728B /* gemini_pisces.json in Resources */,
@@ -2167,6 +2268,7 @@
 				0CB41D4F223FCADD0016728B /* aquarius_cancer.json in Resources */,
 				0C01872122461BB8001B1319 /* old_gemini_sagittarius.json in Resources */,
 				0C681B64223AA70C00374A4B /* BeautyCompetitionVC.xib in Resources */,
+				0C1E2D622249315200683A5C /* babyboy6.jpg in Resources */,
 				0C221DA022425BDD00F06BE3 /* taurus.json in Resources */,
 				0CB41D44223FCADD0016728B /* pisces_aries.json in Resources */,
 				0C01874C22461BB8001B1319 /* old_libra_taurus.json in Resources */,
@@ -2204,6 +2306,8 @@
 				0C01877F22461BB8001B1319 /* old_aquarius_scorpio.json in Resources */,
 				0CB41D96223FCADD0016728B /* virgo_gemini.json in Resources */,
 				0C01871E22461BB8001B1319 /* old_gemini_pisces.json in Resources */,
+				0C1E2D612249315200683A5C /* babyboy3.jpg in Resources */,
+				0C1E2D642249315200683A5C /* babyboy2.jpg in Resources */,
 				0CB41D66223FCADD0016728B /* capricorn_leo.json in Resources */,
 				0C01874B22461BB8001B1319 /* old_libra_leo.json in Resources */,
 				0C01873B22461BB8001B1319 /* old_taurus_aries.json in Resources */,
@@ -2212,6 +2316,7 @@
 				0CB41D17223FCADD0016728B /* taurus_taurus.json in Resources */,
 				0C0186FE22461BB8001B1319 /* old_scorpio_leo.json in Resources */,
 				0CB41D20223FCADD0016728B /* scorpio_leo.json in Resources */,
+				0C1E2D5E2249315200683A5C /* babyboy5.jpg in Resources */,
 				0C01875A22461BB8001B1319 /* old_sagittarius_cancer.json in Resources */,
 				0CB41D5D223FCADD0016728B /* capricorn_sagittarius.json in Resources */,
 				0C01871222461BB8001B1319 /* old_pisces_scorpio.json in Resources */,
@@ -2311,6 +2416,8 @@
 				0CB41C70223FC0F10016728B /* ZodiacObj.swift in Sources */,
 				0CBB672C22202988009E0733 /* KHImageView.swift in Sources */,
 				0CBB6768222029DC009E0733 /* Privacy_PolicyVC.swift in Sources */,
+				0C5520E822468D3E004AA024 /* CellContent.swift in Sources */,
+				0C8D2F872247CBE600A84B31 /* CellSetting.swift in Sources */,
 				0CBB677322202B6F009E0733 /* CompaLoveVC.swift in Sources */,
 				0C2D7A3622241A9B00EBFDEC /* ContentHomeVC.swift in Sources */,
 				0C221D872242591300F06BE3 /* ZodiacService.swift in Sources */,
@@ -2342,6 +2449,7 @@
 				0CBB672322202988009E0733 /* TextFieldView.swift in Sources */,
 				0CBB672D22202988009E0733 /* KHTextView.swift in Sources */,
 				0C221D852242589300F06BE3 /* API.swift in Sources */,
+				0CE97C542247E35600AB0F78 /* SwiftyAd.swift in Sources */,
 				0CBB672722202988009E0733 /* SearchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

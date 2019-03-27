@@ -9,13 +9,20 @@
 import UIKit
 import SwiftyJSON
 
-struct Content {
+class Content: NSObject {
     var title: String = ""
     var content: String = ""
-    
+    override init() {
+        super.init()
+    }
     init(data: JSON) {
         self.title = data["title"].stringValue
         self.content = data["content"].stringValue
+    }
+    
+    init(title: String, content: String) {
+        self.title = title
+        self.content = content
     }
 }
 
@@ -25,10 +32,10 @@ class ZodiacObj: NSObject {
     var img: UIImage = UIImage()
     
     var content: [Content] = []
-    var today: String = ""
-    var week: String = ""
-    var month: String = ""
-    var year: String = ""
+    var today: Content = Content()
+    var week: Content = Content()
+    var month: Content = Content()
+    var year: Content = Content()
     
     override init() {
         super.init()

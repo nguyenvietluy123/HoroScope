@@ -9,7 +9,6 @@
 import UIKit
 
 class CellZodiac: UICollectionViewCell {
-    
     @IBOutlet weak var lbName: KHLabel!
     @IBOutlet weak var lbDate: KHLabel!
     @IBOutlet weak var imgView: UIImageView!

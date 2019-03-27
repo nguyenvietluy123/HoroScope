@@ -15,7 +15,7 @@
                 <outlet property="imgMain" destination="32S-Yw-hHc" id="iHl-hv-9TS"/>
                 <outlet property="lbDate" destination="U9P-yp-Y7Q" id="KJO-IZ-L6k"/>
                 <outlet property="lbName" destination="e8J-6c-laO" id="GJ0-4o-r5P"/>
-                <outlet property="textView" destination="aqk-yu-8b7" id="InY-Oa-V6M"/>
+                <outlet property="tableView" destination="4dm-Tb-V2J" id="W51-Pi-GDj"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -78,29 +78,26 @@
                                 <constraint firstItem="9mO-mo-Nkb" firstAttribute="top" secondItem="U9P-yp-Y7Q" secondAttribute="bottom" id="zfx-p7-q7I"/>
                             </constraints>
                         </view>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqk-yu-8b7" customClass="KHTextView" customModule="HoroScope" customModuleProvider="target">
-                            <rect key="frame" x="12" y="81.5" width="277" height="374.5"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                        </textView>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4dm-Tb-V2J">
+                            <rect key="frame" x="0.0" y="93.5" width="301" height="374.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="JMP-BU-eGm"/>
+                                <outlet property="delegate" destination="-1" id="qbU-wd-o1D"/>
+                            </connections>
+                        </tableView>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="aqk-yu-8b7" firstAttribute="leading" secondItem="6HO-CE-W4H" secondAttribute="leading" constant="12" id="8Hx-1k-FC1"/>
-                        <constraint firstItem="aqk-yu-8b7" firstAttribute="top" secondItem="xw9-Ag-3zK" secondAttribute="bottom" id="Jen-ge-hTy"/>
+                        <constraint firstItem="4dm-Tb-V2J" firstAttribute="top" secondItem="xw9-Ag-3zK" secondAttribute="bottom" constant="12" id="4br-2W-Mtg"/>
+                        <constraint firstAttribute="bottom" secondItem="4dm-Tb-V2J" secondAttribute="bottom" id="LHX-24-rvj"/>
+                        <constraint firstAttribute="trailing" secondItem="4dm-Tb-V2J" secondAttribute="trailing" id="cdh-aV-SwB"/>
                         <constraint firstItem="xw9-Ag-3zK" firstAttribute="height" secondItem="6HO-CE-W4H" secondAttribute="height" multiplier="146:838" id="egq-RM-P5P"/>
                         <constraint firstAttribute="trailing" secondItem="xw9-Ag-3zK" secondAttribute="trailing" id="lla-SZ-cX9"/>
-                        <constraint firstAttribute="trailing" secondItem="aqk-yu-8b7" secondAttribute="trailing" constant="12" id="nNs-Tb-i7V"/>
                         <constraint firstItem="xw9-Ag-3zK" firstAttribute="top" secondItem="6HO-CE-W4H" secondAttribute="top" id="pAH-Ln-9XY"/>
-                        <constraint firstAttribute="bottom" secondItem="aqk-yu-8b7" secondAttribute="bottom" constant="12" id="xEV-9h-asd"/>
+                        <constraint firstItem="4dm-Tb-V2J" firstAttribute="leading" secondItem="6HO-CE-W4H" secondAttribute="leading" id="wE6-cq-OKm"/>
                         <constraint firstItem="xw9-Ag-3zK" firstAttribute="leading" secondItem="6HO-CE-W4H" secondAttribute="leading" id="xgl-P2-uMR"/>
                     </constraints>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                            <real key="value" value="14"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2sB-ru-dCp">
                     <rect key="frame" x="191" y="15.5" width="98" height="98"/>

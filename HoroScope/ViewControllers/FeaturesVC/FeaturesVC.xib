@@ -42,7 +42,7 @@
                     <rect key="frame" x="0.0" y="60" width="375" height="607"/>
                     <subviews>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pc4-ys-VBj">
-                            <rect key="frame" x="19" y="0.0" width="337.5" height="607"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="607"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <outlet property="dataSource" destination="-1" id="sjA-xt-RFh"/>
@@ -52,7 +52,7 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="pc4-ys-VBj" firstAttribute="width" secondItem="wF8-AM-UHG" secondAttribute="width" multiplier="0.9" id="Bqr-0d-3gV"/>
+                        <constraint firstItem="pc4-ys-VBj" firstAttribute="width" secondItem="wF8-AM-UHG" secondAttribute="width" id="Bqr-0d-3gV"/>
                         <constraint firstAttribute="bottom" secondItem="pc4-ys-VBj" secondAttribute="bottom" id="HDj-iO-Zr3"/>
                         <constraint firstItem="pc4-ys-VBj" firstAttribute="centerX" secondItem="wF8-AM-UHG" secondAttribute="centerX" id="Qeu-xj-44S"/>
                         <constraint firstItem="pc4-ys-VBj" firstAttribute="top" secondItem="wF8-AM-UHG" secondAttribute="top" id="sb5-UF-cAo"/>

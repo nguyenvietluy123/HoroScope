@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Privacy_PolicyVC" customModule="FakeWeather" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Privacy_PolicyVC" customModule="HoroScope" customModuleProvider="target">
             <connections>
                 <outlet property="navi" destination="01V-2L-jaG" id="62H-Lq-7fg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -21,7 +21,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="01V-2L-jaG" customClass="NavigationView" customModule="FakeWeather" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="01V-2L-jaG" customClass="NavigationView" customModule="HoroScope" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
@@ -30,15 +30,22 @@
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="title" value="Privacy Policy"/>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="hasLeft" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isGradient" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                            <color key="value" red="0.8980392157" green="0.20000000000000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                            <color key="value" red="1" green="0.64313725489999995" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMj-Vy-Wjd">
                     <rect key="frame" x="0.0" y="70" width="375" height="597"/>
                     <subviews>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Cax-9g-m9k" customClass="KHTextView" customModule="FakeWeather" customModuleProvider="target">
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Cax-9g-m9k" customClass="KHTextView" customModule="HoroScope" customModuleProvider="target">
                             <rect key="frame" x="12" y="12" width="351" height="573"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <mutableString key="text">By using SmartApp Team's APP (the “APP”), you are agreeing to our privacy policy, which applies to the use of the Site and SmartApp Team applications. SmartApp Team reserves the right at any time, without further notice, to change and modify this privacy policy. You should check this privacy policy periodically.
+                            <string key="text">By using SmartApp Team's APP (the “APP”), you are agreeing to our privacy policy, which applies to the use of the Site and SmartApp Team applications. SmartApp Team reserves the right at any time, without further notice, to change and modify this privacy policy. You should check this privacy policy periodically.
 
 We here at Eyewind respect your privacy. Here is a little explanation of when and why we might collect your data, and what we do with it . If you have any questions about this Privacy Policy, please contact us！
 I. Collection and Use of Personal Information
@@ -60,9 +67,10 @@ If SmartApp becomes involved in a merger, acquisition, or any form of sale of so
 
 Contact Us
 
-If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me:tueanhoang.devios2011@gmail.com</mutableString>
+If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me:tueanhoang.devios2011@gmail.com</string>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <dataDetectorType key="dataDetectorTypes" link="YES"/>
                         </textView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

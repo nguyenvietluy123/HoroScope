@@ -94,50 +94,64 @@
                         <constraint firstAttribute="height" constant="50" id="LRO-7E-qVd"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BQH-RG-UJO" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
-                    <rect key="frame" x="146.5" y="586" width="82" height="31"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bgD-9K-g2Q">
+                    <rect key="frame" x="0.0" y="454.5" width="375" height="162.5"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFY-Zk-95X" customClass="KHLabel" customModule="HoroScope" customModuleProvider="target">
-                            <rect key="frame" x="22" y="5" width="38.5" height="21"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQk-nZ-vnz" customClass="KHButton" customModule="HoroScope" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="82" height="31"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="action_Scan:" destination="-1" eventType="touchUpInside" id="WXo-M0-YcU"/>
-                            </connections>
-                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BQH-RG-UJO" customClass="KHView" customModule="HoroScope" customModuleProvider="target">
+                            <rect key="frame" x="126.5" y="62.5" width="122" height="37"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFY-Zk-95X" customClass="KHLabel" customModule="HoroScope" customModuleProvider="target">
+                                    <rect key="frame" x="42" y="8" width="38.5" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQk-nZ-vnz" customClass="KHButton" customModule="HoroScope" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="122" height="37"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="action_Scan:" destination="-1" eventType="touchUpInside" id="WXo-M0-YcU"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="rFY-Zk-95X" firstAttribute="centerX" secondItem="BQH-RG-UJO" secondAttribute="centerX" id="8AV-BB-cjH"/>
+                                <constraint firstItem="IQk-nZ-vnz" firstAttribute="top" secondItem="BQH-RG-UJO" secondAttribute="top" id="8zC-71-T8U"/>
+                                <constraint firstAttribute="bottom" secondItem="IQk-nZ-vnz" secondAttribute="bottom" id="du5-QX-4hL"/>
+                                <constraint firstAttribute="trailing" secondItem="IQk-nZ-vnz" secondAttribute="trailing" id="f4a-7A-Tdt"/>
+                                <constraint firstItem="IQk-nZ-vnz" firstAttribute="leading" secondItem="BQH-RG-UJO" secondAttribute="leading" id="kca-Jk-Vx6"/>
+                                <constraint firstAttribute="width" secondItem="BQH-RG-UJO" secondAttribute="height" multiplier="300:91" id="ojQ-kK-vnG"/>
+                                <constraint firstItem="rFY-Zk-95X" firstAttribute="centerY" secondItem="BQH-RG-UJO" secondAttribute="centerY" id="zkQ-0i-iFl"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isGradientColor" value="YES"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="minColor">
+                                    <color key="value" red="0.8980392157" green="0.20000000000000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="maxColor">
+                                    <color key="value" red="1" green="0.64313725489999995" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
                     </subviews>
-                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="rFY-Zk-95X" firstAttribute="centerX" secondItem="BQH-RG-UJO" secondAttribute="centerX" id="8AV-BB-cjH"/>
-                        <constraint firstItem="IQk-nZ-vnz" firstAttribute="top" secondItem="BQH-RG-UJO" secondAttribute="top" id="8zC-71-T8U"/>
-                        <constraint firstAttribute="bottom" secondItem="IQk-nZ-vnz" secondAttribute="bottom" id="du5-QX-4hL"/>
-                        <constraint firstAttribute="trailing" secondItem="IQk-nZ-vnz" secondAttribute="trailing" id="f4a-7A-Tdt"/>
-                        <constraint firstItem="IQk-nZ-vnz" firstAttribute="leading" secondItem="BQH-RG-UJO" secondAttribute="leading" id="kca-Jk-Vx6"/>
-                        <constraint firstAttribute="width" secondItem="BQH-RG-UJO" secondAttribute="height" multiplier="240:91" id="ojQ-kK-vnG"/>
-                        <constraint firstItem="rFY-Zk-95X" firstAttribute="centerY" secondItem="BQH-RG-UJO" secondAttribute="centerY" id="zkQ-0i-iFl"/>
+                        <constraint firstItem="BQH-RG-UJO" firstAttribute="centerX" secondItem="bgD-9K-g2Q" secondAttribute="centerX" id="0SK-Lz-hBj"/>
+                        <constraint firstItem="BQH-RG-UJO" firstAttribute="centerY" secondItem="bgD-9K-g2Q" secondAttribute="centerY" id="SzK-bA-xgN"/>
                     </constraints>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="circle" value="YES"/>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="isGradientColor" value="YES"/>
-                        <userDefinedRuntimeAttribute type="color" keyPath="minColor">
-                            <color key="value" red="0.8980392157" green="0.20000000000000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="color" keyPath="maxColor">
-                            <color key="value" red="1" green="0.64313725489999995" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bgD-9K-g2Q" secondAttribute="trailing" id="00O-Kb-rbv"/>
+                <constraint firstItem="dgT-hR-YyZ" firstAttribute="top" secondItem="bgD-9K-g2Q" secondAttribute="bottom" id="0Z7-aV-tDP"/>
                 <constraint firstItem="otO-jh-r1P" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="410-77-dGt"/>
+                <constraint firstItem="bgD-9K-g2Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4F6-Hi-cOd"/>
+                <constraint firstItem="bgD-9K-g2Q" firstAttribute="top" secondItem="otO-jh-r1P" secondAttribute="bottom" id="FqI-0k-5J6"/>
                 <constraint firstItem="q5H-05-yQ6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Jri-9i-m2d"/>
-                <constraint firstItem="BQH-RG-UJO" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="31:667" id="SIj-hM-6cB"/>
+                <constraint firstItem="BQH-RG-UJO" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="37:667" id="KWg-qp-Bnq"/>
                 <constraint firstItem="otO-jh-r1P" firstAttribute="top" secondItem="J3p-2n-vBv" secondAttribute="bottom" constant="25" id="TgB-2T-Czl"/>
                 <constraint firstItem="dgT-hR-YyZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UTm-SJ-UnX"/>
                 <constraint firstItem="otO-jh-r1P" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="WQP-Gn-3tA"/>
@@ -145,10 +159,8 @@
                 <constraint firstAttribute="trailing" secondItem="q5H-05-yQ6" secondAttribute="trailing" id="aHe-IF-Sj2"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dgT-hR-YyZ" secondAttribute="bottom" id="cbe-qe-8ZX"/>
                 <constraint firstAttribute="trailing" secondItem="otO-jh-r1P" secondAttribute="trailing" constant="12" id="haY-rK-oFS"/>
-                <constraint firstItem="dgT-hR-YyZ" firstAttribute="top" secondItem="BQH-RG-UJO" secondAttribute="bottom" id="hlE-Sp-QU6"/>
                 <constraint firstItem="q5H-05-yQ6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tHU-xR-6Um"/>
                 <constraint firstItem="J3p-2n-vBv" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" multiplier="0.95" id="u9M-nb-cpI"/>
-                <constraint firstItem="BQH-RG-UJO" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="vOF-KO-DF3"/>
                 <constraint firstItem="J3p-2n-vBv" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="390:1280" id="vpU-pJ-oh3"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dgT-hR-YyZ" secondAttribute="trailing" id="zrb-ZT-btl"/>
             </constraints>

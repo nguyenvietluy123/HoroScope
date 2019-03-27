@@ -104,7 +104,7 @@ extension ScanningVC {
     }
     
     func progressWhenCompleted() {
-        UIView.animate(withDuration: 1, delay: 0, options: UIView.AnimationOptions.curveEaseOut, animations: {
+        UIView.animate(withDuration: 2, delay: 0, options: UIView.AnimationOptions.curveEaseOut, animations: {
             self.scan(imageScan: self.imageView1)
             if self.imgLeftIsSuccessfully {
                 self.scan(imageScan: self.imageView2)
@@ -119,19 +119,9 @@ extension ScanningVC {
             }
         }, completion: { (completed) in
             if self.isDetect {
-                GCDCommon.mainQueueWithDelay(1.5, {
-                    if self.isBeautyPrediction {
-                        let vc = BabyPredictionVC.init(nibName: "BabyPredictionVC", bundle: nil)
-                        vc.imgLeftTranfer = self.img1
-                        vc.imgRightTranfer = self.img2
-                        self.navigationController?.pushViewController(vc, animated: true)
-                    } else {
-                        let vc = BeautyContestVC.init(nibName: "BeautyContestVC", bundle: nil)
-                        vc.imgLeftTranfer = self.img1
-                        vc.imgRightTranfer = self.img2
-                        self.navigationController?.pushViewController(vc, animated: true)
-                    }
-                })
+                SwiftyAd.shared.delegate = self
+                SwiftyAd.shared.showInterstitial(from: self)
+                
             }
         })
     }
@@ -141,6 +131,32 @@ extension ScanningVC {
         _ = AlertController.present(style: .alert, title: "Alert", message: "Can't detect face, Please try again!", actionTitles: ["Ok"], handler: { (action) in
             self.clickBack()
         })
+    }
+}
+
+extension ScanningVC: SwiftyAdDelegate {
+    func swiftyAdDidOpen(_ swiftyAd: SwiftyAd) {
+        GCDCommon.mainQueueWithDelay(1, {
+            if self.isBeautyPrediction {
+                let vc = BabyPredictionVC.init(nibName: "BabyPredictionVC", bundle: nil)
+                vc.imgLeftTranfer = self.img1
+                vc.imgRightTranfer = self.img2
+                self.navigationController?.pushViewController(vc, animated: true)
+            } else {
+                let vc = BeautyContestVC.init(nibName: "BeautyContestVC", bundle: nil)
+                vc.imgLeftTranfer = self.img1
+                vc.imgRightTranfer = self.img2
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        })
+    }
+    
+    func swiftyAdDidClose(_ swiftyAd: SwiftyAd) {
+        
+    }
+    
+    func swiftyAd(_ swiftyAd: SwiftyAd, didRewardUserWithAmount rewardAmount: Int) {
+        
     }
 }
 
@@ -207,7 +223,7 @@ extension ScanningVC {
         let y = face.boundingBox.origin.y * imageScan.image!.size.height
         let faceRect = CGRect(x: x, y: y, width: w, height: h)
         context?.saveGState()
-        context?.setStrokeColor(UIColor.red.cgColor)
+        context?.setStrokeColor(UIColor.clear.cgColor)
         context?.setLineWidth(1.0)
         context?.addRect(faceRect)
         context?.drawPath(using: .stroke)
